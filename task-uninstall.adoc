@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall.html 
+keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
+summary: Você pode desinstalar o software de classificação de dados para solucionar problemas ou remover permanentemente o software do host.  A exclusão da instância também exclui os discos associados onde os dados indexados residem.  Todas as informações que a Classificação de Dados digitalizou serão excluídas permanentemente. 
+---
+= Desinstalar a classificação de dados do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode desinstalar o NetApp Data Classification para solucionar problemas ou remover permanentemente o software do host.  A exclusão da instância também exclui os discos associados onde os dados indexados residem, o que significa que todas as informações que a Classificação de Dados digitalizou serão excluídas permanentemente.
+
+As etapas que você precisa seguir dependem se você implantou a Classificação de Dados na nuvem ou em um host local.
+
+
+
+== Desinstalar a Classificação de Dados de um provedor de nuvem
+
+. Em Classificação de dados, selecione **Configuração**.
+. Na parte inferior da página de configuração, selecione **Desinstalar classificação**.
++
+image:screenshot-uninstall.png["Uma captura de tela do botão para desinstalar o Data Classification."]
+
+. Na caixa de diálogo, digite "desinstalar" para prosseguir com a desconexão da instância de Classificação de Dados do agente do Console.  Selecione **Desinstalar** para confirmar.
+. Na caixa de diálogo _Desinstalar Classificação_, digite *uninstall* para confirmar que deseja desconectar a instância de Classificação de Dados do agente do Console e selecione *Desinstalar*.
+. Para finalizar o processo de desinstalação, acesse o console do seu provedor de nuvem e exclua a instância de Classificação de Dados.  A instância é denominada _CloudCompliance_ com um hash gerado (UUID) concatenado a ela.  Por exemplo: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+
+
+
+
+== Desinstalar a Classificação de Dados de uma implantação local
+
+. Em Classificação de dados, selecione **Configuração**.
+. Na parte inferior da página de configuração, selecione **Desinstalar classificação**.
++
+image:screenshot-uninstall.png["Uma captura de tela do botão para desinstalar o Data Classification."]
+
+. Na caixa de diálogo, digite "desinstalar" para prosseguir com a desconexão da instância de Classificação de Dados do agente do Console.  Selecione **Desinstalar** para confirmar.
+. Para desinstalar o software do host, execute o `cleanup.sh` script na máquina host de Classificação de Dados, por exemplo:
++
+[source, cli]
+----
+cleanup.sh
+----
++
+O script está localizado no `/install/light_probe/onprem_installer/cleanup.sh` diretório. Veja comolink:reference-log-in-to-instance.html["faça login na máquina host de classificação de dados"] .
+
+

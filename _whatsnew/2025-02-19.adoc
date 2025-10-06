@@ -1,0 +1,39 @@
+= Versão 1.40
+:allow-uri-read: 
+
+
+
+
+=== Versão 1.40
+
+Esta versão da BlueXP classification inclui as seguintes atualizações.
+
+.Suporte para RHEL 9.5
+Esta versão oferece suporte ao Red Hat Enterprise Linux v9.5, além das versões suportadas anteriormente.  Isso se aplica a qualquer instalação manual local da BlueXP classification, incluindo implantações em sites obscuros.
+
+Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão de BlueXP classification 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 e 9.5.
+
+.Priorizar varreduras somente de mapeamento
+Ao realizar verificações somente de mapeamento, você pode priorizar as verificações mais importantes.  Esse recurso ajuda quando você tem muitos ambientes de trabalho e quer garantir que as verificações de alta prioridade sejam concluídas primeiro.
+
+Por padrão, as verificações são enfileiradas com base na ordem em que são iniciadas.  Com a capacidade de priorizar verificações, você pode movê-las para a frente da fila.  Várias varreduras podem ser priorizadas.  A prioridade é designada na ordem "primeiro a entrar, primeiro a sair", o que significa que a primeira varredura que você prioriza passa para a frente da fila; a segunda varredura que você prioriza se torna a segunda na fila, e assim por diante.
+
+A prioridade é concedida apenas uma vez.  As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
+
+A priorização é limitada alink:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["varreduras somente de mapeamento"^] ; não está disponível para mapeamento e classificação de varreduras.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"^] .
+
+.Repetir todas as verificações
+A BlueXP classification permite repetir em lote todas as verificações com falha.
+
+Você pode tentar novamente as verificações em uma operação em lote com a função **Repetir tudo**.  Se as verificações de classificação estiverem falhando devido a um problema temporário, como uma queda de rede, você pode tentar todas as verificações ao mesmo tempo com um botão, em vez de tentar novamente individualmente.  As digitalizações podem ser repetidas quantas vezes forem necessárias.
+
+Para repetir todas as verificações:
+
+. No menu de BlueXP classification , selecione *Configuração*.
+. Para repetir todas as verificações com falha, selecione *Repetir todas as verificações*.
+
+
+.Precisão aprimorada do modelo de categorização
+A precisão do modelo de aprendizagem de máquina paralink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorias predefinidas"] melhorou em 11%.

@@ -1,0 +1,146 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-file-shares.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
+summary: Conclua algumas etapas para começar a escanear compartilhamentos de arquivos não NetApp NFS ou CIFS diretamente com a Classificação de Dados.  Esses compartilhamentos de arquivos podem residir no local ou na nuvem. 
+---
+= Verificar compartilhamentos de arquivos com a classificação de dados do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Para verificar compartilhamentos de arquivos, você deve primeiro criar um grupo de compartilhamentos de arquivos no NetApp Data Classification.  Os grupos de compartilhamentos de arquivos são para compartilhamentos NFS ou CIFS (SMB) hospedados no local ou na nuvem.
+
+
+NOTE: A verificação de dados de compartilhamentos de arquivos que não sejam da NetApp não é suportada na versão principal do Data Classification.
+
+
+
+== Pré-requisitos
+
+Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de habilitar a Classificação de Dados.
+
+* Os compartilhamentos podem ser hospedados em qualquer lugar, inclusive na nuvem ou no local.  Compartilhamentos CIFS de sistemas de armazenamento NetApp 7-Mode mais antigos podem ser verificados como compartilhamentos de arquivos.
++
+** A Classificação de Dados não pode extrair permissões ou o "último horário de acesso" dos sistemas do Modo 7.
+** Devido a um problema conhecido entre algumas versões do Linux e compartilhamentos CIFS em sistemas 7-Mode, você deve configurar o compartilhamento para usar somente SMBv1 com autenticação NTLM habilitada.
+
+
+* É necessário haver conectividade de rede entre a instância de Classificação de Dados e os compartilhamentos.
+* Você pode adicionar um compartilhamento DFS (Distributed File System) como um compartilhamento CIFS regular.  Como a Classificação de Dados não sabe que o compartilhamento é criado em vários servidores/volumes combinados como um único compartilhamento CIFS, você pode receber erros de permissão ou conectividade sobre o compartilhamento quando a mensagem realmente se aplica apenas a uma das pastas/compartilhamentos que está localizada em um servidor/volume diferente.
+* Para compartilhamentos CIFS (SMB), certifique-se de ter credenciais do Active Directory que forneçam acesso de leitura aos compartilhamentos.  Credenciais de administrador são preferenciais caso a Classificação de Dados precise verificar quaisquer dados que exijam permissões elevadas.
++
+Se você quiser ter certeza de que os "últimos horários de acesso" dos seus arquivos não serão alterados pelas verificações de Classificação de Dados, é recomendável que o usuário tenha permissões de Gravação de Atributos no CIFS ou permissões de gravação no NFS. Se possível, configure o usuário do Active Directory como parte de um grupo pai na organização que tenha permissões para todos os arquivos.
+
+* Todos os compartilhamentos de arquivos CIFS em um grupo devem usar as mesmas credenciais do Active Directory.
+* Você pode misturar compartilhamentos NFS e CIFS (usando Kerberos ou NTLM).  Você deve adicionar as ações ao grupo separadamente.  Ou seja, você deve concluir o processo duas vezes — uma vez por protocolo.
++
+** Não é possível criar um grupo de compartilhamentos de arquivos que misture tipos de autenticação CIFS (Kerberos e NTLM).
+
+
+* Se você estiver usando CIFS com autenticação Kerberos, certifique-se de que o endereço IP fornecido seja acessível à Classificação de Dados.  Os compartilhamentos de arquivos não podem ser adicionados se o endereço IP estiver inacessível.
+
+
+
+
+== Criar um grupo de compartilhamentos de arquivos
+
+Ao adicionar compartilhamentos de arquivos ao grupo, você deve usar o formato `<host_name>:/<share_path>` .
+
+Você pode adicionar compartilhamentos de arquivos individualmente ou inserir uma lista separada por linhas dos compartilhamentos de arquivos que deseja verificar.  Você pode adicionar até 100 ações por vez.
+
+.Passos
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na página Configuração, selecione *Adicionar Sistema* > *Adicionar Grupo de Compartilhamentos de Arquivos*.
+. Na caixa de diálogo Adicionar grupo de compartilhamentos de arquivos, insira o nome do grupo de compartilhamentos e selecione *Continuar*.
+. Selecione o protocolo para os compartilhamentos de arquivos que você está adicionando.
++
+image:screen-cl-config-shares-add.png["Uma captura de tela do modal para adicionar compartilhamentos, mostrando opções para selecionar protocolos e compartilhamentos"]
+
++
+.. Se você estiver adicionando compartilhamentos CIFS com autenticação NTLM, insira as credenciais do Active Directory para acessar os volumes CIFS.  Embora credenciais somente leitura sejam suportadas, é recomendável que você forneça acesso total com credenciais de administrador. Selecione **Salvar**.
+
+
+. Adicione os compartilhamentos de arquivos que você deseja verificar (um compartilhamento de arquivo por linha).  Em seguida, selecione **Continuar**.
+. Uma caixa de diálogo de confirmação exibe o número de compartilhamentos que foram adicionados.
++
+Se a caixa de diálogo listar quaisquer compartilhamentos que não puderam ser adicionados, capture essas informações para que você possa resolver o problema.  Se o problema estiver relacionado a uma convenção de nomenclatura, você poderá adicionar novamente o compartilhamento com um nome corrigido.
+
+. Configurar a varredura no volume:
++
+** Para habilitar verificações somente de mapeamento em compartilhamentos de arquivos, selecione *Mapear*.
+** Para habilitar verificações completas em compartilhamentos de arquivos, selecione *Mapear e classificar*.
+** Para desabilitar a verificação em compartilhamentos de arquivos, selecione *Desativado*.
++
+
+NOTE: O botão no topo da página para *Verificar quando faltarem permissões de "gravação de atributos"* está desabilitado por padrão.  Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original.  + Se você alternar *Verificar quando faltarem permissões de "gravação de atributos"* para *Ativado*, a verificação redefinirá o último horário de acesso e verificará todos os arquivos, independentemente das permissões.  + Para saber mais sobre o último registro de data e hora acessado, consultelink:link:reference-collected-metadata.html#last-access-time-timestamp["Metadados coletados de fontes de dados na Classificação de Dados"] .
+
+
+
+
+
+.Resultado
+A Classificação de Dados inicia a verificação dos arquivos nos compartilhamentos de arquivos que você adicionou.  Você podexref:#track-the-scanning-progress[Acompanhe o progresso da digitalização] e visualize os resultados da verificação no **Painel**.
+
+
+NOTE: Se a verificação não for concluída com sucesso para uma configuração CIFS com autenticação Kerberos, verifique se há erros na guia **Configuração**.
+
+
+
+== Editar um grupo de compartilhamentos de arquivos
+
+Depois de criar um grupo de compartilhamentos de arquivos, você pode editar o protocolo CIFS ou adicionar e remover compartilhamentos de arquivos.
+
+.Editar a configuração do protocolo CIFS
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na página Configuração, selecione o grupo de compartilhamentos de arquivos que você deseja modificar.
+. Selecione **Editar credenciais CIFS**.
++
+image:screenshot-edit-cifs-credential.png["Captura de tela do menu Editar credenciais CIFS."]
+
+. Escolha o método de autenticação: **NTLM** ou **Kerberos**.
+. Digite o **Nome de usuário** e a **Senha** do Active Directory.
+. Selecione **Salvar** para concluir o processo.
+
+
+.Adicionar compartilhamentos de arquivos às verificações de conformidade
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na página Configuração, selecione o grupo de compartilhamentos de arquivos que você deseja modificar.
+. Selecione **+ Adicionar compartilhamentos**.
+. Selecione o protocolo para os compartilhamentos de arquivos que você está adicionando.
++
+image:screen-cl-config-shares-add.png["Uma captura de tela do modal para adicionar compartilhamentos, mostrando opções para selecionar protocolos e compartilhamentos"]
+
++
+Se você estiver adicionando compartilhamentos de arquivos a um protocolo já configurado, nenhuma alteração será necessária.
+
++
+Se você estiver adicionando compartilhamentos de arquivos com um segundo protocolo, certifique-se de ter configurado corretamente a autenticação conforme detalhado nolink:#prerequisites["pré-requisitos"] .
+
+. Adicione os compartilhamentos de arquivos que você deseja escanear (um compartilhamento de arquivo por linha) usando o formato `<host_name>:/<share_path>` .
+. Selecione **Continuar** para concluir a adição dos compartilhamentos de arquivos.
+
+
+.Remover um compartilhamento de arquivo das verificações de conformidade
+. No menu Classificação de Dados, selecione *Configuração*.
+. Selecione o sistema do qual você deseja remover os compartilhamentos de arquivos.
+. Selecione *Configuração*.
+. Na página Configuração, selecione as Açõesimage:button-actions-horizontal.png["Ícone de ações"] para o compartilhamento de arquivo que você deseja remover.
+. No menu Ações, selecione *Remover compartilhamento*.
+
+
+
+
+== Acompanhe o progresso da digitalização
+
+Você pode acompanhar o progresso da verificação inicial.
+
+. Selecione o menu **Configuração**.
+. Selecione a **Configuração do sistema**.
+. Para o repositório de armazenamento, verifique a coluna Progresso da verificação para visualizar seu status.
+

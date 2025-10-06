@@ -1,0 +1,12 @@
+= Versão 1.35
+:allow-uri-read: 
+
+
+
+
+=== Versão 1.35
+
+.Verificar dados do StorageGRID
+A BlueXP classification oferece suporte à digitalização de dados no StorageGRID.
+
+Para mais detalhes, consultelink:task-scanning-storagegrid.html["Verificar dados do StorageGRID"] .

@@ -1,0 +1,247 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cloud-compliance.html 
+keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
+summary: Conclua algumas etapas para implantar o NetApp Data Classification na nuvem.  O NetApp Console implanta a instância de Classificação de Dados na mesma rede do provedor de nuvem que o agente do Console. 
+---
+= Implante a classificação de dados do NetApp na nuvem usando o NetApp Console
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode implantar o NetApp Data Classification na nuvem com o NetApp Console.  O Console implanta a instância de Classificação de Dados na mesma rede do provedor de nuvem que o agente do Console.
+
+Observe que você também podelink:task-deploy-compliance-onprem.html["instalar a Classificação de Dados em um host Linux que tenha acesso à Internet"] .  Esse tipo de instalação pode ser uma boa opção se você preferir escanear sistemas ONTAP locais usando uma instância de Classificação de Dados que também esteja localizada no local, mas isso não é um requisito.  O software funciona exatamente da mesma maneira, independentemente do método de instalação escolhido.
+
+
+
+== Início rápido
+
+Comece rapidamente seguindo estas etapas ou role para baixo até as seções restantes para obter detalhes completos.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"]Criar um agente de console
+[role="quick-margin-para"]
+Se você ainda não tiver um agente do Console, crie um.  Ver https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
+
+[role="quick-margin-para"]
+Você também pode https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"]Pré-requisitos
+[role="quick-margin-para"]
+Certifique-se de que seu ambiente possa atender aos pré-requisitos.  Isso inclui acesso de saída à Internet para a instância, conectividade entre o agente do Console e a Classificação de Dados pela porta 443 e muito mais.  << Pré-requisitos, veja a lista completa >>.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"]Implantar classificação de dados
+[role="quick-margin-para"]
+Inicie o assistente de instalação para implantar a instância de Classificação de Dados na nuvem.
+
+
+
+== Criar um agente de console
+
+Se você ainda não tiver um agente do Console, crie um agente do Console no seu provedor de nuvem.  Ver https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .  Na maioria dos casos, você provavelmente terá um agente de console configurado antes de tentar ativar a Classificação de Dados porque a maioria https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["Os recursos do console exigem um agente do console"] , mas há casos em que você precisará configurar um agora.
+
+Existem alguns cenários em que você precisa usar um agente do Console implantado em um provedor de nuvem específico:
+
+* Ao escanear dados no Cloud Volumes ONTAP na AWS ou no Amazon FSx para buckets ONTAP , você usa um agente de console na AWS.
+* Ao digitalizar dados no Cloud Volumes ONTAP no Azure ou no Azure NetApp Files, você usa um agente de console no Azure.
++
+** Para o Azure NetApp Files, ele deve ser implantado na mesma região que os volumes que você deseja verificar.
+
+
+* Ao escanear dados no Cloud Volumes ONTAP no GCP, você usa um agente do Console no GCP.
+
+
+Sistemas ONTAP locais, compartilhamentos de arquivos NetApp e bancos de dados podem ser verificados ao usar qualquer um desses agentes do Console na nuvem.
+
+Observe que você também pode https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou na nuvem.  Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
+
+Como você pode ver, pode haver algumas situações em que você precise usar https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["vários agentes de console"] .
+
+
+TIP: A Classificação de Dados não impõe um limite à quantidade de dados que pode escanear.  Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] .  + A interface do usuário do console exibe dados de um único conector.  Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
+
+
+
+=== Apoio regional do governo
+
+A classificação de dados é suportada quando o agente do Console é implantado em uma região governamental (AWS GovCloud, Azure Gov ou Azure DoD).  Quando implantada dessa maneira, a Classificação de Dados tem as seguintes restrições:
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["Veja mais informações sobre a implantação do agente do Console em uma região governamental"^] .
+
+
+
+== Pré-requisitos
+
+Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de implantar a Classificação de Dados na nuvem.  Quando você implanta a Classificação de Dados na nuvem, ela fica localizada na mesma sub-rede que o agente do Console.
+
+Habilitar acesso de saída à Internet a partir da Classificação de Dados:: A classificação de dados requer acesso de saída à Internet.  Se sua rede virtual ou física usar um servidor proxy para acesso à Internet, certifique-se de que a instância de Classificação de Dados tenha acesso de saída à Internet para contatar os seguintes endpoints.  O proxy deve ser opaco.  Proxies transparentes não são suportados atualmente.
++
+--
+Revise a tabela apropriada abaixo, dependendo se você está implantando a Classificação de Dados na AWS, Azure ou GCP.
+
+--
+
+
+[role="tabbed-block"]
+====
+.Pontos de extremidade necessários para AWS
+--
+[cols="43,57"]
+|===
+| Pontos finais | Propósito 
+
+
+| \ https://api.bluexp.netapp.com | Comunicação com o serviço Console, que inclui contas NetApp . 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | Comunicação com o site do Console para autenticação centralizada do usuário. 
+
+
+| \ https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | Fornece acesso a imagens de software, manifestos e modelos. 
+
+
+| \ https://kinesis.us-east-1.amazonaws.com | Permite que o NetApp transmita dados de registros de auditoria. 
+
+
+| \ https://cognito-idp.us-east-1.amazonaws.com \ https://cognito-identity.us-east-1.amazonaws.com \ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \ https://customer-data-production.s3.us-west-2.amazonaws.com | Permite que a Classificação de Dados acesse e baixe manifestos e modelos, além de enviar logs e métricas. 
+|===
+--
+.Pontos de extremidade necessários para o Azure
+--
+[cols="43,57"]
+|===
+| Pontos finais | Propósito 
+
+
+| \ https://api.bluexp.netapp.com | Comunicação com o serviço Console, que inclui contas NetApp . 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | Comunicação com o site do Console para autenticação centralizada do usuário. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | Fornece acesso a imagens de software, manifestos, modelos e para enviar logs e métricas. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | Permite que o NetApp transmita dados de registros de auditoria. 
+|===
+--
+.Pontos de extremidade necessários para o GCP
+--
+[cols="43,57"]
+|===
+| Pontos finais | Propósito 
+
+
+| \ https://api.bluexp.netapp.com | Comunicação com o serviço Console, que inclui contas NetApp . 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | Comunicação com o site do Console para autenticação centralizada do usuário. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | Fornece acesso a imagens de software, manifestos, modelos e para enviar logs e métricas. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | Permite que o NetApp transmita dados de registros de auditoria. 
+|===
+--
+====
+Certifique-se de que a Classificação de Dados tenha as permissões necessárias:: Certifique-se de que a Classificação de Dados tenha permissões para implantar recursos e criar grupos de segurança para a instância da Classificação de Dados.
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Permissões do Google Cloud"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["Permissões da AWS"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Permissões do Azure"^]
+
+
+--
+Garantir que o agente do Console possa acessar a Classificação de Dados:: Garanta a conectividade entre o agente do Console e a instância de Classificação de Dados.  O grupo de segurança do agente do Console deve permitir tráfego de entrada e saída pela porta 443 de e para a instância de Classificação de Dados.  Essa conexão permite a implantação da instância de Classificação de Dados e permite que você visualize informações nas guias Conformidade e Governança.  A classificação de dados é suportada em regiões governamentais na AWS e no Azure.
++
+--
+Regras adicionais de grupo de segurança de entrada e saída são necessárias para implantações da AWS e AWS GovCloud. Ver https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Regras para o agente do Console na AWS"^] para mais detalhes.
+
+Regras adicionais de grupo de segurança de entrada e saída são necessárias para implantações do Azure e do Azure Government. Ver https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Regras para o agente do Console no Azure"^] para mais detalhes.
+
+--
+Garanta que você pode manter a Classificação de Dados em execução:: A instância de Classificação de Dados precisa permanecer ativa para escanear continuamente seus dados.
+Garantir a conectividade do navegador da web com a Classificação de Dados:: Depois que a Classificação de Dados estiver habilitada, certifique-se de que os usuários acessem a interface do Console de um host que tenha uma conexão com a instância da Classificação de Dados.
++
+--
+A instância de Classificação de Dados usa um endereço IP privado para garantir que os dados indexados não sejam acessíveis à Internet.  Como resultado, o navegador da Web que você usa para acessar o Console deve ter uma conexão com esse endereço IP privado.  Essa conexão pode vir de uma conexão direta com seu provedor de nuvem (por exemplo, uma VPN) ou de um host que esteja dentro da mesma rede que a instância de Classificação de Dados.
+
+--
+Verifique seus limites de vCPU:: Certifique-se de que o limite de vCPU do seu provedor de nuvem permite a implantação de uma instância com o número necessário de núcleos.  Você precisará verificar o limite de vCPU para a família de instâncias relevante na região onde o Console está sendo executado. link:concept-classification.html#the-data-classification-instance["Veja os tipos de instância necessários"] .
++
+--
+Veja os links a seguir para mais detalhes sobre os limites de vCPU:
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["Documentação da AWS: cotas de serviço do Amazon EC2"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Documentação do Azure: Cotas de vCPU de máquina virtual"^]
+* https://cloud.google.com/compute/quotas["Documentação do Google Cloud: Cotas de recursos"^]
+
+
+--
+
+
+
+
+== Implantar classificação de dados na nuvem
+
+Siga estas etapas para implantar uma instância de Classificação de Dados na nuvem.  O agente do Console implantará a instância na nuvem e, em seguida, instalará o software de classificação de dados nessa instância.
+
+Em regiões onde o tipo de instância padrão não está disponível, a Classificação de Dados é executada em umlink:reference-instance-types.html["tipo de instância alternativo"] .
+
+[role="tabbed-block"]
+====
+.Implantar na AWS
+--
+.Passos
+. Na página principal de Classificação de Dados, selecione *Implantar classificação no local ou na nuvem*.
++
+image:screenshot-deploy-classification.png["Uma captura de tela da seleção do botão para ativar a Classificação de Dados."]
+
+. Na página _Instalação_, selecione *Implantar > Implantar* para usar o tamanho de instância "Grande" e iniciar o assistente de implantação na nuvem.
+. O assistente exibe o progresso à medida que avança nas etapas de implantação.  Quando forem necessárias entradas ou se houver problemas, você será solicitado.
+. Quando a instância for implantada e a Classificação de Dados estiver instalada, selecione *Continuar para a configuração* para ir para a página _Configuração_.
+
+
+--
+.Implantar no Azure
+--
+.Passos
+. Na página principal de Classificação de Dados, selecione *Implantar classificação no local ou na nuvem*.
++
+image:screenshot-deploy-classification.png["Uma captura de tela da seleção do botão para ativar a Classificação de Dados."]
+
+. Selecione *Implantar* para iniciar o assistente de implantação na nuvem.
+. O assistente exibe o progresso à medida que avança nas etapas de implantação.  Ele irá parar e solicitar uma entrada caso encontre algum problema.
+. Quando a instância for implantada e a Classificação de Dados estiver instalada, selecione *Continuar para a configuração* para ir para a página _Configuração_.
+
+
+--
+.Implantar no Google Cloud
+--
+.Passos
+. Na página principal de Classificação de Dados, selecione *Governança > Classificação*.
+. Selecione *Implantar classificação no local ou na nuvem*.
++
+image:screenshot-deploy-classification.png["Uma captura de tela da seleção do botão para ativar a Classificação de Dados."]
+
+. Selecione *Implantar* para iniciar o assistente de implantação na nuvem.
+. O assistente exibe o progresso à medida que avança nas etapas de implantação.  Ele irá parar e solicitar uma entrada caso encontre algum problema.
+. Quando a instância for implantada e a Classificação de Dados estiver instalada, selecione *Continuar para a configuração* para ir para a página _Configuração_.
+
+
+--
+====
+.Resultado
+O Console implanta a instância de Classificação de Dados no seu provedor de nuvem.
+
+As atualizações do agente do Console e do software de classificação de dados são automatizadas, desde que as instâncias tenham conectividade com a Internet.
+
+.O que vem a seguir
+Na página Configuração, você pode selecionar as fontes de dados que deseja verificar.

@@ -1,0 +1,70 @@
+---
+indexpage:
+  title: Documentação de classificação de dados da NetApp
+  summary: A classificação de dados da NetApp permite que você escaneie e classifique
+    dados na multinuvem híbrida da sua organização.  A Classificação de Dados utiliza
+    processamento de linguagem natural (PLN) orientado por IA para análise e categorização
+    de dados contextuais, fornecendo insights práticos sobre seus dados para atender
+    a requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar
+    custos e acelerar a migração.
+  keywords: bluexp, data classification, cloud data sense, data sense, compliance,
+    security, netapp console, bluexp classification
+  lead: A classificação de dados da NetApp permite que você escaneie e classifique
+    dados na multinuvem híbrida da sua organização.  A Classificação de Dados utiliza
+    processamento de linguagem natural (PLN) orientado por IA para análise e categorização
+    de dados contextuais, fornecendo insights práticos sobre seus dados para atender
+    a requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar
+    custos e acelerar a migração.
+  tiles:
+  - title: Começar
+    links:
+    - title: Aprenda sobre Classificação de Dados
+      url: concept-classification.html
+    - title: O que há de novo
+      url: whats-new.html
+    - title: Implantar classificação de dados na nuvem
+      url: task-deploy-cloud-compliance.html
+    - title: Instalar a Classificação de Dados em um host Linux com internet
+      url: task-deploy-compliance-onprem.html
+  - title: Analise suas fontes de dados
+    links:
+    - title: Verificar o Amazon FSx em busca de volumes ONTAP
+      url: task-scanning-fsx.html
+    - title: Verificar volumes do Azure NetApp Files
+      url: task-scanning-anf.html
+    - title: Digitalizar Cloud Volumes ONTAP
+      url: task-getting-started-compliance.html
+    - title: Esquemas de banco de dados de varredura
+      url: task-scanning-databases.html
+    - title: Verificar compartilhamentos de arquivos (CIFS, NFS)
+      url: task-scanning-file-shares.html
+    - title: Verificar volumes ONTAP locais
+      url: task-getting-started-compliance.html
+    - title: Digitalizar StorageGRID
+      url: task-scanning-storagegrid.html
+  - title: Ver detalhes sobre seus dados
+    links:
+    - title: Ver arquivos contendo informações privadas
+      url: task-controlling-private-data.html
+    - title: Visualizar arquivos duplicados em seu armazenamento
+      url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
+    - title: Filtre seus dados para visualizar arquivos específicos
+      url: task-investigate-data.html
+    - title: Criar uma consulta salva
+      url: task-using-policies.html
+    - title: Gerar relatórios de conformidade
+      url: task-generating-compliance-reports.html
+    - title: Responder a uma solicitação de acesso ao titular dos dados
+      url: task-generating-compliance-reports.html
+  - title: Blogs e comunidade
+    links:
+    - title: Console NetApp
+      url: https://www.netapp.com/console
+    - title: Serviços de dados NetApp
+      url: https://www.netapp.com/data-services/
+    - title: Comunidade NetApp
+      url: https://community.netapp.com/
+    - title: Casos de uso de classificação de dados
+      url: https://bluexp.netapp.com/netapp-cloud-data-sense
+    - title: Vídeos de classificação de dados
+      url: https://youtube.com/playlist?list=PLdXI3bZJEw7m0dFDhu3w6Yqt71Zqyl2Pw

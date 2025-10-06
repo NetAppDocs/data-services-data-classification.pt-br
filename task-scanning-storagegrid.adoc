@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-storagegrid.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
+summary: Conclua algumas etapas para começar a escanear dados no StorageGRID diretamente com o NetApp Data Classification. 
+---
+= Escaneie dados do StorageGRID com a classificação de dados do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Conclua algumas etapas para começar a escanear dados no StorageGRID diretamente com o NetApp Data Classification.
+
+
+
+== Revisar os requisitos do StorageGRID
+
+Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de habilitar a Classificação de Dados.
+
+* Você precisa ter o URL do endpoint para se conectar ao serviço de armazenamento de objetos.
+* Você precisa ter a chave de acesso e a chave secreta do StorageGRID para que o Data Classification possa acessar os buckets.
+
+
+
+
+== Implantar a instância de classificação de dados
+
+Implante a Classificação de Dados se ainda não houver uma instância implantada.
+
+Se você estiver digitalizando dados do StorageGRID que podem ser acessados ​​pela Internet, você podelink:task-deploy-cloud-compliance.html["implementar a Classificação de Dados na nuvem"^] oulink:task-deploy-compliance-onprem.html["implementar a Classificação de Dados em um local local com acesso à Internet"^] .
+
+Se você estiver digitalizando dados do StorageGRID que foi instalado em um site escuro sem acesso à Internet, será necessáriolink:task-deploy-compliance-dark-site.html["implementar a Classificação de Dados no mesmo local que não tem acesso à Internet"^] .  Isso também requer que o agente do Console seja implantado no mesmo local.
+
+
+
+== Adicione o serviço StorageGRID à Classificação de Dados
+
+Adicione o serviço StorageGRID .
+
+.Passos
+. No menu Classificação de Dados, selecione a opção *Configuração*.
+. Na página Configuração, selecione *Adicionar Sistema* > *Adicionar StorageGRID*.
+. Na caixa de diálogo Adicionar serviço StorageGRID , insira os detalhes do serviço StorageGRID e selecione *Continuar*.
++
+.. Digite o nome que você deseja usar para o Sistema.  Este nome deve refletir o nome do serviço StorageGRID ao qual você está se conectando.
+.. Insira a URL do Endpoint para acessar o serviço de armazenamento de objetos.
+.. Insira a chave de acesso e a chave secreta para que a Classificação de Dados possa acessar os buckets no StorageGRID.
++
+image:screenshot-scanning-storagegrid-add.png["Uma captura de tela da caixa de diálogo onde você insere os valores para acessar o serviço StorageGRID ."]
+
+
+
+
+
+.Resultado
+StorageGRID é adicionado à lista de sistemas.
+
+
+
+== Habilitar e desabilitar verificações de conformidade em buckets do StorageGRID
+
+Depois de habilitar a Classificação de Dados no StorageGRID, a próxima etapa é configurar os buckets que você deseja verificar.  A Classificação de Dados descobre esses buckets e os exibe no sistema que você criou.
+
+.Passos
+. Na página Configuração, localize o sistema StorageGRID .
+. No bloco do sistema StorageGRID , selecione *Configuração*.
+. Conclua uma das seguintes etapas para habilitar ou desabilitar a verificação:
++
+** Para habilitar varreduras somente de mapeamento em um bucket, selecione *Mapear*.
+** Para habilitar verificações completas em um bucket, selecione *Mapear e classificar*.
+** Para desabilitar a varredura em um bucket, selecione *Desativado*.
+
+
+
+
+.Resultado
+A Classificação de Dados inicia a varredura dos buckets que você habilitou.  Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**.  O progresso de cada verificação é mostrado como uma barra de progresso.  Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.  Se houver algum erro, ele aparecerá na coluna Status, junto com a ação necessária para corrigi-lo.

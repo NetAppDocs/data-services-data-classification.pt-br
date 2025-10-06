@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: reference-log-in-to-instance.html 
+keywords: log in, data sense, classification 
+summary: Às vezes, pode ser necessário fazer login no sistema de classificação de dados da NetApp para poder acessar arquivos de log ou editar arquivos de configuração. 
+---
+= Efetue login no sistema de classificação de dados da NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você precisa fazer login no sistema de classificação de dados da NetApp para poder acessar arquivos de log ou editar arquivos de configuração.
+
+Quando o Data Classification é instalado em uma máquina Linux em suas instalações ou em uma máquina Linux implantada na nuvem, você pode acessar o arquivo de configuração e o script diretamente.
+
+Quando a Classificação de Dados é implantada na nuvem, você precisa fazer SSH para a instância da Classificação de Dados.  Faça login no sistema via SSH inserindo o usuário e a senha ou usando a chave SSH fornecida durante a instalação do agente do Console.  O comando SSH é:
+
+`ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>`
+
+* `<path_to_the_ssh_key>`= localização das chaves de autenticação ssh
+* `<machine_user>:`
++
+** Para AWS: use o <ec2-user>
+** Para o Azure: use o usuário criado para a instância do Console
+** Para GCP: use o usuário criado para a instância do Console
+
+
+* `<datasense_ip>`= Endereço IP da instância da máquina virtual
+
+
+Você precisa modificar as regras de entrada do grupo de segurança para acessar o sistema na nuvem.  Para mais detalhes, consulte:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Regras de grupo de segurança na AWS"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Regras de grupo de segurança no Azure"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Regras de firewall no Google Cloud"^]
+

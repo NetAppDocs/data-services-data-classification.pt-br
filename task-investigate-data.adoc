@@ -1,0 +1,390 @@
+---
+sidebar: sidebar 
+permalink: task-investigate-data.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies,json, csv, data investigation, data investigation report, download report, file metadata, file permissions, duplicate files, saved search 
+summary: Você pode investigar os dados da sua organização visualizando detalhes na página Investigação de Dados.  Aqui é onde você pode continuar sua pesquisa depois de consultar o painel de governança. 
+---
+= Investigue os dados armazenados em sua organização com a Classificação de Dados NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O painel de investigação de dados exibe insights em nível de arquivo e diretório sobre seus dados, permitindo que você classifique e filtre os resultados.  A página Investigação de Dados apresenta insights sobre metadados e permissões de arquivos e diretórios, além de identificar arquivos duplicados.  Com insights em nível de arquivo, diretório e banco de dados, você pode tomar medidas para melhorar a conformidade da sua organização e economizar espaço de armazenamento.  A página Investigação de Dados também oferece suporte para mover, copiar e excluir arquivos.
+
+
+NOTE: Para obter insights da página Investigação, você deve executar uma verificação de classificação completa em suas fontes de dados.  Fontes de dados que passaram por uma varredura somente de mapeamento não mostram detalhes em nível de arquivo.
+
+
+
+== Estrutura de investigação de dados
+
+A página Investigação de Dados classifica os dados em três guias:
+
+* **Dados não estruturados**: dados de arquivo
+* **Diretórios**: pastas e compartilhamentos de arquivos
+* **Estruturado**: banco de dados
+
+
+
+
+== Filtros de dados
+
+A página Investigação de Dados fornece vários filtros para classificar seus dados e encontrar o que você precisa.  Você pode usar vários filtros em conjunto.
+
+Para adicionar um filtro, selecione o botão **Adicionar filtro**.
+
+image:screenshot_compliance_investigation_filtered.png["Uma captura de tela dos filtros disponíveis ao refinar os resultados na página de investigação."]
+
+*Sensibilidade e conteúdo do filtro*
+
+Use os seguintes filtros para visualizar quanta informação confidencial está contida em seus dados.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Categoria | Selecione olink:reference-private-data-categories.html["tipos de categorias"] . 
+
+
+| Nível de sensibilidade | Selecione o nível de sensibilidade: Pessoal, Pessoal sensível ou Não sensível. 
+
+
+| Número de identificadores | Selecione o intervalo de identificadores sensíveis detectados por arquivo.  Inclui dados pessoais e dados pessoais sensíveis.  Ao filtrar em Diretórios, a Classificação de Dados totaliza as correspondências de todos os arquivos em cada pasta (e subpastas).  OBSERVAÇÃO: a versão de dezembro de 2023 (versão 1.26.6) removeu a opção de calcular o número de dados de informações pessoais identificáveis (PII) por Diretórios. 
+
+
+| Dados Pessoais | Selecione olink:reference-private-data-categories.html["tipos de dados pessoais"] . 
+
+
+| Dados Pessoais Sensíveis | Selecione olink:reference-private-data-categories.html["tipos de dados pessoais sensíveis"] . 
+
+
+| Titular dos dados | Insira o nome completo ou identificador conhecido do titular dos dados. link:task-generating-compliance-reports.html["Saiba mais sobre os titulares dos dados aqui"] . 
+|===
+*Filtrar proprietário do usuário e permissões do usuário*
+
+Use os seguintes filtros para visualizar os proprietários dos arquivos e as permissões para acessar seus dados.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Permissões abertas | Selecione o tipo de permissões dentro dos dados e dentro das pastas/compartilhamentos. 
+
+
+| Permissões de usuário/grupo | Selecione um ou vários nomes de usuário e/ou nomes de grupo, ou insira um nome parcial. 
+
+
+| Proprietário do arquivo | Digite o nome do proprietário do arquivo. 
+
+
+| Número de usuários com acesso | Selecione um ou vários intervalos de categorias para mostrar quais arquivos e pastas estão abertos a um determinado número de usuários. 
+|===
+*Filtrar cronologicamente*
+
+Use os seguintes filtros para visualizar dados com base em critérios de tempo.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Tempo de criação | Selecione um intervalo de tempo em que o arquivo foi criado.  Você também pode especificar um intervalo de tempo personalizado para refinar ainda mais os resultados da pesquisa. 
+
+
+| Tempo descoberto | Selecione um intervalo de tempo em que a Classificação de Dados descobriu o arquivo.  Você também pode especificar um intervalo de tempo personalizado para refinar ainda mais os resultados da pesquisa. 
+
+
+| Última modificação | Selecione um intervalo de tempo em que o arquivo foi modificado pela última vez.  Você também pode especificar um intervalo de tempo personalizado para refinar ainda mais os resultados da pesquisa. 
+
+
+| Último acesso  a| 
+Selecione um intervalo de tempo em que o arquivo ou diretório* foi acessado pela última vez.  Você também pode especificar um intervalo de tempo personalizado para refinar ainda mais os resultados da pesquisa.  Para os tipos de arquivos que a Classificação de Dados verifica, esta é a última vez que a Classificação de Dados verificou o arquivo.
+
+|===
+{asterisk} O último horário de acesso de um diretório só está disponível para compartilhamentos NFS ou CIFS.
+
+*Filtrar metadados*
+
+Use os seguintes filtros para visualizar dados com base em localização, tamanho e diretório ou tipo de arquivo.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Caminho do arquivo | Insira até 20 caminhos parciais ou completos que você deseja incluir ou excluir da consulta.  Se você inserir caminhos de inclusão e exclusão, a Classificação de Dados encontrará todos os arquivos nos caminhos incluídos primeiro, depois removerá os arquivos dos caminhos excluídos e exibirá os resultados.  Observe que usar "*" neste filtro não tem efeito e que você não pode excluir pastas específicas da verificação. Todos os diretórios e arquivos em um compartilhamento configurado serão verificados. 
+
+
+| Tipo de diretório | Selecione o tipo de diretório: "Compartilhar" ou "Pasta". 
+
+
+| Tipo de arquivo | Selecione olink:reference-private-data-categories.html["tipos de arquivos"] . 
+
+
+| Tamanho do arquivo | Selecione o intervalo de tamanho do arquivo. 
+
+
+| Hash de arquivo | Digite o hash do arquivo para encontrar um arquivo específico, mesmo que o nome seja diferente. 
+|===
+*Tipo de armazenamento de filtro*
+
+Use os seguintes filtros para visualizar dados por tipo de armazenamento.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Tipo de sistema | Selecione o tipo de sistema. 
+
+
+| Nome do ambiente do sistema | Selecione sistemas específicos. 
+
+
+| Repositório de Armazenamento | Selecione o repositório de armazenamento, por exemplo, um volume ou um esquema. 
+|===
+*Consulta de filtro*
+
+Use o filtro a seguir para visualizar dados por consultas salvas.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Consulta salva | Selecione uma consulta salva ou várias.  Vá para olink:task-using-policies.html["aba de consultas salvas"] para visualizar a lista de consultas salvas existentes e criar novas. 
+
+
+| Etiquetas | Selecionelink:task-org-private-data.html["a tag ou tags"] que são atribuídos aos seus arquivos. 
+|===
+*Status da análise do filtro*
+
+Use o filtro a seguir para visualizar dados pelo status de verificação de Classificação de Dados.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Status da análise | Selecione uma opção para mostrar a lista de arquivos que estão com a primeira verificação pendente, com verificação concluída, com nova verificação pendente ou que falharam na verificação. 
+
+
+| Evento de análise de varredura | Selecione se deseja visualizar arquivos que não foram classificados porque a Classificação de Dados não conseguiu reverter o horário do último acesso ou arquivos que foram classificados mesmo que a Classificação de Dados não tenha conseguido reverter o horário do último acesso. 
+|===
+link:reference-collected-metadata.html["Veja detalhes sobre o carimbo de data/hora do "último acesso""]para obter mais informações sobre os itens que aparecem na página Investigação ao filtrar usando o Evento de Análise de Verificação.
+
+*Filtrar dados por duplicatas*
+
+Use o filtro a seguir para visualizar arquivos duplicados no seu armazenamento.
+
+[cols="30,60"]
+|===
+| Filtro | Detalhes 
+
+
+| Duplicatas | Selecione se o arquivo será duplicado nos repositórios. 
+|===
+
+
+== Exibir metadados do arquivo
+
+Além de mostrar o sistema e o volume onde o arquivo reside, os metadados mostram muito mais informações, incluindo as permissões do arquivo, o proprietário do arquivo e se há duplicatas desse arquivo.  Esta informação é útil se você estiver planejandolink:task-using-policies.html["criar consultas salvas"] porque você pode ver todas as informações que pode usar para filtrar seus dados.
+
+A disponibilidade das informações depende da fonte de dados.  Por exemplo, o nome do volume e as permissões não são compartilhados para arquivos de banco de dados.
+
+.Passos
+. No menu Classificação de Dados, selecione *Investigação*.
+. Na lista de Investigação de Dados à direita, selecione o cursor para baixoimage:button_down_caret.png["acento circunflexo"] à direita para qualquer arquivo individual para visualizar os metadados do arquivo.
++
+image:screenshot_compliance_file_details.png["Uma captura de tela mostrando os detalhes de metadados de um arquivo na página Investigação de Dados."]
+
+. Opcionalmente, você pode criar ou adicionar uma tag ao arquivo com o botão *Criar tag*.  Selecione uma tag existente no menu suspenso ou adicione uma nova tag com o botão *+ Adicionar*.  Tags podem ser usadas para filtrar dados.
+
+
+
+
+== Ver permissões de usuário para arquivos e diretórios
+
+Para visualizar uma lista de todos os usuários ou grupos que têm acesso a um arquivo ou diretório e os tipos de permissões que eles têm, selecione *Exibir todas as permissões*.  Esta opção está disponível somente para dados em compartilhamentos CIFS.
+
+Se você usar identificadores de segurança (SIDs) em vez de nomes de usuários e grupos, deverá integrar seu Active Directory à Classificação de Dados. Para obter mais informações, consulte link:task-active-directory.html["adicionar Active Directory à Classificação de Dados"] .
+
+.Passos
+. No menu Classificação de Dados, selecione *Investigação*.
+. Na lista de Investigação de Dados à direita, selecione o cursor para baixoimage:button_down_caret.png["acento circunflexo"] à direita para qualquer arquivo individual para visualizar os metadados do arquivo.
+. Para visualizar uma lista de todos os usuários ou grupos que têm acesso a um arquivo ou diretório e os tipos de permissões que eles têm, no campo Permissões abertas, selecione *Exibir todas as permissões*.
++
+
+NOTE: A classificação de dados mostra até 100 usuários na lista.
+
+. Selecione o cursor para baixoimage:button_down_caret.png["acento circunflexo"] botão para qualquer grupo para ver a lista de usuários que fazem parte do grupo.
++
+
+TIP: Você pode expandir um nível do grupo para ver os usuários que fazem parte do grupo.
+
+. Selecione o nome de um usuário ou grupo para atualizar a página Investigação para que você possa ver todos os arquivos e diretórios aos quais o usuário ou grupo tem acesso.
+
+
+
+
+== Verifique se há arquivos duplicados em seus sistemas de armazenamento
+
+Você pode verificar se arquivos duplicados estão sendo armazenados em seus sistemas de armazenamento.  Isso é útil se você quiser identificar áreas onde pode economizar espaço de armazenamento.  Também é bom garantir que determinados arquivos que tenham permissões específicas ou informações confidenciais não sejam duplicados desnecessariamente em seus sistemas de armazenamento.
+
+Todos os seus arquivos (não incluindo bancos de dados) com 1 MB ou mais, ou que contenham informações pessoais ou confidenciais, são comparados para verificar se há duplicatas.
+
+A classificação de dados usa tecnologia de hash para determinar arquivos duplicados.  Se algum arquivo tiver o mesmo código hash de outro arquivo, você pode ter 100% de certeza de que os arquivos são duplicatas exatas, mesmo que os nomes dos arquivos sejam diferentes.
+
+.Passos
+. No menu Classificação de Dados, selecione *Investigação*.
+. No painel Filtro, selecione "Tamanho do arquivo" junto com "Duplicatas" ("Tem duplicatas") para ver quais arquivos de um determinado intervalo de tamanho estão duplicados em seu ambiente.
+. Opcionalmente, baixe a lista de arquivos duplicados e envie-a ao administrador de armazenamento para que ele possa decidir quais arquivos, se houver, podem ser excluídos.
+. Opcionalmente, você pode excluir, marcar ou mover os arquivos duplicados.  Selecione os arquivos nos quais deseja executar uma ação e, em seguida, selecione a ação apropriada.
+
+
+*Ver se um arquivo específico está duplicado*
+
+Você pode ver se um único arquivo tem duplicatas.
+
+.Passos
+. No menu Classificação de Dados, selecione *Investigação*.
+. Na lista Investigação de Dados, selecioneimage:button_down_caret.png["acento circunflexo"] à direita para qualquer arquivo individual para visualizar os metadados do arquivo.
++
+Se houver duplicatas para um arquivo, essa informação aparecerá ao lado do campo _Duplicatas_.
+
+. Para visualizar a lista de arquivos duplicados e onde eles estão localizados, selecione *Exibir detalhes*.
+. Na próxima página, selecione *Exibir duplicatas* para visualizar os arquivos na página Investigação.
+. Opcionalmente, você pode excluir, marcar ou mover os arquivos duplicados.  Selecione os arquivos nos quais deseja executar uma ação e, em seguida, selecione a ação apropriada.
+
+
+
+TIP: Você pode usar o valor "hash do arquivo" fornecido nesta página e inseri-lo diretamente na página Investigação para procurar um arquivo duplicado específico a qualquer momento - ou pode usá-lo em uma consulta salva.
+
+
+
+== Baixe seu relatório
+
+Você pode baixar seus resultados filtrados em formato CSV ou JSON.
+
+Podem ser baixados até três arquivos de relatório se a Classificação de Dados estiver verificando arquivos (dados não estruturados), diretórios (pastas e compartilhamentos de arquivos) e bancos de dados (dados estruturados).
+
+Os arquivos são divididos em arquivos com um número fixo de linhas ou registros:
+
+* JSON: 100.000 registros por relatório que leva cerca de 5 minutos para ser gerado
+* CSV: 200.000 registros por relatório que leva cerca de 4 minutos para ser gerado
+
+
+
+NOTE: Você pode baixar uma versão do arquivo CSV para visualizar neste navegador.  Esta versão é limitada a 10.000 registros.
+
+
+
+=== O que está incluído no relatório para download
+
+O *Relatório de Dados de Arquivos Não Estruturados* inclui as seguintes informações sobre seus arquivos:
+
+* Nome do arquivo
+* Tipo de localização
+* Nome do sistema
+* Repositório de armazenamento (por exemplo, um volume, bucket, compartilhamentos)
+* Tipo de repositório
+* Caminho do arquivo
+* Tipo de arquivo
+* Tamanho do arquivo (em MB)
+* Tempo criado
+* Última modificação
+* Último acesso
+* Proprietário do arquivo
++
+** Os dados do proprietário do arquivo abrangem o nome da conta, o nome da conta SAM e o endereço de e-mail quando o Active Directory está configurado.
+
+
+* Categoria
+* Informações pessoais
+* Informações pessoais sensíveis
+* Permissões abertas
+* Erro de análise de varredura
+* Data de detecção de exclusão
++
+A data de detecção de exclusão identifica a data em que o arquivo foi excluído ou movido.  Isso permite que você identifique quando arquivos confidenciais foram movidos.  Arquivos excluídos não contribuem para a contagem de números de arquivos que aparece no painel ou na página Investigação.  Os arquivos só aparecem nos relatórios CSV.
+
+
+
+O *Relatório de Dados de Diretórios Não Estruturados* inclui as seguintes informações sobre suas pastas e compartilhamentos de arquivos:
+
+* Tipo de sistema
+* Nome do sistema
+* Nome do diretório
+* Repositório de armazenamento (por exemplo, uma pasta ou compartilhamentos de arquivos)
+* Proprietário do diretório
+* Tempo criado
+* Tempo descoberto
+* Última modificação
+* Último acesso
+* Permissões abertas
+* Tipo de diretório
+
+
+O *Relatório de Dados Estruturados* inclui as seguintes informações sobre suas tabelas de banco de dados:
+
+* Nome da tabela do BD
+* Tipo de localização
+* Nome do sistema
+* Repositório de armazenamento (por exemplo, um esquema)
+* Contagem de colunas
+* Contagem de linhas
+* Informações pessoais
+* Informações pessoais sensíveis
+
+
+.Etapas para gerar o relatório
+. Na página Investigação de Dados, selecione oimage:button_download.png["botão de download"] botão no canto superior direito da página.
+. Escolha o tipo de relatório: CSV ou JSON.
+. Digite um **Nome do relatório**.
+. Para baixar o relatório completo, selecione **Sistema** e escolha **Sistema** e **Volume** nos respectivos menus suspensos.  Forneça um **Caminho para a pasta de destino**.
++
+Para baixar o relatório no navegador, selecione **Local** .  Observe que esta opção limita o relatório às primeiras 10.000 linhas e está limitada ao formato **CSV**.  Você não precisa preencher nenhum outro campo se selecionar **Local**.
+
+. Selecione **Baixar relatório**.
++
+image:screenshot_compliance_investigation_report2.png["Uma captura de tela da página Baixar relatório de investigação com várias opções."]
+
+
+
+.Resultado
+Uma caixa de diálogo exibe uma mensagem informando que os relatórios estão sendo baixados.
+
+
+
+== Crie uma consulta salva com base nos filtros selecionados
+
+.Passos
+. Na aba Investigação, defina uma pesquisa selecionando os filtros que deseja usar. Verlink:task-investigate-data.html["Filtrando dados na página Investigação"] para mais detalhes.
+. Depois de definir todas as características do filtro conforme sua preferência, selecione *Salvar consulta*.
++
+image:../media/screenshot_compliance_save_as_highlight.png["Captura de tela mostrando como salvar uma consulta filtrada como uma consulta salva."]
+
+. Nomeie a consulta salva e adicione uma descrição.  O nome deve ser único.
+. Opcionalmente, você pode salvar a consulta como política:
++
+.. Para salvar a consulta como uma política, alterne a opção *Executar como uma política*.
+.. Escolha *Excluir permanentemente* ou *Enviar atualizações por e-mail*.  Se você escolher atualizações por e-mail, poderá enviar os resultados da consulta para _todos_ os usuários do Console diariamente, semanalmente ou mensalmente.  Como alternativa, você pode enviar a notificação para um endereço de e-mail específico com a mesma frequência.
+
+
+. Selecione *Salvar*.
++
+image:../media/screenshot_compliance_save_highlight2.png["Uma captura de tela que mostra como configurar a consulta salva e salvá-la."]
+
+
+
+Depois de criar a pesquisa ou política, você pode visualizá-la na aba **Consultas salvas**.
+
+
+TIP: Pode levar até 15 minutos para que os resultados apareçam na página Consultas salvas.

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-overview.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
+summary: Planeje qual implantação do NetApp Data Classification atende às suas necessidades. 
+---
+= Qual implantação de classificação de dados da NetApp você deve usar?
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode implantar a Classificação de Dados NetApp de diferentes maneiras.  Aprenda qual método atende às suas necessidades.
+
+A classificação de dados pode ser implantada das seguintes maneiras:
+
+* link:task-deploy-cloud-compliance.html["Implante na nuvem usando o Console"] . O Console implanta a instância de Classificação de Dados na mesma rede do provedor de nuvem que o agente do Console.
+* link:task-deploy-compliance-onprem.html["Instalar em um host Linux com acesso à Internet"] . Instale o Data Classification em um host Linux na sua rede ou em um host Linux na nuvem que tenha acesso à Internet.  Esse tipo de instalação pode ser uma boa opção se você preferir escanear sistemas ONTAP locais usando uma instância de Classificação de Dados que também esteja localizada no local, embora isso não seja um requisito.
+* link:task-deploy-compliance-dark-site.html["Instalar em um host Linux em um site local sem acesso à Internet"], também conhecido como _modo privado_. Esse tipo de instalação, que usa um script de instalação, não tem conectividade com a camada SaaS do Console.
+
+
+
+IMPORTANT: O modo privado BlueXP (interface BlueXP legada) normalmente é usado com ambientes locais que não têm conexão com a Internet e com regiões de nuvem seguras, o que inclui AWS Secret Cloud, AWS Top Secret Cloud e Azure IL6. A NetApp continua a oferecer suporte a esses ambientes com a interface legada BlueXP . Para documentação do modo privado na interface BlueXP legada, consultelink:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["Documentação em PDF para o modo privado do BlueXP"^] .
+
+Tanto a instalação em um host Linux com acesso à Internet quanto a instalação local em um host Linux sem acesso à Internet usam um script de instalação.  O script começa verificando se o sistema e o ambiente atendem aos pré-requisitos.  Se os pré-requisitos forem atendidos, a instalação será iniciada.  Se você quiser verificar os pré-requisitos independentemente de executar a instalação da Classificação de Dados, há um pacote de software separado que você pode baixar e que testa apenas os pré-requisitos.
+
+Consulte link:task-test-linux-system.html["Verifique se o seu host Linux está pronto para instalar a Classificação de Dados"] .

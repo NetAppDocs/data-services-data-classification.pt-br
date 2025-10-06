@@ -1,0 +1,17 @@
+= Versão 1.42
+:allow-uri-read: 
+
+
+
+
+=== Versão 1.42
+
+Esta versão de BlueXP classification inclui:
+
+.Digitalização em massa para ambientes de trabalho
+A BlueXP classification oferece suporte a operações em massa para ambientes de trabalho.  Você pode escolher habilitar verificações de mapeamento, habilitar verificações de mapeamento e classificação, desabilitar verificações ou criar uma configuração personalizada em todos os volumes no ambiente de trabalho.  Se você fizer uma seleção para um volume individual, ela substituirá a seleção em massa.  Para executar uma operação em massa, navegue até a página **Configuração** e faça sua seleção.
+
+.Baixe o relatório de investigação localmente
+A BlueXP classification permite baixar relatórios de investigação de dados localmente para visualizar no navegador.  Se você escolher a opção local, a investigação de dados estará disponível apenas no formato CSV e exibirá apenas as primeiras 10.000 linhas de dados.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["Investigue os dados armazenados em sua organização com a BlueXP classification"] .

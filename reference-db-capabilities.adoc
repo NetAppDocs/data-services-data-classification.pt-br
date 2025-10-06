@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reference-db-capabilities.html 
+keywords: database actions, database filters, supported, unsupported 
+summary: Há alguns recursos e funcionalidades que não estão disponíveis com o NetApp Data Classification quando você está verificando esquemas de banco de dados. 
+---
+= Recursos de banco de dados com e sem suporte na classificação de dados do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Há alguns recursos e funcionalidades que não estão disponíveis com o NetApp Data Classification quando você está verificando esquemas de banco de dados.  Veja a lista abaixo.
+
+Você pode adicionar seus esquemas de bancos de dados à Classificação de Dados para serem escaneadoslink:task-scanning-databases.html["conforme descrito aqui"^] .
+
+[cols="12,25,9,9,9,9,9,9,9"]
+|===
+| Tipo | Descrição | MongoDB | Servidor SQL | MySQL | Oráculo | PostgreSQL | SAP HANA | Amazon RDS 
+
+
+.9+| Ações | Criar consulta salva | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Marcação | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Atribuir a | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Exportar dados | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Redigitalizar | x | x | x | x | x | x | x 
+
+
+| Excluir |  | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Mover | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Cópia | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Rótulo | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  .25+| Filtros | Consultas salvas | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Status da análise de varredura | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Tipo de sistema | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Sistema | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Repositório de armazenamento | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Nível de sensibilidade | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Dados pessoais sensíveis | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Categorias | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Dados pessoais | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Titular dos dados | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Tipo de arquivo | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Tamanho do arquivo | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Tempo descoberto | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Etiquetas | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Atribuir a | ✓ | ✓ | ✓ | ✓ | ✓ |  
+
+
+|  | Evento de análise de varredura | x | x | x | x | x | x 
+
+
+| x | Caminho do arquivo/diretório | x | x | x | x | x | x 
+
+
+| x | Filtros de permissões | x | x | x | x | x | x 
+
+
+| x | Rótulo | x | x | x | x | x | x 
+
+
+| x | Número de identificadores | x | x | x | x | x | x 
+
+
+| x | Tipo de diretório | x | x | x | x | x | x 
+
+
+| x | Tempo criado | x | x | x | x | x | x 
+
+
+| x | Última modificação | x | x | x | x | x | x 
+
+
+| x | Último acesso | x | x | x | x | x | x 
+
+
+| x | Duplicatas | x | x | x | x | x | x 
+|===

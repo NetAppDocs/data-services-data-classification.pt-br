@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-databases.html 
+keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
+summary: Conclua algumas etapas para começar a escanear seus esquemas de banco de dados com o NetApp Data Classification. 
+---
+= Escaneie esquemas de banco de dados com a classificação de dados do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Conclua algumas etapas para começar a escanear seus esquemas de banco de dados com o NetApp Data Classification.
+
+
+
+== Revise os pré-requisitos
+
+Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de habilitar a Classificação de Dados.
+
+
+
+=== Bancos de dados suportados
+
+A Classificação de Dados pode escanear esquemas dos seguintes bancos de dados:
+
+* Serviço de banco de dados relacional da Amazon (Amazon RDS)
+* MongoDB
+* MySQL
+* Oráculo
+* PostgreSQL
+* SAP HANA
+* Servidor SQL (MSSQL)
+
+
+
+CAUTION: O recurso de coleta de estatísticas *deve ser habilitado* no banco de dados.
+
+
+
+=== Requisitos do banco de dados
+
+Qualquer banco de dados com conectividade com a instância de Classificação de Dados pode ser verificado, independentemente de onde esteja hospedado.  Você só precisa das seguintes informações para se conectar ao banco de dados:
+
+* Endereço IP ou nome do host
+* Porta
+* Nome do serviço (somente para acessar bancos de dados Oracle)
+* Credenciais que permitem acesso de leitura aos esquemas
++
+Ao escolher um nome de usuário e uma senha, é importante escolher um que tenha permissões totais de leitura para todos os esquemas e tabelas que você deseja verificar.  Recomendamos que você crie um usuário dedicado para o sistema de Classificação de Dados com todas as permissões necessárias.
+
+
+
+
+NOTE: Para o MongoDB, é necessária uma função de administrador somente leitura.
+
+
+
+== Implantar a instância de classificação de dados
+
+Implante a Classificação de Dados se ainda não houver uma instância implantada.
+
+Se você estiver escaneando esquemas de banco de dados que podem ser acessados pela Internet, você podelink:task-deploy-cloud-compliance.html["implementar a Classificação de Dados na nuvem"^] oulink:task-deploy-compliance-onprem.html["implementar a Classificação de Dados em um local local com acesso à Internet"^] .
+
+Se você estiver escaneando esquemas de banco de dados que foram instalados em um site escuro que não tem acesso à Internet, você precisalink:task-deploy-compliance-dark-site.html["implementar a Classificação de Dados no mesmo local que não tem acesso à Internet"^] .  Isso também requer que o agente do Console seja implantado no mesmo local.
+
+
+
+== Adicionar o servidor de banco de dados
+
+Adicione o servidor de banco de dados onde os esquemas residem.
+
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na página Configuração, selecione *Adicionar Sistema* > *Adicionar Servidor de Banco de Dados*.
+. Insira as informações necessárias para identificar o servidor de banco de dados.
++
+.. Selecione o tipo de banco de dados.
+.. Digite a porta e o nome do host ou endereço IP para conectar ao banco de dados.
+.. Para bancos de dados Oracle, insira o nome do serviço.
+.. Insira as credenciais para que o Data Classification possa acessar o servidor.
+.. Selecione *Adicionar servidor de banco de dados*.
++
+image:screenshot_compliance_add_db_server_dialog.png["Uma captura de tela da página Adicionar servidor de banco de dados para que você possa identificar o banco de dados."]
+
+
+
+
+
+O banco de dados é adicionado à lista de sistemas.
+
+
+
+== Habilitar e desabilitar verificações de conformidade em esquemas de banco de dados
+
+Você pode parar ou iniciar a varredura completa dos seus esquemas a qualquer momento.
+
+
+TIP: Não há opção para selecionar varreduras somente de mapeamento para esquemas de banco de dados.
+
+. Na página Configuração, selecione o botão *Configuração* para o banco de dados que você deseja configurar.
++
+image:screenshot_compliance_db_server_config.png["Uma captura de tela da página Configuração de digitalização, onde você pode selecionar o botão Configuração."]
+
+. Selecione os esquemas que você deseja verificar movendo o controle deslizante para a direita.
++
+image:screenshot_compliance_select_schemas.png["Uma captura de tela da página Configuração de verificação, onde você pode escolher os esquemas a serem verificados."]
+
+
+
+.Resultado
+A Classificação de Dados inicia a varredura dos esquemas de banco de dados que você habilitou.  Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**.  O progresso de cada verificação é mostrado como uma barra de progresso.  Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.  Se houver algum erro, ele aparecerá na coluna Status, junto com a ação necessária para corrigi-lo.
+
+A Classificação de Dados verifica seus bancos de dados uma vez por dia; os bancos de dados não são verificados continuamente como outras fontes de dados.

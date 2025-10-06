@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: task-access.html 
+keywords: log in, sign in 
+summary: Comece a usar a Classificação de Dados do NetApp acessando o serviço no Console do NetApp . 
+---
+= Classificação de dados do Access NetApp
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode acessar a Classificação de Dados do NetApp por meio do Console do NetApp .
+
+Para fazer login no Console, você pode usar suas credenciais do Site de Suporte da NetApp ou pode se inscrever para um login no Console da NetApp usando seu e-mail e uma senha. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login no Console"^] .
+
+Tarefas específicas exigem funções específicas do usuário do Console. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+
+.Antes de começar
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Você deve adicionar um agente do Console."^]
+* link:task-deploy-cloud-compliance.html["Entenda qual estilo de implantação de Classificação de Dados é mais adequado à sua carga de trabalho."]
+
+
+.Passos
+. Em um navegador da web, navegue até olink:https://console.netapp.com/["Console"^] .
+. Efetue login no Console.
+. Na página principal do NetApp Console, selecione *Governança* > *Classificação de dados*.
+. Se esta for a primeira vez que você acessa a Classificação de Dados, a página de destino será exibida.
++
+Selecione *Implantar classificação no local ou na nuvem* para começar a implantar sua instância de classificação.  Para mais informações, consultelink:task-deploy-cloud-compliance.html["Qual implantação de classificação de dados você deve usar?"]
+
++
+image:screenshot-deploy-classification.png["Uma captura de tela da seleção do botão para ativar a Classificação de Dados."]
+
++
+Caso contrário, o Painel de Classificação de Dados será exibido.
+
+

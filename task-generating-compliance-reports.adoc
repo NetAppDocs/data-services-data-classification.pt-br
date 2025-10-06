@@ -1,0 +1,246 @@
+---
+sidebar: sidebar 
+permalink: task-generating-compliance-reports.html 
+keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file, dsar 
+summary: A Classificação de Dados da NetApp fornece relatórios que você pode usar para entender melhor o status do programa de privacidade de dados da sua organização. 
+---
+= Exibir relatórios de conformidade da Classificação de Dados da NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+A Classificação de Dados da NetApp fornece relatórios que você pode usar para entender melhor o status do programa de privacidade de dados da sua organização.
+
+Por padrão, os painéis de Classificação de Dados exibem dados de conformidade e governança para todos os sistemas, bancos de dados e fontes de dados.  Se quiser visualizar relatórios que contenham dados apenas de alguns sistemas, você pode filtrar para ver apenas eles.
+
+[NOTE]
+====
+* Os relatórios de conformidade só estarão disponíveis se você realizar uma verificação de classificação completa em suas fontes de dados.  Fontes de dados que passaram por uma varredura somente de mapeamento podem gerar apenas o Relatório de Mapeamento de Dados.
+* A NetApp não pode garantir 100% de precisão dos dados pessoais e dados pessoais confidenciais que a Classificação de Dados identifica.  Você deve sempre validar as informações revisando os dados.
+
+
+====
+Os seguintes relatórios estão disponíveis para Classificação de Dados:
+
+* *Relatório de avaliação de descoberta de dados*: fornece uma análise de alto nível do ambiente escaneado para destacar as descobertas do sistema e mostrar áreas de preocupação e possíveis etapas de correção.
+* *Relatório de mapeamento de dados*: fornece informações sobre o tamanho e o número de arquivos em seus sistemas.  Isso inclui capacidade de uso, idade dos dados, tamanho dos dados e tipos de arquivo.
+* *Relatório de solicitação de acesso do titular dos dados*: permite que você extraia um relatório de todos os arquivos que contêm informações sobre o nome específico ou identificador pessoal de um titular dos dados.
+* *Relatório HIPAA*: Ajuda você a identificar a distribuição de informações de saúde em seus arquivos.
+* *Relatório PCI DSS*: Ajuda a identificar a distribuição de informações de cartão de crédito em seus arquivos.
+* *Relatório de Avaliação de Risco de Privacidade*: Fornece insights de privacidade dos seus dados e uma pontuação de risco de privacidade.
+* *Relatórios sobre um tipo específico de informação*: Há relatórios disponíveis que incluem detalhes sobre os arquivos identificados que contêm dados pessoais e dados pessoais confidenciais.  Você também pode ver os arquivos divididos por categoria e tipo de arquivo.
+
+
+
+
+== Selecione os sistemas para relatórios
+
+Você pode filtrar o conteúdo do painel Conformidade de Classificação de Dados para ver dados de conformidade de todos os sistemas e bancos de dados, ou apenas de sistemas específicos.
+
+Ao filtrar o painel, a Classificação de Dados abrange os dados de conformidade e os relatórios apenas para os sistemas selecionados.
+
+.Passos
+. No menu Classificação de Dados, selecione *Conformidade*.
+. Selecione o filtro suspenso de sistemas e depois selecione os sistemas.
+. Selecione **Aceitar** para confirmar sua seleção.
++
+image:screenshot-report-filter.png["Apresentação de tela mostrando a filtragem de sistemas."]
+
+
+
+
+
+== Relatório de solicitação de acesso ao titular dos dados
+
+Regulamentos de privacidade, como o GDPR europeu, concedem aos titulares dos dados (como clientes ou funcionários) o direito de acessar seus dados pessoais.  Quando um titular de dados solicita essas informações, isso é conhecido como DSAR (solicitação de acesso do titular dos dados).  As organizações são obrigadas a responder a essas solicitações "sem demora injustificada" e, no máximo, dentro de um mês após o recebimento.
+
+Você pode responder a um DSAR pesquisando o nome completo do sujeito ou um identificador conhecido (como um endereço de e-mail) e depois baixando um relatório.  O relatório foi criado para auxiliar a sua organização a cumprir com o GDPR ou leis semelhantes de privacidade de dados.
+
+*Como a Classificação de Dados pode ajudar você a responder a um DSAR?*
+
+Quando você realiza uma pesquisa de titular de dados, a Classificação de Dados encontra todos os arquivos que contêm o nome ou identificador dessa pessoa.  A Classificação de Dados verifica os dados pré-indexados mais recentes para o nome ou identificador.  Não inicia uma nova verificação.
+
+Após a conclusão da pesquisa, você poderá baixar a lista de arquivos para um relatório de Solicitação de Acesso do Titular dos Dados.  O relatório agrega insights dos dados e os coloca em termos legais que você pode enviar de volta à pessoa.
+
+
+NOTE: A pesquisa de titulares de dados não é suportada atualmente em bancos de dados.
+
+*Pesquisar titulares de dados e baixar relatórios*
+
+Pesquise o nome completo do titular dos dados ou o identificador conhecido e baixe um relatório de lista de arquivos ou um relatório DSAR.  Você pode pesquisar porlink:reference-private-data-categories.html#types-of-personal-data["qualquer tipo de informação pessoal"] .
+
+
+NOTE: Inglês, alemão, japonês e espanhol são suportados na busca por nomes de titulares de dados.  Suporte para mais idiomas será adicionado posteriormente.
+
+.Passos
+. No menu Classificação de Dados, selecione *Conformidade*.
+
+
+. Na página Conformidade, selecione *Assuntos de dados*.
+. Pesquise o nome completo do titular dos dados ou um identificador conhecido.
++
+Aqui está um exemplo que mostra uma busca pelo nome _john doe_:
+
++
+image:screenshot_dsar_search.gif["Captura de tela da pesquisa do titular dos dados."]
+
+. Escolha uma das opções disponíveis:
++
+** *Baixar Relatório DSAR*: Uma resposta formal à solicitação de acesso que você pode enviar ao titular dos dados.  Este relatório contém informações geradas automaticamente com base nos dados que a Classificação de Dados encontrou sobre o titular dos dados e foi criado para ser usado como um modelo.  Você deve preencher o formulário e revisá-lo internamente antes de enviá-lo ao titular dos dados.
+** *Investigar resultados*: uma página que permite que você investigue os dados pesquisando, classificando, expandindo detalhes de um arquivo específico e baixando a lista de arquivos.
++
+
+NOTE: Se houver mais de 10.000 resultados, somente os 10.000 principais aparecerão na lista de arquivos.
+
+
+
+
+
+
+
+== Relatório da Lei de Portabilidade e Responsabilidade de Seguros de Saúde (HIPAA)
+
+O Relatório da Lei de Portabilidade e Responsabilidade de Seguros de Saúde (HIPAA) pode ajudar você a identificar arquivos que contêm informações de saúde.  Ele foi desenvolvido para auxiliar a sua organização a cumprir as leis de privacidade de dados da HIPAA.  As informações que a Classificação de Dados procura incluem:
+
+* Padrão de referência de saúde
+* Código médico CID-10-CM
+* Código médico CID-9-CM
+* RH - Categoria Saúde
+* Categoria de dados de aplicação de saúde
+
+
+O relatório inclui as seguintes informações:
+
+* Visão geral: Quantos arquivos contêm informações de saúde e em quais sistemas.
+* Criptografia: A porcentagem de arquivos contendo informações de saúde que estão em sistemas criptografados ou não criptografados.  Estas informações são específicas do Cloud Volumes ONTAP.
+* Proteção contra ransomware: a porcentagem de arquivos contendo informações de saúde que estão em sistemas que têm ou não proteção contra ransomware ativada.  Estas informações são específicas do Cloud Volumes ONTAP.
+* Retenção: O período em que os arquivos foram modificados pela última vez.  Isso é útil porque você não deve manter informações de saúde por mais tempo do que o necessário para processá-las.
+* Distribuição de informações de saúde: os sistemas onde as informações de saúde foram encontradas e se a criptografia e a proteção contra ransomware estão habilitadas.
+
+
+*Gerar o Relatório HIPAA*
+
+Acesse a aba Conformidade para gerar o relatório.
+
+.Passos
+. No menu Classificação de Dados, selecione *Conformidade*.
+. Localize o **Painel Relatórios**.  Selecione o ícone de download ao lado de *Relatório HIPAA*.
++
+image:screenshot-report-options.png["Captura de tela das opções de relatório na página Conformidade."]
+
+
+
+.Resultado
+A Classificação de Dados gera um relatório em PDF que você pode revisar e enviar a outros grupos, conforme necessário.
+
+
+
+== Relatório do Padrão de Segurança de Dados da Indústria de Cartões de Pagamento (PCI DSS)
+
+O relatório do Padrão de Segurança de Dados do Setor de Cartões de Pagamento (PCI DSS) pode ajudar você a identificar a distribuição de informações de cartão de crédito em seus arquivos.
+
+O relatório inclui as seguintes informações:
+
+* Visão geral: Quantos arquivos contêm informações de cartão de crédito e em quais sistemas.
+* Criptografia: A porcentagem de arquivos contendo informações de cartão de crédito que estão em sistemas criptografados ou não criptografados.  Estas informações são específicas do Cloud Volumes ONTAP.
+* Proteção contra ransomware: a porcentagem de arquivos contendo informações de cartão de crédito que estão em sistemas que têm ou não proteção contra ransomware ativada.  Estas informações são específicas do Cloud Volumes ONTAP.
+* Retenção: O período em que os arquivos foram modificados pela última vez.  Isso é útil porque você não deve manter informações de cartão de crédito por mais tempo do que o necessário para processá-las.
+* Distribuição de informações de cartão de crédito: os sistemas onde as informações do cartão de crédito foram encontradas e se a criptografia e a proteção contra ransomware estão habilitadas.
+
+
+*Gerar o Relatório PCI DSS*
+
+Acesse a aba Conformidade para gerar o relatório.
+
+.Passos
+. No menu Classificação de Dados, selecione *Conformidade*.
+. Localize o **Painel Relatórios**.  Selecione o ícone de download ao lado de *Relatório PCI DSS*.
++
+image:screenshot-report-options.png["Captura de tela das opções de relatório na página Conformidade."]
+
+
+
+.Resultado
+A Classificação de Dados gera um relatório em PDF que você pode revisar e enviar a outros grupos, conforme necessário.
+
+
+
+== Relatório de Avaliação de Risco de Privacidade
+
+O Relatório de Avaliação de Risco de Privacidade fornece uma visão geral do status de risco de privacidade da sua organização, conforme exigido por regulamentações de privacidade como GDPR e CCPA.
+
+O relatório inclui as seguintes informações:
+
+* Status de conformidade: uma pontuação de gravidade e a distribuição de dados, sejam eles não confidenciais, pessoais ou pessoais confidenciais.
+* Visão geral da avaliação: Uma análise dos tipos de dados pessoais encontrados, bem como das categorias de dados.
+* Assuntos dos dados nesta avaliação: O número de pessoas, por local, para as quais foram encontrados identificadores nacionais.
+
+
+*Gerar o Relatório de Avaliação de Risco de Privacidade*
+
+Acesse a aba Conformidade para gerar o relatório.
+
+.Passos
+. No menu Classificação de Dados, selecione *Conformidade*.
+. Localize o **Painel Relatórios**.  Selecione o ícone de download ao lado de *Relatório de Avaliação de Risco de Privacidade*.
++
+image:screenshot-report-options.png["Captura de tela das opções de relatório na página Conformidade."]
+
+
+
+.Resultado
+A Classificação de Dados gera um relatório em PDF que você pode revisar e enviar a outros grupos, conforme necessário.
+
+*Pontuação de gravidade*
+
+A Classificação de Dados calcula a pontuação de gravidade do Relatório de Avaliação de Risco de Privacidade com base em três variáveis:
+
+* A porcentagem de dados pessoais em relação a todos os dados.
+* A porcentagem de dados pessoais sensíveis em relação a todos os dados.
+* A porcentagem de arquivos que incluem titulares de dados, determinada por identificadores nacionais, como documentos de identidade nacionais, números de previdência social e números de identificação fiscal.
+
+
+A lógica usada para determinar a pontuação é a seguinte:
+
+[cols="27,73"]
+|===
+| Pontuação de gravidade | Lógica 
+
+
+| 0 | Todas as três variáveis são exatamente 0% 
+
+
+| 1 | Uma das variáveis é maior que 0% 
+
+
+| 2 | Uma das variáveis é maior que 3% 
+
+
+| 3 | Duas das variáveis são maiores que 3% 
+
+
+| 4 | Três das variáveis são maiores que 3% 
+
+
+| 5 | Uma das variáveis é maior que 6% 
+
+
+| 6 | Duas das variáveis são maiores que 6% 
+
+
+| 7 | Três das variáveis são maiores que 6% 
+
+
+| 8 | Uma das variáveis é maior que 15% 
+
+
+| 9 | Duas das variáveis são maiores que 15% 
+
+
+| 10 | Três das variáveis são maiores que 15% 
+|===

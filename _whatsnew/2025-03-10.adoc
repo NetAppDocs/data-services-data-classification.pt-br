@@ -1,0 +1,14 @@
+= Versão 1.41
+:allow-uri-read: 
+
+
+
+
+=== Versão 1.41
+
+Esta versão da BlueXP classification inclui melhorias gerais e correções de bugs.  Inclui também:
+
+.Status da digitalização
+A BlueXP classification rastreia o progresso em tempo real das varreduras de mapeamento e classificação _iniciais_ em um volume.  Barras progressivas separadas rastreiam as varreduras de mapeamento e classificação, apresentando uma porcentagem do total de arquivos varridos.  Você também pode passar o mouse sobre uma barra de progresso para ver o número de arquivos verificados e o total de arquivos.  Acompanhar o status das suas verificações cria insights mais profundos sobre o progresso da verificação, permitindo que você planeje melhor suas verificações e entenda a alocação de recursos.
+
+Para visualizar o status das suas verificações, navegue até **Configuração** na BlueXP classification e selecione a **Configuração do ambiente de trabalho**.  O progresso é exibido em linha para cada volume.

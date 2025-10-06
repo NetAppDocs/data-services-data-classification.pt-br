@@ -1,0 +1,260 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-overview.html 
+keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, mapping-only scans, map and classify, map & classify 
+summary: Analise suas fontes de dados com a Classificação de Dados da NetApp . 
+---
+= Digitalizar fontes de dados com a classificação de dados da NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+A Classificação de Dados da NetApp verifica os dados nos repositórios (volumes, esquemas de banco de dados ou outros dados do usuário) que você seleciona para identificar dados pessoais e confidenciais.  A Classificação de Dados mapeia seus dados organizacionais, categoriza cada arquivo e identifica padrões predefinidos nos dados.  O resultado da verificação é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.
+
+Após a verificação inicial, a Classificação de Dados verifica continuamente seus dados em um sistema round-robin para detectar alterações incrementais.  É por isso que é importante manter a instância em execução.
+
+Você pode habilitar e desabilitar verificações no nível do volume ou no nível do esquema do banco de dados.
+
+
+
+== Qual é a diferença entre varreduras de mapeamento e classificação?
+
+Você pode realizar dois tipos de varreduras na Classificação de Dados:
+
+* **As verificações somente de mapeamento** fornecem apenas uma visão geral de alto nível dos seus dados e são realizadas em fontes de dados selecionadas.  As varreduras somente de mapeamento levam menos tempo do que as varreduras de mapeamento e classificação porque não acessam os arquivos para ver os dados contidos neles.  Talvez você queira fazer isso inicialmente para identificar áreas de pesquisa e depois executar uma varredura de Mapear e Classificar nessas áreas.
+* **As varreduras de Mapa e Classificação** fornecem uma varredura profunda dos seus dados.
+
+
+A tabela abaixo mostra algumas das diferenças:
+
+[cols="47,18,18"]
+|===
+| Recurso | Mapear e classificar varreduras | Varreduras somente de mapeamento 
+
+
+| Velocidade de digitalização | Lento | Rápido 
+
+
+| Preços | Livre | Livre 
+
+
+| Capacidade | Limitado a 500 TiB* | Limitado a 500 TiB* 
+
+
+| Lista de tipos de arquivo e capacidade utilizada | Sim | Sim 
+
+
+| Número de arquivos e capacidade utilizada | Sim | Sim 
+
+
+| Idade e tamanho dos arquivos | Sim | Sim 
+
+
+| Capacidade de executar umlink:task-controlling-governance-data.html["Relatório de Mapeamento de Dados"] | Sim | Sim 
+
+
+| Página de investigação de dados para visualizar detalhes do arquivo | Sim | Não 
+
+
+| Pesquisar nomes dentro de arquivos | Sim | Não 
+
+
+| Criarlink:task-using-policies.html["consultas salvas"] que fornecem resultados de pesquisa personalizados | Sim | Não 
+
+
+| Capacidade de executar outros relatórios | Sim | Não 
+
+
+| Capacidade de ver metadados de arquivos** | Não | Sim 
+|===
+{asterisco} A Classificação de Dados não impõe um limite na quantidade de dados que pode escanear.  Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] .  + A interface do usuário do console exibe dados de um único conector.  Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
+
+{asterisco}{asterisco} Os seguintes metadados são extraídos dos arquivos durante as varreduras de mapeamento:
+
+* Sistema
+* Tipo de sistema
+* Repositório de armazenamento
+* Tipo de arquivo
+* Capacidade utilizada
+* Número de arquivos
+* Tamanho do arquivo
+* Criação de arquivo
+* Último acesso ao arquivo
+* Última modificação do arquivo
+* Hora da descoberta do arquivo
+* Extração de permissões
+
+
+.Diferenças do painel de governança:
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Recurso | Mapear e classificar | Mapa 
+
+
+| Dados obsoletos | Sim | Sim 
+
+
+| Dados não comerciais | Sim | Sim 
+
+
+| Arquivos duplicados | Sim | Sim 
+
+
+| Consultas salvas predefinidas | Sim | Não 
+
+
+| Consultas salvas padrão | Sim | Sim 
+
+
+| Relatório DDA | Sim | Sim 
+
+
+| Relatório de mapeamento | Sim | Sim 
+
+
+| Detecção do nível de sensibilidade | Sim | Não 
+
+
+| Dados sensíveis com permissões amplas | Sim | Não 
+
+
+| Permissões abertas | Sim | Sim 
+
+
+| Era dos dados | Sim | Sim 
+
+
+| Tamanho dos dados | Sim | Sim 
+
+
+| Categorias | Sim | Não 
+
+
+| Tipos de arquivo | Sim | Sim 
+|===
+====
+.Diferenças do painel de conformidade:
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Recurso | Mapear e classificar | Mapa 
+
+
+| Informações pessoais | Sim | Não 
+
+
+| Informações pessoais sensíveis | Sim | Não 
+
+
+| Relatório de avaliação de risco de privacidade | Sim | Não 
+
+
+| Relatório HIPAA | Sim | Não 
+
+
+| Relatório PCI DSS | Sim | Não 
+|===
+====
+.Diferenças nos filtros de investigação:
+[%collapsible]
+====
+[cols="40,25,25"]
+|===
+| Recurso | Mapear e classificar | Mapa 
+
+
+| Consultas salvas | Sim | Sim 
+
+
+| Tipo de sistema | Sim | Sim 
+
+
+| Sistema | Sim | Sim 
+
+
+| Repositório de armazenamento | Sim | Sim 
+
+
+| Tipo de arquivo | Sim | Sim 
+
+
+| Tamanho do arquivo | Sim | Sim 
+
+
+| Tempo criado | Sim | Sim 
+
+
+| Tempo descoberto | Sim | Sim 
+
+
+| Última modificação | Sim | Sim 
+
+
+| Último acesso | Sim | Sim 
+
+
+| Permissões abertas | Sim | Sim 
+
+
+| Caminho do diretório de arquivos | Sim | Sim 
+
+
+| Categoria | Sim | Não 
+
+
+| Nível de sensibilidade | Sim | Não 
+
+
+| Número de identificadores | Sim | Não 
+
+
+| Dados pessoais | Sim | Não 
+
+
+| Dados pessoais sensíveis | Sim | Não 
+
+
+| Titular dos dados | Sim | Não 
+
+
+| Duplicatas | Sim | Sim 
+
+
+| Status de classificação | Sim | O status é sempre "Insights limitados" 
+
+
+| Evento de análise de varredura | Sim | Sim 
+
+
+| Hash de arquivo | Sim | Sim 
+
+
+| Número de usuários com acesso | Sim | Sim 
+
+
+| Permissões de usuário/grupo | Sim | Sim 
+
+
+| Proprietário do arquivo | Sim | Sim 
+
+
+| Tipo de diretório | Sim | Sim 
+|===
+====
+
+
+== Com que rapidez a Classificação de Dados verifica os dados
+
+A velocidade da verificação é afetada pela latência da rede, latência do disco, largura de banda da rede, tamanho do ambiente e tamanhos de distribuição de arquivos.
+
+* Ao executar varreduras somente de mapeamento, a Classificação de Dados pode varrer entre 100 e 150 TiB de dados por dia.
+* Ao executar varreduras de Map & Classify, a Classificação de Dados pode varrer entre 15 e 40 TiB de dados por dia.
+

@@ -1,0 +1,181 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-fsx.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
+summary: Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a Classificação de Dados NetApp . 
+---
+= Escaneie o Amazon FSx em busca de volumes ONTAP com a classificação de dados do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a Classificação de Dados NetApp .
+
+
+
+== Antes de começar
+
+* Você precisa de um agente de console ativo na AWS para implantar e gerenciar a Classificação de Dados.
+* O grupo de segurança selecionado ao criar o sistema deve permitir tráfego da instância de Classificação de Dados.  Você pode encontrar o grupo de segurança associado usando o ENI conectado ao sistema de arquivos FSx para ONTAP e editá-lo usando o AWS Management Console.
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Grupos de segurança da AWS para instâncias Linux"^]
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Grupos de segurança da AWS para instâncias do Windows"^]
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaces de rede elásticas da AWS (ENI)"^]
+
+* Certifique-se de que as seguintes portas estejam abertas para a instância de Classificação de Dados:
++
+** Para NFS – portas 111 e 2049.
+** Para CIFS – portas 139 e 445.
+
+
+
+
+
+
+== Implantar a instância de classificação de dados
+
+link:task-deploy-cloud-compliance.html["Implantar classificação de dados"^]se ainda não houver uma instância implantada.
+
+Você deve implantar a Classificação de Dados na mesma rede AWS que o agente do Console para AWS e os volumes FSx que deseja verificar.
+
+*Observação:* A implantação da Classificação de Dados em um local local não é suportada atualmente ao escanear volumes FSx.
+
+As atualizações do software de classificação de dados são automatizadas, desde que a instância tenha conectividade com a Internet.
+
+
+
+== Habilite a classificação de dados em seus sistemas
+
+Você pode habilitar a Classificação de Dados para FSx para volumes ONTAP .
+
+. No NetApp Console, *Governança > Classificação*.
+. No menu Classificação de Dados, selecione *Configuração*.
++
+image:screenshot_fsx_scanning_activate.png["Uma captura de tela da guia Configuração imediatamente após a implantação da instância de Classificação de Dados."]
+
+. Selecione como você deseja verificar os volumes em cada sistema. link:concept-classification.html#whats-the-difference-between-mapping-and-classification-scans["Aprenda sobre mapeamento e varreduras de classificação"]:
++
+** Para mapear todos os volumes, selecione *Mapear todos os volumes*.
+** Para mapear e classificar todos os volumes, selecione *Mapear e classificar todos os volumes*.
+** Para personalizar a verificação para cada volume, selecione *Ou selecione o tipo de verificação para cada volume* e, em seguida, escolha os volumes que deseja mapear e/ou classificar.
+
+
+. Na caixa de diálogo de confirmação, selecione *Aprovar* para que a Classificação de Dados comece a verificar seus volumes.
+
+
+.Resultado
+A Classificação de Dados inicia a varredura dos volumes selecionados no sistema.  Os resultados estarão disponíveis no painel de conformidade assim que a Classificação de Dados concluir as verificações iniciais.  O tempo que isso leva depende da quantidade de dados: pode levar alguns minutos ou horas.  Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**.  O progresso de cada verificação é mostrado como uma barra de progresso.  Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.
+
+[NOTE]
+====
+* Por padrão, se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos em seus volumes porque a Classificação de Dados não pode reverter o "último horário de acesso" para o registro de data e hora original.  Se não se importar se o último horário de acesso for redefinido, selecione *Ou selecione o tipo de digitalização para cada volume*.  A página resultante tem uma configuração que você pode ativar para que a Classificação de Dados verifique os volumes independentemente das permissões.
+* A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário digitalizar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Veja mais detalhes sobre esta limitação de Classificação de Dados"^] .
+
+
+====
+
+
+== Verifique se a Classificação de Dados tem acesso aos volumes
+
+Certifique-se de que a Classificação de Dados possa acessar volumes verificando sua rede, grupos de segurança e políticas de exportação.
+
+Você precisará fornecer à Classificação de Dados credenciais CIFS para que ela possa acessar volumes CIFS.
+
+.Passos
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na página Configuração, selecione *Exibir detalhes* para revisar o status e corrigir quaisquer erros.
++
+Por exemplo, a imagem a seguir mostra um volume que a Classificação de Dados não consegue escanear devido a problemas de conectividade de rede entre a instância da Classificação de Dados e o volume.
+
++
+image:screenshot_fsx_scanning_no_network_error.png["Uma captura de tela da página Exibir detalhes na configuração de verificação mostrando que o volume não está sendo verificado devido à conectividade de rede entre a Classificação de dados e o volume."]
+
+. Certifique-se de que haja uma conexão de rede entre a instância de Classificação de Dados e cada rede que inclui volumes para FSx para ONTAP.
++
+
+NOTE: Para o FSx para ONTAP, a Classificação de Dados pode escanear volumes somente na mesma região que o Console.
+
+. Certifique-se de que as políticas de exportação de volume NFS incluam o endereço IP da instância de Classificação de Dados para que ela possa acessar os dados em cada volume.
+. Se você usar CIFS, forneça a Classificação de Dados com credenciais do Active Directory para que ele possa verificar volumes CIFS.
++
+.. No menu Classificação de Dados, selecione *Configuração*.
+.. Para cada sistema, selecione *Editar credenciais CIFS* e insira o nome de usuário e a senha que o Data Classification precisa para acessar volumes CIFS no sistema.
++
+As credenciais podem ser somente leitura, mas fornecer credenciais de administrador garante que a Classificação de Dados possa ler quaisquer dados que exijam permissões elevadas.  As credenciais são armazenadas na instância de Classificação de Dados.
+
++
+Se você quiser ter certeza de que os "últimos horários de acesso" dos seus arquivos não serão alterados pelas verificações de Classificação de Dados, é recomendável que o usuário tenha permissões de Gravação de Atributos no CIFS ou permissões de gravação no NFS. Se possível, configure o usuário do Active Directory como parte de um grupo pai na organização que tenha permissões para todos os arquivos.
+
++
+Depois de inserir as credenciais, você verá uma mensagem informando que todos os volumes CIFS foram autenticados com sucesso.
+
+
+
+
+
+
+
+== Habilitar e desabilitar verificações de conformidade em volumes
+
+Você pode iniciar ou parar verificações somente de mapeamento ou verificações de mapeamento e classificação em um sistema a qualquer momento na página Configuração.  Você também pode mudar de varreduras somente de mapeamento para varreduras de mapeamento e classificação, e vice-versa.  Recomendamos que você digitalize todos os volumes.
+
+O botão no topo da página para *Verificar quando faltarem permissões de "gravação de atributos"* está desabilitado por padrão.  Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original.  Se você não se importa se o último horário de acesso for redefinido, ligue o interruptor e todos os arquivos serão verificados, independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^] .
+
+image:screenshot_volume_compliance_selection.png["Uma captura de tela da página de configuração onde você pode ativar ou desativar a verificação de volumes individuais."]
+
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na página Configuração, localize o sistema com os volumes que você deseja verificar.
+. Faça um dos seguintes:
++
+** Para habilitar verificações somente de mapeamento em um volume, na área de volume, selecione *Mapear*.  Ou, para habilitar em todos os volumes, na área de título, selecione *Mapa*.  Para habilitar a verificação completa em um volume, na área de volume, selecione *Mapear e classificar*.  Ou, para habilitar em todos os volumes, na área de título, selecione *Mapear e classificar*.
+** Para desabilitar a verificação em um volume, na área de volume, selecione *Desligado*.  Para desabilitar a verificação em todos os volumes, na área de título, selecione *Desativado*.
+
+
+
+
+
+NOTE: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você define a configuração *Mapa* ou *Mapa e Classificação* na área de título.  Quando definido como *Personalizado* ou *Desativado* na área de título, você precisará ativar o mapeamento e/ou a varredura completa em cada novo volume adicionado ao sistema.
+
+
+
+== Digitalizar volumes de proteção de dados
+
+Por padrão, os volumes de proteção de dados (DP) não são verificados porque não são expostos externamente e a Classificação de Dados não pode acessá-los.  Esses são os volumes de destino para operações do SnapMirror de um sistema de arquivos FSx para ONTAP .
+
+Inicialmente, a lista de volumes identifica esses volumes como _Tipo_ *DP* com o _Status_ *Não digitalizando* e a _Ação necessária_ *Habilitar acesso a volumes DP*.
+
+image:screenshot_cloud_compliance_dp_volumes.png["Uma captura de tela mostrando o botão Habilitar acesso aos volumes DP que você pode selecionar para verificar volumes de proteção de dados."]
+
+.Passos
+Se você quiser escanear esses volumes de proteção de dados:
+
+. No menu Classificação de Dados, selecione *Configuração*.
+. Selecione *Habilitar acesso a volumes DP* na parte superior da página.
+. Revise a mensagem de confirmação e selecione *Habilitar acesso aos volumes DP* novamente.
++
+** Os volumes que foram criados inicialmente como volumes NFS no sistema de arquivos FSx de origem para ONTAP são habilitados.
+** Os volumes que foram criados inicialmente como volumes CIFS no sistema de arquivos FSx de origem para ONTAP exigem que você insira credenciais CIFS para verificar esses volumes DP.  Se você já inseriu credenciais do Active Directory para que a Classificação de Dados possa escanear volumes CIFS, você pode usar essas credenciais ou especificar um conjunto diferente de credenciais de administrador.
++
+image:screenshot_compliance_dp_cifs_volumes.png["Uma captura de tela das duas opções para habilitar volumes de proteção de dados CIFS."]
+
+
+
+. Ative cada volume DP que você deseja escanear.
+
+
+.Resultado
+Uma vez ativada, a Classificação de Dados cria um compartilhamento NFS de cada volume DP que foi ativado para verificação.  As políticas de exportação de compartilhamento só permitem acesso a partir da instância de Classificação de Dados.
+
+Se você não tinha volumes de proteção de dados CIFS quando habilitou inicialmente o acesso aos volumes DP e depois adicionou alguns, o botão *Habilitar acesso ao CIFS DP* aparece na parte superior da página Configuração.  Selecione este botão e adicione credenciais CIFS para habilitar o acesso a esses volumes CIFS DP.
+
+
+NOTE: As credenciais do Active Directory são registradas somente na VM de armazenamento do primeiro volume CIFS DP, portanto, todos os volumes DP nessa SVM serão verificados.  Quaisquer volumes que residam em outras SVMs não terão as credenciais do Active Directory registradas, portanto, esses volumes DP não serão verificados.

@@ -1,0 +1,52 @@
+= Versão 1.40
+:allow-uri-read: 
+
+
+
+
+=== Versão 1.40
+
+Esta versão da BlueXP classification inclui as seguintes atualizações.
+
+.Suporte para RHEL 9.5
+Esta versão oferece suporte ao Red Hat Enterprise Linux v9.5, além das versões suportadas anteriormente.  Isso se aplica a qualquer instalação manual local da BlueXP classification, incluindo implantações em sites obscuros.
+
+Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão de BlueXP classification 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 e 9.5.
+
+.Priorizar varreduras
+Ao verificar a configuração, você pode priorizar as verificações mais importantes para que elas sejam feitas antes de outras verificações.  Esse recurso ajuda quando você tem muitos ambientes de trabalho e quer ter certeza de que as verificações de alta prioridade estão sendo feitas com sucesso primeiro.
+
+Existem dois tipos de varreduras:
+
+* *As varreduras somente de mapeamento* fornecem apenas uma visão geral de alto nível dos seus dados.  O mapeamento pode ser feito em suas fontes de dados muito rapidamente porque ele não acessa arquivos para ver os dados dentro deles.
+* As varreduras de *Mapear e classificar* fornecem uma varredura profunda dos seus dados.
+
+
+Você pode se beneficiar do uso de verificações somente de mapeamento para verificar rapidamente seus dados e identificar as fontes de dados que exigem mais pesquisa e, depois, habilitar as verificações de mapeamento e classificação somente nas fontes de dados ou volumes necessários.
+
+A prioridade é atribuída somente a verificações somente de mapeamento, não a verificações de mapeamento e classificação.
+
+A prioridade é definida como 1 por padrão, e você pode alterá-la para qualquer número entre 1 e 10.  Quanto menor o número, maior a prioridade.  Se você não definir uma prioridade, a verificação receberá uma prioridade de 5.
+
+Para alterar a prioridade, faça o seguinte:
+
+. No menu de BlueXP classification , selecione *Configuração*.
+. Selecione os recursos que você deseja priorizar.
+. Na opção Ações..., selecione *Priorizar verificação*.
+
+
+.Repetir varreduras
+Com esta versão, você pode repetir as verificações que falharam.  Esse recurso é útil quando uma verificação falha devido a um problema temporário, como uma queda de rede.  Você pode tentar a verificação novamente sem precisar reconfigurá-la.
+
+Para tentar uma nova verificação, faça o seguinte:
+
+. No menu de BlueXP classification , selecione *Configuração*.
+. Faça um dos seguintes:
++
+** Para repetir todas as verificações com falha, selecione *Repetir todas as verificações*.
+** Para tentar novamente uma verificação específica, selecione o recurso e selecione *Repetir verificação* na opção Ações...
+
+
+
+
+A verificação é repetida com a mesma configuração da verificação original.  Se a verificação falhar novamente, você poderá tentar novamente quantas vezes forem necessárias.

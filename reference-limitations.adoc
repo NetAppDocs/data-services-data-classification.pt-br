@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, data sense, classification, scan shares 
+summary: Limitações conhecidas identificam funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações cuidadosamente. 
+---
+= Limitações conhecidas na classificação de dados da NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Limitações conhecidas identificam funções que não são suportadas ou não interoperam corretamente nesta versão. Revise essas limitações cuidadosamente.
+
+
+
+== Opções desabilitadas de classificação de dados do NetApp
+
+A versão de dezembro de 2023 (versão 1.26.6) removeu as seguintes opções:
+
+* A opção para ativar a coleta de logs de auditoria foi desabilitada.
+* Durante a investigação dos Diretórios, a opção para calcular o número de dados de informações de identificação pessoal (PII) pelos Diretórios não está disponível.
+* A opção de integrar dados usando rótulos do Azure Information Protection (AIP) foi desabilitada.
+
+
+
+
+== Escaneamento de classificação de dados
+
+As seguintes limitações ocorrem com varreduras de Classificação de Dados.
+
+
+
+=== A classificação de dados verifica apenas um compartilhamento em um volume
+
+Se você tiver vários compartilhamentos de arquivos em um único volume, a Classificação de Dados verificará o compartilhamento com a hierarquia mais alta.  Por exemplo, se você tiver ações como as seguintes:
+
+* /UM
+* /A/B
+* /C
+* /D/E
+
+
+Nesta configuração, somente os dados em /A são verificados.  Os dados em /C e /D não são escaneados.
+
+.Solução alternativa
+Há uma solução alternativa para garantir que você esteja digitalizando dados de todos os compartilhamentos no seu volume. Siga estes passos:
+
+. No sistema, adicione o volume a ser escaneado.
+. Após a Classificação de Dados concluir a varredura do volume, vá para a página _Investigação de Dados_ e crie um filtro para ver qual compartilhamento está sendo varrido:
++
+Filtre os dados por "Nome do sistema" e "Tipo de diretório = Compartilhamento" para ver qual compartilhamento está sendo verificado.
+
+. Obtenha a lista completa de compartilhamentos que existem no volume para que você possa ver quais compartilhamentos não estão sendo verificados.
+. link:task-scanning-file-shares.html["Adicione as ações restantes a um grupo de ações"] .
++
+Adicione todas as ações individualmente, por exemplo:
+
++
+....
+/C
+/D
+....
+. Execute estas etapas para cada volume no sistema que tenha vários compartilhamentos.
+
+
+
+
+=== Último registro de data e hora acessado
+
+Quando a Classificação de Dados realiza uma varredura de um diretório, a varredura afeta o campo **Último acesso** do diretório.  Quando você visualiza o campo **Último acesso**, esses metadados refletem a data e a hora da verificação ou a última vez que um usuário acessou o diretório.

@@ -1,0 +1,128 @@
+---
+sidebar: sidebar 
+permalink: task-using-policies.html 
+keywords: compliance, privacy, filter data, highlights, policies, notifications, saved query, tags, data sense, edit query 
+summary: Consultas salvas são filtros personalizados que fornecem resultados de pesquisa na página Investigação para consultas de conformidade comumente solicitadas.  A Classificação de Dados fornece um conjunto de consultas salvas padrão com base em solicitações comuns ou você pode criar as suas próprias. 
+---
+= Gerenciar consultas salvas com a Classificação de Dados NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+A classificação de dados do NetaApp permite salvar suas consultas de pesquisa.  Com uma consulta salva, você pode criar filtros personalizados para classificar consultas frequentes da sua página de investigação de dados.  A Classificação de Dados também inclui consultas salvas predefinidas com base em solicitações comuns.
+
+A guia *Consultas salvas* no painel de Conformidade lista todas as consultas salvas predefinidas e personalizadas disponíveis nesta instância de Classificação de Dados.
+
+Consultas salvas também podem ser salvas como **políticas**.  Enquanto as consultas filtram dados, as políticas permitem que você atue nos dados.  Com uma política: você pode excluir dados descobertos ou enviar atualizações por e-mail sobre os dados descobertos.
+
+As consultas salvas também aparecem na lista de filtros na página Investigação.
+
+image:screenshot_compliance_highlights_tab.png["Uma captura de tela da guia Consultas salvas no painel Classificação de dados."]
+
+
+
+== Ver resultados de consultas salvas na página Investigação
+
+Para exibir os resultados de uma consulta salva na página Investigação, selecioneimage:button-gallery-options.gif["Botão Mais"] botão para uma pesquisa específica e selecione *Investigar resultados*.
+
+image:screenshot_compliance_highlights_investigate.png["Uma captura de tela da seleção de Investigar resultados para uma pesquisa específica na guia Consulta salva."]
+
+
+
+== Crie consultas e políticas salvas
+
+Você pode criar suas próprias consultas salvas personalizadas que fornecem resultados para consultas específicas da sua organização.  Os resultados são retornados para todos os arquivos e diretórios (compartilhamentos e pastas) que correspondem aos critérios de pesquisa.
+
+.Passos
+. Na aba Investigação, defina uma pesquisa selecionando os filtros que deseja usar. Verlink:task-investigate-data.html["Filtrando dados na página Investigação"] para mais detalhes.
+. Depois de definir todas as características do filtro conforme sua preferência, selecione *Salvar consulta*.
++
+image:../media/screenshot_compliance_save_as_highlight.png["Captura de tela mostrando como salvar uma consulta filtrada como uma consulta salva."]
+
+. Nomeie a consulta salva e adicione uma descrição.  O nome deve ser único.
+. Opcionalmente, você pode salvar a consulta como política:
++
+.. Para salvar a consulta como uma política, alterne a opção *Executar como uma política*.
+.. Escolha *Excluir permanentemente* ou *Enviar atualizações por e-mail*.  Se você escolher atualizações por e-mail, poderá enviar os resultados da consulta para _todos_ os usuários do Console diariamente, semanalmente ou mensalmente.  Como alternativa, você pode enviar a notificação para um endereço de e-mail específico com a mesma frequência.
+
+
+. Selecione *Salvar*.
++
+image:../media/screenshot_compliance_save_highlight2.png["Uma captura de tela que mostra como configurar a consulta salva e salvá-la."]
+
+
+
+Depois de criar a pesquisa ou política, você pode visualizá-la na aba **Consultas salvas**.
+
+
+
+== Editar consultas ou políticas salvas
+
+Você pode modificar o nome e a descrição de uma consulta salva.  Você também pode converter uma consulta em uma política e vice-versa.
+
+Você não pode modificar consultas salvas padrão.  Você não pode modificar os filtros de uma consulta salva.  Você pode visualizar os resultados da investigação de uma consulta salva, alterar ou modificar os filtros e salvá-la como uma nova consulta ou política.
+
+.Passos
+. Na página Consultas salvas, selecione *Editar pesquisa* para a pesquisa que você deseja alterar.
++
+image:screenshot-edit-search.png["Uma captura de tela mostrando Editar consulta salva."]
+
+. Faça as alterações nos campos de nome e descrição.  Para alterar apenas os campos de nome e descrição.
++
+Opcionalmente, você pode converter a consulta em uma política ou converter a política em uma consulta salva.  Alterne a opção *Executar como uma política* conforme necessário. ..  Se você estiver convertendo a consulta em uma política, escolha *Excluir permanentemente* ou *Enviar atualizações por e-mail*.  Se você escolher atualizações por e-mail, poderá enviar os resultados da consulta para _todos_ os usuários do Console diariamente, semanalmente ou mensalmente.  Como alternativa, você pode enviar a notificação para um endereço de e-mail específico com a mesma frequência.
+
+. Selecione *Salvar* para concluir as alterações.
+
+
+
+
+== Excluir consultas salvas
+
+Você pode excluir qualquer consulta ou política personalizada salva se não precisar mais dela.  Você não pode excluir consultas salvas padrão.
+
+Para excluir uma consulta salva, selecione oimage:button-gallery-options.gif["Botão Mais"] botão para uma pesquisa específica, selecione *Excluir consulta* e, em seguida, selecione *Excluir consulta* novamente na caixa de diálogo de confirmação.
+
+
+
+== Consultas padrão
+
+A Classificação de Dados fornece as seguintes consultas de pesquisa definidas pelo sistema:
+
+* **Nomes dos titulares dos dados - Alto risco**
++
+Arquivos com mais de 50 nomes de titulares de dados
+
+* **Endereços de e-mail - Alto risco**
++
+Arquivos com mais de 50 endereços de e-mail ou colunas de banco de dados com mais de 50% de suas linhas contendo endereços de e-mail
+
+* **Dados pessoais - Alto risco**
++
+Arquivos com mais de 20 identificadores de dados pessoais ou colunas de banco de dados com mais de 50% de suas linhas contendo identificadores de dados pessoais
+
+* **Dados privados - desatualizados há mais de 7 anos**
++
+Arquivos contendo informações pessoais ou pessoais sensíveis, modificados pela última vez há mais de 7 anos
+
+* **Proteger - Alto**
++
+Arquivos ou colunas de banco de dados que contêm uma senha, informações de cartão de crédito, número IBAN ou número de previdência social
+
+* **Proteger - Baixo**
++
+Arquivos que não foram acessados por mais de 3 anos
+
+* **Proteger - Médio**
++
+Arquivos que contêm arquivos ou colunas de banco de dados com identificadores de dados pessoais, incluindo números de identificação, números de identificação fiscal, números de carteira de motorista, IDs médicos ou números de passaporte
+
+* **Dados pessoais sensíveis - Alto risco**
++
+Arquivos com mais de 20 identificadores de dados pessoais sensíveis ou colunas de banco de dados com mais de 50% de suas linhas contendo dados pessoais sensíveis
+
+

@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: task-managing-repo-scanning.html 
+keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification 
+summary: 'Você pode gerenciar como seus dados estão sendo verificados em cada um dos seus sistemas e fontes de dados no NetApp Data Classification.  Você pode fazer alterações com base no "repositório", ou seja, você pode fazer alterações para cada volume, bucket, compartilhamento, esquema, usuário, etc., dependendo do tipo de fonte de dados que você está verificando.' 
+---
+= Alterar as configurações de verificação de classificação de dados do NetApp para seus repositórios
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode gerenciar como seus dados estão sendo verificados em cada um dos seus sistemas e fontes de dados.  Você pode fazer as alterações com base no "repositório", ou seja, você pode fazer alterações para cada volume, esquema, usuário, etc., dependendo do tipo de fonte de dados que você está verificando.
+
+Algumas das coisas que você pode alterar são se um repositório é verificado ou não e se a classificação de dados do NetApp está executando umalink:concept-classification.html["varredura de mapeamento ou varredura de mapeamento e classificação"] .  Você também pode pausar e retomar a verificação, por exemplo, se precisar interromper a verificação de um volume por um período de tempo.
+
+
+
+== Visualize o status da verificação dos seus repositórios
+
+Você pode visualizar os repositórios individuais que o NetApp Data Classification está verificando (volumes, buckets, etc.) para cada sistema e fonte de dados.  Você também pode ver quantos foram "Mapeados" e quantos foram "Classificados".  A classificação demora mais porque a identificação completa da IA ​​está sendo realizada em todos os dados.
+
+Você pode visualizar o status de verificação de cada ambiente de trabalho na página Configuração:
+
+* *Inicializando* (ponto azul claro): A configuração do mapa ou classificação está ativada.  Isso aparece por alguns segundos antes de iniciar o status “fila pendente”.
+* *Fila pendente* (ponto laranja): A tarefa de verificação está aguardando para ser listada na fila de verificação.
+* *Na fila* (ponto laranja): A tarefa foi adicionada com sucesso à fila de digitalização.  O sistema começará a mapear ou classificar o volume quando chegar a sua vez na fila.
+* *Em execução* (ponto verde): A tarefa de verificação, que estava na fila, está ativamente em andamento no repositório de armazenamento selecionado.
+* *Concluído* (ponto verde): A verificação do repositório de armazenamento foi concluída.
+* *Pausado* (ponto cinza): Você selecionou a opção “Pausar” para pausar a digitalização.  Embora as alterações no volume não sejam exibidas no sistema, os insights digitalizados ainda são mostrados.
+* *Erro* (ponto vermelho): A verificação não pode ser concluída porque encontrou problemas.  Se você precisar concluir uma ação, o erro aparecerá na dica de ferramenta na coluna “Ação necessária”.  Caso contrário, o sistema mostra um status de “erro” e tenta recuperar.  Quando termina, o status muda.
+* *Não escaneando*: A configuração de volume "Desligado" foi selecionada e o sistema não está escaneando o volume.
+
+
+.Passos
+. No menu Classificação de Dados, selecione *Configuração*.
++
+image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
+
+. Na guia Configuração, selecione o botão *Configuração* do sistema.
+. Na página Configuração de verificação, visualize as configurações de verificação para todos os repositórios.
++
+image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrando se seus buckets estão sendo escaneados e o status atual da varredura."]
+
+. Passe o cursor sobre o gráfico na coluna _Status do mapeamento_ para ver o número de arquivos que ainda precisam ser mapeados ou classificados em cada repositório (bucket neste exemplo).
+
+
+
+
+== Alterar o tipo de digitalização de um repositório
+
+Você pode iniciar ou parar verificações somente de mapeamento ou verificações de mapeamento e classificação em um sistema a qualquer momento na página Configuração.  Você também pode mudar de varreduras somente de mapeamento para varreduras de mapeamento e classificação, e vice-versa.
+
+
+TIP: Os bancos de dados não podem ser configurados para varreduras somente de mapeamento.  A varredura do banco de dados pode estar Desligada ou Ligada; onde Ligada é equivalente a Mapear e Classificar.
+
+.Passos
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na guia Configuração, selecione o botão *Configuração* do sistema.
++
+image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
+
+. Na página Configuração de verificação, altere qualquer um dos repositórios (buckets neste exemplo) para executar verificações *Mapear* ou *Mapear e classificar*.
++
+image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrando como selecionar o tipo de digitalização para um bucket."]
+
++
+Certos tipos de sistemas permitem que você altere o tipo de verificação globalmente para todos os repositórios usando uma barra de botões na parte superior da página.  Isso é válido para sistemas Cloud Volumes ONTAP, ONTAP local, Azure NetApp Files e Amazon FSx para ONTAP .
+
++
+O exemplo abaixo mostra esta barra de botões para um sistema Azure NetApp Files .
+
++
+image:screenshot_compliance_repo_scan_all.png["Uma captura de tela mostrando como configurar a mesma configuração de verificação para todos os volumes em um sistema."]
+
+
+
+
+
+== Priorizar varreduras
+
+Você pode priorizar as verificações mais importantes somente de mapeamento ou mapear e classificar verificações para garantir que as verificações de alta prioridade sejam concluídas primeiro.
+
+Por padrão, as verificações são enfileiradas com base na ordem em que são iniciadas.  Com a capacidade de priorizar verificações, você pode movê-las para a frente da fila.  Várias varreduras podem ser priorizadas.  A prioridade é designada na ordem "primeiro a entrar, primeiro a sair", o que significa que a primeira varredura que você prioriza passa para a frente da fila; a segunda varredura que você prioriza se torna a segunda na fila, e assim por diante.
+
+A prioridade é concedida apenas uma vez.  As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
+
+.Passos
+. No menu Classificação de Dados, selecione *Configuração*.
+. Selecione os recursos que você deseja priorizar.
+. Das Ações `...` opção, selecione *Priorizar verificação*.
+
+
+
+
+== Parar de procurar um repositório
+
+Você pode parar de escanear um repositório (por exemplo, um volume) se não precisar mais monitorá-lo para verificar a conformidade.  Você faz isso desligando a digitalização.  Quando a digitalização é desativada, toda a indexação e informações sobre esse volume são removidas do sistema, e a cobrança pela digitalização dos dados é interrompida.
+
+.Passos
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na guia Configuração, selecione o botão *Configuração* do sistema.
++
+image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
+
+. Na página Configuração de verificação, selecione *Desativado* para interromper a verificação de um bucket específico.
++
+image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrando como selecionar o tipo de digitalização para um bucket."]
+
+
+
+
+
+== Pausar e retomar a varredura de um repositório
+
+Você pode "pausar" a verificação em um repositório se quiser interromper temporariamente a verificação de determinado conteúdo.  Pausar a varredura significa que a Classificação de Dados não executará nenhuma varredura futura em busca de alterações ou adições no repositório, mas todos os resultados atuais ainda serão exibidos no sistema.  Pausar a digitalização não interrompe a cobrança pelos dados digitalizados, pois os dados ainda existem.
+
+Você pode "retomar" a digitalização a qualquer momento.
+
+.Passos
+. No menu Classificação de Dados, selecione *Configuração*.
+. Na guia Configuração, selecione o botão *Configuração* do sistema.
++
+image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
+
+. Na página Configuração de digitalização, selecione as Açõesimage:button-actions-horizontal.png["Ícone de ações"] ícone.
+. Selecione *Pausar* para pausar a varredura de um volume ou selecione *Retomar* para retomar a varredura de um volume que foi pausado anteriormente.
+

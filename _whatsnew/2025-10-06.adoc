@@ -1,0 +1,30 @@
+= Versão 1.47
+:allow-uri-read: 
+
+
+
+
+=== Versão 1.47
+
+.A BlueXP classification agora é NetApp Data Classification
+A BlueXP classification foi renomeada para Classificação de Dados NetApp .  Além da renomeação, a interface do usuário foi aprimorada.
+
+.BlueXP agora é NetApp Console
+O BlueXP foi renomeado e redesenhado para refletir melhor seu papel no gerenciamento de sua infraestrutura de dados.
+
+O NetApp Console fornece gerenciamento centralizado de serviços de armazenamento e dados em ambientes locais e na nuvem em nível empresarial, fornecendo insights em tempo real, fluxos de trabalho mais rápidos e administração simplificada.
+
+Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/bluexp-relnotes/index.html["Notas de versão do NetApp Console"] .
+
+.Ações (visualização)
+A Classificação de Dados agora oferece suporte a ações na página Investigação.  Você pode copiar, mover e excluir arquivos da Classificação de Dados.
+
+.Suporte para marcação de arquivos (visualização)
+A Classificação de Dados agora oferece suporte à marcação de arquivos individuais.  Com tags de arquivo, você pode criar um identificador personalizado para arquivos específicos que podem ser usados para identificar e filtrar dados.  Com a tag, você pode identificar qualidades específicas em sua investigação de dados ou criar consultas e políticas salvas com base nos resultados da tag.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["Exibir metadados do arquivo"] .
+
+.Políticas para consultas salvas (visualização)
+As pesquisas salvas foram renomeadas para consultas salvas.  Você também pode transformar consultas salvas em políticas acionáveis: exclua dados ou envie notificações por e-mail com base nos resultados das consultas salvas.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["Criar políticas"] .

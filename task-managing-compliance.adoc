@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task-managing-compliance.html 
+keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
+summary: Se necessário, você pode impedir que a Classificação de Dados verifique um ou mais sistemas, bancos de dados, grupos de compartilhamento de arquivos, contas do OneDrive, contas do Google Drive ou contas do SharePoint. 
+---
+= Remover fontes de dados da Classificação de Dados NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se necessário, você pode impedir que o NetApp Data Classification verifique um ou mais sistemas, bancos de dados ou grupos de compartilhamento de arquivos.
+
+
+
+== Desativar verificações de conformidade para um sistema
+
+Quando você desativa as verificações, a Classificação de Dados não verifica mais os dados no sistema e remove os insights de conformidade indexados da instância da Classificação de Dados (os dados do próprio sistema não são excluídos).
+
+. Na página _Configuração_, selecione oimage:button-gallery-options.gif["Botão Mais"] botão na linha do sistema e então *Desativar Classificação de Dados*.
+
+
+
+TIP: Você também pode desabilitar as verificações de conformidade de um sistema no painel Serviços ao selecionar o sistema.
+
+
+
+== Remover um banco de dados da Classificação de Dados
+
+Se você não quiser mais verificar um determinado banco de dados, poderá excluí-lo da interface de Classificação de Dados e interromper todas as verificações.
+
+. Na página _Configuração_, selecione oimage:button-gallery-options.gif["Botão Mais"] botão na linha do banco de dados e então *Remover Servidor de BD*.
+
+
+
+
+== Remover um grupo de compartilhamentos de arquivos da Classificação de Dados
+
+Se não quiser mais verificar arquivos de usuário de um grupo de compartilhamentos de arquivos, você pode excluir o Grupo de Compartilhamentos de Arquivos da interface de Classificação de Dados e interromper todas as verificações.
+
+.Passos
+. Na página _Configuração_, selecione oimage:button-gallery-options.gif["Botão Mais"] botão na linha do Grupo de Compartilhamentos de Arquivos e depois *Remover Grupo de Compartilhamentos de Arquivos*.
++
+image:screenshot_compliance_remove_db.png["Uma captura de tela do botão Remover servidor de banco de dados na página Configuração de verificação."]
+
+. Selecione *Excluir Grupo de Compartilhamentos* na caixa de diálogo de confirmação.
+

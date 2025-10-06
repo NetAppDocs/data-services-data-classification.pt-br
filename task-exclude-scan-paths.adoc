@@ -1,0 +1,160 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: Se quiser que a Classificação de Dados do NetApp exclua dados de verificação que residem em determinados diretórios de fonte de dados, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de classificação de dados excluirá os dados de digitalização nesses diretórios. 
+---
+= Excluir diretórios específicos das verificações de classificação de dados do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se quiser que a Classificação de Dados do NetApp exclua diretórios específicos das verificações, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de Classificação de Dados exclui esses diretórios das verificações.
+
+
+NOTE: Por padrão, as verificações de Classificação de Dados excluem dados de instantâneos de volume, que são idênticos à sua origem no volume.
+
+
+
+== Fontes de dados suportadas
+
+A exclusão de diretórios específicos de varreduras de Classificação de Dados é suportada para compartilhamentos NFS e CIFS nas seguintes fontes de dados:
+
+* ONTAP local
+* Cloud Volumes ONTAP
+* Amazon FSx for NetApp ONTAP
+* Azure NetApp Files
+* Compartilhamentos gerais de arquivos
+
+
+
+
+== Defina os diretórios a serem excluídos da verificação
+
+Antes de poder excluir diretórios da verificação de classificação, você precisa fazer login no sistema de Classificação de Dados para poder editar um arquivo de configuração e executar um script.  Veja comolink:reference-log-in-to-instance.html["faça login no sistema de classificação de dados"] dependendo se você instalou manualmente o software em uma máquina Linux ou se implantou a instância na nuvem.
+
+.Considerações
+* Você pode excluir no máximo 50 caminhos de diretório por sistema de classificação de dados.
+* Excluir caminhos de diretório pode afetar o tempo de verificação.
+
+
+.Passos
+. No sistema de classificação de dados, vá para "/opt/netapp/config/custom_configuration" e abra o arquivo `data_provider.yaml` .
+. Na seção "data_providers", na linha "exclude:", insira os caminhos de diretório a serem excluídos. Por exemplo:
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+Não modifique mais nada neste arquivo.
+
+. Salve as alterações no arquivo.
+. Acesse "/opt/netapp/Datasense/tools/customer_configuration/data_providers" e execute o seguinte script:
+
+
+`update_data_providers_from_config_file.sh`
+
++ Este comando confirma os diretórios a serem excluídos da verificação no mecanismo de classificação.
+
+.Resultado
+Todas as verificações subsequentes dos seus dados excluirão a verificação dos diretórios especificados.
+
+Você pode adicionar, editar ou excluir itens da lista de exclusão usando estas mesmas etapas.  A lista de exclusões revisada será atualizada depois que você executar o script para confirmar suas alterações.
+
+
+
+== Exemplos
+
+.Configuração 1:
+Todas as pastas que contiverem "folder1" em qualquer lugar do nome serão excluídas de todas as fontes de dados.
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.Resultados esperados para caminhos que serão excluídos:
+* /CVO1/pasta1
+* /CVO1/nomedapasta1
+* /CVO1/pasta10
+* /CVO1/*pasta1
+* /CVO1/+nomedapasta1
+* /CVO1/nãopasta10
+* /CVO22/pasta1
+* /CVO22/nomedapasta1
+* /CVO22/pasta10
+
+
+.Exemplos de caminhos que não serão excluídos:
+* /CVO1/*pasta
+* /CVO1/nomedapasta
+* /CVO22/*pasta20
+
+
+.Configuração 2:
+Todas as pastas que contiverem apenas "*pasta1" no início do nome serão excluídas.
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.Resultados esperados para caminhos que serão excluídos:
+* /CVO/*pasta1
+* /CVO/*nomedapasta1
+* /CVO/*pasta10
+
+
+.Exemplos de caminhos que não serão excluídos:
+* /CVO/pasta1
+* /CVO/nomedapasta1
+* /CVO/não*pasta10
+
+
+.Configuração 3:
+Todas as pastas na fonte de dados "CVO22" que contiverem "folder1" em qualquer lugar do nome serão excluídas.
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.Resultados esperados para caminhos que serão excluídos:
+* /CVO22/pasta1
+* /CVO22/nomedapasta1
+* /CVO22/pasta10
+
+
+.Exemplos de caminhos que não serão excluídos:
+* /CVO1/pasta1
+* /CVO1/nomedapasta1
+* /CVO1/pasta10
+
+
+
+
+== Escapando caracteres especiais em nomes de pastas
+
+Se você tiver um nome de pasta que contenha um dos seguintes caracteres especiais e quiser excluir dados dessa pasta da verificação, será necessário usar a sequência de escape \\ antes do nome da pasta.
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+Por exemplo:
+
+Caminho na fonte: `/project/*not_to_scan`
+
+Sintaxe no arquivo de exclusão: `"\\*not_to_scan"`
+
+
+
+== Ver a lista de exclusões atual
+
+É possível que o conteúdo do `data_provider.yaml` arquivo de configuração seja diferente do que realmente foi confirmado após a execução do `update_data_providers_from_config_file.sh` roteiro.  Para visualizar a lista atual de diretórios que você excluiu da verificação de Classificação de Dados, execute o seguinte comando em "/opt/netapp/Datasense/tools/customer_configuration/data_providers":
+
+ get_data_providers_configuration.sh

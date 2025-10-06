@@ -1,0 +1,196 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-governance-data.html 
+keywords: savings, stale data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, costs of data 
+summary: Obtenha controle dos custos relacionados aos dados nos recursos de armazenamento da sua organização.  A Classificação de Dados da NetApp identifica a quantidade de dados obsoletos, arquivos duplicados e arquivos muito grandes em seus sistemas para que você possa decidir se deseja remover ou colocar alguns arquivos em um armazenamento de objetos mais barato. 
+---
+= Visualize detalhes de governança sobre os dados armazenados em sua organização com a Classificação de Dados da NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Obtenha controle dos custos relacionados aos dados nos recursos de armazenamento da sua organização.  A Classificação de Dados da NetApp identifica a quantidade de dados obsoletos, arquivos duplicados e arquivos muito grandes em seus sistemas para que você possa decidir se deseja remover ou colocar alguns arquivos em um armazenamento de objetos mais barato.
+
+É aqui que você deve começar sua pesquisa.  No painel de Governança, você pode selecionar uma área para investigação mais aprofundada.
+
+Além disso, se você estiver planejando migrar dados de locais locais para a nuvem, poderá visualizar o tamanho dos dados e se algum deles contém informações confidenciais antes de movê-los.
+
+
+
+== Revise o painel de governança
+
+O painel de governança fornece informações para que você possa aumentar a eficiência e controlar os custos relacionados aos dados armazenados em seus recursos de armazenamento.
+
+image:screenshot_compliance_governance_dashboard.png["Uma captura de tela do painel de Governança de Classificação de Dados."]
+
+.Passos
+. No menu do NetApp Console, selecione *Governança > Classificação*.
+. Selecione *Governança*.
++
+O painel de governança é exibido.
+
+
+
+
+
+=== Revisar oportunidades de economia
+
+O componente _Oportunidades de economia_ mostra dados que você pode excluir ou colocar em um armazenamento de objetos mais barato.  Os dados em _Oportunidades de Economia_ são atualizados a cada 2 horas.  Você também pode atualizar os dados manualmente.
+
+.Passos
+. No menu Classificação de Dados, selecione *Governança*.
+. Em cada bloco Oportunidades de economia do painel Governança, selecione *Otimizar armazenamento* para visualizar os resultados filtrados na página Investigação.  Para descobrir quaisquer dados que você deve excluir ou transferir para um armazenamento mais barato, investigue as _Oportunidades de economia_.
++
+** *Dados desatualizados* - Dados que foram modificados pela última vez há mais de 3 anos.
+** *Arquivos duplicados* - Arquivos que são duplicados em outros locais nas fontes de dados que você está digitalizando. link:task-investigate-data.html["Veja quais tipos de arquivos duplicados são exibidos"] .
+
+
+
+
+
+NOTE: Se alguma de suas fontes de dados implementar a hierarquização de dados, os dados antigos que já residem no armazenamento de objetos poderão ser identificados na categoria _Dados Obsoletos_.
+
+
+
+== Crie o relatório de avaliação de descoberta de dados
+
+O relatório de avaliação de descoberta de dados fornece uma análise de alto nível do ambiente escaneado para mostrar áreas de preocupação e possíveis etapas de correção.  Os resultados são baseados no mapeamento e na classificação dos seus dados.  O objetivo deste relatório é conscientizar sobre três aspectos significativos do seu conjunto de dados:
+
+[cols="25,65"]
+|===
+| Recurso | Descrição 
+
+
+| Preocupações com a governança de dados | Uma imagem detalhada de todos os dados que você possui e áreas onde você pode reduzir a quantidade de dados para economizar custos. 
+
+
+| Exposições de segurança de dados | Áreas onde seus dados podem ser acessados por ataques internos ou externos devido a amplas permissões de acesso. 
+
+
+| Lacunas de conformidade de dados | Onde suas informações pessoais ou pessoais confidenciais estão localizadas, tanto para segurança quanto para DSARs (solicitações de acesso do titular dos dados). 
+|===
+Com o relatório, você pode realizar as seguintes ações:
+
+* Reduza os custos de armazenamento alterando sua política de retenção ou movendo ou excluindo determinados dados (dados obsoletos ou duplicados).
+* Proteja seus dados com permissões amplas revisando as políticas globais de gerenciamento de grupos.
+* Proteja seus dados que contêm informações pessoais ou confidenciais movendo PII para armazenamentos de dados mais seguros.
+
+
+.Passos
+. Em Classificação de Dados, selecione *Governança*.
+. No bloco de relatórios, selecione *Relatório de avaliação de descoberta de dados*.
++
+image:screenshot-compliance-report-buttons.png["Uma captura de tela do Painel de Governança que mostra como iniciar o Relatório de Avaliação de Descoberta de Dados."]
+
+
+
+.Resultado
+A Classificação de Dados gera um relatório em PDF que você pode revisar e compartilhar.
+
+
+
+== Crie o relatório de visão geral do mapeamento de dados
+
+O relatório de visão geral do mapeamento de dados fornece uma visão geral dos dados armazenados em suas fontes de dados corporativos para ajudar você com decisões de migração, backup, segurança e processos de conformidade.  O relatório resume todos os sistemas e fontes de dados.  Ele também fornece uma análise para cada sistema.
+
+O relatório inclui as seguintes informações:
+
+[cols="25,65"]
+|===
+| Categoria | Descrição 
+
+
+| Capacidade de uso | Para todos os sistemas: Lista o número de arquivos e a capacidade usada para cada sistema.  Para sistemas únicos: lista os arquivos que estão usando mais capacidade. 
+
+
+| Era dos Dados | Fornece três tabelas e gráficos para quando os arquivos foram criados, modificados pela última vez ou acessados pela última vez.  Lista o número de arquivos e sua capacidade utilizada, com base em determinados intervalos de datas. 
+
+
+| Tamanho dos dados | Lista o número de arquivos que existem dentro de determinados intervalos de tamanho em seus sistemas. 
+|===
+.Passos
+. Em Classificação de Dados, selecione *Governança*.
+. No bloco de relatórios, selecione *Relatório de visão geral do mapeamento de dados completo*.
++
+image:screenshot-compliance-report-buttons.png["Uma captura de tela do Painel de Governança que mostra como iniciar o Relatório de Mapeamento de Dados."]
+
+
+
+.Resultado
+A Classificação de Dados gera um relatório em PDF que você pode revisar e enviar a outros grupos, conforme necessário.
+
+Se o relatório for maior que 1 MB, o arquivo PDF será retido na instância de Classificação de Dados e você verá uma mensagem pop-up sobre o local exato.  Quando o Data Classification estiver instalado em uma máquina Linux em suas instalações ou em uma máquina Linux implantada na nuvem, você poderá navegar diretamente para o arquivo PDF.  Quando a Classificação de Dados é implantada na nuvem, você precisa autorizar com SSH a instância da Classificação de Dados para baixar o arquivo PDF.
+
+
+
+=== Revise os principais repositórios de dados listados por sensibilidade de dados
+
+A área _Principais repositórios de dados por nível de sensibilidade_ do relatório Visão geral do mapeamento de dados lista os quatro principais repositórios de dados (sistemas e fontes de dados) que contêm os itens mais sensíveis.  O gráfico de barras para cada sistema é dividido em:
+
+* Dados não sensíveis
+* Dados pessoais
+* Dados pessoais sensíveis
+
+
+Esses dados são atualizados a cada duas horas e podem ser atualizados manualmente.
+
+.Passos
+. Para ver o número total de itens em cada categoria, posicione o cursor sobre cada seção da barra.
+. Para filtrar os resultados que aparecerão na página Investigação, selecione cada área na barra e investigue mais.
+
+
+
+
+=== Revise dados confidenciais e permissões amplas
+
+A área _Dados confidenciais e permissões amplas_ do painel Governança mostra as contagens de arquivos que contêm dados confidenciais e têm permissões amplas.  A tabela mostra os seguintes tipos de permissões:
+
+* Das permissões mais restritivas às restrições mais permissivas no eixo horizontal.
+* Dos dados menos sensíveis aos dados mais sensíveis no eixo vertical.
+
+
+.Passos
+. Para ver o número total de arquivos em cada categoria, posicione o cursor sobre cada caixa.
+. Para filtrar os resultados que aparecerão na página Investigação, selecione uma caixa e investigue mais.
+
+
+
+
+=== Revisar dados listados por tipos de permissões abertas
+
+A área _Permissões abertas_ do relatório Visão geral do mapeamento de dados mostra a porcentagem para cada tipo de permissão que existe para todos os arquivos que estão sendo verificados.  O gráfico mostra os seguintes tipos de permissões:
+
+* Sem permissões abertas
+* Aberto à organização
+* Aberto ao público
+* Acesso desconhecido
+
+
+.Passos
+. Para ver o número total de arquivos em cada categoria, posicione o cursor sobre cada caixa.
+. Para filtrar os resultados que aparecerão na página Investigação, selecione uma caixa e investigue mais.
+
+
+
+
+=== Revise a idade e o tamanho dos dados
+
+Você pode investigar os itens nos gráficos _Idade_ e _Tamanho_ do relatório Visão geral do mapeamento de dados para ver se há algum dado que você deve excluir ou colocar em um armazenamento de objetos mais barato.
+
+.Passos
+. No gráfico Idade dos Dados, para ver detalhes sobre a idade dos dados, posicione o cursor sobre um ponto no gráfico.
+. Para filtrar por faixa etária ou tamanho, selecione essa idade ou tamanho.
++
+** *Gráfico de idade dos dados* - categoriza os dados com base na hora em que foram criados, na última vez em que foram acessados ou na última vez em que foram modificados.
+** *Gráfico de tamanho de dados* - categoriza os dados com base no tamanho.
+
+
+
+
+
+NOTE: Se alguma de suas fontes de dados implementar a hierarquização de dados, dados antigos que já residem no armazenamento de objetos poderão ser identificados no gráfico _Idade dos Dados_.
