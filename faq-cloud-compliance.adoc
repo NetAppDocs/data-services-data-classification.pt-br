@@ -173,7 +173,7 @@ Após uma verificação completa, há muitos recursos adicionais de Classificaç
 
 A Classificação de Dados captura metadados como: nome do arquivo, permissões, hora de criação, último acesso e última modificação.  Isso inclui todos os metadados que aparecem na página Detalhes da Investigação de Dados e nos Relatórios de Investigação de Dados.
 
-A classificação de dados pode identificar muitos tipos de dados privados, como informações pessoais (PII) e informações pessoais sensíveis (SPII).  Para obter detalhes sobre dados privados, consulte https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorias de dados privados que a Classificação de Dados verifica"] .
+A classificação de dados pode identificar muitos tipos de dados privados, como informações pessoais (PII) e informações pessoais sensíveis (SPII). Para obter detalhes sobre dados privados, consultexref:reference-private-data-categories.html[Categorias de dados privados que a Classificação de Dados verifica] .
 
 
 
@@ -245,7 +245,7 @@ Ao verificar dados, o agente do NetApp Console Console precisa ser instalado nos
 * Para sistemas ONTAP locais: o agente do console está local.
 
 
-Se você tiver dados nesses locais, pode ser necessário usar https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["vários agentes de console"^] .
+Se você tiver dados nesses locais, pode ser necessário usar https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["vários agentes de console"^] .
 
 
 

@@ -16,10 +16,10 @@ Você pode acessar a Classificação de Dados do NetApp por meio do Console do N
 
 Para fazer login no Console, você pode usar suas credenciais do Site de Suporte da NetApp ou pode se inscrever para um login no Console da NetApp usando seu e-mail e uma senha. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login no Console"^] .
 
-Tarefas específicas exigem funções específicas do usuário do Console. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
+Tarefas específicas exigem funções específicas do usuário do Console. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 
 .Antes de começar
-* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Você deve adicionar um agente do Console."^]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Você deve adicionar um agente do Console."^]
 * link:task-deploy-cloud-compliance.html["Entenda qual estilo de implantação de Classificação de Dados é mais adequado à sua carga de trabalho."]
 
 

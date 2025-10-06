@@ -11,23 +11,23 @@ Esta versão de Classificação de Dados inclui:
 .Priorizar varreduras de classificação
 A Classificação de Dados oferece suporte à capacidade de priorizar verificações de Mapeamento e Classificação, além de verificações somente de Mapeamento, permitindo que você selecione quais verificações serão concluídas primeiro.  A priorização de verificações de Map & Classify é suportada durante e antes do início das verificações.  Se você optar por priorizar uma verificação enquanto ela estiver em andamento, tanto as verificações de mapeamento quanto as de classificação serão priorizadas.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"] .
 
 .Suporte para categorias de dados de informações de identificação pessoal (PII) canadenses
 As varreduras de classificação de dados identificam categorias de dados PII canadenses.  Essas categorias incluem informações bancárias, números de passaporte, números de seguro social, números de carteira de motorista e números de cartão de saúde para todas as províncias e territórios canadenses.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Categorias de dados pessoais"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["Categorias de dados pessoais"] .
 
 .Classificação personalizada (visualização)
 A Classificação de Dados oferece suporte a classificações personalizadas para verificações do Map & Classify.  Com classificações personalizadas, você pode adaptar as verificações de Classificação de Dados para capturar dados específicos da sua organização usando expressões regulares.  Este recurso está atualmente em versão prévia.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["Adicionar classificações personalizadas"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-custom-classification.html["Adicionar classificações personalizadas"] .
 
-.Aba Consultas salvas
-A aba **Políticas** foi renomeadalink:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**Consultas salvas**"] .  A funcionalidade não foi alterada.
+.Aba de pesquisas salvas
+A aba **Políticas** foi renomeadalink:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["**Pesquisas salvas**"] . A funcionalidade não foi alterada.
 
 .Enviar eventos de verificação para a página de auditoria
-A classificação de dados oferece suporte ao envio de eventos de classificação (quando uma varredura é iniciada e quando ela termina) para olink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Página de auditoria do NetApp Consle"^] .
+A classificação de dados oferece suporte ao envio de eventos de classificação (quando uma varredura é iniciada e quando ela termina) para olink:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Página de auditoria do NetApp Consle"^] .
 
 .Atualizações de segurança
 * O pacote Keras foi atualizado, mitigando vulnerabilidades (BDSA-2025-0107 e BDSA-2025-1984).

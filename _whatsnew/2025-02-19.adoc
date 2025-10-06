@@ -20,9 +20,9 @@ Por padrão, as verificações são enfileiradas com base na ordem em que são i
 
 A prioridade é concedida apenas uma vez.  As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
 
-A priorização é limitada alink:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["varreduras somente de mapeamento"^] ; não está disponível para mapeamento e classificação de varreduras.
+A priorização é limitada alink:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["varreduras somente de mapeamento"^] ; não está disponível para mapeamento e classificação de varreduras.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"^] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"^] .
 
 .Repetir todas as verificações
 A BlueXP classification permite repetir em lote todas as verificações com falha.
@@ -36,4 +36,4 @@ Para repetir todas as verificações:
 
 
 .Precisão aprimorada do modelo de categorização
-A precisão do modelo de aprendizagem de máquina paralink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorias predefinidas"] melhorou em 11%.
+A precisão do modelo de aprendizagem de máquina paralink:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorias predefinidas"] melhorou em 11%.

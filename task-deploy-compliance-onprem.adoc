@@ -36,10 +36,10 @@ Comece rapidamente seguindo estas etapas ou role para baixo até as seções res
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"]Criar um agente de console
 [role="quick-margin-para"]
-Se você ainda não tem um agente de console, https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["implantar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem.
+Se você ainda não tem um agente de console, https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["implantar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem.
 
 [role="quick-margin-para"]
-Você também pode criar um agente de console com seu provedor de nuvem.  Ver https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
+Você também pode criar um agente de console com seu provedor de nuvem. Ver https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"]Revise os pré-requisitos
 [role="quick-margin-para"]
@@ -56,9 +56,9 @@ Baixe o software Cloud Data Classification no site de suporte da NetApp e copie 
 
 == Criar um agente de console
 
-Um agente de console é necessário antes que você possa instalar e usar a Classificação de Dados.  Na maioria dos casos, você provavelmente terá um agente de console configurado antes de tentar ativar a Classificação de Dados porque a maioria https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Os recursos do console exigem um agente do console"] , mas há casos em que você precisará configurar um agora.
+Um agente de console é necessário antes que você possa instalar e usar a Classificação de Dados. Na maioria dos casos, você provavelmente terá um agente de console configurado antes de tentar ativar a Classificação de Dados porque a maioria https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Os recursos do console exigem um agente do console"] , mas há casos em que você precisará configurar um agora.
 
-Para criar um no ambiente do seu provedor de nuvem, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
+Para criar um no ambiente do seu provedor de nuvem, consulte https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
 
 Existem alguns cenários em que você precisa usar um agente do Console implantado em um provedor de nuvem específico:
 
@@ -72,7 +72,7 @@ Para o Azure NetApp Files, ele deve ser implantado na mesma região que os volum
 
 Sistemas ONTAP locais, compartilhamentos de arquivos NetApp e contas de banco de dados podem ser verificados usando qualquer um desses agentes do Cloud Console.
 
-Observe que você também pode https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["implantar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem.  Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
+Observe que você também pode https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["implantar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem. Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
 
 Você precisará do endereço IP ou nome do host do sistema do agente do Console ao instalar o Data Classification.  Você terá essas informações se tiver instalado o agente do Console em suas instalações.  Se o agente do Console estiver implantado na nuvem, você poderá encontrar essas informações no Console: selecione o ícone Ajuda, depois *Suporte* e depois **Agente do Console**.
 
@@ -210,16 +210,16 @@ A classificação de dados requer acesso de saída à Internet.  Se sua rede vir
 | Pontos finais | Propósito 
 
 
-| \ https://api.bluexp.netapp.com | Comunicação com o Console, que inclui contas NetApp . 
+| \ https://api.console.netapp.com | Comunicação com o Console, que inclui contas NetApp . 
 
 
 | \ https://netapp-cloud-account.auth0.com \ https://auth0.com | Comunicação com o site do Console para autenticação centralizada do usuário. 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | Fornece acesso a imagens de software, manifestos, modelos e para enviar logs e métricas. 
+| \ https://support.compliance.api.console.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | Fornece acesso a imagens de software, manifestos, modelos e para enviar logs e métricas. 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | Permite que o NetApp transmita dados de registros de auditoria. 
+| \ https://support.compliance.api.console.netapp.com/ | Permite que o NetApp transmita dados de registros de auditoria. 
 
 
 | \ https://github.com/docker \ https://download.docker.com | Fornece pacotes de pré-requisitos para instalação do docker. 
@@ -293,7 +293,7 @@ Ver<<Preparar o sistema host Linux,Preparando o sistema host Linux>> e<<Habilita
 As atualizações do software de classificação de dados são automatizadas, desde que a instância tenha conectividade com a Internet.
 
 
-NOTE: Atualmente, a Classificação de Dados não consegue verificar buckets S3, Azure NetApp Files ou FSx para ONTAP quando o software está instalado no local.  Nesses casos, você precisará implantar um agente de console separado e uma instância de classificação de dados na nuvem e https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["alternar entre conectores"^] para suas diferentes fontes de dados.
+NOTE: Atualmente, a Classificação de Dados não consegue verificar buckets S3, Azure NetApp Files ou FSx para ONTAP quando o software está instalado no local. Nesses casos, você precisará implantar um agente de console separado e uma instância de classificação de dados na nuvem e https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["alternar entre conectores"^] para suas diferentes fontes de dados.
 
 
 

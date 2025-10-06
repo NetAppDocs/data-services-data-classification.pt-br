@@ -24,7 +24,7 @@ Há quatro categorias definidas na Classificação de Dados que correspondem às
 * Configuração
 
 
-As APIs na documentação do Swagger permitem que você pesquise, agregue dados, rastreie suas verificações e execute ações como copiar, mover e muito mais.
+As APIs na documentação do Swagger permitem que você pesquise, agregue dados, rastreie suas verificações e execute ações como copiar, mover e excluir.
 
 
 

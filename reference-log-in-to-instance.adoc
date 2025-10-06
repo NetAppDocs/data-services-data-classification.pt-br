@@ -35,7 +35,7 @@ Quando a Classificação de Dados é implantada na nuvem, você precisa fazer SS
 
 Você precisa modificar as regras de entrada do grupo de segurança para acessar o sistema na nuvem.  Para mais detalhes, consulte:
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Regras de grupo de segurança na AWS"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Regras de grupo de segurança no Azure"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Regras de firewall no Google Cloud"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-aws.html["Regras de grupo de segurança na AWS"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-azure.html["Regras de grupo de segurança no Azure"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-gcp.html["Regras de firewall no Google Cloud"^]
 

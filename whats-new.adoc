@@ -32,20 +32,28 @@ O BlueXP foi renomeado e redesenhado para refletir melhor seu papel no gerenciam
 
 O NetApp Console fornece gerenciamento centralizado de serviços de armazenamento e dados em ambientes locais e na nuvem em nível empresarial, fornecendo insights em tempo real, fluxos de trabalho mais rápidos e administração simplificada.
 
-Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/bluexp-relnotes/index.html["Notas de versão do NetApp Console"] .
+Para obter detalhes sobre o que mudou, consulte o https://docs.netapp.com/us-en/console-relnotes/index.html["Notas de versão do NetApp Console"] .
 
-.Ações (visualização)
-A Classificação de Dados agora oferece suporte a ações na página Investigação.  Você pode copiar, mover e excluir arquivos da Classificação de Dados.
+.Experiência de investigação aprimorada
+Encontre e entenda seus dados mais rapidamente com novos filtros pesquisáveis, contagens de resultados por valor, insights em tempo real resumindo as principais descobertas e uma tabela de resultados atualizada com colunas personalizáveis e um painel de detalhes deslizante.
 
-.Suporte para marcação de arquivos (visualização)
-A Classificação de Dados agora oferece suporte à marcação de arquivos individuais.  Com tags de arquivo, você pode criar um identificador personalizado para arquivos específicos que podem ser usados para identificar e filtrar dados.  Com a tag, você pode identificar qualidades específicas em sua investigação de dados ou criar consultas e políticas salvas com base nos resultados da tag.
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["Investigar dados"] .
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["Exibir metadados do arquivo"] .
+.Novos painéis de governança e conformidade
+Obtenha insights críticos mais rapidamente com widgets intuitivos, visuais mais claros e desempenho de carregamento aprimorado.  Para mais informações, consultelink:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["Revise as informações de governança sobre seus dados"] elink:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["Visualize informações de conformidade sobre seus dados"] .
 
 .Políticas para consultas salvas (visualização)
-As pesquisas salvas foram renomeadas para consultas salvas.  Você também pode transformar consultas salvas em políticas acionáveis: exclua dados ou envie notificações por e-mail com base nos resultados das consultas salvas.
+A classificação de dados agora permite automatizar a governança com ações condicionais.  Você pode criar regras de retenção com exclusão automática e configurar notificações periódicas por e-mail, tudo gerenciado a partir de uma página de consultas salvas atualizada.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["Criar políticas"] .
+
+.Ações (visualização)
+Assuma o controle direto da página Investigação: exclua, mova, copie ou marque arquivos individualmente ou em massa para gerenciamento e correção de dados eficientes.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["Investigar dados"] .
+
+.Suporte para Google Cloud NetApp Volumes
+A classificação de dados agora oferece suporte à digitalização no Google Cloud NetApp Volumes.  Adicione facilmente o Google Cloud NetApp Volumes do NetApp Console para uma varredura e classificação de dados perfeitas.
 
 
 
@@ -60,7 +68,7 @@ Esta versão de Classificação de Dados inclui correções de bugs e as seguint
 .Insights aprimorados sobre eventos de verificação na página de auditoria
 A página Auditoria agora oferece suporte a insights aprimorados sobre eventos de verificação para BlueXP classification.  A página Auditoria agora exibe quando a verificação de um sistema começa, os status dos sistemas e quaisquer problemas.  Os status de compartilhamentos e sistemas estão disponíveis somente para verificações de mapeamento.
 
-Para mais informações sobre a página Auditoria, consultelink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Monitorar as operações do NetApp Console"^] .
+Para mais informações sobre a página Auditoria, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["Monitorar as operações do NetApp Console"^] .
 
 .Suporte para RHEL 9.6
 Esta versão adiciona suporte ao Red Hat Enterprise Linux v9.6 para instalação manual local da BlueXP classification, incluindo implantações de site escuro.
@@ -80,12 +88,12 @@ Esta versão de BlueXP classification inclui alterações de código que otimiza
 .Fluxo de trabalho aprimorado para adicionar compartilhamentos de arquivos para digitalização
 O fluxo de trabalho para adicionar compartilhamentos de arquivos a um grupo de compartilhamento de arquivos foi simplificado.  O processo agora também diferencia o suporte ao protocolo CIFS com base no tipo de autenticação (Kerberos ou NTLM).
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-scanning-file-shares.html["Verificar compartilhamentos de arquivos"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-file-shares.html["Verificar compartilhamentos de arquivos"] .
 
 .Informações aprimoradas sobre o proprietário do arquivo
 Agora você pode visualizar mais informações sobre os proprietários dos arquivos capturados na guia Investigação.  Ao visualizar os metadados de um arquivo na guia Investigação, localize o proprietário do arquivo e selecione **Exibir detalhes** para ver o nome de usuário, o e-mail e o nome da conta SAM.  Você também pode ver outros itens de propriedade deste usuário.  Este recurso está disponível somente para ambientes de trabalho com o Active Directory.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Investigue os dados armazenados em sua organização"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Investigue os dados armazenados em sua organização"] .
 
 
 
@@ -126,7 +134,7 @@ Os tempos de atualização para componentes individuais do painel de governança
 | Permissões abertas | 24 horas 
 
 
-| Consultas salvas | 2 horas 
+| Pesquisas salvas | 2 horas 
 
 
 | Dados sensíveis e permissões amplas | 24 horas 
@@ -140,7 +148,7 @@ Os tempos de atualização para componentes individuais do painel de governança
 
 | Principais repositórios de dados por nível de sensibilidade | 2 horas 
 |===
-Você pode visualizar o horário da última atualização e atualizar manualmente os componentes Arquivos duplicados, Dados não comerciais, Consultas salvas, Dados obsoletos e Principais repositórios de dados por nível de sensibilidade.  Para obter mais informações sobre o painel de governança, consultelink:https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["Visualize detalhes de governança sobre os dados armazenados em sua organização"] .
+Você pode visualizar o horário da última atualização e atualizar manualmente os componentes Arquivos duplicados, Dados não comerciais, Pesquisas salvas, Dados obsoletos e Principais repositórios de dados por nível de sensibilidade. Para obter mais informações sobre o painel de governança, consultelink:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["Visualize detalhes de governança sobre os dados armazenados em sua organização"] .
 
 .Melhorias de desempenho e segurança
 Foram feitas melhorias para melhorar o desempenho, o consumo de memória e a segurança da classificação BlueXP .
@@ -161,23 +169,23 @@ Esta versão de Classificação de Dados inclui:
 .Priorizar varreduras de classificação
 A Classificação de Dados oferece suporte à capacidade de priorizar verificações de Mapeamento e Classificação, além de verificações somente de Mapeamento, permitindo que você selecione quais verificações serão concluídas primeiro.  A priorização de verificações de Map & Classify é suportada durante e antes do início das verificações.  Se você optar por priorizar uma verificação enquanto ela estiver em andamento, tanto as verificações de mapeamento quanto as de classificação serão priorizadas.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"] .
 
 .Suporte para categorias de dados de informações de identificação pessoal (PII) canadenses
 As varreduras de classificação de dados identificam categorias de dados PII canadenses.  Essas categorias incluem informações bancárias, números de passaporte, números de seguro social, números de carteira de motorista e números de cartão de saúde para todas as províncias e territórios canadenses.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Categorias de dados pessoais"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["Categorias de dados pessoais"] .
 
 .Classificação personalizada (visualização)
 A Classificação de Dados oferece suporte a classificações personalizadas para verificações do Map & Classify.  Com classificações personalizadas, você pode adaptar as verificações de Classificação de Dados para capturar dados específicos da sua organização usando expressões regulares.  Este recurso está atualmente em versão prévia.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["Adicionar classificações personalizadas"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-custom-classification.html["Adicionar classificações personalizadas"] .
 
-.Aba Consultas salvas
-A aba **Políticas** foi renomeadalink:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**Consultas salvas**"] .  A funcionalidade não foi alterada.
+.Aba de pesquisas salvas
+A aba **Políticas** foi renomeadalink:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["**Pesquisas salvas**"] . A funcionalidade não foi alterada.
 
 .Enviar eventos de verificação para a página de auditoria
-A classificação de dados oferece suporte ao envio de eventos de classificação (quando uma varredura é iniciada e quando ela termina) para olink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Página de auditoria do NetApp Consle"^] .
+A classificação de dados oferece suporte ao envio de eventos de classificação (quando uma varredura é iniciada e quando ela termina) para olink:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Página de auditoria do NetApp Consle"^] .
 
 .Atualizações de segurança
 * O pacote Keras foi atualizado, mitigando vulnerabilidades (BDSA-2025-0107 e BDSA-2025-1984).
@@ -206,7 +214,7 @@ A BlueXP classification oferece suporte a operações em massa para ambientes de
 .Baixe o relatório de investigação localmente
 A BlueXP classification permite baixar relatórios de investigação de dados localmente para visualizar no navegador.  Se você escolher a opção local, a investigação de dados estará disponível apenas no formato CSV e exibirá apenas as primeiras 10.000 linhas de dados.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["Investigue os dados armazenados em sua organização com a BlueXP classification"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#create-the-data-investigation-report["Investigue os dados armazenados em sua organização com a BlueXP classification"] .
 
 
 
@@ -245,9 +253,9 @@ Por padrão, as verificações são enfileiradas com base na ordem em que são i
 
 A prioridade é concedida apenas uma vez.  As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
 
-A priorização é limitada alink:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["varreduras somente de mapeamento"^] ; não está disponível para mapeamento e classificação de varreduras.
+A priorização é limitada alink:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["varreduras somente de mapeamento"^] ; não está disponível para mapeamento e classificação de varreduras.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"^] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"^] .
 
 .Repetir todas as verificações
 A BlueXP classification permite repetir em lote todas as verificações com falha.
@@ -261,7 +269,7 @@ Para repetir todas as verificações:
 
 
 .Precisão aprimorada do modelo de categorização
-A precisão do modelo de aprendizagem de máquina paralink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorias predefinidas"] melhorou em 11%.
+A precisão do modelo de aprendizagem de máquina paralink:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorias predefinidas"] melhorou em 11%.
 
 
 
@@ -291,7 +299,7 @@ A exportação de dados do relatório de investigação de dados tem as seguinte
 * Espera-se que um milhão de registros levem cerca de 35 minutos para serem exportados.
 
 
-Para obter detalhes sobre a investigação de dados e o relatório, consulte https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Investigue os dados armazenados na sua organização"] .
+Para obter detalhes sobre a investigação de dados e o relatório, consulte https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Investigue os dados armazenados na sua organização"] .
 
 
 
@@ -318,12 +326,12 @@ Esta versão oferece suporte ao Red Hat Enterprise Linux v8.10, além das versõ
 
 Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão de BlueXP classification 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 8.10, 9.0, 9.1, 9.2, 9.3 e 9.4.
 
-Saiba mais sobre https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"] .
+Saiba mais sobre https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["BlueXP classification"] .
 
 .Suporte para NFS v4.1
 Esta versão oferece suporte ao NFS v4.1, além das versões suportadas anteriormente.
 
-Saiba mais sobre https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"] .
+Saiba mais sobre https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["BlueXP classification"] .
 
 
 
@@ -338,7 +346,7 @@ Esta versão oferece suporte ao Red Hat Enterprise Linux v9.4, além das versõe
 
 Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão de BlueXP classification 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 9.0, 9.1, 9.2, 9.3 e 9.4.
 
-Saiba mais sobre https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Visão geral das implantações de BlueXP classification"] .
+Saiba mais sobre https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["Visão geral das implantações de BlueXP classification"] .
 
 .Desempenho de digitalização aprimorado
 Esta versão oferece desempenho de digitalização aprimorado.
@@ -429,7 +437,7 @@ Para explicações sobre os status, consulte https://docs.netapp.com/us-en/data-
 A BlueXP classification agora está disponível como um recurso principal dentro do BlueXP , sem custo adicional para até 500 TiB de dados digitalizados por conector.  Não é necessária nenhuma licença de classificação ou assinatura paga.  Como focamos a funcionalidade de BlueXP classification na varredura de sistemas de armazenamento NetApp com esta nova versão, algumas funcionalidades legadas estarão disponíveis apenas para clientes que pagaram anteriormente por uma licença.  O uso desses recursos legados expirará quando o contrato pago atingir sua data final.
 
 
-NOTE: A Classificação de Dados não impõe um limite à quantidade de dados que pode escanear.  Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] .  + A interface do usuário do console exibe dados de um único conector.  Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
+NOTE: A Classificação de Dados não impõe um limite à quantidade de dados que pode escanear. Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] . + A interface do usuário do console exibe dados de um único conector. Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
 
 
 
@@ -570,7 +578,7 @@ A BlueXP classification pode identificar e categorizar arquivos que contêm os s
 link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["Veja todos os tipos de dados pessoais que a BlueXP classification pode identificar em seus dados"] .
 
 .A BlueXP classification é totalmente suportada no modo Restrito e no modo Privado
-A BlueXP classification agora é totalmente compatível com sites sem acesso à Internet (modo privado) e com acesso limitado à Internet de saída (modo restrito). link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP para o Conector"^] .
+A BlueXP classification agora é totalmente compatível com sites sem acesso à Internet (modo privado) e com acesso limitado à Internet de saída (modo restrito). link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP para o Conector"^] .
 
 .Capacidade de pular versões ao atualizar uma instalação em modo privado da BlueXP classification
 Agora você pode atualizar para uma versão mais recente da BlueXP classification, mesmo que ela não seja sequencial.  Isso significa que a limitação atual de atualização da BlueXP classification em uma versão por vez não é mais necessária.  Este recurso é relevante a partir da versão 1.24.

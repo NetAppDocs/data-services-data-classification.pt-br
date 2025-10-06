@@ -20,7 +20,7 @@ Conclua algumas etapas para começar a usar a Classificação de Dados NetApp pa
 
 == Descubra o sistema Azure NetApp Files que você deseja verificar
 
-Se o sistema Azure NetApp Files que você deseja verificar ainda não estiver no NetApp Console como sistema,link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["adicione-o na página Sistemas"^] .
+Se o sistema Azure NetApp Files que você deseja verificar ainda não estiver no NetApp Console como sistema,link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["adicione-o na página Sistemas"^] .
 
 
 

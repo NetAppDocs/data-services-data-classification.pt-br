@@ -14,4 +14,4 @@ A BlueXP classification oferece suporte a operações em massa para ambientes de
 .Baixe o relatório de investigação localmente
 A BlueXP classification permite baixar relatórios de investigação de dados localmente para visualizar no navegador.  Se você escolher a opção local, a investigação de dados estará disponível apenas no formato CSV e exibirá apenas as primeiras 10.000 linhas de dados.
 
-Para obter mais informações, consulte link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["Investigue os dados armazenados em sua organização com a BlueXP classification"] .
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#create-the-data-investigation-report["Investigue os dados armazenados em sua organização com a BlueXP classification"] .

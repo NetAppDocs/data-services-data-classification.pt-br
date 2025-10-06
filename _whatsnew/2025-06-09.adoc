@@ -37,7 +37,7 @@ Os tempos de atualização para componentes individuais do painel de governança
 | Permissões abertas | 24 horas 
 
 
-| Consultas salvas | 2 horas 
+| Pesquisas salvas | 2 horas 
 
 
 | Dados sensíveis e permissões amplas | 24 horas 
@@ -51,7 +51,7 @@ Os tempos de atualização para componentes individuais do painel de governança
 
 | Principais repositórios de dados por nível de sensibilidade | 2 horas 
 |===
-Você pode visualizar o horário da última atualização e atualizar manualmente os componentes Arquivos duplicados, Dados não comerciais, Consultas salvas, Dados obsoletos e Principais repositórios de dados por nível de sensibilidade.  Para obter mais informações sobre o painel de governança, consultelink:https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["Visualize detalhes de governança sobre os dados armazenados em sua organização"] .
+Você pode visualizar o horário da última atualização e atualizar manualmente os componentes Arquivos duplicados, Dados não comerciais, Pesquisas salvas, Dados obsoletos e Principais repositórios de dados por nível de sensibilidade. Para obter mais informações sobre o painel de governança, consultelink:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["Visualize detalhes de governança sobre os dados armazenados em sua organização"] .
 
 .Melhorias de desempenho e segurança
 Foram feitas melhorias para melhorar o desempenho, o consumo de memória e a segurança da classificação BlueXP .
