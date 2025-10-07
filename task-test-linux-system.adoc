@@ -37,7 +37,7 @@ Você executará as seguintes tarefas.
 
 Um agente de console é necessário antes que você possa instalar e usar a Classificação de Dados.  No entanto, você pode executar o script de pré-requisitos sem um agente do Console.
 
-Você pode https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem. Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
+Você pode https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem.  Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
 
 Para criar um agente de console no ambiente do seu provedor de nuvem, consulte https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
 

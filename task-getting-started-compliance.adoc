@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-getting-started-compliance.html 
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
-summary: Conclua algumas etapas para começar a escanear seus volumes Cloud Volumes ONTAP e ONTAP locais usando a Classificação de Dados da NetApp . 
+summary: Conclua algumas etapas para começar a escanear seus volumes Cloud Volumes ONTAP e ONTAP locais usando o NetApp Data Classification. 
 ---
-= Escaneie Cloud Volumes ONTAP e volumes ONTAP locais com a classificação de dados NetApp
+= Escaneie Cloud Volumes ONTAP e volumes ONTAP locais com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Conclua algumas etapas para começar a escanear seus volumes Cloud Volu
 
 
 [role="lead"]
-Conclua algumas etapas para começar a escanear seus volumes Cloud Volumes ONTAP e ONTAP locais usando a Classificação de Dados da NetApp .
+Conclua algumas etapas para começar a escanear seus volumes Cloud Volumes ONTAP e ONTAP locais usando o NetApp Data Classification.
 
 
 
@@ -62,7 +62,7 @@ O botão no topo da página para *Verificar quando faltarem permissões de "grav
 A Classificação de Dados inicia a varredura dos volumes selecionados no sistema.  Os resultados começam a aparecer no painel de conformidade assim que a Classificação de Dados inicia a verificação.  O tempo que leva para ser concluído depende da quantidade de dados: pode levar alguns minutos ou horas.
 
 
-NOTE: A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário digitalizar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Veja mais detalhes sobre esta limitação de Classificação de Dados"^] .
+NOTE: A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário verificar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Veja mais detalhes sobre esta limitação de Classificação de Dados"^] .
 
 
 

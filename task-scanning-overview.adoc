@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-overview.html 
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, mapping-only scans, map and classify, map & classify 
-summary: Analise suas fontes de dados com a Classificação de Dados da NetApp . 
+summary: Analise suas fontes de dados com o NetApp Data Classification. 
 ---
-= Digitalizar fontes de dados com a classificação de dados da NetApp
+= Digitalizar fontes de dados com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Analise suas fontes de dados com a Classificação de Dados da NetApp .
 
 
 [role="lead"]
-A Classificação de Dados da NetApp verifica os dados nos repositórios (volumes, esquemas de banco de dados ou outros dados do usuário) que você seleciona para identificar dados pessoais e confidenciais.  A Classificação de Dados mapeia seus dados organizacionais, categoriza cada arquivo e identifica padrões predefinidos nos dados.  O resultado da verificação é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.
+A NetApp Data Classification verifica os dados nos repositórios (volumes, esquemas de banco de dados ou outros dados do usuário) que você seleciona para identificar dados pessoais e confidenciais.  A Classificação de Dados mapeia seus dados organizacionais, categoriza cada arquivo e identifica padrões predefinidos nos dados.  O resultado da verificação é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.
 
 Após a verificação inicial, a Classificação de Dados verifica continuamente seus dados em um sistema round-robin para detectar alterações incrementais.  É por isso que é importante manter a instância em execução.
 
@@ -72,7 +72,7 @@ A tabela abaixo mostra algumas das diferenças:
 
 | Capacidade de ver metadados de arquivos** | Não | Sim 
 |===
-{asterisco} A Classificação de Dados não impõe um limite na quantidade de dados que pode escanear. Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:task-deploy-overview.html["implantar outra instância de Classificação de Dados"] . + A interface do usuário do console exibe dados de um único conector. Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
+{asterisco} A Classificação de Dados não impõe um limite na quantidade de dados que pode escanear.  Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:task-deploy-overview.html["implantar outra instância de Classificação de Dados"] .  + A interface do usuário do console exibe dados de um único conector.  Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
 
 {asterisco}{asterisco} Os seguintes metadados são extraídos dos arquivos durante as varreduras de mapeamento:
 

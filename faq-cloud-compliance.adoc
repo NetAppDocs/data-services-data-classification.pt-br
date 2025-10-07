@@ -4,7 +4,7 @@ permalink: faq-cloud-compliance.html
 keywords: faq, frequently asked questions, questions, cloud compliance, data sense 
 summary: Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma resposta rápida para uma pergunta. 
 ---
-= Perguntas frequentes sobre a classificação de dados da NetApp
+= Perguntas frequentes sobre a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma r
 
 
 
-== Classificação de dados da NetApp
+== NetApp Data Classification
 
 As perguntas a seguir fornecem uma compreensão geral da Classificação de Dados.
 
@@ -42,7 +42,7 @@ Sim, o Data Classification tem uma API REST para os recursos suportados na vers�
 
 === A classificação de dados está disponível nos mercados de nuvem?
 
-A Classificação de Dados faz parte dos principais recursos do NetApp Console, portanto você não precisa usar os marketplaces para este serviço.
+A Classificação de Dados faz parte dos principais recursos do NetApp Console , portanto você não precisa usar os marketplaces para este serviço.
 
 
 
@@ -173,7 +173,7 @@ Após uma verificação completa, há muitos recursos adicionais de Classificaç
 
 A Classificação de Dados captura metadados como: nome do arquivo, permissões, hora de criação, último acesso e última modificação.  Isso inclui todos os metadados que aparecem na página Detalhes da Investigação de Dados e nos Relatórios de Investigação de Dados.
 
-A classificação de dados pode identificar muitos tipos de dados privados, como informações pessoais (PII) e informações pessoais sensíveis (SPII). Para obter detalhes sobre dados privados, consultexref:reference-private-data-categories.html[Categorias de dados privados que a Classificação de Dados verifica] .
+A classificação de dados pode identificar muitos tipos de dados privados, como informações pessoais (PII) e informações pessoais sensíveis (SPII).  Para obter detalhes sobre dados privados, consultexref:reference-private-data-categories.html[Categorias de dados privados que a Classificação de Dados verifica] .
 
 
 
@@ -219,7 +219,7 @@ A pergunta a seguir está relacionada ao licenciamento e aos custos para usar a 
 
 === Quanto custa a Classificação de Dados?
 
-A classificação de dados é um recurso essencial do NetApp Console.  Não é cobrado.
+A classificação de dados é um recurso essencial do NetApp Console .  Não é cobrado.
 
 
 
@@ -231,7 +231,7 @@ As perguntas a seguir estão relacionadas ao agente do Console.
 
 === O que é o agente do Console?
 
-O agente do Console é um software executado em uma instância de computação na sua conta de nuvem ou no local, que permite que o NetApp Console gerencie com segurança os recursos da nuvem. Você deve implantar um agente do Console para usar a Classificação de Dados.
+O agente do Console é um software executado em uma instância de computação na sua conta de nuvem ou no local, que permite que o NetApp Console gerencie com segurança os recursos da nuvem.  Você deve implantar um agente do Console para usar a Classificação de Dados.
 
 
 

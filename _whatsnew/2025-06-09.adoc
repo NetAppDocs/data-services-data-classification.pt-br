@@ -9,7 +9,7 @@
 Esta versão de BlueXP classification inclui:
 
 .Tempos de atualização aprimorados para o painel de governança
-Os tempos de atualização para componentes individuais do painel de governança foram melhorados.  A tabela a seguir exibe a frequência de atualizações para cada componente.
+Os tempos de atualização para componentes individuais do painel de governança foram melhorados. A tabela a seguir exibe a frequência de atualizações para cada componente.
 
 [cols="1,1"]
 |===
@@ -57,4 +57,4 @@ Você pode visualizar o horário da última atualização e atualizar manualment
 Foram feitas melhorias para melhorar o desempenho, o consumo de memória e a segurança da classificação BlueXP .
 
 .Correções de bugs
-O Redis foi atualizado para melhorar a confiabilidade da BlueXP classification.  A BlueXP classification agora usa o Elasticsearch para melhorar a precisão dos relatórios de contagem de arquivos durante as verificações.
+O Redis foi atualizado para melhorar a confiabilidade da BlueXP classification. A BlueXP classification agora usa o Elasticsearch para melhorar a precisão dos relatórios de contagem de arquivos durante as verificações.

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-access.html 
 keywords: log in, sign in 
-summary: Comece a usar a Classificação de Dados do NetApp acessando o serviço no Console do NetApp . 
+summary: Comece a usar a NetApp Data Classification acessando o serviço no NetApp Console. 
 ---
-= Classificação de dados do Access NetApp
+= NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,9 +12,9 @@ summary: Comece a usar a Classificação de Dados do NetApp acessando o serviço
 
 
 [role="lead"]
-Você pode acessar a Classificação de Dados do NetApp por meio do Console do NetApp .
+Você pode acessar a NetApp Data Classification por meio do NetApp Console.
 
-Para fazer login no Console, você pode usar suas credenciais do Site de Suporte da NetApp ou pode se inscrever para um login no Console da NetApp usando seu e-mail e uma senha. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login no Console"^] .
+Para fazer login no Console, você pode usar suas credenciais do Site de Suporte da NetApp ou pode se inscrever para um login no NetApp Console usando seu e-mail e uma senha. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login no Console"^] .
 
 Tarefas específicas exigem funções específicas do usuário do Console. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do Console para todos os serviços"^] .
 

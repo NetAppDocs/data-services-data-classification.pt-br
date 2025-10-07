@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-custom-classification.html 
 keywords: custom classification, customize, regular expression, keyword, regex 
-summary: A Classificação de Dados da NetApp permite que você personalize uma pesquisa de informações confidenciais, adaptando o serviço a padrões individuais e palavras-chave relevantes para sua organização. 
+summary: A NetApp Data Classification permite que você personalize uma pesquisa de informações confidenciais, adaptando o serviço a padrões individuais e palavras-chave relevantes para sua organização. 
 ---
 = Crie uma classificação personalizada no NetApp Data Classification
 :allow-uri-read: 
@@ -13,13 +13,13 @@ summary: A Classificação de Dados da NetApp permite que você personalize uma 
 
 
 [role="lead"]
-Com a Classificação de Dados da NetApp , você pode criar uma pesquisa personalizada para informações confidenciais.  A pesquisa pode ser limitada a uma expressão regular (regex).
+Com a NetApp Data Classification, você pode criar uma pesquisa personalizada para informações confidenciais.  A pesquisa pode ser limitada a uma expressão regular (regex).
 
 
 
 == Crie uma classificação personalizada
 
-A classificação personalizada está disponível apenas para verificações de Map & Classify, não para verificações somente de mapeamento.  Este recurso está atualmente em versão prévia.
+A classificação personalizada está disponível apenas para verificações de Map & Classify, não para verificações somente de mapeamento. Este recurso está atualmente em versão prévia.
 
 .Passos
 . Selecione a aba **Classificação personalizada**.

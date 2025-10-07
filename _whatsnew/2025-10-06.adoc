@@ -7,7 +7,7 @@
 === Versão 1.47
 
 .A BlueXP classification agora é NetApp Data Classification
-A BlueXP classification foi renomeada para Classificação de Dados NetApp .  Além da renomeação, a interface do usuário foi aprimorada.
+A BlueXP classification foi renomeada para NetApp Data Classification. Além da renomeação, a interface do usuário foi aprimorada.
 
 .BlueXP agora é NetApp Console
 O BlueXP foi renomeado e redesenhado para refletir melhor seu papel no gerenciamento de sua infraestrutura de dados.
@@ -22,10 +22,10 @@ Encontre e entenda seus dados mais rapidamente com novos filtros pesquisáveis, 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["Investigar dados"] .
 
 .Novos painéis de governança e conformidade
-Obtenha insights críticos mais rapidamente com widgets intuitivos, visuais mais claros e desempenho de carregamento aprimorado.  Para mais informações, consultelink:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["Revise as informações de governança sobre seus dados"] elink:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["Visualize informações de conformidade sobre seus dados"] .
+Obtenha insights críticos mais rapidamente com widgets intuitivos, visuais mais claros e desempenho de carregamento aprimorado. Para mais informações, consultelink:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["Revise as informações de governança sobre seus dados"] elink:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["Visualize informações de conformidade sobre seus dados"] .
 
 .Políticas para consultas salvas (visualização)
-A classificação de dados agora permite automatizar a governança com ações condicionais.  Você pode criar regras de retenção com exclusão automática e configurar notificações periódicas por e-mail, tudo gerenciado a partir de uma página de consultas salvas atualizada.
+A classificação de dados agora permite automatizar a governança com ações condicionais. Você pode criar regras de retenção com exclusão automática e configurar notificações periódicas por e-mail, tudo gerenciado a partir de uma página de consultas salvas atualizada.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["Criar políticas"] .
 
@@ -35,4 +35,4 @@ Assuma o controle direto da página Investigação: exclua, mova, copie ou marqu
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["Investigar dados"] .
 
 .Suporte para Google Cloud NetApp Volumes
-A classificação de dados agora oferece suporte à digitalização no Google Cloud NetApp Volumes.  Adicione facilmente o Google Cloud NetApp Volumes do NetApp Console para uma varredura e classificação de dados perfeitas.
+A classificação de dados agora oferece suporte à digitalização no Google Cloud NetApp Volumes. Adicione facilmente o Google Cloud NetApp Volumes do NetApp Console para uma varredura e classificação de dados perfeitas.

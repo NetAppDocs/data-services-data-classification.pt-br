@@ -4,7 +4,7 @@ permalink: reference-private-data-categories.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
 summary: Há muitos tipos de dados privados que a Classificação de Dados pode identificar em seus volumes. 
 ---
-= Categorias de dados privados na Classificação de Dados da NetApp
+= Categorias de dados privados na NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -218,7 +218,7 @@ Os idiomas nos quais esses itens podem ser reconhecidos estão identificados na 
 | Número de Identificação Fiscal Francês (SPI) | Sim | ✓ | ✓ | ✓ | ✓ |  
 
 
-| ID alemã (Personalausweisnummer) | Sim | ✓ | ✓ | ✓ |  |  
+| ID alemão (Personalausweisnummer) | Sim | ✓ | ✓ | ✓ |  |  
 
 
 | ID interno alemão para transferências bancárias | Sim | ✓ | ✓ | ✓ |  |  

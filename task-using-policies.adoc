@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, notifications, saved query, tags, data sense, edit query 
 summary: Consultas salvas são filtros personalizados que fornecem resultados de pesquisa na página Investigação para consultas de conformidade comumente solicitadas.  A Classificação de Dados fornece um conjunto de consultas salvas padrão com base em solicitações comuns ou você pode criar as suas próprias. 
 ---
-= Gerenciar consultas salvas com a Classificação de Dados NetApp
+= Gerenciar consultas salvas com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

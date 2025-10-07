@@ -4,7 +4,7 @@ permalink: task-deploy-overview.html
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
 summary: Planeje qual implantação do NetApp Data Classification atende às suas necessidades. 
 ---
-= Qual implantação de classificação de dados da NetApp você deve usar?
+= Qual implantação de NetApp Data Classification você deve usar?
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Planeje qual implantação do NetApp Data Classification atende às sua
 
 
 [role="lead"]
-Você pode implantar a Classificação de Dados NetApp de diferentes maneiras.  Aprenda qual método atende às suas necessidades.
+Você pode implantar a NetApp Data Classification de diferentes maneiras.  Aprenda qual método atende às suas necessidades.
 
 A classificação de dados pode ser implantada das seguintes maneiras:
 

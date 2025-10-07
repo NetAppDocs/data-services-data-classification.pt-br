@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, costs of data 
-summary: Obtenha controle dos custos relacionados aos dados nos recursos de armazenamento da sua organização.  A Classificação de Dados da NetApp identifica a quantidade de dados obsoletos, arquivos duplicados e arquivos muito grandes em seus sistemas para que você possa decidir se deseja remover ou colocar alguns arquivos em um armazenamento de objetos mais barato. 
+summary: Obtenha controle dos custos relacionados aos dados nos recursos de armazenamento da sua organização.  A NetApp Data Classification identifica a quantidade de dados obsoletos, arquivos duplicados e arquivos muito grandes em seus sistemas para que você possa decidir se deseja remover ou colocar alguns arquivos em um armazenamento de objetos mais barato. 
 ---
-= Visualize detalhes de governança sobre os dados armazenados em sua organização com a Classificação de Dados da NetApp
+= Visualize detalhes de governança sobre os dados armazenados em sua organização com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Obtenha controle dos custos relacionados aos dados nos recursos de arma
 
 
 [role="lead"]
-Obtenha controle dos custos relacionados aos dados nos recursos de armazenamento da sua organização.  A Classificação de Dados da NetApp identifica a quantidade de dados obsoletos, arquivos duplicados e arquivos muito grandes em seus sistemas para que você possa decidir se deseja remover ou colocar alguns arquivos em um armazenamento de objetos mais barato.
+Obtenha controle dos custos relacionados aos dados nos recursos de armazenamento da sua organização.  A NetApp Data Classification identifica a quantidade de dados obsoletos, arquivos duplicados e arquivos muito grandes em seus sistemas para que você possa decidir se deseja remover ou colocar alguns arquivos em um armazenamento de objetos mais barato.
 
 É aqui que você deve começar sua pesquisa.  No painel de Governança, você pode selecionar uma área para investigação mais aprofundada.
 
@@ -29,7 +29,7 @@ O painel de governança fornece informações para que você possa aumentar a ef
 image:screenshot_compliance_governance_dashboard.png["Uma captura de tela do painel de Governança de Classificação de Dados."]
 
 .Passos
-. No menu do NetApp Console, selecione *Governança > Classificação*.
+. No menu do NetApp Console , selecione *Governança > Classificação*.
 . Selecione *Governança*.
 +
 O painel de governança é exibido.

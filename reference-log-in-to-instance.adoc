@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-log-in-to-instance.html 
 keywords: log in, data sense, classification 
-summary: Às vezes, pode ser necessário fazer login no sistema de classificação de dados da NetApp para poder acessar arquivos de log ou editar arquivos de configuração. 
+summary: Às vezes, pode ser necessário fazer login no sistema de NetApp Data Classification para poder acessar arquivos de log ou editar arquivos de configuração. 
 ---
-= Efetue login no sistema de classificação de dados da NetApp
+= Efetue login no sistema de NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Às vezes, pode ser necessário fazer login no sistema de classificaç�
 
 
 [role="lead"]
-Você precisa fazer login no sistema de classificação de dados da NetApp para poder acessar arquivos de log ou editar arquivos de configuração.
+Você precisa fazer login no sistema de NetApp Data Classification para poder acessar arquivos de log ou editar arquivos de configuração.
 
 Quando o Data Classification é instalado em uma máquina Linux em suas instalações ou em uma máquina Linux implantada na nuvem, você pode acessar o arquivo de configuração e o script diretamente.
 

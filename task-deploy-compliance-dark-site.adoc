@@ -14,7 +14,7 @@ summary: 'Conclua algumas etapas para instalar o NetApp Data Classification em u
 
 
 [role="lead"]
-A instalação do NetApp Data Classification em um host Linux em um site local que não tem acesso à Internet é conhecida como _modo privado_.  Este tipo de instalação, que usa um script de instalação, não tem conectividade com a camada SaaS do NetApp Console.
+A instalação do NetApp Data Classification em um host Linux em um site local que não tem acesso à Internet é conhecida como _modo privado_.  Este tipo de instalação, que usa um script de instalação, não tem conectividade com a camada SaaS do NetApp Console .
 
 
 IMPORTANT: O modo privado BlueXP (interface BlueXP legada) normalmente é usado com ambientes locais que não têm conexão com a Internet e com regiões de nuvem seguras, o que inclui AWS Secret Cloud, AWS Top Secret Cloud e Azure IL6. A NetApp continua a oferecer suporte a esses ambientes com a interface legada BlueXP . Para documentação do modo privado na interface BlueXP legada, consultelink:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["Documentação em PDF para o modo privado do BlueXP"^] .

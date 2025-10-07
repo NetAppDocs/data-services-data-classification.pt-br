@@ -9,7 +9,7 @@
 Esta versão de Classificação de Dados inclui correções de bugs e as seguintes atualizações:
 
 .Insights aprimorados sobre eventos de verificação na página de auditoria
-A página Auditoria agora oferece suporte a insights aprimorados sobre eventos de verificação para BlueXP classification.  A página Auditoria agora exibe quando a verificação de um sistema começa, os status dos sistemas e quaisquer problemas.  Os status de compartilhamentos e sistemas estão disponíveis somente para verificações de mapeamento.
+A página Auditoria agora oferece suporte a insights aprimorados sobre eventos de verificação para BlueXP classification. A página Auditoria agora exibe quando a verificação de um sistema começa, os status dos sistemas e quaisquer problemas. Os status de compartilhamentos e sistemas estão disponíveis somente para verificações de mapeamento.
 
 Para mais informações sobre a página Auditoria, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["Monitorar as operações do NetApp Console"^] .
 

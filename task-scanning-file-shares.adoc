@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: Conclua algumas etapas para começar a escanear compartilhamentos de arquivos não NetApp NFS ou CIFS diretamente com a Classificação de Dados.  Esses compartilhamentos de arquivos podem residir no local ou na nuvem. 
 ---
-= Verificar compartilhamentos de arquivos com a classificação de dados do NetApp
+= Verificar compartilhamentos de arquivos com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -63,7 +63,7 @@ Você pode adicionar compartilhamentos de arquivos individualmente ou inserir um
 image:screen-cl-config-shares-add.png["Uma captura de tela do modal para adicionar compartilhamentos, mostrando opções para selecionar protocolos e compartilhamentos"]
 
 +
-.. Se você estiver adicionando compartilhamentos CIFS com autenticação NTLM, insira as credenciais do Active Directory para acessar os volumes CIFS.  Embora credenciais somente leitura sejam suportadas, é recomendável que você forneça acesso total com credenciais de administrador. Selecione **Salvar**.
+.. Se você estiver adicionando compartilhamentos CIFS com autenticação NTLM, insira as credenciais do Active Directory para acessar os volumes CIFS.  Embora credenciais somente leitura sejam suportadas, é recomendável que você forneça acesso total com credenciais de administrador.  Selecione **Salvar**.
 
 
 . Adicione os compartilhamentos de arquivos que você deseja verificar (um compartilhamento de arquivo por linha).  Em seguida, selecione **Continuar**.

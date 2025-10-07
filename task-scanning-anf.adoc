@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: Conclua algumas etapas para começar a usar a Classificação de Dados para o Azure NetApp Files. 
 ---
-= Verificar volumes do Azure NetApp Files com a Classificação de Dados do NetApp
+= Verificar volumes do Azure NetApp Files com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Conclua algumas etapas para começar a usar a Classificação de Dados 
 
 
 [role="lead"]
-Conclua algumas etapas para começar a usar a Classificação de Dados NetApp para Azure NetApp Files.
+Conclua algumas etapas para começar a usar a NetApp Data Classification para Azure NetApp Files.
 
 
 

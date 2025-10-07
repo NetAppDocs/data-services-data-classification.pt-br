@@ -9,7 +9,7 @@
 Esta versão da BlueXP classification inclui as seguintes atualizações.
 
 .Suporte para RHEL 9.5
-Esta versão oferece suporte ao Red Hat Enterprise Linux v9.5, além das versões suportadas anteriormente.  Isso se aplica a qualquer instalação manual local da BlueXP classification, incluindo implantações em sites obscuros.
+Esta versão oferece suporte ao Red Hat Enterprise Linux v9.5, além das versões suportadas anteriormente. Isso se aplica a qualquer instalação manual local da BlueXP classification, incluindo implantações em sites obscuros.
 
 Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão de BlueXP classification 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 e 9.5.
 

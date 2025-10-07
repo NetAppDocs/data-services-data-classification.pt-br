@@ -4,7 +4,7 @@ permalink: task-add-group-id-as-open.html
 keywords: permissions, open to organization, file access 
 summary: 'Quando IDs de grupo são anexados a arquivos ou pastas em compartilhamentos de arquivos NFS, eles definem as permissões para o arquivo ou pasta; como se eles são "abertos à organização".  Se alguns IDs de grupo (GIDs) não estiverem configurados inicialmente com o nível de permissão "Aberto à organização", você poderá adicionar essa permissão ao GID para que todos os arquivos e pastas que tenham esse GID anexado sejam considerados "abertos à organização".' 
 ---
-= Defina IDs de grupo adicionais como abertos à organização na Classificação de Dados NetApp
+= Defina IDs de grupo adicionais como abertos à organização na NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

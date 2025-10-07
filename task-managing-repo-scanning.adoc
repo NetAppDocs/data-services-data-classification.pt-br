@@ -4,7 +4,7 @@ permalink: task-managing-repo-scanning.html
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification 
 summary: 'Você pode gerenciar como seus dados estão sendo verificados em cada um dos seus sistemas e fontes de dados no NetApp Data Classification.  Você pode fazer alterações com base no "repositório", ou seja, você pode fazer alterações para cada volume, bucket, compartilhamento, esquema, usuário, etc., dependendo do tipo de fonte de dados que você está verificando.' 
 ---
-= Alterar as configurações de verificação de classificação de dados do NetApp para seus repositórios
+= Alterar as configurações de verificação de NetApp Data Classification para seus repositórios
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: 'Você pode gerenciar como seus dados estão sendo verificados em cada 
 [role="lead"]
 Você pode gerenciar como seus dados estão sendo verificados em cada um dos seus sistemas e fontes de dados.  Você pode fazer as alterações com base no "repositório", ou seja, você pode fazer alterações para cada volume, esquema, usuário, etc., dependendo do tipo de fonte de dados que você está verificando.
 
-Algumas das coisas que você pode alterar são se um repositório é verificado ou não e se a classificação de dados do NetApp está executando umalink:concept-classification.html["varredura de mapeamento ou varredura de mapeamento e classificação"] .  Você também pode pausar e retomar a verificação, por exemplo, se precisar interromper a verificação de um volume por um período de tempo.
+Algumas das coisas que você pode alterar são se um repositório é verificado ou não e se a NetApp Data Classification está executando umalink:concept-classification.html["varredura de mapeamento ou varredura de mapeamento e classificação"] .  Você também pode pausar e retomar a verificação, por exemplo, se precisar interromper a verificação de um volume por um período de tempo.
 
 
 
@@ -83,11 +83,11 @@ image:screenshot_compliance_repo_scan_all.png["Uma captura de tela mostrando com
 
 == Priorizar varreduras
 
-Você pode priorizar as verificações mais importantes somente de mapeamento ou mapear e classificar verificações para garantir que as verificações de alta prioridade sejam concluídas primeiro.
+Você pode priorizar as verificações de mapeamento mais importantes ou mapear e classificar verificações para garantir que as verificações de alta prioridade sejam concluídas primeiro.
 
-Por padrão, as verificações são enfileiradas com base na ordem em que são iniciadas.  Com a capacidade de priorizar verificações, você pode movê-las para a frente da fila.  Várias varreduras podem ser priorizadas.  A prioridade é designada na ordem "primeiro a entrar, primeiro a sair", o que significa que a primeira varredura que você prioriza passa para a frente da fila; a segunda varredura que você prioriza se torna a segunda na fila, e assim por diante.
+Por padrão, as verificações são enfileiradas com base na ordem em que são iniciadas. Com a capacidade de priorizar verificações, você pode movê-las para a frente da fila. Várias varreduras podem ser priorizadas. A prioridade é designada na ordem "primeiro a entrar, primeiro a sair", o que significa que a primeira varredura que você prioriza passa para a frente da fila; a segunda varredura que você prioriza se torna a segunda na fila, e assim por diante.
 
-A prioridade é concedida apenas uma vez.  As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
+A prioridade é concedida apenas uma vez. As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.

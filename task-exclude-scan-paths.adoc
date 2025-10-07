@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-exclude-scan-paths.html 
 keywords: exclude scans, folders, directories 
-summary: Se quiser que a Classificação de Dados do NetApp exclua dados de verificação que residem em determinados diretórios de fonte de dados, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de classificação de dados excluirá os dados de digitalização nesses diretórios. 
+summary: Se quiser que a NetApp Data Classification exclua dados de verificação que residem em determinados diretórios de fonte de dados, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de classificação de dados excluirá os dados de digitalização nesses diretórios. 
 ---
-= Excluir diretórios específicos das verificações de classificação de dados do NetApp
+= Excluir diretórios específicos das verificações de NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Se quiser que a Classificação de Dados do NetApp exclua dados de veri
 
 
 [role="lead"]
-Se quiser que a Classificação de Dados do NetApp exclua diretórios específicos das verificações, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de Classificação de Dados exclui esses diretórios das verificações.
+Se quiser que a NetApp Data Classification exclua diretórios específicos das verificações, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de Classificação de Dados exclui esses diretórios das verificações.
 
 
 NOTE: Por padrão, as verificações de Classificação de Dados excluem dados de instantâneos de volume, que são idênticos à sua origem no volume.

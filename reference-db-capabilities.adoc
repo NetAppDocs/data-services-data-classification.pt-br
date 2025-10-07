@@ -4,7 +4,7 @@ permalink: reference-db-capabilities.html
 keywords: database actions, database filters, supported, unsupported 
 summary: Há alguns recursos e funcionalidades que não estão disponíveis com o NetApp Data Classification quando você está verificando esquemas de banco de dados. 
 ---
-= Recursos de banco de dados com e sem suporte na classificação de dados do NetApp
+= Recursos de banco de dados com e sem suporte na NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

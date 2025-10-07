@@ -4,7 +4,7 @@ permalink: task-managing-compliance.html
 keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
 summary: Se necessário, você pode impedir que a Classificação de Dados verifique um ou mais sistemas, bancos de dados, grupos de compartilhamento de arquivos, contas do OneDrive, contas do Google Drive ou contas do SharePoint. 
 ---
-= Remover fontes de dados da Classificação de Dados NetApp
+= Remover fontes de dados da NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file, dsar 
-summary: A Classificação de Dados da NetApp fornece relatórios que você pode usar para entender melhor o status do programa de privacidade de dados da sua organização. 
+summary: A NetApp Data Classification fornece relatórios que você pode usar para entender melhor o status do programa de privacidade de dados da sua organização. 
 ---
-= Exibir relatórios de conformidade da Classificação de Dados da NetApp
+= Exibir relatórios de conformidade da NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: A Classificação de Dados da NetApp fornece relatórios que você pode
 
 
 [role="lead"]
-A Classificação de Dados da NetApp fornece relatórios que você pode usar para entender melhor o status do programa de privacidade de dados da sua organização.
+A NetApp Data Classification fornece relatórios que você pode usar para entender melhor o status do programa de privacidade de dados da sua organização.
 
 Por padrão, os painéis de Classificação de Dados exibem dados de conformidade e governança para todos os sistemas, bancos de dados e fontes de dados.  Se quiser visualizar relatórios que contenham dados apenas de alguns sistemas, você pode filtrar para ver apenas eles.
 

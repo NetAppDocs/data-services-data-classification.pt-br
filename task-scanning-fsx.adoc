@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-fsx.html 
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
-summary: Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a Classificação de Dados NetApp . 
+summary: Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a NetApp Data Classification. 
 ---
-= Escaneie o Amazon FSx em busca de volumes ONTAP com a classificação de dados do NetApp
+= Escaneie o Amazon FSx em busca de volumes ONTAP com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Conclua algumas etapas para começar a escanear o Amazon FSx em busca d
 
 
 [role="lead"]
-Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a Classificação de Dados NetApp .
+Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a NetApp Data Classification.
 
 
 
@@ -29,7 +29,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["G
 https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Grupos de segurança da AWS para instâncias do Windows"^]
 
 +
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaces de rede elásticas da AWS (ENI)"^]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaces de rede elásticas (ENI) da AWS"^]
 
 * Certifique-se de que as seguintes portas estejam abertas para a instância de Classificação de Dados:
 +
@@ -78,7 +78,7 @@ A Classificação de Dados inicia a varredura dos volumes selecionados no sistem
 [NOTE]
 ====
 * Por padrão, se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos em seus volumes porque a Classificação de Dados não pode reverter o "último horário de acesso" para o registro de data e hora original.  Se não se importar se o último horário de acesso for redefinido, selecione *Ou selecione o tipo de digitalização para cada volume*.  A página resultante tem uma configuração que você pode ativar para que a Classificação de Dados verifique os volumes independentemente das permissões.
-* A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário digitalizar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Veja mais detalhes sobre esta limitação de Classificação de Dados"^] .
+* A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário verificar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Veja mais detalhes sobre esta limitação de Classificação de Dados"^] .
 
 
 ====

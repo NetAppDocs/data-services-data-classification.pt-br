@@ -4,7 +4,7 @@ permalink: task-deploy-cloud-compliance.html
 keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
 summary: Conclua algumas etapas para implantar o NetApp Data Classification na nuvem.  O NetApp Console implanta a instância de Classificação de Dados na mesma rede do provedor de nuvem que o agente do Console. 
 ---
-= Implante a classificação de dados do NetApp na nuvem usando o NetApp Console
+= Implante a NetApp Data Classification na nuvem usando o NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -26,7 +26,7 @@ Comece rapidamente seguindo estas etapas ou role para baixo até as seções res
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"]Criar um agente de console
 [role="quick-margin-para"]
-Se você ainda não tiver um agente do Console, crie um. Ver https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
+Se você ainda não tiver um agente do Console, crie um.  Ver https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
 
 [role="quick-margin-para"]
 Você também pode https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem.
@@ -43,7 +43,7 @@ Inicie o assistente de instalação para implantar a instância de Classificaç�
 
 == Criar um agente de console
 
-Se você ainda não tiver um agente do Console, crie um agente do Console no seu provedor de nuvem. Ver https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] . Na maioria dos casos, você provavelmente terá um agente de console configurado antes de tentar ativar a Classificação de Dados porque a maioria https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-a-connector-is-required["Os recursos do console exigem um agente do console"] , mas há casos em que você precisará configurar um agora.
+Se você ainda não tiver um agente do Console, crie um agente do Console no seu provedor de nuvem.  Ver https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .  Na maioria dos casos, você provavelmente terá um agente de console configurado antes de tentar ativar a Classificação de Dados porque a maioria https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-a-connector-is-required["Os recursos do console exigem um agente do console"] , mas há casos em que você precisará configurar um agora.
 
 Existem alguns cenários em que você precisa usar um agente do Console implantado em um provedor de nuvem específico:
 
@@ -58,12 +58,12 @@ Existem alguns cenários em que você precisa usar um agente do Console implanta
 
 Sistemas ONTAP locais, compartilhamentos de arquivos NetApp e bancos de dados podem ser verificados ao usar qualquer um desses agentes do Console na nuvem.
 
-Observe que você também pode https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou na nuvem. Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
+Observe que você também pode https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou na nuvem.  Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
 
 Como você pode ver, pode haver algumas situações em que você precise usar https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#multiple-connectors["vários agentes de console"] .
 
 
-TIP: A Classificação de Dados não impõe um limite à quantidade de dados que pode escanear. Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] . + A interface do usuário do console exibe dados de um único conector. Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
+TIP: A Classificação de Dados não impõe um limite à quantidade de dados que pode escanear.  Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] .  + A interface do usuário do console exibe dados de um único conector.  Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
 
 
 

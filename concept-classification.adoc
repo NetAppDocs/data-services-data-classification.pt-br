@@ -4,7 +4,7 @@ permalink: concept-classification.html
 keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, bluexp, bluexp classification, netapp console 
 summary: A Classificação de Dados é um serviço de governança de dados para o NetApp Console que verifica suas fontes de dados corporativas locais e na nuvem para mapear e classificar dados e identificar informações privadas. Isso pode ajudar a reduzir seus riscos de segurança e conformidade, diminuir custos de armazenamento e auxiliar em seus projetos de migração de dados. 
 ---
-= Saiba mais sobre a classificação de dados da NetApp
+= Saiba mais sobre a NetApp Data Classification
 :allow-uri-read: 
 :no-hardbreaks: 
 :nofooter: 
@@ -21,7 +21,7 @@ IMPORTANT: A partir da versão 1.31, a Classificação de Dados está disponíve
 
 
 
-== Console NetApp
+== NetApp Console
 
 A classificação de dados pode ser acessada por meio do NetApp Console.
 
@@ -29,7 +29,7 @@ O NetApp Console fornece gerenciamento centralizado de serviços de armazenament
 
 Você não precisa de uma licença ou assinatura para começar a usar o NetApp Console e só incorrerá em cobranças quando precisar implantar agentes do Console na sua nuvem para garantir a conectividade com seus sistemas de armazenamento ou serviços de dados do NetApp . No entanto, alguns serviços de dados da NetApp acessíveis pelo Console são licenciados ou baseados em assinatura.
 
-Saiba mais sobre olink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["Console NetApp"^] .
+Saiba mais sobre olink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"^] .
 
 
 
@@ -60,7 +60,7 @@ A Classificação de Dados pode identificar dados que correm risco potencial de 
 A Classificação de Dados fornece ferramentas que podem ajudar com o custo total de propriedade (TCO) do seu armazenamento.  Você pode usar a Classificação de Dados para:
 
 * Aumente a eficiência do armazenamento identificando dados duplicados ou não relacionados aos negócios.
-* Economize custos de armazenamento identificando dados inativos que você pode colocar em camadas para armazenamento de objetos mais barato. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Saiba mais sobre camadas de sistemas Cloud Volumes ONTAP"^] . https://docs.netapp.com/us-en/data-services-tiering/concept-cloud-tiering.html["Saiba mais sobre camadas de sistemas ONTAP locais"^] .
+* Economize custos de armazenamento identificando dados inativos que você pode colocar em camadas para armazenamento de objetos mais barato. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Saiba mais sobre camadas dos sistemas Cloud Volumes ONTAP"^] . https://docs.netapp.com/us-en/data-services-tiering/concept-cloud-tiering.html["Saiba mais sobre camadas de sistemas ONTAP locais"^] .
 
 
 
@@ -107,8 +107,8 @@ A Classificação de Dados é de uso gratuito.  Não é necessária nenhuma lice
 
 === Custos de infraestrutura
 
-* A instalação do Data Classification na nuvem requer a implantação de uma instância de nuvem, o que resulta em cobranças do provedor de nuvem onde ela é implantada. Ver <<A instância de classificação de dados,o tipo de instância que é implantada para cada provedor de nuvem>> .  Não há custo algum se você instalar o Data Classification em um sistema local.
-* A Classificação de Dados exige que você tenha implantado um agente do Console. Em muitos casos, você já tem um agente do Console por causa de outros serviços e armazenamentos que está usando no Console. A instância do agente do Console resulta em cobranças do provedor de nuvem onde é implantada. Veja o https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["tipo de instância que é implantada para cada provedor de nuvem"^] . Não há custo se você instalar o agente do Console em um sistema local.
+* A instalação do Data Classification na nuvem requer a implantação de uma instância de nuvem, o que resulta em cobranças do provedor de nuvem onde ela é implantada. Ver <<A instância de classificação de dados,o tipo de instância que é implantada para cada provedor de nuvem>> .  Não há custo se você instalar o Data Classification em um sistema local.
+* A Classificação de Dados exige que você tenha implantado um agente do Console.  Em muitos casos, você já tem um agente do Console por causa de outros armazenamentos e serviços que está usando no Console.  A instância do agente do Console resulta em cobranças do provedor de nuvem onde é implantada. Veja o https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["tipo de instância que é implantada para cada provedor de nuvem"^] .  Não há custo se você instalar o agente do Console em um sistema local.
 
 
 
@@ -184,7 +184,7 @@ Após a verificação inicial, a Classificação de Dados verifica continuamente
 Você pode habilitar e desabilitar verificações no nível do volume ou no nível do esquema do banco de dados.
 
 
-NOTE: A Classificação de Dados não impõe um limite à quantidade de dados que pode escanear. Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] . + A interface do usuário do console exibe dados de um único conector. Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
+NOTE: A Classificação de Dados não impõe um limite à quantidade de dados que pode escanear.  Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["implantar outra instância de Classificação de Dados"] .  + A interface do usuário do console exibe dados de um único conector.  Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
 
 
 

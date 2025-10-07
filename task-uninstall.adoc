@@ -4,7 +4,7 @@ permalink: task-uninstall.html
 keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
 summary: Você pode desinstalar o software de classificação de dados para solucionar problemas ou remover permanentemente o software do host.  A exclusão da instância também exclui os discos associados onde os dados indexados residem.  Todas as informações que a Classificação de Dados digitalizou serão excluídas permanentemente. 
 ---
-= Desinstalar a classificação de dados do NetApp
+= Desinstalar a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
