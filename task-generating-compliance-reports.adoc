@@ -27,12 +27,12 @@ Por padrão, os painéis de Classificação de Dados exibem dados de conformidad
 ====
 Os seguintes relatórios estão disponíveis para Classificação de Dados:
 
-* *Relatório de avaliação de descoberta de dados*: fornece uma análise de alto nível do ambiente escaneado para destacar as descobertas do sistema e mostrar áreas de preocupação e possíveis etapas de correção.
-* *Relatório de mapeamento de dados*: fornece informações sobre o tamanho e o número de arquivos em seus sistemas.  Isso inclui capacidade de uso, idade dos dados, tamanho dos dados e tipos de arquivo.
-* *Relatório de solicitação de acesso do titular dos dados*: permite que você extraia um relatório de todos os arquivos que contêm informações sobre o nome específico ou identificador pessoal de um titular dos dados.
-* *Relatório HIPAA*: Ajuda você a identificar a distribuição de informações de saúde em seus arquivos.
-* *Relatório PCI DSS*: Ajuda a identificar a distribuição de informações de cartão de crédito em seus arquivos.
-* *Relatório de Avaliação de Risco de Privacidade*: Fornece insights de privacidade dos seus dados e uma pontuação de risco de privacidade.
+* *Relatório de avaliação de descoberta de dados*: Fornece uma análise de alto nível do ambiente escaneado para destacar as descobertas do sistema e mostrar áreas de preocupação e possíveis etapas de correção.  Este relatório está disponível no painel de Governança.
+* *Relatório de visão geral do mapeamento de dados completo*: Fornece informações sobre o tamanho e o número de arquivos em seus sistemas. Isso inclui capacidade de uso, idade dos dados, tamanho dos dados e tipos de arquivo.  Este relatório está disponível no painel de Governança.
+* *Relatório de solicitação de acesso do titular dos dados*: permite que você extraia um relatório de todos os arquivos que contêm informações sobre o nome específico ou identificador pessoal de um titular dos dados. Este relatório está disponível no painel de conformidade.
+* *Relatório HIPAA*: Ajuda você a identificar a distribuição de informações de saúde em seus arquivos. Este relatório está disponível no painel de conformidade.
+* *Relatório PCI DSS*: Ajuda a identificar a distribuição de informações de cartão de crédito em seus arquivos. Este relatório está disponível no painel de conformidade.
+* *Relatório de avaliação de risco de privacidade*: fornece insights de privacidade dos seus dados e uma pontuação de risco de privacidade.  Este relatório está disponível no painel de conformidade.
 * *Relatórios sobre um tipo específico de informação*: Há relatórios disponíveis que incluem detalhes sobre os arquivos identificados que contêm dados pessoais e dados pessoais confidenciais.  Você também pode ver os arquivos divididos por categoria e tipo de arquivo.
 
 
@@ -79,24 +79,25 @@ NOTE: Inglês, alemão, japonês e espanhol são suportados na busca por nomes d
 
 .Passos
 . No menu Classificação de Dados, selecione *Conformidade*.
-
-
-. Na página Conformidade, selecione *Assuntos de dados*.
-. Pesquise o nome completo do titular dos dados ou um identificador conhecido.
+. Na página Conformidade, localize a aba **Assuntos de Dados**.
+. Na seção *Assuntos de dados*, insira um nome ou identificador conhecido e selecione **Pesquisar**.
+. Quando a pesquisa for concluída, selecione **Baixar** para acessar a resposta da solicitação de acesso do titular dos dados.  Selecione **Investigar resultados** para ver mais informações na página Investigação de dados.image:screenshot-data-subject-john-doe.png["Captura de tela da pesquisa DSAR"]
+. Revise os resultados na Classificação de Dados ou baixe-os como um relatório selecionando o ícone de download.
 +
-Aqui está um exemplo que mostra uma busca pelo nome _john doe_:
+.. Ao selecionar o ícone de download, configure suas configurações de download:
++
+*** Escolha o formato do filme: CSV ou JSON
+*** Digite um *Nome do relatório*
+*** Escolha o destino da exportação: *Sistema* ou sua máquina *Local*.
++
+Se você escolher sistema, todos os dados serão baixados.  Você também deve selecionar o *Sistema*, *Volume* e *Caminho da pasta de destino*.
 
 +
-image:screenshot_dsar_search.gif["Captura de tela da pesquisa do titular dos dados."]
+Se você escolher *Local*, o relatório será limitado às primeiras 10.000 linhas de dados não estruturados; 5.000 linhas de dados não estruturados e 1.000 linhas de dados estruturados.
 
-. Escolha uma das opções disponíveis:
-+
-** *Baixar Relatório DSAR*: Uma resposta formal à solicitação de acesso que você pode enviar ao titular dos dados.  Este relatório contém informações geradas automaticamente com base nos dados que a Classificação de Dados encontrou sobre o titular dos dados e foi criado para ser usado como um modelo.  Você deve preencher o formulário e revisá-lo internamente antes de enviá-lo ao titular dos dados.
-** *Investigar resultados*: uma página que permite que você investigue os dados pesquisando, classificando, expandindo detalhes de um arquivo específico e baixando a lista de arquivos.
-+
 
-NOTE: Se houver mais de 10.000 resultados, somente os 10.000 principais aparecerão na lista de arquivos.
 
+.. Selecione **Baixar relatório** para iniciar o download.image:screenshot-download-report.png["Captura de tela das opções de download do relatório"]
 
 
 
@@ -136,7 +137,7 @@ image:screenshot-report-options.png["Captura de tela das opções de relatório 
 
 
 .Resultado
-A Classificação de Dados gera um relatório em PDF que você pode revisar e enviar a outros grupos, conforme necessário.
+A classificação de dados gera um relatório em PDF.
 
 
 

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task-scanning-anf.html 
-keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
-summary: Conclua algumas etapas para começar a usar a Classificação de Dados para o Azure NetApp Files. 
+permalink: task-scan-google-cloud.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, google cloud, google cloud netapp volumes 
+summary: Analise seu sistema Google Cloud NetApp Volumes para manter os padrões de conformidade e governança. 
 ---
-= Verificar volumes do Azure NetApp Files com a NetApp Data Classification
+= Escaneie Google Cloud NetApp Volumes com a NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Conclua algumas etapas para começar a usar a Classificação de Dados 
 
 
 [role="lead"]
-Conclua algumas etapas para começar a usar a NetApp Data Classification para Azure NetApp Files.
+A NetApp Data Classification oferece suporte ao Google Cloud NetApp Volumes como um sistema.  Saiba como escanear seu sistema Google Cloud NetApp Volumes .
 
 
 
-== Descubra o sistema Azure NetApp Files que você deseja verificar
+== Descubra o sistema Google Cloud NetApp Volumes que você deseja escanear
 
-Se o sistema Azure NetApp Files que você deseja verificar ainda não estiver no NetApp Console como um sistema,link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["adicione-o na página Sistemas"^] .
+Se o sistema Google Cloud NetApp Volumes que você deseja verificar ainda não estiver no NetApp Console como um sistema,link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["adicione-o à página Sistemas"^] .
 
 
 
@@ -28,27 +28,24 @@ Se o sistema Azure NetApp Files que você deseja verificar ainda não estiver no
 
 link:task-deploy-cloud-compliance.html["Implantar classificação de dados"^]se ainda não houver uma instância implantada.
 
-A Classificação de Dados deve ser implantada na nuvem ao verificar volumes do Azure NetApp Files e deve ser implantada na mesma região dos volumes que você deseja verificar.
+A Classificação de Dados deve ser implantada na nuvem ao verificar os Google Cloud NetApp Volumes e deve ser implantada na mesma região dos volumes que você deseja verificar.
 
-*Observação:* A implantação da Classificação de Dados em um local não é suportada atualmente ao verificar volumes do Azure NetApp Files .
+*Observação:* a implantação da Classificação de Dados em um local não é compatível no momento ao verificar o Google Cloud NetApp Volumes.
 
 
 
 == Habilite a classificação de dados em seus sistemas
 
-Você pode habilitar a Classificação de Dados nos seus volumes do Azure NetApp Files .
+Você pode habilitar a Classificação de Dados no seu sistema Google Cloud NetApp Volumes .
 
 . No menu Classificação de Dados, selecione *Configuração*.
-+
-image:screenshot_cloud_compliance_anf_scan_config.png["Uma captura de tela da guia Configuração imediatamente após a implantação da instância de Classificação de Dados."]
-
 . Selecione como você deseja verificar os volumes em cada sistema. link:concept-classification.html#whats-the-difference-between-mapping-and-classification-scans["Aprenda sobre mapeamento e varreduras de classificação"]:
 +
 ** Para mapear todos os volumes, selecione *Mapear todos os volumes*.
 ** Para mapear e classificar todos os volumes, selecione *Mapear e classificar todos os volumes*.
-** Para personalizar a digitalização para cada volume, selecione *Ou selecione o tipo de digitalização para cada volume* e escolha os volumes que deseja mapear ou mapear e classificar.
+** Para personalizar a verificação para cada volume, selecione *Ou selecione o tipo de verificação para cada volume* e, em seguida, escolha os volumes que deseja mapear e/ou classificar.
 +
-Ver<<Habilitar ou desabilitar verificações de conformidade em volumes,Habilitar ou desabilitar verificações de conformidade em volumes>> para mais detalhes.
+Ver<<Habilitar e desabilitar verificações de conformidade em volumes,Habilitar e desabilitar verificações de conformidade em volumes>> para mais detalhes.
 
 
 
@@ -56,23 +53,23 @@ Ver<<Habilitar ou desabilitar verificações de conformidade em volumes,Habilita
 
 
 .Resultado
-A Classificação de Dados inicia a varredura dos volumes selecionados no sistema. Os resultados estarão disponíveis no painel de conformidade assim que a Classificação de Dados concluir as verificações iniciais. O tempo que isso leva depende da quantidade de dados: pode levar alguns minutos ou horas. Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**. A Classificação de Dados exibe uma barra de progresso para cada verificação.  Você pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao número total de arquivos no volume.
+A Classificação de Dados inicia a varredura dos volumes selecionados no sistema. Os resultados estarão disponíveis no painel de conformidade assim que a Classificação de Dados concluir as verificações iniciais. O tempo que isso leva depende da quantidade de dados: de alguns minutos a algumas horas.  Você pode acompanhar o progresso da verificação inicial na seção **Configuração do sistema** do menu **Configuração**.  A Classificação de Dados exibe uma barra de progresso para cada verificação. Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.
 
 * Por padrão, se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos em seus volumes porque a Classificação de Dados não pode reverter o "último horário de acesso" para o registro de data e hora original.  Se não se importar se o último horário de acesso for redefinido, selecione *Ou selecione o tipo de digitalização para cada volume*.  A página resultante tem uma configuração que você pode ativar para que a Classificação de Dados verifique os volumes independentemente das permissões.
-* A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário verificar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Saiba mais sobre esta limitação de classificação de dados"^] .
+* A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume. Se você tiver vários compartilhamentos em seus volumes, precisará verificar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Saiba mais sobre esta limitação de classificação de dados"^].
 
 
 
 
 == Verifique se a Classificação de Dados tem acesso aos volumes
 
-Certifique-se de que a Classificação de Dados possa acessar volumes verificando sua rede, grupos de segurança e políticas de exportação.  Você precisa fornecer à Classificação de Dados credenciais CIFS para que ela possa acessar volumes CIFS.
+Garanta que a Classificação de Dados possa acessar volumes verificando sua rede, grupos de segurança e políticas de exportação.  Para volumes CIFS, você precisa fornecer Classificação de Dados com credenciais CIFS.
 
 
-NOTE: Para o Azure NetApp Files, a Classificação de Dados só pode verificar volumes na mesma região que o Console.
+NOTE: Para o Google Cloud NetApp Volumes, a Classificação de Dados só pode verificar volumes na mesma região que o Console.
 
 .Lista de verificação
-* Certifique-se de que haja uma conexão de rede entre a instância de Classificação de Dados e cada rede que inclui volumes para o Azure NetApp Files.
+* Certifique-se de que haja uma conexão de rede entre a instância de Classificação de Dados e cada rede que inclui volumes para o Google Cloud NetApp Volumes.
 * Certifique-se de que as seguintes portas estejam abertas para a instância de Classificação de Dados:
 +
 ** Para NFS – portas 111 e 2049.
@@ -87,7 +84,7 @@ NOTE: Para o Azure NetApp Files, a Classificação de Dados só pode verificar v
 +
 .. Se você estiver usando CIFS (SMB), verifique se as credenciais do Active Directory estão corretas.  Para cada sistema, selecione *Editar credenciais CIFS* e insira o nome de usuário e a senha que o Data Classification precisa para acessar os volumes CIFS no sistema.
 +
-As credenciais podem ser somente leitura; fornecer credenciais de administrador garante que a Classificação de Dados possa ler quaisquer dados que exijam permissões elevadas. As credenciais são armazenadas na instância de Classificação de Dados.
+As credenciais podem ser somente leitura, mas fornecer credenciais de administrador garante que a Classificação de Dados possa ler quaisquer dados que exijam permissões elevadas.  As credenciais são armazenadas na instância de Classificação de Dados.
 
 +
 Se você quiser ter certeza de que os "últimos horários de acesso" dos seus arquivos não serão alterados pelas verificações de Classificação de Dados, é recomendável que o usuário tenha permissões de Gravação de Atributos no CIFS ou permissões de gravação no NFS. Se possível, configure o usuário do Active Directory como parte de um grupo pai na organização que tenha permissões para todos os arquivos.
@@ -100,12 +97,12 @@ image:screenshot_cifs_status.gif["Uma captura de tela que mostra a página de co
 
 
 
-. Na página Configuração, selecione *Exibir detalhes* para revisar o status de cada volume CIFS e NFS.  Se necessário, corrija quaisquer erros, como problemas de conectividade de rede.
+. Na página Configuração, selecione *Exibir detalhes* para revisar o status de cada volume CIFS e NFS e corrigir quaisquer erros.
 
 
 
 
-== Habilitar ou desabilitar verificações de conformidade em volumes
+== Habilitar e desabilitar verificações de conformidade em volumes
 
 Você pode iniciar ou interromper verificações em qualquer sistema a qualquer momento na página Configuração.  Você também pode alternar as verificações de somente mapeamento para verificações de mapeamento e classificação, e vice-versa.  É recomendável que você escaneie todos os volumes em um sistema.
 

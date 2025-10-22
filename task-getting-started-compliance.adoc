@@ -28,44 +28,6 @@ Antes de habilitar a Classificação de Dados, certifique-se de ter uma configur
 
 
 
-== Habilite a varredura de classificação de dados em seus sistemas
-
-Você pode habilitar a varredura de Classificação de Dados em sistemas Cloud Volumes ONTAP em qualquer provedor de nuvem compatível e em clusters ONTAP locais.
-
-.Passos
-. No menu Classificação de Dados, selecione *Configuração*.
-+
-A página Configuração mostra vários sistemas.
-
-+
-image:screen-cl-config-cvo.png["Uma captura de tela da guia Configuração mostrando um sistema Cloud Volumes ONTAP ."]
-
-. Escolha um sistema e selecione *Configuração*.
-+
-image:screen-cl-config-cvo-map-options.png["Uma captura de tela da guia Configuração mostrando as opções para mapear e classificar repositórios."]
-
-. Se você não se importa se o último horário de acesso for redefinido, ative a opção *Verificar quando faltarem permissões de "atributos de gravação"* e todos os arquivos serão verificados, independentemente das permissões.
-+
-O botão no topo da página para *Verificar quando faltarem permissões de "gravação de atributos"* está desabilitado por padrão.  Isso significa que se a Classificação de Dados não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não classificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original. link:reference-collected-metadata.html["Saber mais"^] .
-
-. Selecione como você deseja verificar os volumes em cada sistema. link:concept-classification.html#whats-the-difference-between-mapping-and-classification-scans["Aprenda sobre mapeamento e varreduras de classificação"]:
-+
-** Para mapear todos os volumes, selecione *Mapear*.
-** Para mapear e classificar todos os volumes, selecione *Mapear e classificar*.
-** Para personalizar a digitalização de cada volume, selecione *Personalizado* e escolha os volumes que deseja mapear e/ou classificar.
-
-
-. Na caixa de diálogo de confirmação, selecione *Aprovar* para que a Classificação de Dados comece a verificar seus volumes.
-
-
-.Resultado
-A Classificação de Dados inicia a varredura dos volumes selecionados no sistema.  Os resultados começam a aparecer no painel de conformidade assim que a Classificação de Dados inicia a verificação.  O tempo que leva para ser concluído depende da quantidade de dados: pode levar alguns minutos ou horas.
-
-
-NOTE: A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário verificar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Veja mais detalhes sobre esta limitação de Classificação de Dados"^] .
-
-
-
 == Verifique se a Classificação de Dados tem acesso aos volumes
 
 Certifique-se de que a Classificação de Dados possa acessar volumes verificando sua rede, grupos de segurança e políticas de exportação.  Você precisará fornecer à Classificação de Dados credenciais CIFS para que ela possa acessar volumes CIFS.
@@ -82,39 +44,48 @@ Você pode abrir o grupo de segurança para o tráfego do endereço IP da instâ
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
 +
-image:screen-cl-config-cvo-map-options.png["Uma captura de tela da guia Configuração mostrando as opções para mapear e classificar repositórios."]..  Se você usar CIFS, forneça a Classificação de Dados com credenciais do Active Directory para que ele possa verificar volumes CIFS.  Para cada sistema, selecione *Editar credenciais CIFS* e insira o nome de usuário e a senha que o Data Classification precisa para acessar volumes CIFS no sistema.
+image:screen-cl-config-cvo-map-options.png["Uma captura de tela da guia Configuração mostrando as opções para mapear e classificar repositórios."]
+
+. Se você usar CIFS, forneça a Classificação de Dados com credenciais do Active Directory para que ele possa verificar volumes CIFS. Para cada sistema, selecione *Editar credenciais CIFS* e insira o nome de usuário e a senha que o Data Classification precisa para acessar volumes CIFS no sistema.
++
+As credenciais podem ser somente leitura, mas fornecer credenciais de administrador garante que a Classificação de Dados possa ler quaisquer dados que exijam permissões elevadas.  As credenciais são armazenadas na instância de Classificação de Dados.
 
 +
-+ As credenciais podem ser somente leitura, mas fornecer credenciais de administrador garante que a Classificação de Dados possa ler quaisquer dados que exijam permissões elevadas.  As credenciais são armazenadas na instância de Classificação de Dados.
+Se você quiser ter certeza de que os "últimos horários de acesso" dos seus arquivos não serão alterados pelas verificações de Classificação de Dados, é recomendável que o usuário tenha permissões de Gravação de Atributos no CIFS ou permissões de gravação no NFS. Se possível, configure o usuário do Active Directory como parte de um grupo pai na organização que tenha permissões para todos os arquivos.
 
 +
-+ Se você quiser ter certeza de que os "últimos horários de acesso" dos seus arquivos não serão alterados pelas verificações de Classificação de Dados, é recomendável que o usuário tenha permissões de Gravação de Atributos no CIFS ou permissões de gravação no NFS. Se possível, configure o usuário do Active Directory como parte de um grupo pai na organização que tenha permissões para todos os arquivos.
-
-+
-+ Depois de inserir as credenciais, você verá uma mensagem informando que todos os volumes CIFS foram autenticados com sucesso.
+Se você inseriu as credenciais corretamente, uma mensagem confirmará que todos os volumes CIFS foram autenticados com sucesso.
 
 . Na página Configuração, selecione *Configuração* para revisar o status de cada volume CIFS e NFS e corrigir quaisquer erros.
 
 
 
 
-== Desabilitar verificações de conformidade em volumes
+== Habilitar ou desabilitar verificações de conformidade em volumes
 
-Você pode iniciar ou parar verificações somente de mapeamento ou verificações de mapeamento e classificação em um sistema a qualquer momento na página Configuração.  Você também pode mudar de varreduras somente de mapeamento para varreduras de mapeamento e classificação, e vice-versa.  Recomendamos que você digitalize todos os volumes.
+Você pode iniciar ou interromper verificações em qualquer sistema a qualquer momento na página Configuração.  Você também pode alternar as verificações de somente mapeamento para verificações de mapeamento e classificação, e vice-versa.  É recomendável que você escaneie todos os volumes em um sistema.
 
 
-NOTE: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você define a configuração *Mapa* ou *Mapa e Classificação* na área de título.  Quando a opção estiver definida como *Personalizado* ou *Desativado* na área de título, você precisará ativar o mapeamento e/ou a verificação completa em cada novo volume adicionado ao sistema.
+TIP: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você seleciona a configuração *Mapa* ou *Mapa e Classificação* na área de título. Quando definido como *Personalizado* ou *Desativado* na área de título, você precisará ativar o mapeamento e/ou a varredura completa em cada novo volume adicionado ao sistema.
+
+O botão no topo da página para *Verificar quando faltarem permissões de "gravação"* está desabilitado por padrão. Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original. Se você não se importa se o último horário de acesso for redefinido, ligue o interruptor e todos os arquivos serão verificados, independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^].
+
+
+NOTE: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você define a configuração *Mapa* ou *Mapa e Classificação* na área de título. Quando a configuração para todos os volumes for *Personalizada* ou *Desativada*, você precisará ativar a verificação manualmente para cada novo volume adicionado.
+
+image:screenshot_volume_compliance_selection.png["Uma captura de tela da página de configuração onde você pode ativar ou desativar a verificação de volumes individuais."]
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Selecione o botão *Configuração* para o sistema que você deseja alterar.
+. Escolha um sistema e selecione *Configuração*.
+. Para habilitar ou desabilitar verificações para todos os volumes, selecione **Mapear**, **Mapear e classificar** ou **Desativar** no título acima de todos os volumes.
 +
-image:screen-cl-config-cvo-map-options.png["Uma captura de tela da guia Configuração mostrando as opções para mapear e classificar repositórios."]
-
-. Faça um dos seguintes:
-+
-** Para desabilitar a verificação em um volume, na área de volume, selecione *Desligado*.
-** Para desabilitar a verificação em todos os volumes, na área de título, selecione *Desativado*.
+Para habilitar ou desabilitar verificações para volumes individuais, encontre os volumes na lista e selecione **Mapear**, **Mapear e classificar** ou **Desativar** ao lado do nome do volume.
 
 
 
+.Resultado
+Quando você ativa a digitalização, a Classificação de Dados inicia a digitalização dos volumes selecionados no sistema. Os resultados começam a aparecer no painel de conformidade assim que a Classificação de Dados inicia a verificação.  O tempo de conclusão da verificação depende da quantidade de dados, variando de minutos a horas.
+
+
+NOTE: A Classificação de Dados verifica apenas um compartilhamento de arquivo em um volume.  Se você tiver vários compartilhamentos em seus volumes, será necessário verificar esses outros compartilhamentos separadamente como um grupo de compartilhamentos. link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["Veja mais detalhes sobre esta limitação de Classificação de Dados"^] .

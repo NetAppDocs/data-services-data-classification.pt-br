@@ -59,7 +59,7 @@ NOTE: Se alguma de suas fontes de dados implementar a hierarquização de dados,
 
 == Crie o relatório de avaliação de descoberta de dados
 
-O relatório de avaliação de descoberta de dados fornece uma análise de alto nível do ambiente escaneado para mostrar áreas de preocupação e possíveis etapas de correção.  Os resultados são baseados no mapeamento e na classificação dos seus dados.  O objetivo deste relatório é conscientizar sobre três aspectos significativos do seu conjunto de dados:
+O relatório de avaliação de descoberta de dados fornece uma análise de alto nível do ambiente escaneado para mostrar áreas de preocupação e possíveis etapas de correção. Os resultados são baseados no mapeamento e na classificação dos seus dados. O objetivo deste relatório é conscientizar sobre três aspectos significativos do seu conjunto de dados:
 
 [cols="25,65"]
 |===

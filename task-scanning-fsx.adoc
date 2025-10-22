@@ -126,24 +126,29 @@ Depois de inserir as credenciais, você verá uma mensagem informando que todos 
 
 == Habilitar e desabilitar verificações de conformidade em volumes
 
-Você pode iniciar ou parar verificações somente de mapeamento ou verificações de mapeamento e classificação em um sistema a qualquer momento na página Configuração.  Você também pode mudar de varreduras somente de mapeamento para varreduras de mapeamento e classificação, e vice-versa.  Recomendamos que você digitalize todos os volumes.
+Você pode iniciar ou interromper verificações em qualquer sistema a qualquer momento na página Configuração.  Você também pode alternar as verificações de somente mapeamento para verificações de mapeamento e classificação, e vice-versa.  É recomendável que você escaneie todos os volumes em um sistema.
 
-O botão no topo da página para *Verificar quando faltarem permissões de "gravação de atributos"* está desabilitado por padrão.  Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original.  Se você não se importa se o último horário de acesso for redefinido, ligue o interruptor e todos os arquivos serão verificados, independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^] .
+
+TIP: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você seleciona a configuração *Mapa* ou *Mapa e Classificação* na área de título. Quando definido como *Personalizado* ou *Desativado* na área de título, você precisará ativar o mapeamento e/ou a varredura completa em cada novo volume adicionado ao sistema.
+
+O botão no topo da página para *Verificar quando faltarem permissões de "gravação"* está desabilitado por padrão. Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original. Se você não se importa se o último horário de acesso for redefinido, ligue o interruptor e todos os arquivos serão verificados, independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^].
+
+
+NOTE: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você define a configuração *Mapa* ou *Mapa e Classificação* na área de título. Quando a configuração para todos os volumes for *Personalizada* ou *Desativada*, você precisará ativar a verificação manualmente para cada novo volume adicionado.
 
 image:screenshot_volume_compliance_selection.png["Uma captura de tela da página de configuração onde você pode ativar ou desativar a verificação de volumes individuais."]
 
+.Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Na página Configuração, localize o sistema com os volumes que você deseja verificar.
-. Faça um dos seguintes:
+. Escolha um sistema e selecione *Configuração*.
+. Para habilitar ou desabilitar verificações para todos os volumes, selecione **Mapear**, **Mapear e classificar** ou **Desativar** no título acima de todos os volumes.
 +
-** Para habilitar verificações somente de mapeamento em um volume, na área de volume, selecione *Mapear*.  Ou, para habilitar em todos os volumes, na área de título, selecione *Mapa*.  Para habilitar a verificação completa em um volume, na área de volume, selecione *Mapear e classificar*.  Ou, para habilitar em todos os volumes, na área de título, selecione *Mapear e classificar*.
-** Para desabilitar a verificação em um volume, na área de volume, selecione *Desligado*.  Para desabilitar a verificação em todos os volumes, na área de título, selecione *Desativado*.
+Para habilitar ou desabilitar verificações para volumes individuais, encontre os volumes na lista e selecione **Mapear**, **Mapear e classificar** ou **Desativar** ao lado do nome do volume.
 
 
 
-
-
-NOTE: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você define a configuração *Mapa* ou *Mapa e Classificação* na área de título.  Quando definido como *Personalizado* ou *Desativado* na área de título, você precisará ativar o mapeamento e/ou a varredura completa em cada novo volume adicionado ao sistema.
+.Resultado
+Quando você ativa a digitalização, a Classificação de Dados inicia a digitalização dos volumes selecionados no sistema. Os resultados começam a aparecer no painel de conformidade assim que a Classificação de Dados inicia a verificação.  O tempo de conclusão da verificação depende da quantidade de dados, variando de minutos a horas.
 
 
 

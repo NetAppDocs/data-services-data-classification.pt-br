@@ -60,7 +60,7 @@ A Classificação de Dados pode identificar dados que correm risco potencial de 
 A Classificação de Dados fornece ferramentas que podem ajudar com o custo total de propriedade (TCO) do seu armazenamento.  Você pode usar a Classificação de Dados para:
 
 * Aumente a eficiência do armazenamento identificando dados duplicados ou não relacionados aos negócios.
-* Economize custos de armazenamento identificando dados inativos que você pode colocar em camadas para armazenamento de objetos mais barato. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Saiba mais sobre camadas dos sistemas Cloud Volumes ONTAP"^] . https://docs.netapp.com/us-en/data-services-tiering/concept-cloud-tiering.html["Saiba mais sobre camadas de sistemas ONTAP locais"^] .
+* Economize custos de armazenamento identificando dados inativos que você pode colocar em camadas para armazenamento de objetos mais barato. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Saiba mais sobre camadas dos sistemas Cloud Volumes ONTAP"^] . https://docs.netapp.com/us-en/data-services-cloud-tiering/concept-cloud-tiering.html["Saiba mais sobre camadas de sistemas ONTAP locais"^] .
 
 
 
@@ -207,8 +207,9 @@ A Classificação de Dados coleta, indexa e atribui categorias aos seguintes dad
 * *Metadados padrão* sobre arquivos: o tipo de arquivo, seu tamanho, datas de criação e modificação e assim por diante.
 * *Dados pessoais*: Informações de identificação pessoal (PII), como endereços de e-mail, números de identificação ou números de cartão de crédito, que a Classificação de Dados identifica usando palavras, sequências de caracteres e padrões específicos nos arquivos. link:task-controlling-private-data.html#view-files-that-contain-personal-data["Saiba mais sobre dados pessoais"^] .
 * *Dados pessoais sensíveis*: Tipos especiais de informações pessoais sensíveis (SPII), como dados de saúde, origem étnica ou opiniões políticas, conforme definido pelo Regulamento Geral de Proteção de Dados (GDPR) e outros regulamentos de privacidade. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Saiba mais sobre dados pessoais sensíveis"^] .
-* *Categorias*: A classificação de dados pega os dados escaneados e os divide em diferentes tipos de categorias.  Categorias são tópicos baseados na análise de IA do conteúdo e metadados de cada arquivo. link:task-controlling-private-data.html#view-files-by-categories["Saiba mais sobre categorias"^] .
-* *Tipos*: A Classificação de Dados pega os dados digitalizados e os divide por tipo de arquivo. link:task-controlling-private-data.html#view-files-by-file-types["Saiba mais sobre os tipos"^] .
+* *Categorias*: A classificação de dados pega os dados escaneados e os divide em diferentes tipos de categorias. Categorias são tópicos baseados na análise de IA do conteúdo e metadados de cada arquivo. link:task-controlling-governance-data.html["Saiba mais sobre categorias"^].
+
+
 * *Reconhecimento de entidade de nome*: A classificação de dados usa IA para extrair nomes naturais de pessoas de documentos. link:task-generating-compliance-reports.html["Saiba mais sobre como responder às solicitações de acesso do titular dos dados"^] .
 
 

@@ -35,4 +35,4 @@ Assuma o controle direto da página Investigação: exclua, mova, copie ou marqu
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["Investigar dados"] .
 
 .Suporte para Google Cloud NetApp Volumes
-A classificação de dados agora oferece suporte à digitalização no Google Cloud NetApp Volumes. Adicione facilmente o Google Cloud NetApp Volumes do NetApp Console para uma varredura e classificação de dados perfeitas.
+A classificação de dados agora oferece suporte à digitalização no Google Cloud NetApp Volumes. Adicione facilmente o Google Cloud NetApp Volumes do NetApp Console para uma varredura e classificação de dados perfeitas. Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-scan-google-cloud.html["Verificar Google Cloud NetApp Volumes"^].

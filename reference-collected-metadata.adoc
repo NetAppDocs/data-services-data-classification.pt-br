@@ -64,4 +64,4 @@ As seleções de filtros são:
 * "Último horário de acesso classificado e atualizado" - Mostra os arquivos que foram classificados e a Classificação de Dados não conseguiu redefinir o último horário de acesso para a data original.  Este filtro é relevante somente para ambientes em que você ativou a opção *Verificar quando faltarem permissões de "gravação de atributos"*.
 
 
-Se necessário, você pode exportar esses resultados para um relatório para ver quais arquivos estão ou não sendo verificados devido às permissões. link:task-investigate-data.html#data-investigation-report["Saiba mais sobre o Relatório de Investigação de Dados"^] .
+Se necessário, você pode exportar esses resultados para um relatório para ver quais arquivos estão ou não sendo verificados devido às permissões. link:task-investigate-data.html#download-your-report["Saiba mais sobre relatórios de investigação de dados"^].

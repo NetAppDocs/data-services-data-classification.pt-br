@@ -334,10 +334,7 @@ tar -xzf DATASENSE-INSTALLER-V1.25.0.tar.gz
 +
 image:screenshot-deploy-classification.png["Uma captura de tela da seleção do botão para ativar a Classificação de Dados."]
 
-. Dependendo se você estiver instalando a Classificação de Dados em uma instância preparada na nuvem ou em uma instância preparada em suas instalações, selecione o botão *Implantar* apropriado para iniciar a instalação da Classificação de Dados.
-+
-image:screenshot_cloud_compliance_deploy_onprem.png["Uma captura de tela da seleção do botão para implantar a Classificação de Dados em uma máquina na nuvem ou em suas instalações."]
-
+. Dependendo se você estiver instalando a Classificação de Dados em uma instância preparada na nuvem ou em uma instância preparada em suas instalações, selecione a opção *Implantar* apropriada para iniciar a instalação da Classificação de Dados.
 . A caixa de diálogo _Implantar classificação de dados no local_ é exibida.  Copie o comando fornecido (por exemplo: `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` ) e cole-o em um arquivo de texto para que você possa usá-lo mais tarde.  Em seguida, selecione *Fechar* para fechar a caixa de diálogo.
 . Na máquina host, insira o comando que você copiou e siga uma série de prompts, ou você pode fornecer o comando completo, incluindo todos os parâmetros necessários, como argumentos de linha de comando.
 +
