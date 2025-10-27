@@ -61,7 +61,7 @@ Se você inseriu as credenciais corretamente, uma mensagem confirmará que todos
 
 
 
-== Habilitar ou desabilitar verificações de conformidade em volumes
+== Habilitar ou desabilitar verificações em volumes
 
 Você pode iniciar ou interromper verificações em qualquer sistema a qualquer momento na página Configuração.  Você também pode alternar as verificações de somente mapeamento para verificações de mapeamento e classificação, e vice-versa.  É recomendável que você escaneie todos os volumes em um sistema.
 

@@ -78,7 +78,7 @@ Se a caixa de diálogo listar quaisquer compartilhamentos que não puderam ser a
 ** Para desabilitar a verificação em compartilhamentos de arquivos, selecione *Desativado*.
 +
 
-NOTE: O botão no topo da página para *Verificar quando faltarem permissões de "gravação de atributos"* está desabilitado por padrão.  Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original.  + Se você alternar *Verificar quando faltarem permissões de "gravação de atributos"* para *Ativado*, a verificação redefinirá o último horário de acesso e verificará todos os arquivos, independentemente das permissões.  + Para saber mais sobre o último registro de data e hora acessado, consultelink:link:reference-collected-metadata.html#last-access-time-timestamp["Metadados coletados de fontes de dados na Classificação de Dados"] .
+NOTE: O botão no topo da página para *Verificar quando faltarem permissões de "gravação de atributos"* está desabilitado por padrão. Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original. + Se você alternar *Verificar quando faltarem permissões de "gravação de atributos"* para *Ativado*, a verificação redefinirá o último horário de acesso e verificará todos os arquivos, independentemente das permissões. + Para saber mais sobre o último registro de data e hora acessado, consultelink:reference-collected-metadata.html#last-access-time-timestamp["Metadados coletados de fontes de dados na Classificação de Dados"] .
 
 
 
@@ -108,7 +108,7 @@ image:screenshot-edit-cifs-credential.png["Captura de tela do menu Editar creden
 . Selecione **Salvar** para concluir o processo.
 
 
-.Adicionar compartilhamentos de arquivos às verificações de conformidade
+.Adicionar compartilhamentos de arquivos às verificações
 . No menu Classificação de Dados, selecione *Configuração*.
 . Na página Configuração, selecione o grupo de compartilhamentos de arquivos que você deseja modificar.
 . Selecione **+ Adicionar compartilhamentos**.
@@ -126,7 +126,7 @@ Se você estiver adicionando compartilhamentos de arquivos com um segundo protoc
 . Selecione **Continuar** para concluir a adição dos compartilhamentos de arquivos.
 
 
-.Remover um compartilhamento de arquivo das verificações de conformidade
+.Remover um compartilhamento de arquivo das verificações
 . No menu Classificação de Dados, selecione *Configuração*.
 . Selecione o sistema do qual você deseja remover os compartilhamentos de arquivos.
 . Selecione *Configuração*.

@@ -48,7 +48,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["Uma captura de tela da gu
 ** Para mapear e classificar todos os volumes, selecione *Mapear e classificar todos os volumes*.
 ** Para personalizar a digitalização para cada volume, selecione *Ou selecione o tipo de digitalização para cada volume* e escolha os volumes que deseja mapear ou mapear e classificar.
 +
-Ver<<Habilitar ou desabilitar verificações de conformidade em volumes,Habilitar ou desabilitar verificações de conformidade em volumes>> para mais detalhes.
+Ver<<Habilitar ou desabilitar verificações em volumes,Habilitar ou desabilitar verificações em volumes>> para mais detalhes.
 
 
 
@@ -105,7 +105,7 @@ image:screenshot_cifs_status.gif["Uma captura de tela que mostra a página de co
 
 
 
-== Habilitar ou desabilitar verificações de conformidade em volumes
+== Habilitar ou desabilitar verificações em volumes
 
 Você pode iniciar ou interromper verificações em qualquer sistema a qualquer momento na página Configuração.  Você também pode alternar as verificações de somente mapeamento para verificações de mapeamento e classificação, e vice-versa.  É recomendável que você escaneie todos os volumes em um sistema.
 

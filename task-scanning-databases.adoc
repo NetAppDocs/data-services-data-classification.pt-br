@@ -94,7 +94,7 @@ O banco de dados é adicionado à lista de sistemas.
 
 
 
-== Habilitar e desabilitar verificações de conformidade em esquemas de banco de dados
+== Habilitar e desabilitar varreduras em esquemas de banco de dados
 
 Você pode parar ou iniciar a varredura completa dos seus esquemas a qualquer momento.
 
@@ -112,6 +112,6 @@ image:screenshot_compliance_select_schemas.png["Uma captura de tela da página C
 
 
 .Resultado
-A Classificação de Dados inicia a varredura dos esquemas de banco de dados que você habilitou.  Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**.  O progresso de cada verificação é mostrado como uma barra de progresso.  Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.  Se houver algum erro, ele aparecerá na coluna Status, junto com a ação necessária para corrigi-lo.
+A Classificação de Dados inicia a varredura dos esquemas de banco de dados que você habilitou. Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**. O progresso de cada verificação é mostrado como uma barra de progresso.  Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao número total de arquivos no volume.  Se houver algum erro, ele aparecerá na coluna Status, junto com as ações necessárias para corrigi-lo.
 
 A Classificação de Dados verifica seus bancos de dados uma vez por dia; os bancos de dados não são verificados continuamente como outras fontes de dados.

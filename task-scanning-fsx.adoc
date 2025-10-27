@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-fsx.html 
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
-summary: Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a NetApp Data Classification. 
+summary: Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volumes ONTAP com a NetApp Data Classification. 
 ---
 = Escaneie o Amazon FSx em busca de volumes ONTAP com a NetApp Data Classification
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Conclua algumas etapas para começar a escanear o Amazon FSx em busca d
 
 
 [role="lead"]
-Conclua algumas etapas para começar a escanear o Amazon FSx em busca de volume ONTAP com a NetApp Data Classification.
+Conclua algumas etapas para escanear o Amazon FSx em busca de volumes ONTAP com a NetApp Data Classification.
 
 
 
@@ -73,7 +73,7 @@ image:screenshot_fsx_scanning_activate.png["Uma captura de tela da guia Configur
 
 
 .Resultado
-A Classificação de Dados inicia a varredura dos volumes selecionados no sistema.  Os resultados estarão disponíveis no painel de conformidade assim que a Classificação de Dados concluir as verificações iniciais.  O tempo que isso leva depende da quantidade de dados: pode levar alguns minutos ou horas.  Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**.  O progresso de cada verificação é mostrado como uma barra de progresso.  Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.
+A Classificação de Dados inicia a varredura dos volumes selecionados no sistema. Os resultados estarão disponíveis no painel de conformidade assim que a Classificação de Dados concluir as verificações iniciais. O tempo que isso leva depende da quantidade de dados: pode levar alguns minutos ou horas. Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**. Acompanhe o progresso de cada verificação na barra de progresso; você pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.
 
 [NOTE]
 ====
@@ -124,7 +124,7 @@ Depois de inserir as credenciais, você verá uma mensagem informando que todos 
 
 
 
-== Habilitar e desabilitar verificações de conformidade em volumes
+== Habilitar e desabilitar verificações em volumes
 
 Você pode iniciar ou interromper verificações em qualquer sistema a qualquer momento na página Configuração.  Você também pode alternar as verificações de somente mapeamento para verificações de mapeamento e classificação, e vice-versa.  É recomendável que você escaneie todos os volumes em um sistema.
 

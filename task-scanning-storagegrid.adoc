@@ -62,7 +62,7 @@ StorageGRID é adicionado à lista de sistemas.
 
 
 
-== Habilitar e desabilitar verificações de conformidade em buckets do StorageGRID
+== Habilitar e desabilitar varreduras em buckets do StorageGRID
 
 Depois de habilitar a Classificação de Dados no StorageGRID, a próxima etapa é configurar os buckets que você deseja verificar.  A Classificação de Dados descobre esses buckets e os exibe no sistema que você criou.
 
