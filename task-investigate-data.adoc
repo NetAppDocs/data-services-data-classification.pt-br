@@ -238,9 +238,13 @@ TIP: Você pode expandir um nível do grupo para ver os usuários que fazem part
 
 Você pode verificar se arquivos duplicados estão sendo armazenados em seus sistemas de armazenamento.  Isso é útil se você quiser identificar áreas onde pode economizar espaço de armazenamento.  Também é bom garantir que determinados arquivos que tenham permissões específicas ou informações confidenciais não sejam duplicados desnecessariamente em seus sistemas de armazenamento.
 
-Todos os seus arquivos (não incluindo bancos de dados) com 1 MB ou mais, ou que contenham informações pessoais ou confidenciais, são comparados para verificar se há duplicatas.
+A Classificação de Dados compara todos os arquivos (exceto bancos de dados) em busca de duplicatas, caso existam:
 
-A classificação de dados usa tecnologia de hash para determinar arquivos duplicados.  Se algum arquivo tiver o mesmo código hash de outro arquivo, você pode ter 100% de certeza de que os arquivos são duplicatas exatas, mesmo que os nomes dos arquivos sejam diferentes.
+* 1 MB ou lager
+* Ou que contenham informações pessoais ou informações pessoais sensíveis.
+
+
+A classificação de dados usa tecnologia de hash para determinar arquivos duplicados. Se um arquivo tiver o mesmo código hash que outro, os arquivos são duplicados exatos, mesmo que os nomes dos arquivos sejam diferentes.
 
 .Passos
 . No menu Classificação de Dados, selecione *Investigação*.

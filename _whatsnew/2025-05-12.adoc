@@ -6,7 +6,7 @@
 
 === Versão 1.43
 
-Esta versão de Classificação de Dados inclui:
+Esta versão de classificação BlueXP inclui:
 
 .Priorizar varreduras de classificação
 A Classificação de Dados oferece suporte à capacidade de priorizar verificações de Mapeamento e Classificação, além de verificações somente de Mapeamento, permitindo que você selecione quais verificações serão concluídas primeiro. A priorização de verificações de Map & Classify é suportada durante e antes do início das verificações. Se você optar por priorizar uma verificação enquanto ela estiver em andamento, tanto as verificações de mapeamento quanto as de classificação serão priorizadas.

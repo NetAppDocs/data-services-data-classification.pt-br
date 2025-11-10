@@ -45,7 +45,7 @@ Você pode habilitar a Classificação de Dados no seu sistema Google Cloud NetA
 ** Para mapear e classificar todos os volumes, selecione *Mapear e classificar todos os volumes*.
 ** Para personalizar a verificação para cada volume, selecione *Ou selecione o tipo de verificação para cada volume* e, em seguida, escolha os volumes que deseja mapear e/ou classificar.
 +
-Ver<<Habilitar e desabilitar verificações de conformidade em volumes,Habilitar e desabilitar verificações de conformidade em volumes>> para mais detalhes.
+Ver<<Habilitar e desabilitar verificações em volumes,Habilitar e desabilitar verificações em volumes>> para mais detalhes.
 
 
 

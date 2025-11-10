@@ -18,6 +18,21 @@ Saiba o que há de novo na NetApp Data Classification.
 
 
 
+== 10 de novembro de 2025
+
+
+
+=== Versão 1.48
+
+Esta versão do Data Classification inclui correções de erros, melhorias de segurança e otimizações de desempenho.
+
+.Clareza aprimorada no progresso da digitalização
+As configurações de digitalização agora incluem informações aprimoradas sobre a conclusão da digitalização. Anteriormente, a barra de progresso era exibida apenas enquanto a digitalização estava em andamento. Agora, a barra de progresso permanece visível após a conclusão para confirmar que as verificações foram concluídas com sucesso. Você também poderá visualizar o número de arquivos mapeados e digitalizados.
+
+Para obter mais informações sobre as configurações de digitalização, consulte link:task-managing-repo-scanning.html#view-the-scan-status-for-your-repositories["Alterar as configurações de verificação de NetApp Data Classification para seus repositórios"^].
+
+
+
 == 06 de outubro de 2025
 
 
@@ -164,7 +179,7 @@ O Redis foi atualizado para melhorar a confiabilidade da BlueXP classification. 
 
 === Versão 1.43
 
-Esta versão de Classificação de Dados inclui:
+Esta versão de classificação BlueXP inclui:
 
 .Priorizar varreduras de classificação
 A Classificação de Dados oferece suporte à capacidade de priorizar verificações de Mapeamento e Classificação, além de verificações somente de Mapeamento, permitindo que você selecione quais verificações serão concluídas primeiro. A priorização de verificações de Map & Classify é suportada durante e antes do início das verificações. Se você optar por priorizar uma verificação enquanto ela estiver em andamento, tanto as verificações de mapeamento quanto as de classificação serão priorizadas.

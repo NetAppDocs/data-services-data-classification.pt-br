@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification 
-summary: 'Você pode gerenciar como seus dados estão sendo verificados em cada um dos seus sistemas e fontes de dados no NetApp Data Classification.  Você pode fazer alterações com base no "repositório", ou seja, você pode fazer alterações para cada volume, bucket, compartilhamento, esquema, usuário, etc., dependendo do tipo de fonte de dados que você está verificando.' 
+summary: Aprenda como modificar as configurações de varredura de um sistema no NetApp Data Classification. 
 ---
 = Alterar as configurações de verificação de NetApp Data Classification para seus repositórios
 :hardbreaks:
@@ -26,12 +26,12 @@ Você pode visualizar os repositórios individuais que o NetApp Data Classificat
 
 Você pode visualizar o status de verificação de cada ambiente de trabalho na página Configuração:
 
-* *Inicializando* (ponto azul claro): A configuração do mapa ou classificação está ativada.  Isso aparece por alguns segundos antes de iniciar o status “fila pendente”.
+* *Inicializando* (ponto azul claro): A configuração do mapa ou classificação está ativada. Isso aparece brevemente antes de passar para o status de "fila pendente".
 * *Fila pendente* (ponto laranja): A tarefa de verificação está aguardando para ser listada na fila de verificação.
 * *Na fila* (ponto laranja): A tarefa foi adicionada com sucesso à fila de digitalização.  O sistema começará a mapear ou classificar o volume quando chegar a sua vez na fila.
 * *Em execução* (ponto verde): A tarefa de verificação, que estava na fila, está ativamente em andamento no repositório de armazenamento selecionado.
 * *Concluído* (ponto verde): A verificação do repositório de armazenamento foi concluída.
-* *Pausado* (ponto cinza): Você selecionou a opção “Pausar” para pausar a digitalização.  Embora as alterações no volume não sejam exibidas no sistema, os insights digitalizados ainda são mostrados.
+* *Pausado* (ponto cinza): Você pausou a digitalização. Embora as alterações de volume não sejam exibidas no sistema, as informações obtidas por meio da digitalização permanecem disponíveis.
 * *Erro* (ponto vermelho): A verificação não pode ser concluída porque encontrou problemas.  Se você precisar concluir uma ação, o erro aparecerá na dica de ferramenta na coluna “Ação necessária”.  Caso contrário, o sistema mostra um status de “erro” e tenta recuperar.  Quando termina, o status muda.
 * *Não escaneando*: A configuração de volume "Desligado" foi selecionada e o sistema não está escaneando o volume.
 
@@ -46,7 +46,7 @@ image:screenshot_compliance_config_button.png["Uma captura de tela mostrando com
 +
 image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrando se seus buckets estão sendo escaneados e o status atual da varredura."]
 
-. Passe o cursor sobre o gráfico na coluna _Status do mapeamento_ para ver o número de arquivos que ainda precisam ser mapeados ou classificados em cada repositório (bucket neste exemplo).
+. Durante uma verificação, passe o cursor sobre a barra de progresso na coluna _Status do mapeamento_ para visualizar o número de arquivos na fila a serem mapeados ou classificados para esse repositório.
 
 
 
@@ -117,9 +117,11 @@ image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrand
 
 == Pausar e retomar a varredura de um repositório
 
-Você pode "pausar" a verificação em um repositório se quiser interromper temporariamente a verificação de determinado conteúdo.  Pausar a varredura significa que a Classificação de Dados não executará nenhuma varredura futura em busca de alterações ou adições no repositório, mas todos os resultados atuais ainda serão exibidos no sistema.  Pausar a digitalização não interrompe a cobrança pelos dados digitalizados, pois os dados ainda existem.
+Você pode "pausar" a verificação em um repositório se quiser interromper temporariamente a verificação de determinado conteúdo. Pausar a verificação significa que a Classificação de Dados não realizará mais verificações em busca de alterações ou adições ao repositório. Todos os resultados de varredura atuais permanecem acessíveis na Classificação de Dados.
 
-Você pode "retomar" a digitalização a qualquer momento.
+Se você pausar as digitalizações, isso não elimina as cobranças, pois os dados ainda permanecem no sistema.
+
+Você pode retomar a digitalização a qualquer momento.
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
