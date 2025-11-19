@@ -1153,9 +1153,7 @@
   <block id="77b5d2f21e25341a3f84901a513bf64c" category="inline-link">criando um agente de console na AWS</block>
   <block id="5dc317f5e4506014a6457cea6e36b5e8" category="inline-link">criando um agente de console no Azure</block>
   <block id="48c24d9c6f6e8d0b548116a386c62dbe" category="inline-link">criando um agente de console no GCP</block>
-  <block id="6cf086fd7e27f5587a9831d78af8c5b6" category="paragraph">Se você ainda não tiver um agente do Console, crie um.  Ver<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> ,<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> , ou<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block> .</block>
   <block id="02559d50684120805e2f264bdea2e4c1" category="inline-link">instalar o agente do Console no local</block>
-  <block id="1d9503a33ebe4a2fef4b7e15b1c066cd" category="paragraph">Você também pode<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block> em um host Linux na sua rede ou em um host Linux na nuvem.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dois</block>
   <block id="0e2ddd6334405299d1b4c44e894c9e78" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>Pré-requisitos</block>
   <block id="339dbb3aad86454446f85f0a0a7f7606" category="paragraph">Certifique-se de que seu ambiente possa atender aos pré-requisitos.  Isso inclui acesso de saída à Internet para a instância, conectividade entre o agente do Console e a Classificação de Dados pela porta 443 e muito mais.  &lt;&lt; Pré-requisitos, veja a lista completa &gt;&gt;.</block>
@@ -1164,19 +1162,14 @@
   <block id="9f0ba00e2450c6e218eaa2d60c8c8ee7" category="paragraph">Inicie o assistente de instalação para implantar a instância de Classificação de Dados na nuvem.</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="section-title">Criar um agente de console</block>
   <block id="1f96813eb41ebd0c3dd5544a17de7743" category="inline-link">Os recursos do console exigem um agente do console</block>
-  <block id="6b9d8db86615c626426dac3240a23cd9" category="paragraph">Se você ainda não tiver um agente do Console, crie um agente do Console no seu provedor de nuvem.  Ver<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> ou<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> , ou<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block> .  Na maioria dos casos, você provavelmente terá um agente de console configurado antes de tentar ativar a Classificação de Dados porque a maioria<block ref="92d08814b1d84d2ad7da2f290b48da3c" category="inline-link-rx"></block> , mas há casos em que você precisará configurar um agora.</block>
   <block id="529213d44c3711e3260c35b12c2d2580" category="paragraph">Existem alguns cenários em que você precisa usar um agente do Console implantado em um provedor de nuvem específico:</block>
   <block id="cfea0a57313e8ccb9a39d4af86e20ca9" category="list-text">Ao escanear dados no Cloud Volumes ONTAP na AWS ou no Amazon FSx para buckets ONTAP , você usa um agente de console na AWS.</block>
   <block id="5603e4788fdafa67a19bd479883972c6" category="list-text">Ao digitalizar dados no Cloud Volumes ONTAP no Azure ou no Azure NetApp Files, você usa um agente de console no Azure.</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">Para o Azure NetApp Files, ele deve ser implantado na mesma região que os volumes que você deseja verificar.</block>
   <block id="2f3343ea56a236ac7df9fd71459af465" category="list-text">Ao escanear dados no Cloud Volumes ONTAP no GCP, você usa um agente do Console no GCP.</block>
   <block id="e49d11048063c821e2d61e7d656352c8" category="paragraph">Sistemas ONTAP locais, compartilhamentos de arquivos NetApp e bancos de dados podem ser verificados ao usar qualquer um desses agentes do Console na nuvem.</block>
-  <block id="db78195627af3608024c56bc521f4e79" category="paragraph">Observe que você também pode<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block> em um host Linux na sua rede ou na nuvem.  Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.</block>
-  <block id="7bf578ebca82bd39e9c3d25054af4c2e" category="paragraph">Como você pode ver, pode haver algumas situações em que você precise usar<block ref="435c5800eb6a11448025dffd7c93a30f" category="inline-link-rx"></block> .</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">Apoio regional do governo</block>
   <block id="90476c1dd7be704eec72e67e38b53fff" category="paragraph">A classificação de dados é suportada quando o agente do Console é implantado em uma região governamental (AWS GovCloud, Azure Gov ou Azure DoD).  Quando implantada dessa maneira, a Classificação de Dados tem as seguintes restrições:</block>
-  <block id="2f39ad11fa41d7d59b3cab13367c7762" category="inline-link">Veja mais informações sobre a implantação do agente do Console em uma região governamental</block>
-  <block id="bb3d4632f65d269a14bed66aafbadc3f" category="paragraph"><block ref="7686ee2eb49af977f9d11ac7d13abc66" category="inline-link-rx"></block> .</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="section-title">Pré-requisitos</block>
   <block id="f4df53c9081ea6340923013025dd19a1" category="paragraph">Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de implantar a Classificação de Dados na nuvem.  Quando você implanta a Classificação de Dados na nuvem, ela fica localizada na mesma sub-rede que o agente do Console.</block>
   <block id="b3afed32875b4a54f2caed1b075ae9f5" category="list-text">Habilitar acesso de saída à Internet a partir da Classificação de Dados</block>
@@ -1223,11 +1216,8 @@
   <block id="c686f695eeec04f8c4fe350e3159e65d" category="list-text">Certifique-se de que o limite de vCPU do seu provedor de nuvem permite a implantação de uma instância com o número necessário de núcleos.  Você precisará verificar o limite de vCPU para a família de instâncias relevante na região onde o Console está sendo executado. <block ref="5843cd637232ef0567b219de30d73e1e" category="inline-link-macro-rx"></block> .</block>
   <block id="1686a92132918f281d54cd603c1a36b8" category="paragraph">Veja os links a seguir para mais detalhes sobre os limites de vCPU:</block>
   <block id="2b0807f353a429700271a9351867f260" category="inline-link">Documentação da AWS: cotas de serviço do Amazon EC2</block>
-  <block id="33519b7a4b15f32177ee6e24629da21e" category="list-text"><block ref="33519b7a4b15f32177ee6e24629da21e" category="inline-link-rx"></block></block>
   <block id="e0d6a0bc9c3fe66c7c1b32f5fc7989c7" category="inline-link">Documentação do Azure: Cotas de vCPU de máquina virtual</block>
-  <block id="8a1f7f28105f0b82b916d62dd700157d" category="list-text"><block ref="8a1f7f28105f0b82b916d62dd700157d" category="inline-link-rx"></block></block>
   <block id="679c6b026096af4912243f7d0fe0c56a" category="inline-link">Documentação do Google Cloud: Cotas de recursos</block>
-  <block id="e0c1891bead6f9e2f86ecf6043345b62" category="list-text"><block ref="e0c1891bead6f9e2f86ecf6043345b62" category="inline-link-rx"></block></block>
   <block id="c35d8883ac588dc663c36bba3983f80b" category="section-title">Implantar classificação de dados na nuvem</block>
   <block id="d67ea3265ba6129264b22f13c6548a5b" category="paragraph">Siga estas etapas para implantar uma instância de Classificação de Dados na nuvem.  O agente do Console implantará a instância na nuvem e, em seguida, instalará o software de classificação de dados nessa instância.</block>
   <block id="8b4cc0616cd3112ce97c78446249e336" category="inline-link-macro">tipo de instância alternativo</block>
@@ -2618,4 +2608,14 @@
   <block id="76d0e11c30b5dcbca92c93eb0f33daec" category="paragraph">Você pode retomar a digitalização a qualquer momento.</block>
   <block id="e018b56ef561ad538d1aca1d6fae6b6c" category="paragraph">Ver<block ref="15dceb3fb9d388923f206ab616cd56a9" category="inline-xref-macro-rx"></block> para mais detalhes.</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10 de novembro de 2025</block>
+  <block id="71a65ebb3dc98cbee7a35c227b17a9d2" category="paragraph">Se você ainda não tiver um agente do Console, crie um. Ver<block ref="d5bd3e4518f2136cfa2b600a07183cdd" category="inline-link-macro-rx"></block> ,<block ref="8ebe3bab1eaa1107c63d6c8e11f3037a" category="inline-link-macro-rx"></block> , ou<block ref="289d689c55d02ef047cce8b209e7a21e" category="inline-link-macro-rx"></block> .</block>
+  <block id="546e9d6a80a7f338dcca2f303d981d2a" category="paragraph">Você também pode<block ref="9335525199017a57f50f3ba5f9c0cf66" category="inline-link-macro-rx"></block> em um host Linux em sua rede ou em um host Linux na nuvem.</block>
+  <block id="3235c8cdd5c8a3cd602a2a8decbafa9f" category="paragraph">Se você ainda não tiver um agente do Console, crie um agente do Console no seu provedor de nuvem. Ver<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block> ou<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block> , ou<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block> .  Na maioria dos casos, você provavelmente já terá um agente de console configurado antes de tentar ativar a Classificação de Dados, pois a maioria<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block> Mas há casos em que você precisará configurar um agora.</block>
+  <block id="b9b4d509fe9e3e77716d45d551ade64d" category="paragraph">Observe que você também pode<block ref="66fb3c1341fae0e6f8743c669eb701a1" category="inline-link-rx"></block> em um host Linux em sua rede ou na nuvem. Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.</block>
+  <block id="639d50c4b484797455c51239e20b934e" category="paragraph">Pode haver situações em que você precise usar<block ref="b343c1bfd082abc4974fc8258a47d6f6" category="inline-link-rx"></block> .</block>
+  <block id="b5a65ac63c30d18f443b0320e2b34254" category="inline-link-macro">Saiba mais sobre como implantar o agente do Console em uma região governamental.</block>
+  <block id="eb77a4cd659fccb7fe8612f8103da806" category="paragraph"><block ref="c0002063ba45db75f04eb8bb8388dddc" category="inline-link-macro-rx"></block>.</block>
+  <block id="f918c4aee73951e03ee5c0a40ad23d9e" category="list-text"><block ref="f918c4aee73951e03ee5c0a40ad23d9e" category="inline-link-macro-rx"></block></block>
+  <block id="d642b544681a16a1135a35722647009f" category="list-text"><block ref="d642b544681a16a1135a35722647009f" category="inline-link-macro-rx"></block></block>
+  <block id="7a1e3b83c1962dc960f34e0a588fe7c6" category="list-text"><block ref="7a1e3b83c1962dc960f34e0a588fe7c6" category="inline-link-macro-rx"></block></block>
 </blocks>
