@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: task-health-monitor.html 
+keywords: health monitor, disk usage, disk utilization, cpu usage, memory usage, metrics 
+summary: A classificação de dados fornece informações sobre o uso e a utilização para ajudar a otimizar o desempenho e solucionar problemas. 
+---
+= Monitore a integridade da NetApp Data Classification.
+:hardbreaks:
+:allow-uri-read: 
+:firstname: :nofooter
+:author: :nofooter
+:authorinitials: :
+:authors: :nofooter
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O painel de controle do NetApp Data Classification Health Monitor fornece monitoramento em tempo real e insights sobre o desempenho. O Monitor de Saúde coleta informações sobre sua infraestrutura de Classificação de Dados, integridade do sistema, métricas de uso e dados de utilização, permitindo que você identifique e corrija problemas.
+
+
+
+== Informações do Monitor de Saúde
+
+O painel de controle do Monitor de Saúde apresenta informações em quatro categorias.
+
+* **Estado da infraestrutura**
++
+Visualize informações como o status da versão, a estabilidade do sistema, o tipo de implantação e a escala da máquina.
+
+* **Recipientes problemáticos**
++
+Analise o campo de contêineres problemáticos para obter informações sobre contêineres que são interrompidos ou reiniciados com frequência. Utilize essas informações para investigar os contêineres específicos.
+
+* **Informações do sistema**
++
+O painel de informações do sistema captura informações críticas sobre o NetApp Console e a Classificação de Dados, como endereços IP públicos e privados, nome do host, sistema operacional, versão do Console e ID do Console.
+
+* **Uso e utilização**
++
+Analise o uso da CPU, a utilização do disco e o uso da memória. Esses valores são exibidos em unidades de armazenamento (GB) ou em porcentagem do uso total. Se algum campo exibir um aviso, selecione-o para obter informações e recomendações de correção.
+
+
+
+
+
+== Acesse o painel de controle do Monitor de Saúde.
+
+. Em Classificação de Dados, selecione **Configuração**.
+. Na seção **Configuração**, selecione **Monitor de integridade da classificação de dados**.
+. No painel do Monitor de Saúde, você pode:
++
+** Analise o uso e a utilização. Se alguma métrica de uso ou utilização exibir avisos, selecione o aviso para obter recomendações sobre como resolver o problema.
+** Alterne o gráfico para exibir o uso da CPU, a utilização do disco e o uso da memória. Você pode alterar o eixo x para exibir o conteúdo ao longo de horas (6, 12 ou 24) ou dias (2, 7 ou 14).
+** Atualize o painel para visualizar as métricas de dados mais recentes.
++
+image:health-monitor.png["Captura de tela do painel do Monitor de Saúde"]
+
+
+
+

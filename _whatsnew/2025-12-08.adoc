@@ -1,0 +1,17 @@
+= Versão 1.49
+:allow-uri-read: 
+
+
+
+
+=== Versão 1.49
+
+Esta versão do Data Classification inclui correções de erros e as seguintes atualizações:
+
+.Monitore as métricas e o desempenho no painel de monitoramento de integridade.
+O Data Classification agora oferece um painel de monitoramento de integridade, fornecendo monitoramento em tempo real de seus recursos e insights sobre uso de memória, uso de disco, utilização de disco e muito mais. Com as informações do painel de monitoramento de integridade, você pode analisar a infraestrutura da sua implementação e obter insights para otimizar o armazenamento e o desempenho.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["Monitore a integridade da Classificação de Dados."].
+
+.Desempenho de carregamento aprimorado
+O desempenho de carregamento de todas as páginas em Classificação de Dados foi aprimorado para criar uma experiência de usuário mais eficiente.
