@@ -16,7 +16,7 @@ summary: Antes de instalar o Data Classification manualmente em um host Linux, v
 [role="lead"]
 Antes de instalar o NetApp Data Classification manualmente em um host Linux, opcionalmente, execute um script no host para verificar se todos os pré-requisitos estão em vigor para instalar o Data Classification.  Você pode executar este script em um host Linux na sua rede ou em um host Linux na nuvem.  O host pode estar conectado à Internet ou pode residir em um site que não tem acesso à Internet (um _dark site_).
 
-Há também um script de teste de pré-requisito que faz parte do script de instalação do Data Classification.  O script descrito aqui foi projetado especificamente para usuários que desejam verificar o host Linux independentemente de executar o script de instalação do Data Classification.
+O script de instalação do Data Classification inclui um script de teste para garantir que seu ambiente atenda aos requisitos. Você pode executar este script separadamente para verificar se o host Linux está pronto antes de executar o script de instalação.
 
 
 
@@ -24,11 +24,11 @@ Há também um script de teste de pré-requisito que faz parte do script de inst
 
 Você executará as seguintes tarefas.
 
-. Opcionalmente, instale um agente do Console caso você ainda não tenha um instalado.  Você pode executar o script de teste sem ter um agente do Console instalado, mas o script verifica a conectividade entre o agente do Console e a máquina host de Classificação de Dados. Portanto, é recomendável que você tenha um agente do Console.
-. Prepare a máquina host e verifique se ela atende a todos os requisitos.
-. Habilite o acesso de saída à Internet a partir da máquina host de Classificação de Dados.
-. Verifique se todas as portas necessárias estão habilitadas em todos os sistemas.
-. Baixe e execute o script de teste de pré-requisito.
+* Opcionalmente, instale um agente do Console caso você ainda não tenha um instalado.  Você pode executar o script de teste sem ter um agente do Console instalado, mas o script verifica a conectividade entre o agente do Console e a máquina host de Classificação de Dados. Portanto, é recomendável que você tenha um agente do Console.
+* Prepare a máquina host e verifique se ela atende a todos os requisitos.
+* Habilite o acesso de saída à Internet a partir da máquina host de Classificação de Dados.
+* Verifique se todas as portas necessárias estão habilitadas em todos os sistemas.
+* Baixe e execute o script de teste de pré-requisito.
 
 
 
@@ -37,19 +37,24 @@ Você executará as seguintes tarefas.
 
 Um agente de console é necessário antes que você possa instalar e usar a Classificação de Dados.  No entanto, você pode executar o script de pré-requisitos sem um agente do Console.
 
-Você pode https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux na sua rede ou em um host Linux na nuvem.  Alguns usuários que planejam instalar o Data Classification no local também podem optar por instalar o agente do Console no local.
+Você pode link:https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["instalar o agente do Console no local"^] em um host Linux em sua rede ou em um host Linux na nuvem. Você também pode instalar o Data Classification localmente se o agente do Console estiver instalado localmente.
 
-Para criar um agente de console no ambiente do seu provedor de nuvem, consulte https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^] , ou https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^] .
+Para criar um agente de console no ambiente do seu provedor de nuvem, consulte:
 
-Você precisará do endereço IP ou nome do host do sistema do agente do Console ao executar o script de pré-requisitos.  Você terá essas informações se tiver instalado o agente do Console em suas instalações.  Se o agente do Console estiver implantado na nuvem, você poderá encontrar essas informações no Console: selecione o ícone Ajuda, depois *Suporte* e depois *Agente do Console*.
+* https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["criando um agente de console na AWS"^]
+* https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["criando um agente de console no Azure"^]
+* https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["criando um agente de console no GCP"^]
+
+
+Você precisa do endereço IP ou do nome do host do sistema do agente do Console ao executar o script de pré-requisitos. Você possui essas informações se instalou o agente do Console em suas instalações. Se o agente do Console estiver implantado na nuvem, você poderá encontrar essas informações no Console: selecione o ícone Ajuda e, em seguida, *Suporte*; na seção Agente e Auditoria, selecione *Acessar o agente*.
 
 
 
 == Verificar os requisitos do host
 
-O software de classificação de dados deve ser executado em um host que atenda aos requisitos específicos do sistema operacional, requisitos de RAM, requisitos de software e assim por diante.
+O software de classificação de dados deve ser executado em um host que atenda a requisitos específicos de sistema operacional, requisitos de RAM e requisitos de software.
 
-* A classificação de dados não é suportada em um host compartilhado com outros aplicativos. O host deve ser um host dedicado.
+* A classificação de dados deve estar em um host dedicado. O host não pode ser compartilhado com outros aplicativos ou softwares de terceiros, como antivírus.
 * Ao construir o sistema host em suas instalações, você pode escolher entre esses tamanhos de sistema dependendo do tamanho do conjunto de dados que você planeja escanear com Classificação de Dados.
 +
 [cols="17,17,27,31"]
