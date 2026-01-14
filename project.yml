@@ -87,6 +87,8 @@ sidebar:
       url: "/task-exclude-scan-paths.html"
     - title: Definir IDs de grupo existentes como "abertos à organização"
       url: "/task-add-group-id-as-open.html"
+    - title: Defina dados obsoletos.
+      url: "/task-stale-data.html"
     - title: Remover fontes de dados da Classificação de Dados
       url: "/task-managing-compliance.html"
     - title: Classificação de dados de desinstalação

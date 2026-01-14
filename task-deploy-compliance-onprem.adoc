@@ -85,7 +85,7 @@ O software de classificação de dados deve ser executado em um host que atenda 
 Certifique-se de que você pode manter a Classificação de Dados em execução.  A máquina de classificação de dados precisa permanecer ligada para escanear continuamente seus dados.
 
 * A classificação de dados deve estar em um host dedicado. O host não pode ser compartilhado com outros aplicativos ou softwares de terceiros, como antivírus.
-* Ao construir o sistema host em suas instalações, você pode escolher entre esses tamanhos de sistema dependendo do tamanho do conjunto de dados que você planeja escanear com Classificação de Dados.
+* Escolha o tamanho que esteja de acordo com o conjunto de dados que você planeja analisar com a Classificação de Dados.
 +
 [cols="17,17,27,31"]
 |===
@@ -154,7 +154,7 @@ Certifique-se de que você pode manter a Classificação de Dados em execução.
 * *Red Hat Subscription Management*: O host deve estar registrado no Red Hat Subscription Management.  Se não estiver registrado, o sistema não poderá acessar repositórios para atualizar o software de terceiros necessário durante a instalação.
 * *Software adicional*: Você deve instalar o seguinte software no host antes de instalar o Data Classification:
 +
-** Dependendo do sistema operacional que você estiver usando, você precisará instalar um dos mecanismos de contêiner:
+** Dependendo do sistema operacional que você estiver usando, será necessário instalar um dos mecanismos de contêiner:
 +
 *** Docker Engine versão 19.3.1 ou superior. https://docs.docker.com/engine/install/["Ver instruções de instalação"^] .
 *** Podman versão 4 ou superior.  Para instalar o Podman, digite(`sudo yum install podman netavark -y` ).

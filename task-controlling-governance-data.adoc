@@ -46,7 +46,7 @@ O componente _Oportunidades de economia_ mostra dados que você pode excluir ou 
 . No menu Classificação de Dados, selecione *Governança*.
 . Em cada bloco Oportunidades de economia do painel Governança, selecione *Otimizar armazenamento* para visualizar os resultados filtrados na página Investigação.  Para descobrir quaisquer dados que você deve excluir ou transferir para um armazenamento mais barato, investigue as _Oportunidades de economia_.
 +
-** *Dados desatualizados* - Dados que foram modificados pela última vez há mais de 3 anos.
+** *Dados obsoletos* - Por padrão, os dados são considerados obsoletos se a última modificação ocorreu há mais de 3 anos. Você pode [personalizar a definição de dados obsoletos](task-stale-data.html).
 ** *Arquivos duplicados* - Arquivos que são duplicados em outros locais nas fontes de dados que você está digitalizando. link:task-investigate-data.html["Veja quais tipos de arquivos duplicados são exibidos"] .
 
 

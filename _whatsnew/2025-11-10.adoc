@@ -11,4 +11,4 @@ Esta versão do Data Classification inclui correções de erros, melhorias de se
 .Clareza aprimorada no progresso da digitalização
 As configurações de digitalização agora incluem informações aprimoradas sobre a conclusão da digitalização. Anteriormente, a barra de progresso era exibida apenas enquanto a digitalização estava em andamento. Agora, a barra de progresso permanece visível após a conclusão para confirmar que as verificações foram concluídas com sucesso. Você também poderá visualizar o número de arquivos mapeados e digitalizados.
 
-Para obter mais informações sobre as configurações de digitalização, consulte link:task-managing-repo-scanning.html#view-the-scan-status-for-your-repositories["Alterar as configurações de verificação de NetApp Data Classification para seus repositórios"^].
+Para obter mais informações sobre as configurações de digitalização, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#view-the-scan-status-for-your-repositories["Alterar as configurações de verificação de NetApp Data Classification para seus repositórios"^].
