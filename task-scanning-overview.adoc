@@ -249,12 +249,3 @@ A tabela abaixo mostra algumas das diferenças:
 | Tipo de diretório | Sim | Sim 
 |===
 ====
-
-
-== Com que rapidez a Classificação de Dados verifica os dados
-
-A velocidade da verificação é afetada pela latência da rede, latência do disco, largura de banda da rede, tamanho do ambiente e tamanhos de distribuição de arquivos.
-
-* Ao executar varreduras somente de mapeamento, a Classificação de Dados pode varrer entre 100 e 150 TiB de dados por dia.
-* Ao executar varreduras de Map & Classify, a Classificação de Dados pode varrer entre 15 e 40 TiB de dados por dia.
-
