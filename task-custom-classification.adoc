@@ -87,8 +87,7 @@ Insira o **caminho do diretório** que contém os dados de treinamento.
 image:custom-category-file-summary.png["Captura de tela mostrando o resumo dos arquivos enviados para treinamento."]
 
 +
-.. Para alterar o caminho do arquivo ou reenviar arquivos, selecione **Alterar caminho**, insira os dados e carregue os arquivos novamente.
-
+A Classificação de Dados exibe o tempo estimado de conclusão para o treinamento dos dados. .. Para alterar o caminho do arquivo ou reenviar os arquivos, selecione **Alterar caminho** e insira os dados e carregue os arquivos novamente.
 
 . Quando estiver satisfeito com os arquivos enviados, selecione **Avançar**.
 . Insira um **Nome do Classificador** e uma **Descrição** para identificar a categoria personalizada no seu painel.
