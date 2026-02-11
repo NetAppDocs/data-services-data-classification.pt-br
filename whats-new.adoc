@@ -22,7 +22,7 @@ Saiba o que há de novo na NetApp Data Classification.
 
 
 
-=== Versão 1.50
+=== Versão 1.51
 
 Esta versão do Data Classification inclui correções de erros e as seguintes atualizações:
 
