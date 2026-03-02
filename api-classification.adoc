@@ -58,7 +58,7 @@ A API é segura e usa o mesmo método de autenticação da interface do usuário
 
 == Acessando a referência da API do Swagger
 
-Para acessar o Swagger, você precisará do endereço IP da sua instância de Classificação de Dados.  No caso de uma implantação na nuvem, você usará o endereço IP público.  Então você precisará acessar este endpoint:
+Para acessar o Swagger, você precisará do endereço IP da sua instância de NetApp Data Classification. No caso de uma implantação de nuvem, você usará o endereço IP público. Em seguida, você precisará acessar este endpoint:
 
 \https://<ip_de_classificação>/documentação
 

@@ -14,7 +14,7 @@ summary: Analise suas fontes de dados com o NetApp Data Classification.
 
 
 [role="lead"]
-A NetApp Data Classification verifica os dados nos repositórios (volumes, esquemas de banco de dados ou outros dados do usuário) que você seleciona para identificar dados pessoais e confidenciais.  A Classificação de Dados mapeia seus dados organizacionais, categoriza cada arquivo e identifica padrões predefinidos nos dados.  O resultado da verificação é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.
+NetApp Data Classification examina os dados nos repositórios (os volumes, esquemas de banco de dados ou outros dados de usuário) que você seleciona para identificar dados pessoais e confidenciais. Data Classification então mapeia os dados da sua organização, categoriza cada arquivo e identifica padrões predefinidos nos dados. O resultado da análise é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.
 
 Após a verificação inicial, a Classificação de Dados verifica continuamente seus dados em um sistema round-robin para detectar alterações incrementais.  É por isso que é importante manter a instância em execução.
 
