@@ -18,7 +18,7 @@ Ao exportar um relatório de investigação sobre diretórios a partir do painel
 
 Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Investigar dados"^].
 
-.Aumento do limite para copiar e mover
+.Aumento dos limites para copiar e mover
 Ao copiar ou mover arquivos, agora você pode mover arquivos de até 250 MB, um aumento em relação ao limite anterior de 50 MB.
 
 Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Investigar dados"^].

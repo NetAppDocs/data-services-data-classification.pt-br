@@ -18,6 +18,34 @@ Saiba o que há de novo na NetApp Data Classification.
 
 
 
+== 09 de março de 2026
+
+
+
+=== Versão 1.52
+
+.Validação de recursos
+Para garantir a confiabilidade, Data Classification agora valida a memória e os recursos de disco disponíveis durante a verificação, geração de relatórios e ações. Quando o uso de memória excede 95% ou o espaço de disco cai abaixo de 6 GB, Data Classification pausa automaticamente as operações. As operações são retomadas assim que os recursos forem suficientes.
+
+Para monitorar os recursos do seu sistema, veja link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["Monitore a integridade da Classificação de Dados."^].
+
+.Aumento do limite para copiar e mover
+As funções de copiar e mover agora são compatíveis para destinos CIFS. O limite de tamanho por arquivo para ambas as ações aumentou para 1 GB em relação ao limite anterior de 50 MB. Os limites de operação para ambas as ações aumentaram para 1 TB ou 5 milhões de arquivos.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Investigar dados"^].
+
+.Permissões de configuração de integração do Active Directory
+As alterações nas configurações de integração do Active Directory (AD) na Data Classification agora estão restritas a administradores. Visualizadores não têm mais a capacidade de modificar as configurações do AD.
+
+Para mais informações sobre a função Classification viewer, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html#data-service-roles["Funções do serviço de dados"^].
+
+.Suporte a proxy transparente
+A Classificação de Dados agora oferece suporte a configurações de proxy transparente, permitindo uma implantação mais tranquila em ambientes de rede com proxy ou restrições.
+
+Para obter mais informações sobre a implantação em ambientes restritos, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["Instalar o NetApp Data Classification em um host Linux sem acesso à Internet"^].
+
+
+
 == 09 de fevereiro de 2026
 
 
@@ -36,7 +64,7 @@ Ao exportar um relatório de investigação sobre diretórios a partir do painel
 
 Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Investigar dados"^].
 
-.Aumento do limite para copiar e mover
+.Aumento dos limites para copiar e mover
 Ao copiar ou mover arquivos, agora você pode mover arquivos de até 250 MB, um aumento em relação ao limite anterior de 50 MB.
 
 Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Investigar dados"^].
@@ -83,7 +111,7 @@ Esta versão do Data Classification inclui correções de erros e as seguintes a
 .Monitore as métricas e o desempenho no painel de monitoramento de integridade.
 O Data Classification agora oferece um painel de monitoramento de integridade, fornecendo monitoramento em tempo real de seus recursos e insights sobre uso de memória, uso de disco, utilização de disco e muito mais. Com as informações do painel de monitoramento de integridade, você pode analisar a infraestrutura da sua implementação e obter insights para otimizar o armazenamento e o desempenho.
 
-Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["Monitore a integridade da Classificação de Dados."].
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["Monitore a integridade da Classificação de Dados."^].
 
 .Desempenho de carregamento aprimorado
 O desempenho de carregamento de todas as páginas em Classificação de Dados foi aprimorado para criar uma experiência de usuário mais eficiente.

@@ -2563,7 +2563,6 @@
   <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">Monitore as métricas e o desempenho no painel de monitoramento de integridade.</block>
   <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">O Data Classification agora oferece um painel de monitoramento de integridade, fornecendo monitoramento em tempo real de seus recursos e insights sobre uso de memória, uso de disco, utilização de disco e muito mais. Com as informações do painel de monitoramento de integridade, você pode analisar a infraestrutura da sua implementação e obter insights para otimizar o armazenamento e o desempenho.</block>
   <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">Monitore a integridade da Classificação de Dados.</block>
-  <block id="699330677c1a0f32d795bf5b4ef62c06" category="paragraph">Para mais informações, consulte <block ref="47a26f0a929ccc455d276fcbc1329665" category="inline-link-macro-rx"></block>.</block>
   <block id="bf17c0b6bb3350440ee2a9bb4f2c9d89" category="paragraph-title">Desempenho de carregamento aprimorado</block>
   <block id="b6a3c9ea2c8f586e05010be520e7c46c" category="paragraph">O desempenho de carregamento de todas as páginas em Classificação de Dados foi aprimorado para criar uma experiência de usuário mais eficiente.</block>
   <block id="c7a647b1e9f70e39870907a0d37fc861" category="summary">A classificação de dados fornece informações sobre o uso e a utilização para ajudar a otimizar o desempenho e solucionar problemas.</block>
@@ -2746,8 +2745,6 @@
   <block id="2c68446a47623409683fed996b7df333" category="cell">Necessário para processos internos dentro de um servidor Ubuntu.</block>
   <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">Instale Data Classification no host Linux local</block>
   <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">Para configurações típicas, você instalará o software em um único host.</block>
-  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">Um diagrama que mostra a localização das fontes de dados que você pode analisar ao usar uma única instância de Data Classification implantada localmente sem acesso à internet.</block>
-  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
   <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">Siga estas etapas ao instalar o software de Data Classification em um único host local em um ambiente offline.</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">Verifique se você instalou os dois pacotes de software necessários (Docker Engine ou Podman, e Python 3).</block>
   <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">Verifique se seu ambiente offline atende aos requisitos <block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>.</block>
@@ -2784,4 +2781,19 @@
   <block id="c360e0cba3ce8612a20efd7da0fa5d7a" category="paragraph">Para acessar o Swagger, você precisará do endereço IP da sua instância de NetApp Data Classification. No caso de uma implantação de nuvem, você usará o endereço IP público. Em seguida, você precisará acessar este endpoint:</block>
   <block id="421d31e2b03d6dcfd776134e6cc90fb8" category="list-text">Em cada bloco de Oportunidades de Economia do painel de Governança, selecione *Otimizar Armazenamento* para visualizar os resultados filtrados na página de Investigação. Para descobrir quaisquer dados que você deve excluir ou migrar para um armazenamento mais econômico, investigue as _Oportunidades de Economia_.</block>
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classification examina os dados nos repositórios (os volumes, esquemas de banco de dados ou outros dados de usuário) que você seleciona para identificar dados pessoais e confidenciais. Data Classification então mapeia os dados da sua organização, categoriza cada arquivo e identifica padrões predefinidos nos dados. O resultado da análise é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.</block>
+  <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">Para obter mais informações, consulte <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>.</block>
+  <block id="59ff8a6991a0f51816a1d27ab0590821" category="paragraph-title">Aumento dos limites para copiar e mover</block>
+  <block id="5db4431afc8c4647c29360449ee80225" category="doc">Versão 1.52</block>
+  <block id="1cc9fa7904bbb11e4569869878e58bbb" category="paragraph-title">Validação de recursos</block>
+  <block id="19458db6dfda018080434d803401d712" category="paragraph">Para garantir a confiabilidade, Data Classification agora valida a memória e os recursos de disco disponíveis durante a verificação, geração de relatórios e ações. Quando o uso de memória excede 95% ou o espaço de disco cai abaixo de 6 GB, Data Classification pausa automaticamente as operações. As operações são retomadas assim que os recursos forem suficientes.</block>
+  <block id="0c246fa8aa5b9bb6f56169910551448c" category="paragraph">Para monitorar os recursos do seu sistema, veja <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>.</block>
+  <block id="427468160760189964c9cf7fcaa52709" category="paragraph">As funções de copiar e mover agora são compatíveis para destinos CIFS. O limite de tamanho por arquivo para ambas as ações aumentou para 1 GB em relação ao limite anterior de 50 MB. Os limites de operação para ambas as ações aumentaram para 1 TB ou 5 milhões de arquivos.</block>
+  <block id="6d965e454a055e436e41408f02aad8e1" category="paragraph-title">Permissões de configuração de integração do Active Directory</block>
+  <block id="a14fc25490ab294bb8fb754cd29f6486" category="paragraph">As alterações nas configurações de integração do Active Directory (AD) na Data Classification agora estão restritas a administradores. Visualizadores não têm mais a capacidade de modificar as configurações do AD.</block>
+  <block id="40abfc355f5aea2697c05cedc7637005" category="inline-link-macro">Funções do serviço de dados</block>
+  <block id="86b37aec2cfdfa690aeb8de2465ae8f4" category="paragraph">Para mais informações sobre a função Classification viewer, consulte <block ref="152b8a96499e0e41ff478a993b579623" category="inline-link-macro-rx"></block>.</block>
+  <block id="262af560e91bb5d3ce2340e565954dbf" category="paragraph-title">Suporte a proxy transparente</block>
+  <block id="9478b45dce4de73855a8e0b13720f895" category="paragraph">A Classificação de Dados agora oferece suporte a configurações de proxy transparente, permitindo uma implantação mais tranquila em ambientes de rede com proxy ou restrições.</block>
+  <block id="89f7afc8a9b178d4b4346f224d8bffc7" category="paragraph">Para obter mais informações sobre a implantação em ambientes restritos, consulte <block ref="6804ab8e5e77245509e3dc550ef5b67d" category="inline-link-macro-rx"></block>.</block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">09 de março de 2026</block>
 </blocks>
