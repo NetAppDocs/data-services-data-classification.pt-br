@@ -409,7 +409,6 @@
   <block id="3d2322c36c5c8998bf0183ca389aa7b6" category="inline-link-macro">aprenda sobre os endpoints que a Classificação de Dados contata</block>
   <block id="a889fab695578c45f1fd5da621fa33f8" category="paragraph">Se você tiver requisitos de rede rigorosos,<block ref="a9a9ec7bd20cc97c95a6363402756430" category="inline-link-macro-rx"></block> .</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma resposta rápida para uma pergunta.</block>
-  <block id="9a3ee97d85ced5069aaaa9aa9840a547" category="doc">Perguntas frequentes sobre a NetApp Data Classification</block>
   <block id="91d5470ff0de1d64ddb0c8c3bef0b246" category="section-title">NetApp Data Classification</block>
   <block id="46e8d23cf6731fff45d8d2f8b0904245" category="paragraph">As perguntas a seguir fornecem uma compreensão geral da Classificação de Dados.</block>
   <block id="5c96bb1e94b5c40e2b4c67e86da9035b" category="section-title">Como funciona a Classificação de Dados?</block>
@@ -2798,4 +2797,5 @@
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">09 de março de 2026</block>
   <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">Um diagrama que mostra a localização das fontes de dados que você pode analisar ao usar uma única instância de Data Classification implantada localmente sem acesso à internet.</block>
   <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e70d49c282a7c52a8996f7a8357c7524" category="doc">Perguntas frequentes sobre NetApp Data Classification</block>
 </blocks>
