@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task-copy-move.html 
+keywords: investigation, filter, delete, copy, move, flexclone, sync 
+summary: Após filtrar dados no painel de investigação, você pode copiar, mover e excluir dados não estruturados. 
+---
+= Copie, mova e exclua arquivos usando NetApp Data Classification
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Além de fornecer informações sobre governança e oportunidades de economia, NetApp Data Classification também permite que você execute ações em arquivos a partir do painel de investigação. Após filtrar dados no painel de investigação, você pode copiar, mover e excluir dados não estruturados. A execução dessas ações pode melhorar a conformidade, por exemplo, movendo arquivos para um local mais seguro ou criar oportunidades de economia excluindo arquivos antigos ou duplicados.
+
+
+
+== Copiar arquivos
+
+Data Classification suporta a cópia de arquivos de até 1 GB. Você pode copiar um total de 1 TB de dados ou 5 milhões de arquivos, o que ocorrer primeiro. Você pode copiar arquivos para um compartilhamento CIFS ou destino NFS. Não há impacto no arquivo de origem ao copiá-lo.
+
+.Passos
+. No painel de investigação, selecione os arquivos que deseja copiar.
+. Acima da lista de arquivos, selecione **Copy**.
++
+image:screenshot-copy-move-delete.png["Captura de tela das ações na página de investigação"]
+
+. Selecione o protocolo do destino para as cópias: **NFS** ou **CIFS**.
+. Se você selecionou NFS, insira o caminho de destino usando barras (/), por exemplo `hostname:/path/to/destination`.
++
+Se você selecionou CIFS, insira o caminho de destino usando barras invertidas, por exemplo `\\server\share\path`. Insira também as credenciais de **Username** e **Password** para o compartilhamento CIFS.
+
++
+image:screenshot-copy-nfs.png["Captura de tela da função de cópia para arquivos NFS"]
+
+. Selecione **Submit**.
+
+
+
+
+== Mover arquivos
+
+NetApp Data Classification suporta a movimentação de arquivos de até 1 GB. Você pode mover um total de 1 TB de dados ou 5 milhões de arquivos, o que ocorrer primeiro. Você pode mover arquivos para um compartilhamento CIFS ou destino NFS.
+
+.Passos
+. No painel de investigação, selecione os arquivos que você deseja mover.
++
+image:screenshot-copy-move-delete.png["Captura de tela das ações na página de investigação"]
+
+. Acima da lista de arquivos, selecione **Move**.
+. Selecione o protocolo do destino: **NFS** ou **CIFS**.
+. Se você selecionou NFS, insira o caminho de destino usando barras (/), por exemplo `hostname:/path/to/destination`.
++
+Se você selecionou CIFS, insira o caminho de destino usando barras invertidas, por exemplo `\\server\share\path`. Insira também as credenciais de **Username** e **Password** para o compartilhamento CIFS.
+
+. Opcionalmente, selecione **Deixar breadcrumb** para deixar um arquivo breadcrumb no volume de origem que explica onde e por que o arquivo foi movido.
++
+.. Se você selecionou **Deixar breadcrumb**, insira um texto descritivo que explique o motivo da movimentação do arquivo e, se necessário, o novo local.
++
+image:screenshot-move-nfs.png["Captura de tela da função de movimentação de arquivos NFS"]
+
+
+
+. Selecione **Mover itens**.
+
+
+
+
+== Excluir arquivos
+
+Ao filtrar dados no painel de Investigação para descobrir oportunidades de economia de espaço e custos, você pode excluir esses arquivos. A exclusão de arquivos é compatível apenas com arquivos não estruturados.
+
+.Passos
+. No painel de investigação, selecione os arquivos que deseja excluir.
+. Na caixa de diálogo de confirmação, digite "permanently delete".
+. Selecione **Excluir arquivo** para confirmar a operação.
++
+image:screenshot-delete.png["Captura de tela da caixa de diálogo de exclusão"]
+
+

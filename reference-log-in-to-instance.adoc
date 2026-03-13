@@ -4,7 +4,7 @@ permalink: reference-log-in-to-instance.html
 keywords: log in, data sense, classification 
 summary: Às vezes, pode ser necessário fazer login no sistema de NetApp Data Classification para poder acessar arquivos de log ou editar arquivos de configuração. 
 ---
-= Efetue login no sistema de NetApp Data Classification
+= Faça login em NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

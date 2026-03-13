@@ -14,7 +14,7 @@ summary: Você pode investigar os dados da sua organização visualizando detalh
 
 
 [role="lead"]
-O painel de investigação de dados exibe insights em nível de arquivo e diretório sobre seus dados, permitindo que você classifique e filtre os resultados.  A página Investigação de Dados apresenta insights sobre metadados e permissões de arquivos e diretórios, além de identificar arquivos duplicados.  Com insights em nível de arquivo, diretório e banco de dados, você pode tomar medidas para melhorar a conformidade da sua organização e economizar espaço de armazenamento.  A página Investigação de Dados também oferece suporte para mover, copiar e excluir arquivos.
+O painel de Investigação de Dados exibe informações sobre seus dados em nível de arquivo e diretório, permitindo que você classifique e filtre os resultados. A página Investigação de Dados apresenta informações sobre metadados e permissões de arquivos e diretórios, além de identificar arquivos duplicados. Com informações em nível de arquivo, diretório e banco de dados, você pode tomar medidas para melhorar a conformidade da sua organização e economizar espaço de storage. A página Investigação de Dados também oferece suporte a link:task-copy-move.html["mover, copiar e excluir arquivos"].
 
 
 NOTE: Para obter insights da página Investigação, você deve executar uma verificação de classificação completa em suas fontes de dados.  Fontes de dados que passaram por uma varredura somente de mapeamento não mostram detalhes em nível de arquivo.
@@ -191,6 +191,9 @@ Use o filtro a seguir para visualizar arquivos duplicados no seu armazenamento.
 
 | Duplicatas | Selecione se o arquivo será duplicado nos repositórios. 
 |===
+
+TIP: Após filtrar os dados, você pode link:task-copy-move.html["copiar, mover e excluir arquivos não estruturados"] para melhorar a conformidade ou otimizar o armazenamento.
+
 
 
 == Exibir metadados do arquivo
@@ -392,3 +395,10 @@ Depois de criar a pesquisa ou política, você pode visualizá-la na aba **Consu
 
 
 TIP: Pode levar até 15 minutos para que os resultados apareçam na página Consultas salvas.
+
+
+
+== Próximos passos
+
+* link:task-copy-move.html["Copie, mova e exclua dados do painel de investigação"]
+

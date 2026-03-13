@@ -664,7 +664,6 @@
   <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">Último registro de data e hora acessado</block>
   <block id="766aa8e7cd2a6b2b085c6107a7da9b88" category="paragraph">Quando a Classificação de Dados realiza uma varredura de um diretório, a varredura afeta o campo **Último acesso** do diretório.  Quando você visualiza o campo **Último acesso**, esses metadados refletem a data e a hora da verificação ou a última vez que um usuário acessou o diretório.</block>
   <block id="e96a6a2be46b8b1357ec2a787a1d1300" category="summary">Às vezes, pode ser necessário fazer login no sistema de NetApp Data Classification para poder acessar arquivos de log ou editar arquivos de configuração.</block>
-  <block id="3bdd1ff20ed6998a7cc8219fdca4e271" category="doc">Efetue login no sistema de NetApp Data Classification</block>
   <block id="3ce6ca22e847cbd536ba7c715301377a" category="paragraph">Você precisa fazer login no sistema de NetApp Data Classification para poder acessar arquivos de log ou editar arquivos de configuração.</block>
   <block id="2b5271618e7493a8c77e7b4639d819b8" category="paragraph">Quando o Data Classification é instalado em uma máquina Linux em suas instalações ou em uma máquina Linux implantada na nuvem, você pode acessar o arquivo de configuração e o script diretamente.</block>
   <block id="b432bef38adffbc05fc1ceb150787a02" category="paragraph">Quando a Classificação de Dados é implantada na nuvem, você precisa fazer SSH para a instância da Classificação de Dados.  Faça login no sistema via SSH inserindo o usuário e a senha ou usando a chave SSH fornecida durante a instalação do agente do Console.  O comando SSH é:</block>
@@ -1569,7 +1568,6 @@
   <block id="0079344bb0661607100d432cde92e6a5" category="list-text">Na página Configuração, selecione *Configuração* para revisar o status de cada volume CIFS e NFS e corrigir quaisquer erros.</block>
   <block id="e90444baa59788bd6471cf703b12a16e" category="summary">Você pode investigar os dados da sua organização visualizando detalhes na página Investigação de Dados.  Aqui é onde você pode continuar sua pesquisa depois de consultar o painel de governança.</block>
   <block id="4c257f0482d661d1986f92f057e1c581" category="doc">Investigue os dados armazenados em sua organização com a NetApp Data Classification</block>
-  <block id="7ce237dbe0011dccdc7c96c7be17d6ec" category="paragraph">O painel de investigação de dados exibe insights em nível de arquivo e diretório sobre seus dados, permitindo que você classifique e filtre os resultados.  A página Investigação de Dados apresenta insights sobre metadados e permissões de arquivos e diretórios, além de identificar arquivos duplicados.  Com insights em nível de arquivo, diretório e banco de dados, você pode tomar medidas para melhorar a conformidade da sua organização e economizar espaço de armazenamento.  A página Investigação de Dados também oferece suporte para mover, copiar e excluir arquivos.</block>
   <block id="8d6bb2090f1e71e8cabff59cd97a6f5f" category="admonition">Para obter insights da página Investigação, você deve executar uma verificação de classificação completa em suas fontes de dados.  Fontes de dados que passaram por uma varredura somente de mapeamento não mostram detalhes em nível de arquivo.</block>
   <block id="adbc89b69fed239a539f916b53592ab9" category="section-title">Estrutura de investigação de dados</block>
   <block id="7fc46b0c25bc13694774a84c4a0f5b4b" category="paragraph">A página Investigação de Dados classifica os dados em três guias:</block>
@@ -2429,7 +2427,6 @@
   <block id="a1b1318193a35f78be2416bedbe04261" category="sidebar">Veja detalhes de governança sobre seus dados</block>
   <block id="056f094fced7be2185f9f1e21b455e6b" category="sidebar">Veja detalhes de conformidade sobre seus dados</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="sidebar">Categorias de dados privados</block>
-  <block id="d208d030068b6bbb840e4e251deaf193" category="sidebar">Crie uma verificação personalizada</block>
   <block id="bd3668f2876c07e4375041fda913dc31" category="sidebar">Gerenciar consultas salvas</block>
   <block id="91cace02ed792be8683fda1544dfb32c" category="sidebar">Modificar configurações de digitalização</block>
   <block id="2a79af6160ec8fbec237f8058c6c9de3" category="sidebar">Gerenciar classificação de dados</block>
@@ -2797,5 +2794,49 @@
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">09 de março de 2026</block>
   <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">Um diagrama que mostra a localização das fontes de dados que você pode analisar ao usar uma única instância de Data Classification implantada localmente sem acesso à internet.</block>
   <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e70d49c282a7c52a8996f7a8357c7524" category="doc">Perguntas frequentes sobre NetApp Data Classification</block>
+  <block id="4ccc6bc65ccfbf776471461699df7790" category="inline-link-macro">Copiar, mover e excluir dados</block>
+  <block id="26f19c45862fe8f967db0b3b7d289ad3" category="paragraph">Para mais informações, consulte <block ref="151ab796904ad3ebe669fb675d8fec0a" category="inline-link-macro-rx"></block>.</block>
+  <block id="ad5b3224be1d6831dcf88a793785b1f1" category="doc">Perguntas frequentes sobre NetApp Data Classification</block>
+  <block id="621a6cff40fed66e7b90194843eb20fb" category="doc">Avisos legais para NetApp Data Classification</block>
+  <block id="b231d70c2e9c026262bda45de2cf8e61" category="doc">Faça login em NetApp Data Classification</block>
+  <block id="f214292b356953b67175bbd37992066d" category="summary">Após filtrar dados no painel de investigação, você pode copiar, mover e excluir dados não estruturados.</block>
+  <block id="645af234aa1818d98e8bb6c780fb0e42" category="doc">Copie, mova e exclua arquivos usando NetApp Data Classification</block>
+  <block id="4c6b11e5b29f298bdccac50248f21007" category="paragraph">Além de fornecer informações sobre governança e oportunidades de economia, NetApp Data Classification também permite que você execute ações em arquivos a partir do painel de investigação. Após filtrar dados no painel de investigação, você pode copiar, mover e excluir dados não estruturados. A execução dessas ações pode melhorar a conformidade, por exemplo, movendo arquivos para um local mais seguro ou criar oportunidades de economia excluindo arquivos antigos ou duplicados.</block>
+  <block id="558f28628ba8ab4cb8420949524832d3" category="section-title">Copiar arquivos</block>
+  <block id="e54a222aee96b176f405c4031ff80909" category="paragraph">Data Classification suporta a cópia de arquivos de até 1 GB. Você pode copiar um total de 1 TB de dados ou 5 milhões de arquivos, o que ocorrer primeiro. Você pode copiar arquivos para um compartilhamento CIFS ou destino NFS. Não há impacto no arquivo de origem ao copiá-lo.</block>
+  <block id="37214830ec688e601a722f40084e9795" category="list-text">No painel de investigação, selecione os arquivos que deseja copiar.</block>
+  <block id="2d2f00419a0dd0229c58522ea98e71ae" category="list-text">Acima da lista de arquivos, selecione **Copy**.</block>
+  <block id="b9e9b1bb4d8b072a482f32c6e7d7ff72" category="inline-image-macro">Captura de tela das ações na página de investigação</block>
+  <block id="cca60a4ec6a536a71654abbbd1c54e3a" category="paragraph"><block ref="cca60a4ec6a536a71654abbbd1c54e3a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="07f527a3198ae416b045c995367ab422" category="list-text">Selecione o protocolo do destino para as cópias: **NFS** ou **CIFS**.</block>
+  <block id="4885cff36928d8614fad0e3d21b27679" category="list-text">Se você selecionou NFS, insira o caminho de destino usando barras (/), por exemplo<block ref="8ed050b486343bdef7b6adadf5b986b8" prefix=" " category="inline-code"></block>.</block>
+  <block id="6a3331936dcbbbfa4db946e4d0f00e9b" category="paragraph">Se você selecionou CIFS, insira o caminho de destino usando barras invertidas, por exemplo<block ref="52938cbc0a420230679e4ae98bb4a89a" prefix=" " category="inline-code"></block>. Insira também as credenciais de **Username** e **Password** para o compartilhamento CIFS.</block>
+  <block id="c64976420b21ffb4d1ba97533079e81c" category="inline-image-macro">Captura de tela da função de cópia para arquivos NFS</block>
+  <block id="12ceb039500c1e7536d6a926d04beed0" category="paragraph"><block ref="12ceb039500c1e7536d6a926d04beed0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="005315d0bf05e5d249f46e46e20423d3" category="list-text">Selecione **Submit**.</block>
+  <block id="ed86a97d5bcbda5898269baae37b79f7" category="section-title">Mover arquivos</block>
+  <block id="0ac97eb58eed3141f29d93b87eb4d0b7" category="paragraph">NetApp Data Classification suporta a movimentação de arquivos de até 1 GB. Você pode mover um total de 1 TB de dados ou 5 milhões de arquivos, o que ocorrer primeiro. Você pode mover arquivos para um compartilhamento CIFS ou destino NFS.</block>
+  <block id="fbb338a6c6a711b7c940515c513f15de" category="list-text">No painel de investigação, selecione os arquivos que você deseja mover.</block>
+  <block id="2066527d248d6275b0ce325ff50ec8fb" category="list-text">Acima da lista de arquivos, selecione **Move**.</block>
+  <block id="2a993e09d9313401f99dcee0ed7245f9" category="list-text">Selecione o protocolo do destino: **NFS** ou **CIFS**.</block>
+  <block id="1ab5ecdad0b7cf47d71967b3f0e1f51b" category="list-text">Opcionalmente, selecione **Deixar breadcrumb** para deixar um arquivo breadcrumb no volume de origem que explica onde e por que o arquivo foi movido.</block>
+  <block id="465b61ed91de19635de96ea746fcd8dd" category="list-text">Se você selecionou **Deixar breadcrumb**, insira um texto descritivo que explique o motivo da movimentação do arquivo e, se necessário, o novo local.</block>
+  <block id="f7e4b92188f5354ca61e9869df6224cc" category="inline-image-macro">Captura de tela da função de movimentação de arquivos NFS</block>
+  <block id="9b1a8f320a2c08a8370e356510090979" category="paragraph"><block ref="9b1a8f320a2c08a8370e356510090979" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7afd3db29a42496704a6705958fec121" category="list-text">Selecione **Mover itens**.</block>
+  <block id="19e43848563797a6f937c7895b604754" category="section-title">Excluir arquivos</block>
+  <block id="bf7a8fa340e92f5931d748d2f4929afb" category="paragraph">Ao filtrar dados no painel de Investigação para descobrir oportunidades de economia de espaço e custos, você pode excluir esses arquivos. A exclusão de arquivos é compatível apenas com arquivos não estruturados.</block>
+  <block id="fe3f40b2ceb6ec005d118e22ab125813" category="list-text">No painel de investigação, selecione os arquivos que deseja excluir.</block>
+  <block id="9f9603fa59f6dd606ff86c8b621cae42" category="list-text">Na caixa de diálogo de confirmação, digite "permanently delete".</block>
+  <block id="de44f74c0cf208f9b074a847f28871e1" category="list-text">Selecione **Excluir arquivo** para confirmar a operação.</block>
+  <block id="9c213e0d48408ad93cdfc881eb4f22dd" category="inline-image-macro">Captura de tela da caixa de diálogo de exclusão</block>
+  <block id="d5c79828ec7e224f24ce0c5c7bdfd94a" category="paragraph"><block ref="d5c79828ec7e224f24ce0c5c7bdfd94a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1e91143d215d79313744660e8a25c51" category="inline-link-macro">mover, copiar e excluir arquivos</block>
+  <block id="5f346df67220a8ad49f8534209369421" category="paragraph">O painel de Investigação de Dados exibe informações sobre seus dados em nível de arquivo e diretório, permitindo que você classifique e filtre os resultados. A página Investigação de Dados apresenta informações sobre metadados e permissões de arquivos e diretórios, além de identificar arquivos duplicados. Com informações em nível de arquivo, diretório e banco de dados, você pode tomar medidas para melhorar a conformidade da sua organização e economizar espaço de storage. A página Investigação de Dados também oferece suporte a <block ref="53552aaf1401627b381eb7f88c3339dc" category="inline-link-macro-rx"></block>.</block>
+  <block id="f394fbb29081ecb4ff4624bf5701d2c0" category="inline-link-macro">copiar, mover e excluir arquivos não estruturados</block>
+  <block id="380916f8eca732c161f7d63bc771658e" category="admonition">Após filtrar os dados, você pode <block ref="80925d04faafa25188db966788d6cf44" category="inline-link-macro-rx"></block> para melhorar a conformidade ou otimizar o armazenamento.</block>
+  <block id="a05935ba37500bcaabc75b8fac4a4d69" category="inline-link-macro">Copie, mova e exclua dados do painel de investigação</block>
+  <block id="dccdd7229b11ad459b3b6fd7edf24186" category="list-text"><block ref="dccdd7229b11ad459b3b6fd7edf24186" category="inline-link-macro-rx"></block></block>
+  <block id="5b077e4667590c350e8809dec7c16b8f" category="sidebar">Verifique a prontidão do seu host Linux</block>
+  <block id="44c26efa4311ed85b7e12474f8bd2eaf" category="sidebar">Remover fontes de dados</block>
 </blocks>
