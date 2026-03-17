@@ -145,7 +145,7 @@ Certifique-se de que você pode manter a Classificação de Dados em execução.
 
 ** Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão 1.30 ou superior do Data Classification:
 +
-*** Red Hat Enterprise Linux versão 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5 e 9.6.
+*** Red Hat Enterprise Linux versão 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 e 9.7.
 
 
 ** As extensões de vetor avançadas (AVX2) devem estar habilitadas no sistema host.
