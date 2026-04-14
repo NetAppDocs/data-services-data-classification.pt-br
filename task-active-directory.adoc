@@ -4,7 +4,7 @@ permalink: task-active-directory.html
 keywords: active directory, ad, data sense, cloud data sense 
 summary: Você pode integrar um Active Directory global com a NetApp Data Classification para aprimorar os resultados que a Classificação de Dados relata sobre proprietários de arquivos e quais usuários e grupos têm acesso aos seus arquivos. 
 ---
-= Integre seu Active Directory com a NetApp Data Classification
+= Integrar o Active Directory com NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

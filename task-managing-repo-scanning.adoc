@@ -4,7 +4,7 @@ permalink: task-managing-repo-scanning.html
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification 
 summary: Aprenda como modificar as configurações de varredura de um sistema no NetApp Data Classification. 
 ---
-= Alterar as configurações de verificação de NetApp Data Classification para seus repositórios
+= Alterar configurações de digitalização em NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
