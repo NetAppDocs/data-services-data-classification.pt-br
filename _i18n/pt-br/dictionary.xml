@@ -350,7 +350,6 @@
   <block id="e3039a8cdad0a73851473ddb07dde2db" category="paragraph"><block ref="e3039a8cdad0a73851473ddb07dde2db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0fcbb838b28fe6620124c2e3523d9aec" category="paragraph">Observe o seguinte sobre a instância padrão:</block>
   <block id="51289cc570c497db655052573fd52ce4" category="inline-link">instância m6i.4xlarge</block>
-  <block id="cd58258f239a8600b9d2702d8474b7ba" category="list-text">Na AWS, a Classificação de Dados é executada em um<block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block> com um disco GP2 de 500 GiB.  A imagem do sistema operacional é o Amazon Linux 2.  Quando implantado na AWS, você pode escolher um tamanho de instância menor se estiver digitalizando uma pequena quantidade de dados.</block>
   <block id="d4167e5918d44a2511d9c29b74d9811f" category="inline-link-macro">Standard_D16s_v3 VM</block>
   <block id="ba9e8ffa00e4ec6e8fd6ad39395b0771" category="list-text">No Azure, a Classificação de Dados é executada em um<block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block> com um disco de 500 GiB.  A imagem do sistema operacional é o Ubuntu 22.04.</block>
   <block id="f62345014eb3b94916730d5fa4eb623f" category="inline-link-macro">VM n2-padrão-16</block>
@@ -371,7 +370,6 @@
   <block id="1a7c4f8acb1e42cdd7c2f34894fc2a2a" category="cell">Grande (padrão)</block>
   <block id="f1fec8e9e1c0fb72e2b217fcc55b8ae5" category="cell">16 CPUs, 64 GB de RAM, SSD de 500 GiB</block>
   <block id="ea1a46649fa6479f8f6b7adefbb4450a" category="cell">Pode escanear até 250 milhões de arquivos.</block>
-  <block id="804b3eb7f21fe46f64e94599ec406b5d" category="paragraph">Ao implantar a Classificação de Dados no Azure ou no GCP, envie um e-mail para ng-contact-data-sense@netapp.com para obter assistência se desejar usar um tipo de instância menor.</block>
   <block id="210aaa57065cbe07de752e162872e005" category="section-title">Como funciona a varredura de classificação de dados</block>
   <block id="86e78fffe44861a160c4cf918a51d508" category="paragraph">Em um nível mais alto, a varredura de classificação de dados funciona assim:</block>
   <block id="68b79e824b76880b5977d460b5a6cf96" category="list-text">Você implanta uma instância de Classificação de Dados no Console.</block>
@@ -516,7 +514,6 @@
   <block id="dde19a0f40a28ec93e840744c9acff6b" category="section-title">Que tipo de instância ou VM é necessária para a Classificação de Dados?</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">implantado na nuvem</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">Quando<block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block> :</block>
-  <block id="7c27816a1e01fb6a59e4cfb7c34a2547" category="list-text">Na AWS, a Classificação de Dados é executada em uma instância m6i.4xlarge com um disco GP2 de 500 GiB.  Você pode selecionar um tipo de instância menor durante a implantação.</block>
   <block id="41009856b6a3ebfc92ee460b5d8cd587" category="list-text">No Azure, a Classificação de Dados é executada em uma VM Standard_D16s_v3 com um disco de 500 GiB.</block>
   <block id="934ed7b265f7f163e5eda8f780809fa6" category="list-text">No GCP, a Classificação de Dados é executada em uma VM n2-standard-16 com um disco persistente Standard de 500 GiB.</block>
   <block id="cac4c6c3e3aab4c73ea23379444f4211" category="section-title">Posso implantar a Classificação de Dados no meu próprio host?</block>
@@ -605,8 +602,6 @@
   <block id="b30d2f4e379d4d1d15b42fb01207e52c" category="summary">O software de classificação de dados deve ser executado em um host que atenda aos requisitos específicos do sistema operacional, requisitos de RAM, requisitos de software e assim por diante.  Ao implantar a Classificação de Dados na nuvem, é recomendável usar um sistema com características "grandes" para funcionalidade completa.</block>
   <block id="abf286473c09b28744e63e974cf9988b" category="doc">Tipos de instância de NetApp Data Classification com suporte</block>
   <block id="6daeedd88ba8cb7688391f66dd283257" category="paragraph">O software NetApp Data Classification deve ser executado em um host que atenda a requisitos específicos do sistema operacional, requisitos de RAM, requisitos de software e assim por diante.  Ao implantar a Classificação de Dados na nuvem, recomendamos que você use um sistema com características "grandes" para obter funcionalidade completa.</block>
-  <block id="e3d9501cf5bf97e937eec87d87b8575b" category="inline-link-macro">Saiba mais sobre essas limitações</block>
-  <block id="a5ed42633f6328596e09b85b7f23e651" category="paragraph">Você pode implantar a Classificação de Dados em um sistema com menos CPUs e menos RAM, mas há algumas limitações ao usar esses sistemas menos potentes. <block ref="6a2df54a359e7ff07fa6fb48e3814fc6" category="inline-link-macro-rx"></block> .</block>
   <block id="31bcdb40fe40bdf5535d17bbb6b1231c" category="paragraph">Nas tabelas a seguir, se o sistema marcado como "padrão" não estiver disponível na região onde você está instalando o Data Classification, o próximo sistema na tabela será implantado.</block>
   <block id="c050baa4e510e3ce3e02b5da38a1c517" category="section-title">Tipos de instância da AWS</block>
   <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="cell">Tipo de instância</block>
@@ -616,14 +611,6 @@
   <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">Grande</block>
   <block id="eec0d212c1750829ae380457eae9d24d" category="inline-link">m6i.4xlarge</block>
   <block id="a0663cb1844f1b3415ad47f3e1336565" category="cell"><block ref="4a1901a74409198712b3543e7da252d5" category="inline-link-rx"></block>(padrão) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge</block>
-  <block id="87f8a6ab85c9ced3702b4ea641ad4bb5" category="cell">Médio</block>
-  <block id="ae0bb774c8ff14b3dcc932f311aaacb7" category="cell">8 CPUs, 32 GB de RAM, SSD de 200 GiB</block>
-  <block id="74b1ff02462cd25206c932a6e717f618" category="inline-link">m6i.2xlarge</block>
-  <block id="c6f3d0ce2f348118098491bd4e596968" category="cell"><block ref="d3d71aa1fb316d99a8a4d2c1c360ebef" category="inline-link-rx"></block>(padrão) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge</block>
-  <block id="2660064e68655415da2628c2ae2f7592" category="cell">Pequeno</block>
-  <block id="4d4d090716714e5940e9220554e56673" category="cell">8 CPUs, 16 GB de RAM, SSD de 100 GiB</block>
-  <block id="31f5c89df71ec769af1bb972a418e35d" category="inline-link">c6a.2xlarge</block>
-  <block id="fdf22b4a55e52f224df3e72ab9eb5ca8" category="cell"><block ref="fa55dc5c8a0289d3eee586f1fb616e44" category="inline-link-rx"></block>(padrão) c5a.2xlarge c5.2xlarge c4.2xlarge</block>
   <block id="254c926efe222a9cced66b6753a3b70c" category="section-title">Tipos de instância do Azure</block>
   <block id="7c6b159592aa05d7d8934685f5b0c4c8" category="cell">32 CPUs, 128 GB de RAM, disco do sistema operacional (2.048 GiB, taxa de transferência mínima de 250 MB/s) e disco de dados (SSD de 1 TiB, taxa de transferência mínima de 750 MB/s)</block>
   <block id="02201d429f7390acabd29e5c0c6e22e2" category="inline-link">Standard_D32_v3</block>
@@ -2846,4 +2833,6 @@
   <block id="f15acb0d4fe22bbfd7a457efbbb0c466" category="doc">Visualize os relatórios de conformidade em NetApp Data Classification</block>
   <block id="d8a9eef33f1bf33c7498d8f206f3d120" category="doc">Investigue os dados da sua organização com NetApp Data Classification</block>
   <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">Alterar configurações de digitalização em NetApp Data Classification</block>
+  <block id="d45f223b29c54a03c611d6faaae58cf9" category="list-text">Na AWS, a Classificação de Dados é executada em um <block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block> com um disco GP2 de 500 GiB. A imagem do sistema operacional é o Amazon Linux 2.</block>
+  <block id="5d8b6e341fd15d744bee3c27b7ca8a68" category="list-text">Na AWS, a Classificação de Dados é executada em uma instância m6i.4xlarge com um disco GP2 de 500 GiB.</block>
 </blocks>

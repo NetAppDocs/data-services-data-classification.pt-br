@@ -276,7 +276,7 @@ O NetApp Console permite que o usuário escaneie e gere relatórios sobre sistem
 
 Quandolink:task-deploy-cloud-compliance.html["implantado na nuvem"] :
 
-* Na AWS, a Classificação de Dados é executada em uma instância m6i.4xlarge com um disco GP2 de 500 GiB.  Você pode selecionar um tipo de instância menor durante a implantação.
+* Na AWS, a Classificação de Dados é executada em uma instância m6i.4xlarge com um disco GP2 de 500 GiB.
 * No Azure, a Classificação de Dados é executada em uma VM Standard_D16s_v3 com um disco de 500 GiB.
 * No GCP, a Classificação de Dados é executada em uma VM n2-standard-16 com um disco persistente Standard de 500 GiB.
 

@@ -74,9 +74,9 @@ A Classificação de Dados pode escanear e analisar dados estruturados e não es
 * Amazon FSx for NetApp ONTAP
 * Azure NetApp Files
 * Cloud Volumes ONTAP (implantado na AWS, Azure ou GCP)
+* Google Cloud NetApp Volumes
 * Clusters ONTAP locais
 * StorageGRID
-* Google Cloud NetApp Volumes
 
 
 *Fontes de dados*
@@ -132,7 +132,7 @@ image:diagram_cloud_compliance_instance.png["Um diagrama que mostra uma instânc
 
 Observe o seguinte sobre a instância padrão:
 
-* Na AWS, a Classificação de Dados é executada em um https://aws.amazon.com/ec2/instance-types/m6i/["instância m6i.4xlarge"^] com um disco GP2 de 500 GiB.  A imagem do sistema operacional é o Amazon Linux 2.  Quando implantado na AWS, você pode escolher um tamanho de instância menor se estiver digitalizando uma pequena quantidade de dados.
+* Na AWS, a Classificação de Dados é executada em um  https://aws.amazon.com/ec2/instance-types/m6i/["instância m6i.4xlarge"^] com um disco GP2 de 500 GiB. A imagem do sistema operacional é o Amazon Linux 2.
 * No Azure, a Classificação de Dados é executada em umlink:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] com um disco de 500 GiB.  A imagem do sistema operacional é o Ubuntu 22.04.
 * No GCP, a Classificação de Dados é executada em umlink:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["VM n2-padrão-16"^] com um disco persistente padrão de 500 GiB.  A imagem do sistema operacional é o Ubuntu 22.04.
 * Em regiões onde a instância padrão não está disponível, a Classificação de Dados é executada em uma instância alternativa. link:reference-instance-types.html["Veja os tipos de instância alternativos"] .
@@ -159,8 +159,6 @@ Revise as seguintes especificações para tipos de instância:
 
 | Grande (padrão) | 16 CPUs, 64 GB de RAM, SSD de 500 GiB | Pode escanear até 250 milhões de arquivos. 
 |===
-Ao implantar a Classificação de Dados no Azure ou no GCP, envie um e-mail para ng-contact-data-sense@netapp.com para obter assistência se desejar usar um tipo de instância menor.
-
 
 
 == Como funciona a varredura de classificação de dados
