@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+TIP: Para implementações VMware vSphere locais, a Classificação de Dados oferece suporte a um processo simplificado link:task-deploy-ova.html["implantação com OVA"].

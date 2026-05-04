@@ -1,9 +1,9 @@
-= Versão 1.53
+= Melhorias gerais
 :allow-uri-read: 
 
 
 
 
-=== Versão 1.53
+=== Melhorias gerais
 
 Esta versão do Data Classification inclui correções de erros, melhorias de segurança e otimizações de desempenho.

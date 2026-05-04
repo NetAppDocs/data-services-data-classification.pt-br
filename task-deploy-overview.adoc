@@ -14,15 +14,20 @@ summary: Planeje qual implantação do NetApp Data Classification atende às sua
 
 
 [role="lead"]
-Você pode implantar a NetApp Data Classification de diferentes maneiras.  Aprenda qual método atende às suas necessidades.
-
-A classificação de dados pode ser implantada das seguintes maneiras:
+Você pode implementar a NetApp Data Classification de diferentes maneiras. Analise os métodos disponíveis para escolher aquele que melhor se adapta às suas necessidades.
 
 * link:task-deploy-cloud-compliance.html["Implante na nuvem usando o Console"] . O Console implanta a instância de Classificação de Dados na mesma rede do provedor de nuvem que o agente do Console.
 * link:task-deploy-compliance-onprem.html["Instalar em um host Linux com acesso à Internet"] . Instale o Data Classification em um host Linux na sua rede ou em um host Linux na nuvem que tenha acesso à Internet.  Esse tipo de instalação pode ser uma boa opção se você preferir escanear sistemas ONTAP locais usando uma instância de Classificação de Dados que também esteja localizada no local, embora isso não seja um requisito.
 * link:task-deploy-compliance-dark-site.html["Instalar em um host Linux em um site local sem acesso à Internet"], também conhecido como _modo privado_. Esse tipo de instalação, que usa um script de instalação, não tem conectividade com a camada SaaS do Console.
 
 
-Tanto a instalação em um host Linux com acesso à Internet quanto a instalação local em um host Linux sem acesso à Internet usam um script de instalação.  O script começa verificando se o sistema e o ambiente atendem aos pré-requisitos.  Se os pré-requisitos forem atendidos, a instalação será iniciada.  Se você quiser verificar os pré-requisitos independentemente de executar a instalação da Classificação de Dados, há um pacote de software separado que você pode baixar e que testa apenas os pré-requisitos.
 
-Consulte link:task-test-linux-system.html["Verifique se o seu host Linux está pronto para instalar a Classificação de Dados"] .
+TIP: Para implementações VMware vSphere locais, a Classificação de Dados oferece suporte a um processo simplificado link:task-deploy-ova.html["implantação com OVA"].
+
+
+
+== Script de instalação local
+
+Tanto a instalação em um host Linux com acesso à internet quanto a instalação local em um host Linux sem acesso à internet utilizam um script de instalação. O script inicia verificando se o sistema e o ambiente atendem aos pré-requisitos. Se os pré-requisitos forem atendidos, a instalação é iniciada.
+
+Um pacote de software separado está disponível para verificar a prontidão do seu Linux. Para executar o pacote de verificação, consulte link:task-test-linux-system.html["Verifique se seu host Linux está pronto para instalar Data Classification"].

@@ -1,0 +1,11 @@
+= Implantar o NetApp Data Classification com OVA
+:allow-uri-read: 
+
+
+
+
+=== Implantar o NetApp Data Classification com OVA
+
+NetApp Data Classification agora oferece suporte à implantação com VMware Open Virtual Appliance (OVA), proporcionando uma estratégia de implantação simplificada para ambientes VMware vSphere locais.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-ova.html["Implantar o NetApp Data Classification com OVA"^].

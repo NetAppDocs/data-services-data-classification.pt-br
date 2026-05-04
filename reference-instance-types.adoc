@@ -14,9 +14,9 @@ summary: 'O software de classificação de dados deve ser executado em um host q
 
 
 [role="lead"]
-O software NetApp Data Classification deve ser executado em um host que atenda a requisitos específicos do sistema operacional, requisitos de RAM, requisitos de software e assim por diante.  Ao implantar a Classificação de Dados na nuvem, recomendamos que você use um sistema com características "grandes" para obter funcionalidade completa.
+NetApp Data Classification deve ser executado em um host que atenda aos requisitos específicos de sistema operacional, requisitos de RAM e requisitos de software. Ao implantar Data Classification na nuvem, recomendamos que você use um sistema com as características "large" para funcionalidade completa.
 
-Nas tabelas a seguir, se o sistema marcado como "padrão" não estiver disponível na região onde você está instalando o Data Classification, o próximo sistema na tabela será implantado.
+Nas tabelas a seguir, se o sistema marcado como "default" não estiver disponível na região onde você está instalando o Data Classification, o próximo tipo de instância listado na tabela será implantado.
 
 
 

@@ -20,6 +20,9 @@ A instalação local é uma boa opção se você preferir escanear sistemas ONTA
 
 O script de instalação do Data Classification começa verificando se o sistema e o ambiente atendem aos pré-requisitos necessários.  Se todos os pré-requisitos forem atendidos, a instalação será iniciada.  Se você quiser verificar os pré-requisitos independentemente de executar a instalação da Classificação de Dados, há um pacote de software separado que você pode baixar e que testa apenas os pré-requisitos. link:task-test-linux-system.html["Veja como verificar se o seu host Linux está pronto para instalar o Data Classification"] .
 
+
+TIP: Para implementações VMware vSphere locais, a Classificação de Dados oferece suporte a um processo simplificado link:task-deploy-ova.html["implantação com OVA"].
+
 A instalação típica em um host Linux _em suas instalações_ tem os seguintes componentes e conexões.
 
 image:diagram_deploy_onprem_overview.png["Um diagrama dos componentes de console e rede necessários e as conexões relacionadas."]
@@ -321,7 +324,7 @@ Observe que todas as atividades de instalação são registradas durante a insta
 
 
 .Passos
-. Baixe o software de classificação de dados do https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de suporte da NetApp"^] .  O arquivo que você deve selecionar é chamado *DATASENSE-INSTALLER-<versão>.tar.gz*.
+. Faça o download do software de Classificação de Dados em https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["Site de suporte da NetApp"^]. Selecione o arquivo chamado *DATASENSE-INSTALLER-<version>.tar.gz*.
 . Copie o arquivo do instalador para o host Linux que você planeja usar (usando `scp` ou algum outro método).
 . Descompacte o arquivo do instalador na máquina host, por exemplo:
 +
@@ -384,5 +387,9 @@ O instalador do Data Classification instala pacotes, registra a instalação e i
 
 Se houver conectividade pela porta 8080 entre a máquina host e a instância do agente do Console, você verá o progresso da instalação na guia Classificação de Dados no Console.
 
-.O que vem a seguir
-Na página Configuração, você pode selecionar as fontes de dados que deseja verificar.
+
+
+== Próximos passos
+
+* link:task-scanning-overview.html["Configure a varredura em suas fontes de dados"]
+

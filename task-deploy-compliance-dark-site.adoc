@@ -18,7 +18,8 @@ A instalação do NetApp Data Classification em um host Linux em um site local q
 
 link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Saiba mais sobre os diferentes modos de implantação para o agente do Console e Data Classification"^].
 
-Você também pode link:task-deploy-compliance-onprem.html["Implante Data Classification em um site local com acesso à internet"].
+
+TIP: Para implementações VMware vSphere locais, a Classificação de Dados oferece suporte a um processo simplificado link:task-deploy-ova.html["implantação com OVA"].
 
 O script de instalação do Data Classification começa verificando se o sistema e o ambiente atendem aos pré-requisitos necessários.  Se todos os pré-requisitos forem atendidos, a instalação será iniciada.  Se você quiser verificar os pré-requisitos independentemente de executar a instalação da Classificação de Dados, há um pacote de software separado que você pode baixar e que testa apenas os pré-requisitos. link:task-test-linux-system.html["Veja como verificar se o seu host Linux está pronto para instalar o Data Classification"] .
 
@@ -390,3 +391,10 @@ start_darksite_upgrade.sh
 O software de classificação de dados é atualizado no seu host. A atualização pode levar de 5 a 10 minutos.
 
 Você pode verificar se o software foi atualizado consultando a versão na parte inferior das páginas da interface de usuário de Data Classification.
+
+
+
+== Próximos passos
+
+* link:task-scanning-overview.html["Configure a varredura em suas fontes de dados"]
+

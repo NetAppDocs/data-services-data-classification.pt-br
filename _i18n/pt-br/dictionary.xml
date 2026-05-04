@@ -67,11 +67,9 @@
   <block id="672224b23e2b17f35b0d4bf8aa4f1c43" category="inline-image-macro">Uma captura de tela que mostra como configurar a consulta salva e salvá-la.</block>
   <block id="47a922638f32c230008676e9ffb143c9" category="paragraph"><block ref="47a922638f32c230008676e9ffb143c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02d6fe4579b4d035f1741bff636a2bf4" category="paragraph">Depois de criar a pesquisa ou política, você pode visualizá-la na aba **Consultas salvas**.</block>
-  <block id="2808185c0a48de3cd5dcc0d92f453531" category="doc">Versão 1.35</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="paragraph-title">Verificar dados do StorageGRID</block>
   <block id="3c857514c210414567713ffec9077aff" category="paragraph">A BlueXP classification oferece suporte à digitalização de dados no StorageGRID.</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Para mais detalhes, consulte<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block> .</block>
-  <block id="5413a43995a4a97a249b7b24fbf3e785" category="doc">Versão 1.36</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="paragraph-title">Suporte para RHEL 9.4</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">Esta versão oferece suporte ao Red Hat Enterprise Linux v9.4, além das versões suportadas anteriormente. Isso se aplica a qualquer instalação manual local da BlueXP classification, incluindo implantações em sites obscuros.</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão de BlueXP classification 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 9.0, 9.1, 9.2, 9.3 e 9.4.</block>
@@ -79,7 +77,6 @@
   <block id="ff7cd37eefd2efb9fa7f8feccf820e44" category="paragraph">Saiba mais sobre<block ref="7abbc5be80bdd5f0d4a0233853932b40" category="inline-link-rx"></block> .</block>
   <block id="7062dd46798946172bc9078744756dfc" category="paragraph-title">Desempenho de digitalização aprimorado</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Esta versão oferece desempenho de digitalização aprimorado.</block>
-  <block id="c1922490c576eff789b323f98c667589" category="doc">Versão 1.37</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">Esta versão da BlueXP classification inclui as seguintes atualizações.</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="paragraph-title">Suporte para RHEL 8.10</block>
   <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">Esta versão oferece suporte ao Red Hat Enterprise Linux v8.10, além das versões suportadas anteriormente. Isso se aplica a qualquer instalação manual local da BlueXP classification, incluindo implantações em sites obscuros.</block>
@@ -88,9 +85,7 @@
   <block id="ed86b5b4b59dfed3be7d90507a982e16" category="paragraph">Saiba mais sobre<block ref="8a553bdd7b5187af06654af7127bede8" category="inline-link-rx"></block> .</block>
   <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">Suporte para NFS v4.1</block>
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">Esta versão oferece suporte ao NFS v4.1, além das versões suportadas anteriormente.</block>
-  <block id="5ae300808387123005a76abbd5a99f46" category="doc">Versão 1.38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">Esta versão da BlueXP classification inclui melhorias gerais e correções de bugs.</block>
-  <block id="0a401367ec8a2cd84bb197e6d12c99af" category="doc">Versão 1.39</block>
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">Esta versão de BlueXP classification atualiza o processo de exportação do relatório de investigação de dados. Esta atualização de exportação é útil para executar análises adicionais em seus dados, criar visualizações adicionais nos dados ou compartilhar os resultados de sua investigação de dados com outras pessoas.</block>
   <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">Anteriormente, a exportação do relatório de investigação de dados era limitada a 10.000 linhas. Com esta versão, o limite foi removido para que você possa exportar todos os seus dados. Essa alteração permite que você exporte mais dados dos seus relatórios de investigação de dados, proporcionando mais flexibilidade na sua análise de dados.</block>
   <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">Você pode escolher o ambiente de trabalho, os volumes, a pasta de destino e o formato JSON ou CSV. O nome do arquivo exportado inclui um registro de data e hora para ajudar você a identificar quando os dados foram exportados.</block>
@@ -141,19 +136,15 @@
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">Precisão aprimorada do modelo de categorização</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">categorias predefinidas</block>
   <block id="3c83d9ffa8db579e805de307f057c519" category="paragraph">A precisão do modelo de aprendizagem de máquina para<block ref="4258f204d4b8f149538aa226ed3589d3" category="inline-link-macro-rx"></block> melhorou em 11%.</block>
-  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">Versão 1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">Esta versão da BlueXP classification inclui melhorias gerais e correções de bugs. Inclui também:</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">Status da digitalização</block>
   <block id="6a5c0bfd72f9b6c51f4f17f0d32a0bf5" category="paragraph">A BlueXP classification rastreia o progresso em tempo real das varreduras de mapeamento e classificação _iniciais_ em um volume. Barras progressivas separadas rastreiam as varreduras de mapeamento e classificação, apresentando uma porcentagem do total de arquivos varridos. Você também pode passar o mouse sobre uma barra de progresso para ver o número de arquivos verificados e o total de arquivos. Acompanhar o status das suas verificações cria insights mais profundos sobre o progresso da verificação, permitindo que você planeje melhor suas verificações e entenda a alocação de recursos.</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">Para visualizar o status das suas verificações, navegue até **Configuração** na BlueXP classification e selecione a **Configuração do ambiente de trabalho**. O progresso é exibido em linha para cada volume.</block>
-  <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">Versão 1.42</block>
-  <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">Esta versão de BlueXP classification inclui:</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">Digitalização em massa para ambientes de trabalho</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">Baixe o relatório de investigação localmente</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">A BlueXP classification permite baixar relatórios de investigação de dados localmente para visualizar no navegador. Se você escolher a opção local, a investigação de dados estará disponível apenas no formato CSV e exibirá apenas as primeiras 10.000 linhas de dados.</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">Investigue os dados armazenados em sua organização com a BlueXP classification</block>
   <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">Para obter mais informações, consulte <block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> .</block>
-  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">Versão 1.43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">Priorizar varreduras de classificação</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">A Classificação de Dados oferece suporte à capacidade de priorizar verificações de Mapeamento e Classificação, além de verificações somente de Mapeamento, permitindo que você selecione quais verificações serão concluídas primeiro. A priorização de verificações de Map &amp; Classify é suportada durante e antes do início das verificações. Se você optar por priorizar uma verificação enquanto ela estiver em andamento, tanto as verificações de mapeamento quanto as de classificação serão priorizadas.</block>
   <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">Para obter mais informações, consulte <block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> .</block>
@@ -169,8 +160,6 @@
   <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-link-macro">**Pesquisas salvas**</block>
   <block id="7d05e5a22d1961e95b7be92d35164378" category="paragraph">A aba **Políticas** foi renomeada<block ref="8d1bca00b0b16766f87fd78ec3ac185e" category="inline-link-macro-rx"></block> . A funcionalidade não foi alterada.</block>
   <block id="2e2e722b53fe801ed6bcd1713f8325ac" category="paragraph-title">Enviar eventos de verificação para a página de auditoria</block>
-  <block id="0d01ca23121427aff206ecc678cb7af3" category="inline-link-macro">Página de auditoria do NetApp Consle</block>
-  <block id="0fddd3e20389e20ca1c63de5412406ae" category="paragraph">A classificação de dados oferece suporte ao envio de eventos de classificação (quando uma varredura é iniciada e quando ela termina) para o<block ref="3dcf10816a01bda1b4320932f26d59f3" category="inline-link-macro-rx"></block> .</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">Atualizações de segurança</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">O pacote Keras foi atualizado, mitigando vulnerabilidades (BDSA-2025-0107 e BDSA-2025-1984).</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">A configuração dos contêineres do Docker foi atualizada. O contêiner não tem mais acesso às interfaces de rede do host para criar pacotes de rede brutos. Ao reduzir o acesso desnecessário, a atualização atenua potenciais riscos de segurança.</block>
@@ -178,7 +167,6 @@
   <block id="38942def5d8bae857c7eab12e7216c36" category="paragraph">Melhorias no código foram implementadas para reduzir o uso de RAM e melhorar o desempenho geral da Classificação de Dados.</block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="paragraph-title">Correções de bugs</block>
   <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">Foram corrigidos bugs que causavam falhas nas verificações do StorageGRID , o não carregamento das opções de filtro da página de investigação e o não download da Avaliação de Descoberta de Dados para avaliações de alto volume.</block>
-  <block id="1c4322a2b157ac1326426ebdbd680c74" category="doc">Versão 1.44</block>
   <block id="c7ea7ba68a180dd7fffb65d260820bdf" category="paragraph-title">Tempos de atualização aprimorados para o painel de governança</block>
   <block id="4a225b50559fc3e5c91e7a224bca4f82" category="paragraph">Os tempos de atualização para componentes individuais do painel de governança foram melhorados. A tabela a seguir exibe a frequência de atualizações para cada componente.</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">Componente</block>
@@ -203,8 +191,6 @@
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">Melhorias de desempenho e segurança</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">Foram feitas melhorias para melhorar o desempenho, o consumo de memória e a segurança da classificação BlueXP .</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">O Redis foi atualizado para melhorar a confiabilidade da BlueXP classification. A BlueXP classification agora usa o Elasticsearch para melhorar a precisão dos relatórios de contagem de arquivos durante as verificações.</block>
-  <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="doc">Versão 1.45</block>
-  <block id="8321b9867214f5caa9d5a37197549cfb" category="paragraph">Esta versão de BlueXP classification inclui alterações de código que otimizam a utilização de recursos e:</block>
   <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">Fluxo de trabalho aprimorado para adicionar compartilhamentos de arquivos para digitalização</block>
   <block id="7363f98210e80281886d9b88b644899c" category="paragraph">O fluxo de trabalho para adicionar compartilhamentos de arquivos a um grupo de compartilhamento de arquivos foi simplificado. O processo agora também diferencia o suporte ao protocolo CIFS com base no tipo de autenticação (Kerberos ou NTLM).</block>
   <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-link-macro">Verificar compartilhamentos de arquivos</block>
@@ -213,15 +199,12 @@
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">Agora você pode visualizar mais informações sobre os proprietários dos arquivos capturados na guia Investigação. Ao visualizar os metadados de um arquivo na guia Investigação, localize o proprietário do arquivo e selecione **Exibir detalhes** para ver o nome de usuário, o e-mail e o nome da conta SAM. Você também pode ver outros itens de propriedade deste usuário. Este recurso está disponível somente para ambientes de trabalho com o Active Directory.</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">Investigue os dados armazenados em sua organização</block>
   <block id="726bb63ef50725c7e3c4766906388acd" category="paragraph">Para obter mais informações, consulte <block ref="26029df2267a3a60cd67c1340e62ae48" category="inline-link-macro-rx"></block> .</block>
-  <block id="7a4e65e1bd3f1685ea059c893a13cb58" category="doc">Versão 1.46</block>
-  <block id="98f52421b10c8b076970cd9d4bc2932c" category="paragraph">Esta versão de Classificação de Dados inclui correções de bugs e as seguintes atualizações:</block>
   <block id="2c3661dfa2b24a2bf7320699cd536d69" category="paragraph-title">Insights aprimorados sobre eventos de verificação na página de auditoria</block>
   <block id="56693a88c5f83646349fbcd49bc5c045" category="paragraph">A página Auditoria agora oferece suporte a insights aprimorados sobre eventos de verificação para BlueXP classification. A página Auditoria agora exibe quando a verificação de um sistema começa, os status dos sistemas e quaisquer problemas. Os status de compartilhamentos e sistemas estão disponíveis somente para verificações de mapeamento.</block>
   <block id="00b752fcc4ff0f02c4a53ddfe7ca85f1" category="inline-link-macro">Monitorar as operações do NetApp Console</block>
   <block id="2602ef05ceb5e5b51fe554db44e59c2c" category="paragraph">Para mais informações sobre a página Auditoria, consulte<block ref="33e0fa7818f83bbe32f6e9c2e830952c" category="inline-link-macro-rx"></block> .</block>
   <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">Suporte para RHEL 9.6</block>
   <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">Esta versão adiciona suporte ao Red Hat Enterprise Linux v9.6 para instalação manual local da BlueXP classification, incluindo implantações de site escuro.</block>
-  <block id="ffc4cf2b04c0381567893ed4b4045ccf" category="doc">Versão 1.47</block>
   <block id="6f36bf9a9811b172de79706eb4020697" category="paragraph-title">A BlueXP classification agora é NetApp Data Classification</block>
   <block id="5aac44f6ff056f1c6c2f526f52fa4c03" category="paragraph">A BlueXP classification foi renomeada para NetApp Data Classification. Além da renomeação, a interface do usuário foi aprimorada.</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="paragraph-title">BlueXP agora é NetApp Console</block>
@@ -601,8 +584,6 @@
   <block id="763275034b3bde5ad4f0fb074a35e741" category="cell">Duplicatas</block>
   <block id="b30d2f4e379d4d1d15b42fb01207e52c" category="summary">O software de classificação de dados deve ser executado em um host que atenda aos requisitos específicos do sistema operacional, requisitos de RAM, requisitos de software e assim por diante.  Ao implantar a Classificação de Dados na nuvem, é recomendável usar um sistema com características "grandes" para funcionalidade completa.</block>
   <block id="abf286473c09b28744e63e974cf9988b" category="doc">Tipos de instância de NetApp Data Classification com suporte</block>
-  <block id="6daeedd88ba8cb7688391f66dd283257" category="paragraph">O software NetApp Data Classification deve ser executado em um host que atenda a requisitos específicos do sistema operacional, requisitos de RAM, requisitos de software e assim por diante.  Ao implantar a Classificação de Dados na nuvem, recomendamos que você use um sistema com características "grandes" para obter funcionalidade completa.</block>
-  <block id="31bcdb40fe40bdf5535d17bbb6b1231c" category="paragraph">Nas tabelas a seguir, se o sistema marcado como "padrão" não estiver disponível na região onde você está instalando o Data Classification, o próximo sistema na tabela será implantado.</block>
   <block id="c050baa4e510e3ce3e02b5da38a1c517" category="section-title">Tipos de instância da AWS</block>
   <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="cell">Tipo de instância</block>
   <block id="9b751021fe03877034959f96cd4215c8" category="cell">32 CPUs, 128 GB de RAM, 1 TiB gp3 SSD</block>
@@ -1263,7 +1244,6 @@
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">permissões e conectividade</block>
   <block id="6bbd76aed7b9a40fed8eed718cd10a57" category="list-text">Verifique se o seu ambiente offline atende aos requisitos<block ref="95ceef71f2a9d15ceaa6dd17e75c1dd0" category="inline-xref-macro-rx"></block> .</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">Site de suporte da NetApp</block>
-  <block id="c9a87a7f951d4e7d4680cb07a4c60b9f" category="list-text">Baixe o software de classificação de dados do<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block> .  O arquivo que você deve selecionar é chamado *DATASENSE-INSTALLER-&lt;versão&gt;.tar.gz*.</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">Copie o arquivo do instalador para o host Linux que você planeja usar (usando<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block> ou algum outro método).</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">Descompacte o arquivo do instalador na máquina host, por exemplo:</block>
   <block id="f74ff5e319b8679db4cb8aab068461b0" category="list-text">No Console, selecione *Governança &gt; Classificação*.</block>
@@ -1294,17 +1274,12 @@
   <block id="d4c51b5a828be356e15e6075078acbf3" category="paragraph">O instalador do Data Classification instala pacotes, registra a instalação e instala o Data Classification.  A instalação pode levar de 10 a 20 minutos.</block>
   <block id="055e0d252fbbc82a23ab2191fb431592" category="paragraph">Se houver conectividade pela porta 8080 entre a máquina host e a instância do agente do Console, você verá o progresso da instalação na guia Classificação de Dados no Console.</block>
   <block id="0f6783da8066ed936cd9826db896cc6b" category="summary">Planeje qual implantação do NetApp Data Classification atende às suas necessidades.</block>
-  <block id="8a627e808de2c30fa43886f0bdb6620c" category="paragraph">Você pode implantar a NetApp Data Classification de diferentes maneiras.  Aprenda qual método atende às suas necessidades.</block>
-  <block id="6598d8c3ced0847c96a82744bde57ec0" category="paragraph">A classificação de dados pode ser implantada das seguintes maneiras:</block>
   <block id="a7955816207c66ef93518de3b208c0d2" category="inline-link-macro">Implante na nuvem usando o Console</block>
   <block id="61e7b2134b2bd5446d16fd5d98582544" category="list-text"><block ref="718e5bf832b7dc2d474175d5c8eba439" category="inline-link-macro-rx"></block> . O Console implanta a instância de Classificação de Dados na mesma rede do provedor de nuvem que o agente do Console.</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="inline-link-macro">Instalar em um host Linux com acesso à Internet</block>
   <block id="08858c16551aba16c4305089845b505e" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block> . Instale o Data Classification em um host Linux na sua rede ou em um host Linux na nuvem que tenha acesso à Internet.  Esse tipo de instalação pode ser uma boa opção se você preferir escanear sistemas ONTAP locais usando uma instância de Classificação de Dados que também esteja localizada no local, embora isso não seja um requisito.</block>
   <block id="5be81ee840734d5fff39d8fb451e87de" category="inline-link-macro">Instalar em um host Linux em um site local sem acesso à Internet</block>
   <block id="53732c49c909038650b435483c435d88" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>, também conhecido como _modo privado_. Esse tipo de instalação, que usa um script de instalação, não tem conectividade com a camada SaaS do Console.</block>
-  <block id="967c2f231d9eedd4e80f0b4308527637" category="paragraph">Tanto a instalação em um host Linux com acesso à Internet quanto a instalação local em um host Linux sem acesso à Internet usam um script de instalação.  O script começa verificando se o sistema e o ambiente atendem aos pré-requisitos.  Se os pré-requisitos forem atendidos, a instalação será iniciada.  Se você quiser verificar os pré-requisitos independentemente de executar a instalação da Classificação de Dados, há um pacote de software separado que você pode baixar e que testa apenas os pré-requisitos.</block>
-  <block id="5163ac50e7f6c9b31163f15317256ad2" category="inline-link-macro">Verifique se o seu host Linux está pronto para instalar a Classificação de Dados</block>
-  <block id="0864d0b8a39fc12ae74c4773b2a77ebb" category="paragraph">Consulte <block ref="52b086fa7b78412e3e0a859256e795c9" category="inline-link-macro-rx"></block> .</block>
   <block id="e1e216bf40960616935ca16f6eb23050" category="summary">Se quiser que a NetApp Data Classification exclua dados de verificação que residem em determinados diretórios de fonte de dados, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de classificação de dados excluirá os dados de digitalização nesses diretórios.</block>
   <block id="24559753da5c8b45ef15b1ad5d8f01de" category="doc">Excluir diretórios específicos das verificações de NetApp Data Classification</block>
   <block id="7d9aed9048d0f40617358d6c89d937c2" category="paragraph">Se quiser que a NetApp Data Classification exclua diretórios específicos das verificações, você pode adicionar esses nomes de diretório a um arquivo de configuração.  Depois de aplicar essa alteração, o mecanismo de Classificação de Dados exclui esses diretórios das verificações.</block>
@@ -2192,14 +2167,12 @@
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 de outubro de 2024</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2 de setembro de 2024</block>
   <block id="d7cf77b2e56bc33512915804de4711b6" category="section-title">05 de agosto de 2024</block>
-  <block id="3b506912c9fbc6e924c90fcd67f9e81d" category="section-title">Versão 1.34</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">Esta versão de BlueXP classification inclui a seguinte atualização.</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="paragraph-title">Mudança do CentOS para o Ubuntu</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">A BlueXP classification atualizou seu sistema operacional Linux para Microsoft Azure e Google Cloud Platform (GCP) do CentOS 7.9 para o Ubuntu 22.04.</block>
   <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">Instalar em um host Linux com acesso à Internet e preparar o sistema host Linux</block>
   <block id="6a69f78db41581cfd7a75502f076641e" category="paragraph">Para obter detalhes de implantação, consulte<block ref="bff73d8b740f372e10ebba82fd5cc0db" category="inline-link-rx"></block> .</block>
   <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">01 de julho de 2024</block>
-  <block id="29ca6f4adc7aee37872328bb347b7543" category="section-title">Versão 1.33</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="paragraph-title">Suporte ao Ubuntu</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">Esta versão suporta a plataforma Linux Ubuntu 24.04.</block>
   <block id="b83927d03444ee961e834ea1c3b0581b" category="paragraph-title">As varreduras de mapeamento coletam metadados</block>
@@ -2211,17 +2184,14 @@
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link-macro">Qual é a diferença entre mapeamento e varreduras de classificação?</block>
   <block id="5ea8b091093d54a8d17a734f5a2613d1" category="paragraph">Para obter detalhes, consulte <block ref="1f8ed6e5fe2de61322f9de0ebb8b7505" category="inline-link-macro-rx"></block> .</block>
   <block id="e4aecca06323b10cc72f8605553dacea" category="section-title">05 de junho de 2024</block>
-  <block id="decdab3311a7d521fe764d5d580ddd35" category="section-title">Versão 1.32</block>
   <block id="7910c8307cac3d62eca8ac0d42301b38" category="paragraph-title">Nova coluna de status de mapeamento na página de configuração</block>
   <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">Esta versão agora mostra uma nova coluna de status de mapeamento na página Configuração.  A nova coluna ajuda você a identificar se o mapeamento está em execução, na fila, pausado, entre outros.</block>
   <block id="6195c7a1534de8abb0c4706e15d24a3c" category="inline-link">Alterar configurações de digitalização</block>
   <block id="1f206e2cb955d5e4de5225f30ab20ee9" category="paragraph">Para explicações sobre os status, consulte<block ref="d5d0647f1bb783c2ee28e91247e20822" category="inline-link-rx"></block> .</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">15 de maio de 2024</block>
-  <block id="362a66c8caf141f86c11be1e2f936c77" category="section-title">Versão 1.31</block>
   <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="paragraph-title">A classificação está disponível como um serviço principal no BlueXP</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">A BlueXP classification agora está disponível como um recurso principal dentro do BlueXP , sem custo adicional para até 500 TiB de dados digitalizados por conector.  Não é necessária nenhuma licença de classificação ou assinatura paga.  Como focamos a funcionalidade de BlueXP classification na varredura de sistemas de armazenamento NetApp com esta nova versão, algumas funcionalidades legadas estarão disponíveis apenas para clientes que pagaram anteriormente por uma licença.  O uso desses recursos legados expirará quando o contrato pago atingir sua data final.</block>
   <block id="9c0269454c5c35ffc377aed6baf6d638" category="section-title">01 de abril de 2024</block>
-  <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">Versão 1.30</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="paragraph-title">Suporte adicionado para BlueXP classification</block>
   <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">Esta versão oferece suporte ao Red Hat Enterprise Linux v8.8 e v9.3, além do 9.x anteriormente suportado, que requer o Podman, em vez do mecanismo Docker.  Isso se aplica a qualquer instalação manual local da BlueXP classification.</block>
   <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podman e exigem a versão de BlueXP classification 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 9.0, 9.1, 9.2 e 9.3.</block>
@@ -2235,7 +2205,6 @@
   <block id="f943db85a7c2edd799890ddb18f29cab" category="inline-link">Instalar a BlueXP classification em um host Linux sem acesso à Internet</block>
   <block id="51113453f591a14d5c9aa29ed4c673ee" category="paragraph">Se você implantou a BlueXP classification sem acesso à Internet, será necessário atualizar manualmente. Para mais detalhes, consulte<block ref="99892e361f57f56d51a62e67f9505dc2" category="inline-link-rx"></block> .</block>
   <block id="b8a98fcc40c83e855fb31eabe2a4360d" category="section-title">04 de março de 2024</block>
-  <block id="512d4a337ec357edd106a616e83b1a1f" category="section-title">Versão 1.29</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="paragraph-title">Agora você pode excluir dados de digitalização que residem em determinados diretórios de fonte de dados</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Se quiser que a BlueXP classification exclua dados de digitalização que residem em determinados diretórios de fonte de dados, você pode adicionar esses nomes de diretório a um arquivo de configuração processado pela BlueXP classification .  Esse recurso permite que você evite escanear diretórios desnecessários ou que resultariam em resultados falsos positivos de dados pessoais.</block>
   <block id="4f7f682e1cf9bdb2a99803b608a4cba1" category="paragraph"><block ref="e9b412144eab992a1669232ef41dc93d" category="inline-link-rx"></block> .</block>
@@ -2243,29 +2212,20 @@
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">Se precisar que a BlueXP classification verifique mais de 250 milhões de arquivos, você pode usar uma instância extragrande em sua implantação na nuvem ou instalação local.  Este tipo de sistema pode escanear até 500 milhões de arquivos.</block>
   <block id="21945ea03234b0d3124095ee6fd8427b" category="paragraph"><block ref="6ace692244f983096552c0b273619a12" category="inline-link-rx"></block> .</block>
   <block id="c630754f942c555264fff115d6b5e9b2" category="section-title">10 de janeiro de 2024</block>
-  <block id="536149161458a7a77ae5b72258f34e48" category="section-title">Versão 1.27</block>
   <block id="fe2063e5676e0308022c99eb2466140c" category="paragraph-title">Os resultados da página de investigação exibem o tamanho total, além do número total de itens</block>
   <block id="6cff48344cb111c0fcdb424ba18c6bcf" category="paragraph">Os resultados filtrados na página Investigação exibem o tamanho total dos itens, além do número total de arquivos.  Isso pode ajudar ao mover arquivos, excluir arquivos e muito mais.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="paragraph-title">Configurar IDs de grupo adicionais como "Aberto à organização"</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link-macro">adicionar IDs de grupo adicionais como "abertos à organização"</block>
   <block id="73b91e38353381a5358557fef0936ca8" category="paragraph">Agora você pode configurar IDs de grupo no NFS para serem consideradas como "Abertas à organização" diretamente da BlueXP classification, caso o grupo não tenha sido definido inicialmente com essa permissão.  Todos os arquivos e pastas que tiverem esses IDs de grupo anexados serão exibidos como "Abertos à organização" na página Detalhes da investigação. Veja como<block ref="3412c0c43e6acc979ac67717176325f7" category="inline-link-macro-rx"></block> .</block>
   <block id="3500d4b863ccad6f25298c3ab1519e74" category="section-title">14 de dezembro de 2023</block>
-  <block id="552c9ad11d5dffc1189fa270ca015445" category="section-title">Versão 1.26.6</block>
-  <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">Esta versão incluiu algumas pequenas melhorias.</block>
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">O lançamento também removeu as seguintes opções:</block>
-  <block id="cfb92709c6d193fc86ee41b349cbe288" category="list-text">Durante a investigação dos Diretórios, a opção para calcular o número de dados de informações pessoais identificáveis (PII) pelos Diretórios não está disponível. Consulte <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block> .</block>
   <block id="544cac1ecf4d7d5eb4b8b563c0d90c5a" category="section-title">06 de novembro de 2023</block>
-  <block id="0778a32085af8830c408efb93cb7239f" category="section-title">Versão 1.26.3</block>
   <block id="e25bae53fb1951841531279fa78ee63a" category="paragraph">Os seguintes problemas foram corrigidos nesta versão</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">Corrigida uma inconsistência ao apresentar o número de arquivos verificados pelo sistema nos painéis.</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Melhorou o comportamento de verificação ao manipular e relatar arquivos e diretórios com caracteres especiais no nome e nos metadados.</block>
   <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">04 de outubro de 2023</block>
-  <block id="a7dfa38887a337aec315ca23d79dc622" category="section-title">Versão 1.26</block>
   <block id="74246010013353726bd9ff99866fa7d4" category="paragraph-title">Suporte para instalações locais da BlueXP classification no RHEL versão 9</block>
-  <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">As versões 8 e 9 do Red Hat Enterprise Linux não oferecem suporte ao mecanismo Docker, que era necessário para a instalação da BlueXP classification . Agora oferecemos suporte à instalação da BlueXP classification no RHEL 9.0, 9.1 e 9.2 usando o Podman versão 4 ou superior como infraestrutura de contêiner. Se o seu ambiente exigir o uso das versões mais recentes do RHEL, agora você pode instalar a BlueXP classification (versão 1.26 ou superior) ao usar o Podman.</block>
-  <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">No momento, não oferecemos suporte a instalações de sites obscuros ou ambientes de digitalização distribuídos (usando nós de scanner mestre e remoto) ao usar o RHEL 9.x.</block>
   <block id="b9d5019337501d72be4adcf007f7d84c" category="section-title">05 de setembro de 2023</block>
-  <block id="3f1982a78707e6a0e0433cad5b5a037d" category="section-title">Versão 1.25</block>
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="paragraph-title">Implantações pequenas e médias temporariamente indisponíveis</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">Ao implantar uma instância da BlueXP classification na AWS, a opção de selecionar *Implantar &gt; Configuração* e escolher uma instância pequena ou média não estará disponível no momento. Você ainda pode implantar a instância usando o tamanho de instância grande selecionando *Implantar &gt; Implantar*.</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="paragraph-title">Aplique tags em até 100.000 itens da página Resultados da investigação</block>
@@ -2273,7 +2233,6 @@
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="paragraph-title">Identifique arquivos duplicados com um tamanho mínimo de 1 MB</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">A BlueXP classification era usada para identificar arquivos duplicados somente quando os arquivos tinham 50 MB ou mais. Agora é possível identificar arquivos duplicados começando com 1 MB. Você pode usar os filtros da página Investigação "Tamanho do arquivo" junto com "Duplicatas" para ver quais arquivos de um determinado tamanho estão duplicados em seu ambiente.</block>
   <block id="deac043b98b13aa9a1a0d041a820ee2c" category="section-title">17 de julho de 2023</block>
-  <block id="314ecd7c1da8864532628a8aa4a6c85b" category="section-title">Versão 1.24</block>
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="paragraph-title">Dois novos tipos de dados pessoais alemães são identificados pela BlueXP classification</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">A BlueXP classification pode identificar e categorizar arquivos que contêm os seguintes tipos de dados:</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link-macro">Veja todos os tipos de dados pessoais que a BlueXP classification pode identificar em seus dados</block>
@@ -2288,7 +2247,6 @@
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link-macro">Saiba mais sobre as APIs de BlueXP classification</block>
   <block id="31fcc22988d07002d58b5a25a50056c4" category="paragraph"><block ref="ad3b8a781fb3bfe4825e830a10bd8f59" category="inline-link-macro-rx"></block> .</block>
   <block id="40d3210136139f5fa0cdf31aed565820" category="section-title">06 de junho de 2023</block>
-  <block id="5a78709b3e68f78b25a72a31cfcaa8f0" category="section-title">Versão 1.23</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="paragraph-title">O japonês agora é suportado na busca por nomes de titulares de dados</block>
   <block id="3a3337f232548d40f54052862077499b" category="inline-link-macro">Relatório de solicitação de acesso do titular dos dados</block>
   <block id="931c126009c96d8f8ce9770df003478d" category="inline-link-macro">Filtro "Assunto dos Dados" na página Investigação de Dados</block>
@@ -2303,7 +2261,6 @@
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="paragraph-title">As licenças BYOL do Data Sense agora são suportadas em sites obscuros</block>
   <block id="164199ecac7ab88714ff0c68b5fb98f0" category="paragraph">Agora você pode carregar sua licença BYOL do Data Sense na BlueXP digital wallet em um site escuro para ser notificado quando sua licença estiver acabando.</block>
   <block id="70c95406986fbb3626df1a393daf99ce" category="section-title">03 de abril de 2023</block>
-  <block id="288d139ea0d21561e65bec74c2f7c646" category="section-title">Versão 1.22</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="paragraph-title">Novo Relatório de Avaliação de Descoberta de Dados</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Veja como gerar e usar o Relatório de Avaliação de Descoberta de Dados</block>
   <block id="9669b178481453beb0e2edf206fb5692" category="paragraph">O Relatório de Avaliação de Descoberta de Dados fornece uma análise de alto nível do seu ambiente escaneado para destacar as descobertas do sistema e mostrar áreas de preocupação e possíveis etapas de correção.  O objetivo deste relatório é aumentar a conscientização sobre preocupações com governança de dados, exposições de segurança de dados e lacunas de conformidade de dados do seu conjunto de dados.<block ref="9aee3318dd7918d722246357cd8063ac" category="inline-link-rx"></block> .</block>
@@ -2314,10 +2271,8 @@
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">Veja como verificar se o seu host Linux está pronto para instalar a BlueXP classification</block>
   <block id="4ea787a4759c0904647bf00934108410" category="paragraph">Se você quiser verificar se seu sistema Linux atende a todos os pré-requisitos, independentemente de executar a instalação da BlueXP classification , há um script separado que você pode baixar e que testa apenas os pré-requisitos.<block ref="5e1d943ca6af2f5a9cb8f87395f318ef" category="inline-link-rx"></block> .</block>
   <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">07 de março de 2023</block>
-  <block id="321553493f3e3f76105c5f5c5633b4c1" category="section-title">Versão 1.21</block>
   <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="paragraph-title">Nova funcionalidade para adicionar suas próprias categorias personalizadas na interface de BlueXP classification</block>
   <block id="3e55ef3a5ecc1c61843dac319870a00a" category="paragraph">A BlueXP classification agora permite que você adicione suas próprias categorias personalizadas para que a BlueXP classification identifique os arquivos que se enquadram nessas categorias.  A BlueXP classification tem muitos<block ref="5836292d8632cade998e14bbf16972f4" category="inline-link-rx"></block> , então esse recurso permite que você adicione categorias personalizadas para identificar onde as informações exclusivas da sua organização são encontradas nos seus dados.</block>
-  <block id="bca8069b731ea966c03da0cea318f9d1" category="paragraph-title">Agora você pode adicionar palavras-chave personalizadas da interface de BlueXP classification</block>
   <block id="c9383e3b8d4c0ef8e217c6982644630b" category="paragraph">A BlueXP classification tem a capacidade de adicionar palavras-chave personalizadas que a BlueXP classification identificará em verificações futuras há algum tempo.  No entanto, você precisava fazer login no host Linux de BlueXP classification e usar uma interface de linha de comando para adicionar as palavras-chave.  Nesta versão, a capacidade de adicionar palavras-chave personalizadas está na interface de BlueXP classification , tornando muito fácil adicionar e editar essas palavras-chave.</block>
   <block id="7e5ec3b51659d16db2e72438a8ca680a" category="paragraph-title">Capacidade de fazer com que a BlueXP classification *não* escaneie arquivos quando o "último horário de acesso" for alterado</block>
   <block id="f9bee7a7e545f0d95664d3ccaa7b7151" category="paragraph">Por padrão, se a BlueXP classification não tiver permissões de "gravação" adequadas, o sistema não verificará os arquivos em seus volumes porque a BlueXP classification não pode reverter o "último horário de acesso" para o registro de data e hora original.  No entanto, se você não se importa se o último horário de acesso será redefinido para o horário original em seus arquivos, você pode substituir esse comportamento na página Configuração para que a BlueXP classification verifique os volumes independentemente das permissões.</block>
@@ -2333,7 +2288,6 @@
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">O instalador de BlueXP classification para sites sem acesso à Internet (dark sites) agora executa uma pré-verificação para garantir que seus requisitos de sistema e rede estejam prontos para uma instalação bem-sucedida.</block>
   <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">Os arquivos de log de auditoria de instalação são salvos agora; eles são gravados em<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block> .</block>
   <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">05 de fevereiro de 2023</block>
-  <block id="4d892f9a0cb70711d12ffb41d4d77d8b" category="section-title">Versão 1.20</block>
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="paragraph-title">Capacidade de enviar e-mails de notificação baseados em políticas para qualquer endereço de e-mail</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">Em versões anteriores da BlueXP classification, você podia enviar alertas por e-mail aos usuários do BlueXP em sua conta quando determinadas políticas críticas retornassem resultados.  Este recurso permite que você receba notificações para proteger seus dados quando não estiver online.  Agora você também pode enviar alertas por e-mail das Políticas para quaisquer outros usuários (até 20 endereços de e-mail) que não estejam na sua conta BlueXP .</block>
   <block id="01111213f34b03537871696a29c018fa" category="inline-link">Saiba mais sobre o envio de alertas por e-mail com base nos resultados da política</block>
@@ -2343,12 +2297,10 @@
   <block id="7a726788f7018e2e33cf2248365cb342" category="paragraph-title">Capacidade de mover 15 milhões de arquivos usando a BlueXP classification</block>
   <block id="21aa7ff00797b2159931293ba0196475" category="paragraph">No passado, você podia fazer com que a BlueXP classification movesse no máximo 100.000 arquivos de origem para qualquer compartilhamento NFS.  Agora você pode mover até 15 milhões de arquivos de uma vez.</block>
   <block id="e25a297a27416e76c1a8e01af56d07ed" category="paragraph-title">Capacidade de ver o número de usuários que têm acesso aos arquivos do SharePoint Online</block>
-  <block id="6e0f24b07c077e6e557a1d0fac76b6c1" category="paragraph">O filtro "Número de usuários com acesso" agora oferece suporte a arquivos armazenados em repositórios do SharePoint Online.  No passado, apenas arquivos em compartilhamentos CIFS eram suportados.  Observe que os grupos do SharePoint que não são baseados no Active Directory não serão contados neste filtro neste momento.</block>
   <block id="cab6c5a0928827eecbe652fb21944075" category="paragraph-title">O novo status "Sucesso Parcial" foi adicionado ao painel Status da Ação</block>
   <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">Veja como visualizar o painel Status das Ações</block>
   <block id="f936ab7640aaf50ac88f9f70993bd303" category="paragraph">O novo status "Sucesso Parcial" indica que uma ação de BlueXP classification foi concluída e alguns itens falharam e outros foram bem-sucedidos, por exemplo, quando você move ou exclui 100 arquivos.  Além disso, o status "Concluído" foi renomeado para "Sucesso".  No passado, o status "Concluído" podia listar ações que foram bem-sucedidas e que falharam.  Agora, o status "Sucesso" significa que todas as ações foram bem-sucedidas em todos os itens.<block ref="75a8438a4d837357264f215af439f18c" category="inline-link-rx"></block> .</block>
   <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">09 de janeiro de 2023</block>
-  <block id="58080b77f4121259ffde5ce32650fff6" category="section-title">Versão 1.19</block>
   <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="paragraph-title">Capacidade de visualizar um gráfico de arquivos que contêm dados confidenciais e que são excessivamente permissivos</block>
   <block id="fbe297fe9bdb2184be0e67e56d41549d" category="paragraph">O painel de governança adicionou uma nova área _Dados confidenciais e permissões amplas_ que fornece um mapa de calor de arquivos que contêm dados confidenciais (incluindo dados pessoais sensíveis e sigilosos) e que são excessivamente permissivos.  Isso pode ajudar você a ver onde pode haver algum risco com dados confidenciais.<block ref="b6419b51c73e0c028146cb926b306794" category="inline-link-rx"></block> .</block>
   <block id="738f7059231d5fe5c1e22879f52682fd" category="paragraph-title">Três novos filtros estão disponíveis na página Investigação de Dados</block>
@@ -2501,8 +2453,6 @@
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">Habilitar e desabilitar varreduras em buckets do StorageGRID</block>
   <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/</block>
   <block id="a326c778205842f816c52ca7e63cae5d" category="cell">https://support.compliance.api.bluexp.netapp.com/</block>
-  <block id="649b850f0bca668f5279a8b29028973a" category="paragraph">Esta versão de classificação BlueXP inclui:</block>
-  <block id="73bb8d1c85014ba6981a002bd9fc9364" category="doc">Versão 1.48</block>
   <block id="d34f29080dba1970a613ab39b7166d0c" category="paragraph">Esta versão do Data Classification inclui correções de erros, melhorias de segurança e otimizações de desempenho.</block>
   <block id="8905ad2fb9f028e6bd28666015b4b50a" category="paragraph-title">Clareza aprimorada no progresso da digitalização</block>
   <block id="206c07a2ed5644be711186a00b2c6ae2" category="paragraph">As configurações de digitalização agora incluem informações aprimoradas sobre a conclusão da digitalização. Anteriormente, a barra de progresso era exibida apenas enquanto a digitalização estava em andamento. Agora, a barra de progresso permanece visível após a conclusão para confirmar que as verificações foram concluídas com sucesso. Você também poderá visualizar o número de arquivos mapeados e digitalizados.</block>
@@ -2529,8 +2479,6 @@
   <block id="f918c4aee73951e03ee5c0a40ad23d9e" category="list-text"><block ref="f918c4aee73951e03ee5c0a40ad23d9e" category="inline-link-macro-rx"></block></block>
   <block id="d642b544681a16a1135a35722647009f" category="list-text"><block ref="d642b544681a16a1135a35722647009f" category="inline-link-macro-rx"></block></block>
   <block id="7a1e3b83c1962dc960f34e0a588fe7c6" category="list-text"><block ref="7a1e3b83c1962dc960f34e0a588fe7c6" category="inline-link-macro-rx"></block></block>
-  <block id="6a6493990827c82055e808631b52c236" category="doc">Versão 1.49</block>
-  <block id="640602402999fbf572de482a35f449bc" category="paragraph">Esta versão do Data Classification inclui correções de erros e as seguintes atualizações:</block>
   <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">Monitore as métricas e o desempenho no painel de monitoramento de integridade.</block>
   <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">O Data Classification agora oferece um painel de monitoramento de integridade, fornecendo monitoramento em tempo real de seus recursos e insights sobre uso de memória, uso de disco, utilização de disco e muito mais. Com as informações do painel de monitoramento de integridade, você pode analisar a infraestrutura da sua implementação e obter insights para otimizar o armazenamento e o desempenho.</block>
   <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">Monitore a integridade da Classificação de Dados.</block>
@@ -2573,7 +2521,6 @@
   <block id="baf6246d7a1f90583599825a4d8818c0" category="cell">Permissões mínimas</block>
   <block id="cd3fbf7c4da6e490eec17762a02afcb8" category="list-text">Dependendo do sistema operacional que você estiver usando, será necessário instalar um dos mecanismos de contêiner:</block>
   <block id="9f4066a8aad2a422e68c5b69dd9472f8" category="paragraph">Para obter mais informações sobre as configurações de digitalização, consulte <block ref="26da27bca2c7e859f7f769768b8a4285" category="inline-link-macro-rx"></block>.</block>
-  <block id="a4abecdc1a189db5254898cad3b99a7e" category="doc">Versão 1.50</block>
   <block id="0bbdca5358fc47c779aaa8d26a52510f" category="paragraph-title">Melhorias na classificação personalizada</block>
   <block id="3d1c64f6b833049963a84f1722911079" category="paragraph">A Classificação de Dados agora permite a criação de categorias personalizadas para seus dados. Você pode carregar arquivos para ajustar um modelo de IA que a Classificação de Dados usa para aplicar o marcador de categoria aos dados. A interface para todas as classificações personalizadas foi aprimorada.</block>
   <block id="1ea7cf77170c31be18fc52c7e9649923" category="paragraph">Para mais informações, consulte <block ref="c45381d223df5e8e5c4b98a60b8b65d3" category="inline-link-macro-rx"></block>.</block>
@@ -2673,11 +2620,8 @@
   <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification aprimorou seu desempenho de exibição em telas de baixa resolução, melhorando a experiência do usuário.</block>
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">A Classificação de Dados exibe o tempo estimado de conclusão para o treinamento dos dados. .. Para alterar o caminho do arquivo ou reenviar os arquivos, selecione **Alterar caminho** e insira os dados e carregue os arquivos novamente.</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">09 de fevereiro de 2026</block>
-  <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">Versão 1.51</block>
   <block id="58c2f245ba9fee2040b80ea19d9ccd7c" category="inline-link-macro">Saiba mais sobre os diferentes modos de implantação para o agente do Console e Data Classification</block>
   <block id="9da1ffd588a2b7dde94c64757653a38a" category="paragraph"><block ref="cb90c21a9c44c9ac5d86b04e8dfb0fb3" category="inline-link-macro-rx"></block>.</block>
-  <block id="3883c68756cb61eec195bb6e108336ba" category="inline-link-macro">Implante Data Classification em um site local com acesso à internet</block>
-  <block id="aff289904c75641e7044ceeb9e922006" category="paragraph">Você também pode <block ref="9d4e9d68c29b6863b7c77f4a02e40d14" category="inline-link-macro-rx"></block>.</block>
   <block id="eb7c0a54a684e3bfabc7abd5ff6851ad" category="paragraph">Quando instalado no modo privado (às vezes chamado de site "offline" ou "dark"), Data Classification só pode analisar dados de fontes de dados que também sejam locais no site on-premises. No momento, Data Classification pode analisar as seguintes fontes de dados *locais*:</block>
   <block id="318a375199576f5d44d9caad0d810341" category="paragraph">Atualmente, não há suporte para a verificação de Cloud Volumes ONTAP, Azure NetApp Files ou FSx for ONTAP em contas quando a Classificação de Dados é implantada no modo privado.</block>
   <block id="15626ba7e1a3568f27f269f3c7356d0d" category="paragraph">A maioria das funcionalidades de Classificação de Dados funciona quando implementada em um local sem acesso à internet. No entanto, certas funcionalidades que exigem acesso à internet não são suportadas, por exemplo:</block>
@@ -2754,7 +2698,6 @@
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classification examina os dados nos repositórios (os volumes, esquemas de banco de dados ou outros dados de usuário) que você seleciona para identificar dados pessoais e confidenciais. Data Classification então mapeia os dados da sua organização, categoriza cada arquivo e identifica padrões predefinidos nos dados. O resultado da análise é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.</block>
   <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">Para obter mais informações, consulte <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>.</block>
   <block id="59ff8a6991a0f51816a1d27ab0590821" category="paragraph-title">Aumento dos limites para copiar e mover</block>
-  <block id="5db4431afc8c4647c29360449ee80225" category="doc">Versão 1.52</block>
   <block id="1cc9fa7904bbb11e4569869878e58bbb" category="paragraph-title">Validação de recursos</block>
   <block id="19458db6dfda018080434d803401d712" category="paragraph">Para garantir a confiabilidade, Data Classification agora valida a memória e os recursos de disco disponíveis durante a verificação, geração de relatórios e ações. Quando o uso de memória excede 95% ou o espaço de disco cai abaixo de 6 GB, Data Classification pausa automaticamente as operações. As operações são retomadas assim que os recursos forem suficientes.</block>
   <block id="0c246fa8aa5b9bb6f56169910551448c" category="paragraph">Para monitorar os recursos do seu sistema, veja <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>.</block>
@@ -2818,7 +2761,6 @@
   <block id="05ae2f7ed42f24ad34227986da264aae" category="paragraph-title">Suporte para RHEL 9.7</block>
   <block id="3864a6ab3937a10a6f13bfa0f593150c" category="paragraph">A Data Classification adicionou o Red Hat Enterprise Linux v9.7 para instalação manual local, incluindo implantações em ambientes de segurança restrita.</block>
   <block id="900e4148b2c0433fc2c6d0435cf489cd" category="paragraph">Os seguintes sistemas operacionais requerem o uso do mecanismo de contêiner Podman e exigem Data Classification versão 1.30 ou superior: Red Hat Enterprise Linux versão 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 e 9.7.</block>
-  <block id="9011586cd2cbb8095aa94a58c4af72fd" category="doc">Versão 1.53</block>
   <block id="0afc92b0bdc2ed57893a82b6cc2587d3" category="summary">Quando IDs de grupo são associados a arquivos ou pastas em compartilhamentos de arquivos NFS, eles definem as permissões para o arquivo ou pasta. Se os IDs de grupo não estiverem configurados com o nível de permissão "Aberto para a organização", você pode adicionar essa permissão ao GID para que todos os arquivos e pastas que tiverem esse GID associado sejam considerados "abertos para a organização".</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">13 de abril de 2026</block>
   <block id="4282eab95027b5795f33f16206ffbe95" category="doc">Integrar o Active Directory com NetApp Data Classification</block>
@@ -2835,4 +2777,110 @@
   <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">Alterar configurações de digitalização em NetApp Data Classification</block>
   <block id="d45f223b29c54a03c611d6faaae58cf9" category="list-text">Na AWS, a Classificação de Dados é executada em um <block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block> com um disco GP2 de 500 GiB. A imagem do sistema operacional é o Amazon Linux 2.</block>
   <block id="5d8b6e341fd15d744bee3c27b7ca8a68" category="list-text">Na AWS, a Classificação de Dados é executada em uma instância m6i.4xlarge com um disco GP2 de 500 GiB.</block>
+  <block id="1c009e201a68e95941fe981e5fdfa016" category="inline-link-macro">implantação com OVA</block>
+  <block id="697a620593a003d9900b7aa00be1acc6" category="admonition">Para implementações VMware vSphere locais, a Classificação de Dados oferece suporte a um processo simplificado <block ref="3d59e70993d210c9da20a35410c0aa19" category="inline-link-macro-rx"></block>.</block>
+  <block id="e4c84482ee4555ae482d96b91322224c" category="doc">Melhorias gerais</block>
+  <block id="3f468d12d8f20d8c9b0af0175d719e8d" category="inline-link-macro">NetApp Console Página de auditoria</block>
+  <block id="67e15c1e2a08f0a8a8953cf75a2f512f" category="paragraph">A classificação de dados suporta o envio de eventos de classificação (quando uma varredura é iniciada e quando ela termina) para o <block ref="6d2f9072000bb7a11bdbf2bb5389f581" category="inline-link-macro-rx"></block>.</block>
+  <block id="e51a6de645bb52eeb7e8ef9b3c883b16" category="doc">Otimização da utilização de recursos</block>
+  <block id="220726f631dfe5a4dfdc0d65472b98dc" category="paragraph">Esta versão de classificação do BlueXP inclui alterações de código que otimizam a utilização de recursos.</block>
+  <block id="d939a4c3efbccb14bb6a8b8ec450f62d" category="doc">Implantar o NetApp Data Classification com OVA</block>
+  <block id="c58a3e421744f0b78f692f20d074d1f6" category="paragraph">NetApp Data Classification agora oferece suporte à implantação com VMware Open Virtual Appliance (OVA), proporcionando uma estratégia de implantação simplificada para ambientes VMware vSphere locais.</block>
+  <block id="1a4ea23de9d17b2e28a82a012795f402" category="paragraph">Para obter mais informações, consulte <block ref="671ddfd34f6defdc139134bff6f63dc9" category="inline-link-macro-rx"></block>.</block>
+  <block id="8744e3889336c440e17e4a85c0573d80" category="paragraph">NetApp Data Classification deve ser executado em um host que atenda aos requisitos específicos de sistema operacional, requisitos de RAM e requisitos de software. Ao implantar Data Classification na nuvem, recomendamos que você use um sistema com as características "large" para funcionalidade completa.</block>
+  <block id="da49eae2f2697eebbdfcb923e399ee06" category="paragraph">Nas tabelas a seguir, se o sistema marcado como "default" não estiver disponível na região onde você está instalando o Data Classification, o próximo tipo de instância listado na tabela será implantado.</block>
+  <block id="6b9707300ae2253b20a1508cdef29b86" category="inline-link-macro">Configure a varredura em suas fontes de dados</block>
+  <block id="32c268474be77292e0a04f91871ff5ae" category="list-text"><block ref="32c268474be77292e0a04f91871ff5ae" category="inline-link-macro-rx"></block></block>
+  <block id="37bdabd730f5e2aa9c95ca046c4a528d" category="list-text">Faça o download do software de Classificação de Dados em<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>. Selecione o arquivo chamado *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*.</block>
+  <block id="3990c3483164e3d71f7feb035dcc5d2e" category="summary">NetApp Data Classification oferece suporte à implantação para ambientes vSphere locais com Open Virtual Appliance (OVA). O método de implantação OVA fornece um ambiente gerenciado pela NetApp, pré-validado, para simplificar a implantação.</block>
+  <block id="d9a33ab3030c9b5fd7a102e28aba7be3" category="doc">Implante NetApp Data Classification com o VMware Open Virtual Appliance</block>
+  <block id="a130e61bd4b704e7fe34c433d0d11621" category="paragraph">NetApp Data Classification oferece suporte à implementação com VMware Open Virtual Appliance (OVA), fornecendo um pacote gerenciado para instalar e executar Data Classification em ambientes VMware vSphere locais. O método de implementação OVA fornece um ambiente gerenciado e pré-validado pela NetApp, para simplificar a implementação.</block>
+  <block id="3aa8474d5b875cbd9fa36a9b295450c1" category="paragraph">Este método é recomendado para novas implementações baseadas em VMware.</block>
+  <block id="86b7d468352815e2bd2fcebcf1707ed0" category="paragraph">Antes de usar o arquivo OVA para instalar o Data Classification, você precisa ter:</block>
+  <block id="e6c02e5ccba91b0f8a2da6080936e5f5" category="list-text">Um ambiente vSphere VMware</block>
+  <block id="afe34e38b29b496b8d140d1b05f7639b" category="list-text">Um endereço IPv4 estático alocado ao appliance</block>
+  <block id="c2536178d417593ff00b31c3acd23ffa" category="list-text">Servidores DNS acessíveis a partir da rede de destino</block>
+  <block id="784e3265e48a6bd157680a38d46c8c55" category="list-text">Acesso SSH habilitado para o appliance</block>
+  <block id="5d0a8cdc6b9b55fd93ed84e6766e7b28" category="inline-link-macro">NetApp credenciais do site de suporte</block>
+  <block id="91ea08e1aa2323f4b4da558f043fb414" category="list-text"><block ref="b753d64a45d12e5e34df2907367d09a4" category="inline-link-macro-rx"></block> para baixar o instalador</block>
+  <block id="8cbae09146721faac95bceac9bf5fca3" category="section-title">Implante o OVA no VMware vSphere</block>
+  <block id="bd7ce254f37b2c00eb5eb9946bcf0759" category="list-text">Faça o download do arquivo OVA em <block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block>. Escolha o dispositivo OVA apropriado para o seu ambiente:</block>
+  <block id="ddde1efaada34040cfccceaa34f9b3bb" category="cell">Appliance OVA</block>
+  <block id="df623f3b0eca686aa70011889478c1b4" category="cell">Tamanho da produção</block>
+  <block id="638fea7f650cbb9f4eddd66ce254fdd1" category="cell">Limite de digitalização de arquivos</block>
+  <block id="bccd9f0f398a2a4a23d2ef929e4a1645" category="cell"><block ref="c634ef6b6a6b888ef1b1a2d326622ee7" prefix="" category="inline-code"></block></block>
+  <block id="0e836ac8fea63f0e7d0ea76786c3a146" category="cell">Carga de trabalho padrão de produção: 16 CPUs, 64 GB de RAM, 500 GB de disco</block>
+  <block id="6977457ec4d43a18ebcc0cc12a5b4785" category="cell">250 milhões de arquivos</block>
+  <block id="8958a7a71bfe0f4a5a40d760f7e3c2f6" category="cell"><block ref="8cd39dc4f7544e158d7ef1dfbc5c4070" prefix="" category="inline-code"></block></block>
+  <block id="c758b0781d6f7df6c0ae256696eddbf2" category="cell">Grande volume de trabalho de produção: 32 CPUs, 128 GB de RAM, 1 TB de disco</block>
+  <block id="d5f0912c122421def604836efc37e147" category="cell">500 milhões de arquivos</block>
+  <block id="39da8715f80fcb97588e0413c8d421b1" category="list-text">Acesse o cliente vSphere. Clique com o botão direito do mouse no cluster ou host de destino e selecione *Implantar modelo OVF* &gt; *Criar VM a partir de OVA*.</block>
+  <block id="a86160c84f70e41fb0b3c1ec91660a92" category="list-text">Faça o upload do arquivo OVA que você baixou na primeira etapa.</block>
+  <block id="ea42daee36ca14f2930377ea9c60593a" category="list-text">Especifique o *nome da VM* e o data center, host ou cluster e datastore de destino.</block>
+  <block id="0a9aa37d2e353e096772c5f826a07f7f" category="list-text">Aceite o Contrato de Licença de Usuário Final da NetApp.</block>
+  <block id="78eef3c0aadecdde92b4cfc4c1ddf5e4" category="list-text">Personalize o modelo. Você deve fornecer as seguintes informações:</block>
+  <block id="d472e2787bc8d836e087cb5b10e9f80d" category="list-text">**Nome do host** - o nome do appliance</block>
+  <block id="cfec9ea037ba23cf959f507a91a6497f" category="list-text">**Endereço IPv4** - o endereço IPv4 estático para a interface de gerenciamento</block>
+  <block id="cfc470d8c64abd61f35d1cc9e9831f55" category="list-text">**Máscara de sub-rede IPv4** - por exemplo 255.255.255.0</block>
+  <block id="dae24545ba4e62bae20bcbcedf0477c0" category="list-text">**Endereço do gateway IPv4** - o gateway padrão</block>
+  <block id="55545e079a19ab0aaa2eb447088557fa" category="list-text">**Primary DNS** - o resolvedor DNS necessário</block>
+  <block id="398fb85648fe3bf7b1c3132bc43c8da7" category="paragraph">Opcionalmente, adicione o **Secondary DNS** e, como listas separadas por vírgulas, os **domínios de pesquisa** (por exemplo,<block ref="edddc6841b263ff64dd234136625ea9e" prefix=" " category="inline-code"></block>) e os **servidores NTP**.</block>
+  <block id="3971f79ba20dd9eea1c77eb7bcab0566" category="list-text">Defina a *senha de administrador* para o usuário padrão do Linux.</block>
+  <block id="4f46c0ee9f477b4fe1294d2fa8dcdd5b" category="admonition">A senha é usada para acesso à raiz, acesso SSH e administração do sistema. Guarde a senha em local seguro.</block>
+  <block id="e70561faa323b2a08c3f90b258d6f1c6" category="list-text">Analise o resumo. Selecione *Concluir* para implementar.</block>
+  <block id="2c6b86d7e99472d3dc260c2363c69efa" category="list-text">Após a conclusão da implantação, ligue a máquina virtual.</block>
+  <block id="7020b99b4452945edfa566eb18678316" category="section-title">Instalar Classificação de Dados</block>
+  <block id="f1cbf08f5744cd499f0689de8053c832" category="list-text">Faça o download do software de classificação de dados em <block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block>.</block>
+  <block id="6cac65ee9c5b85cb06427233e5bdb208" category="paragraph">Selecione o arquivo chamado *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*.</block>
+  <block id="4d4bda9c294a00ba7df9db822f19e797" category="list-text">Selecione *Implantar Classificação*.</block>
+  <block id="d9f71f47f93d634da4ff095ee023a20e" category="list-text">Conecte-se ao dispositivo OVA via SSH usando o usuário administrador.</block>
+  <block id="b49d72dce505eca7dd3d8a331d97211c" category="list-text">Execute o comando de instalação que você gerou para concluir a instalação e registrar o sistema em sua organização.</block>
+  <block id="2e64cc6066537ce6e812349f63c7e206" category="paragraph">Você pode implementar a NetApp Data Classification de diferentes maneiras. Analise os métodos disponíveis para escolher aquele que melhor se adapta às suas necessidades.</block>
+  <block id="30dabb33051152f55606045c5b5163f8" category="section-title">Script de instalação local</block>
+  <block id="c0dd91183d065fa262aad92cd66f17bf" category="paragraph">Tanto a instalação em um host Linux com acesso à internet quanto a instalação local em um host Linux sem acesso à internet utilizam um script de instalação. O script inicia verificando se o sistema e o ambiente atendem aos pré-requisitos. Se os pré-requisitos forem atendidos, a instalação é iniciada.</block>
+  <block id="4fabfbf691d67364aed0fc8d0476cd38" category="inline-link-macro">Verifique se seu host Linux está pronto para instalar Data Classification</block>
+  <block id="4ad6bc72849add23a7cdca295638a87d" category="paragraph">Um pacote de software separado está disponível para verificar a prontidão do seu Linux. Para executar o pacote de verificação, consulte <block ref="a3ff8db6958b78e3d36fc9bc3fcfe254" category="inline-link-macro-rx"></block>.</block>
+  <block id="e0b0747cd573746d9f139faffc729dd5" category="section-title">04 de maio de 2026</block>
+  <block id="c4bc4e2f20f342faa62434be75cb6ee5" category="paragraph">*Versão 1.53*</block>
+  <block id="8411d6925cd29126d060394c08a4b4ca" category="paragraph">*Versão 1.52*</block>
+  <block id="65a0258fc15834bf0f84ceaa52ada501" category="paragraph">*Versão 1.51*</block>
+  <block id="e4b498cddaa444d57c01009b2102f55f" category="paragraph">*Versão 1.50*</block>
+  <block id="52aa7e45dc7f5ea8286631265ac1d36a" category="paragraph">*Versão 1.49*</block>
+  <block id="26baa7b8a763c4e09d054abaf87bb6d0" category="paragraph">*Versão 1.48*</block>
+  <block id="595d74539f06331485866d3131f447e8" category="paragraph">*Versão 1.47*</block>
+  <block id="63baf28a815c716ed6e2c417cb4153b2" category="paragraph">*Versão 1.46*</block>
+  <block id="1964d7d03dd19e55e353230a6f62b06e" category="paragraph">*Versão 1.45*</block>
+  <block id="465901fde75bcfcdda96ed356aeeeb4f" category="paragraph">*Versão 1.44*</block>
+  <block id="cb92087f3524d242231728663d9503b5" category="paragraph">*Versão 1.43*</block>
+  <block id="58a9fe63f3060056d06ba740aca954b8" category="paragraph">*Versão 1.42*</block>
+  <block id="0a2f2aba3f1b44682b1d94613a92546b" category="paragraph">*Versão 1.41*</block>
+  <block id="cf478480279bce16082112f00be7df7f" category="paragraph">*Versão 1.40*</block>
+  <block id="a624a704a460cabdb133c0962d0885ed" category="paragraph">*Versão 1.37*</block>
+  <block id="f469240780f7eff6330e02b5675d0a08" category="paragraph">*Versão 1.38*</block>
+  <block id="a2db02c48e35b7dca1db16acecb190ff" category="paragraph">*Versão 1.36*</block>
+  <block id="ea2391a5ddbbca135950f9d480a5981a" category="paragraph">*Versão 1.35*</block>
+  <block id="0e6051493f71317da4f2c7bba8dcfc97" category="paragraph">*Versão 1.34*</block>
+  <block id="9a3351da91753729c142405fec71d541" category="paragraph">*Versão 1.33*</block>
+  <block id="d8caf3d67521b52888bb50b0449d77f4" category="paragraph">*Versão 1.32*</block>
+  <block id="413b3a9cddb127f6a98a38a39992639c" category="paragraph">*Versão 1.31*</block>
+  <block id="3362688f791418f4ba8e7d0c8a358d74" category="paragraph">*Versão 1.30*</block>
+  <block id="731530c0d12c82e27cfc130ae6c93804" category="paragraph">*Versão 1.29*</block>
+  <block id="f67d7fa2a44e36da02cec0e1e856d491" category="paragraph">*Versão 1.27*</block>
+  <block id="2c5b015f9b8d6e1cf0b8425cd79ccef1" category="paragraph">*Versão 1.26.6*</block>
+  <block id="663fe31afd754e14edf62c0eeb43e3be" category="paragraph">Esta versão incluiu pequenas melhorias.</block>
+  <block id="cbb4d57c029ce27c745cadc11326ef01" category="list-text">Durante a investigação dos diretórios, a opção para calcular o número de dados de informações de identificação pessoal (PII) por diretórios não está disponível. Consulte <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>.</block>
+  <block id="a91d543e35a44a40abde8539454a3147" category="paragraph">*Versão 1.26.3*</block>
+  <block id="dccefd0e401840dd90d719ff48e73421" category="paragraph">*Versão 1.26*</block>
+  <block id="20a38ed7220ae3d563acc7f546d6a38c" category="paragraph">As versões 8 e 9 do Red Hat Enterprise Linux não suportam o mecanismo Docker, que era anteriormente necessário para a instalação do BlueXP classification. BlueXP classification agora suporta instalação no RHEL 9.0, 9.1 e 9.2 usando o Podman versão 4 ou superior como infraestrutura de contêineres. Se o seu ambiente exigir o uso das versões mais recentes do RHEL, agora você pode instalar o BlueXP classification (versão 1.26 ou superior) usando o Podman.</block>
+  <block id="d47937e1bfcfc34aadafaf94f878be50" category="paragraph">Atualmente, o Data Classification não oferece suporte a instalações em dark sites nem a ambientes de varredura distribuída (usando um nó mestre e nós de varredura remotos) ao usar o RHEL 9.x.</block>
+  <block id="507beb19670add8ef909c6b465d2113f" category="paragraph">*Versão 1.25*</block>
+  <block id="ff9507aa8ec2a4d65e0197283a0ffb4a" category="paragraph">*Versão 1.24*</block>
+  <block id="9f35e0bca6f0baf4185ddc2208bc9831" category="paragraph">*Versão 1.23*</block>
+  <block id="cc6a6fa01e9d6665a252d1f7ee507f10" category="paragraph">*Versão 1.22*</block>
+  <block id="fcbfa613263a39c01238f29970301729" category="paragraph">*Versão 1.21*</block>
+  <block id="8dff06822fe979f3c3274cc5f8c4b91a" category="section-title">Adicione palavras-chave personalizadas na interface de classificação do BlueXP</block>
+  <block id="5dd86e37bb688c2bd8d740a853836c5b" category="paragraph">*Versão 1.20*</block>
+  <block id="ea618accf4845a405569f1ffa72274f5" category="paragraph">O filtro "Número de usuários com acesso" agora suporta arquivos armazenados em repositórios do SharePoint Online. Anteriormente, apenas arquivos em compartilhamentos CIFS eram suportados. Grupos do SharePoint que não são baseados no Active Directory não são contabilizados neste filtro no momento.</block>
+  <block id="fd472c68167f5fc3fdb653a650f9fd55" category="paragraph">*Versão 1.19*</block>
+  <block id="2c6be179dba321b242cbe88c550f1815" category="sidebar">Instale localmente com OVA</block>
 </blocks>
