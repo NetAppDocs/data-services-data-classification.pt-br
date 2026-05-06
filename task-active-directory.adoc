@@ -51,7 +51,7 @@ Depois de implantar a Classificação de Dados e ativar a verificação em suas 
 
 As credenciais do Active Directory podem ser somente leitura, mas fornecer credenciais de administrador garante que a Classificação de Dados possa ler quaisquer dados que exijam permissões elevadas.  As credenciais são armazenadas na instância de Classificação de Dados.
 
-Para volumes/compartilhamentos de arquivos CIFS, se você quiser ter certeza de que os "últimos horários de acesso" dos seus arquivos não serão alterados pelas verificações de classificação de Classificação de Dados, o usuário deverá ter permissão para Gravar Atributos.  Se possível, recomendamos tornar o usuário configurado do Active Directory parte de um grupo pai na organização que tenha permissões para todos os arquivos.
+Para volumes/compartilhamentos de arquivos CIFS, se você quiser garantir que os "últimos horários de acesso" dos seus arquivos permaneçam inalterados pelas verificações de Classificação de Dados, o usuário deve ter permissão de Gravação de Atributos. Se possível, recomendamos que o usuário configurado no Active Directory faça parte de um grupo pai na organização que tenha permissões para todos os arquivos.
 
 .Requisitos
 * Você deve ter um Active Directory já configurado para os usuários da sua empresa.

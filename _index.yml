@@ -1,20 +1,20 @@
 ---
 indexpage:
   title: Documentação de NetApp Data Classification
-  summary: A classificação de dados da NetApp permite que você escaneie e classifique
-    dados na multinuvem híbrida da sua organização.  A Classificação de Dados utiliza
-    processamento de linguagem natural (PLN) orientado por IA para análise e categorização
-    de dados contextuais, fornecendo insights práticos sobre seus dados para atender
-    a requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar
-    custos e acelerar a migração.
+  summary: NetApp Data Classification permite que você analise e classifique dados
+    em toda a nuvem híbrida da sua organização. Data Classification utiliza processamento
+    de linguagem natural (PLN) baseado em IA para análise e categorização contextual
+    de dados, fornecendo insights acionáveis sobre seus dados para atender aos requisitos
+    de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar
+    a migração.
   keywords: bluexp, data classification, cloud data sense, data sense, compliance,
     security, netapp console, bluexp classification
-  lead: A classificação de dados da NetApp permite que você escaneie e classifique
-    dados na multinuvem híbrida da sua organização.  A Classificação de Dados utiliza
-    processamento de linguagem natural (PLN) orientado por IA para análise e categorização
-    de dados contextuais, fornecendo insights práticos sobre seus dados para atender
-    a requisitos de conformidade, detectar vulnerabilidades de segurança, otimizar
-    custos e acelerar a migração.
+  lead: NetApp Data Classification permite que você analise e classifique dados em
+    toda a nuvem híbrida da sua organização. Data Classification utiliza processamento
+    de linguagem natural (PLN) baseado em IA para análise e categorização contextual
+    de dados, fornecendo insights acionáveis sobre seus dados para atender aos requisitos
+    de conformidade, detectar vulnerabilidades de segurança, otimizar custos e acelerar
+    a migração.
   tiles:
   - title: Começar
     links:

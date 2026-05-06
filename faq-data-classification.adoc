@@ -234,7 +234,7 @@ O agente do Console é um software executado em uma instância de computação n
 
 === Onde o agente do Console precisa ser instalado?
 
-Ao verificar dados, o agente do NetApp Console Console precisa ser instalado nos seguintes locais:
+Ao analisar dados, o agente do NetApp Console precisa ser instalado nos seguintes locais:
 
 * Para Cloud Volumes ONTAP na AWS ou Amazon FSx para ONTAP: o agente do console está na AWS.
 * Para Cloud Volumes ONTAP no Azure ou no Azure NetApp Files: o agente do console está no Azure.
