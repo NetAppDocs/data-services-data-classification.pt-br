@@ -18,7 +18,17 @@ Saiba o que há de novo na NetApp Data Classification.
 
 
 
-== 04 de maio de 2026
+== 11 de maio de 2026
+
+*Versão 1.54*
+
+
+
+=== Página de configuração aprimorada
+
+O Data Classification atualizou e aprimorou a página de Configuração, proporcionando uma experiência de usabilidade melhor para gerenciar configurações, sistemas, habilitar verificações e monitorar a integridade do sistema. A nova página de Configuração oferece as funcionalidades existentes em um formato mais fácil de usar, além da possibilidade de filtrar sistemas por tipo, status de erro e status da verificação. A nova página também fornece um resumo dos sistemas conectados e uma visão geral das verificações ativas e configuradas.
+
+Analise um link:https://youtu.be/_8YJ3KyZ7nI["vídeo tutorial"^]. Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-overview.html["Analise fontes de dados com a Classificação de Dados"^].
 
 
 
@@ -380,7 +390,7 @@ O Redis foi atualizado para melhorar a confiabilidade da BlueXP classification. 
 
 === Priorizar varreduras de classificação
 
-A Classificação de Dados oferece suporte à capacidade de priorizar verificações de Mapeamento e Classificação, além de verificações somente de Mapeamento, permitindo que você selecione quais verificações serão concluídas primeiro. A priorização de verificações de Map & Classify é suportada durante e antes do início das verificações. Se você optar por priorizar uma verificação enquanto ela estiver em andamento, tanto as verificações de mapeamento quanto as de classificação serão priorizadas.
+A Classificação de Dados permite priorizar varreduras de Map & Classify, além das varreduras somente de Map, possibilitando que você selecione quais varreduras serão concluídas primeiro. A priorização de varreduras de Map & Classify é suportada durante e antes do início das varreduras. Se você optar por priorizar uma varredura enquanto ela estiver em andamento, tanto o mapeamento quanto a classificação das varreduras de Map & Classify serão priorizados.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"] .
 
@@ -488,15 +498,15 @@ Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podma
 
 
 
-=== Priorizar varreduras somente de mapeamento
+=== Priorize apenas as varreduras de mapa
 
-Ao realizar verificações somente de mapeamento, você pode priorizar as verificações mais importantes. Esse recurso ajuda quando você tem muitos ambientes de trabalho e quer garantir que as verificações de alta prioridade sejam concluídas primeiro.
+Ao realizar varreduras somente de Map, você pode priorizar as varreduras mais importantes. Esse recurso é útil quando você tem muitos ambientes de trabalho e deseja garantir que as varreduras de alta prioridade sejam concluídas primeiro.
 
 Por padrão, as verificações são enfileiradas com base na ordem em que são iniciadas. Com a capacidade de priorizar verificações, você pode movê-las para a frente da fila. Várias varreduras podem ser priorizadas. A prioridade é designada na ordem "primeiro a entrar, primeiro a sair", o que significa que a primeira varredura que você prioriza passa para a frente da fila; a segunda varredura que você prioriza se torna a segunda na fila, e assim por diante.
 
 A prioridade é concedida apenas uma vez. As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
 
-A priorização é limitada alink:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["varreduras somente de mapeamento"^] ; não está disponível para mapeamento e classificação de varreduras.
+A priorização é limitada a link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["varreduras apenas de mapa"^]; não está disponível para varreduras de mapa e classificação.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"^] .
 

@@ -6,7 +6,7 @@
 
 === Priorizar varreduras de classificação
 
-A Classificação de Dados oferece suporte à capacidade de priorizar verificações de Mapeamento e Classificação, além de verificações somente de Mapeamento, permitindo que você selecione quais verificações serão concluídas primeiro. A priorização de verificações de Map & Classify é suportada durante e antes do início das verificações. Se você optar por priorizar uma verificação enquanto ela estiver em andamento, tanto as verificações de mapeamento quanto as de classificação serão priorizadas.
+A Classificação de Dados permite priorizar varreduras de Map & Classify, além das varreduras somente de Map, possibilitando que você selecione quais varreduras serão concluídas primeiro. A priorização de varreduras de Map & Classify é suportada durante e antes do início das varreduras. Se você optar por priorizar uma varredura enquanto ela estiver em andamento, tanto o mapeamento quanto a classificação das varreduras de Map & Classify serão priorizados.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"] .
 

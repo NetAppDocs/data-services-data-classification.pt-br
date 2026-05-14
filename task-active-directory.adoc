@@ -24,7 +24,7 @@ Esta integração fornece informações adicionais nos seguintes locais na Class
 +
 Você também pode visualizar mais detalhes sobre o proprietário do arquivo: nome da conta, endereço de e-mail e nome da conta SAM, ou visualizar itens de propriedade desse usuário.
 
-* Você pode verlink:task-investigate-data.html["permissões completas de arquivo"] para cada arquivo e diretório quando você clica no botão "Exibir todas as permissões".
+* Você pode ver link:task-investigate-data.html["permissões completas de arquivo"] para cada arquivo e diretório ao selecionar o botão "Exibir todas as permissões".
 * Nolink:task-controlling-governance-data.html["Painel de governança"] , o painel Permissões abertas mostrará um nível maior de detalhes sobre seus dados.
 
 
@@ -37,10 +37,10 @@ NOTE: SIDs de usuários locais e SIDs de domínios desconhecidos não são tradu
 
 Uma integração do Active Directory com a Classificação de Dados pode identificar dados das seguintes fontes de dados:
 
-* Sistemas ONTAP locais
-* Cloud Volumes ONTAP
 * Azure NetApp Files
+* Cloud Volumes ONTAP
 * FSx para ONTAP
+* Sistemas ONTAP locais
 
 
 
@@ -91,22 +91,15 @@ Endereço IP do servidor LDAP ou vários endereços IP
 
 
 .Passos
-. Na página Configuração de Classificação de Dados, clique em *Adicionar Active Directory*.
-+
-image:screenshot_compliance_integrate_active_directory.png["Uma captura de tela que mostra clicar no botão para adicionar um servidor do Active Directory na Classificação de Dados."]
-
-. Na caixa de diálogo Conectar ao Active Directory, insira os detalhes do Active Directory e clique em *Conectar*.
+. Em Classificação de Dados, selecione **Configuração**.
+. Acesse a aba **Configurações**.
+. No cabeçalho Active Directory, selecione **Adicionar**.
+. Na caixa de diálogo Conectar ao Active Directory, insira os detalhes do Active Directory e selecione *Conectar*.
 +
 Você pode adicionar vários endereços IP, se necessário, selecionando *Adicionar IP*.
 
 +
-image:screenshot_compliance_active_directory_dialog.png["Uma captura de tela da caixa de diálogo onde você define o Active Directory que deseja integrar com a Classificação de Dados."]
-
-+
 A Classificação de Dados é integrada ao Active Directory e uma nova seção é adicionada à página Configuração.
-
-+
-image:screenshot_compliance_active_directory_added.png["Uma captura de tela mostrando o novo Active Directory integrado na Classificação de Dados."]
 
 
 
@@ -114,6 +107,6 @@ image:screenshot_compliance_active_directory_added.png["Uma captura de tela most
 
 == Gerencie sua integração com o Active Directory
 
-Se precisar modificar algum valor na sua integração com o Active Directory, clique no botão *Editar* e faça as alterações.
+Se precisar modificar algum valor na sua integração com o Active Directory, você deve atualizar a configuração do Active Directory em Data Classification. Retorne ao menu **Configuration** em Data Classification e acesse a guia de configurações para fazer as alterações.
 
-Você também pode excluir a integração selecionando oimage:button-gallery-options.gif["Botão Mais"] botão e depois *Remover Active Directory*.
+Você também pode excluir a integração selecionando o botão **Remover** em Active Directory.

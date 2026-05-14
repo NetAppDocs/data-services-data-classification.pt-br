@@ -18,13 +18,13 @@ Ao verificar a configuração, você pode priorizar as verificações mais impor
 
 Existem dois tipos de varreduras:
 
-* *As varreduras somente de mapeamento* fornecem apenas uma visão geral de alto nível dos seus dados.  O mapeamento pode ser feito em suas fontes de dados muito rapidamente porque ele não acessa arquivos para ver os dados dentro deles.
+* *As varreduras somente de mapa* fornecem apenas uma visão geral de alto nível dos seus dados. O mapeamento pode ser feito em suas fontes de dados muito rapidamente, pois não acessa arquivos para visualizar os dados internos.
 * As varreduras de *Mapear e classificar* fornecem uma varredura profunda dos seus dados.
 
 
-Você pode se beneficiar do uso de verificações somente de mapeamento para verificar rapidamente seus dados e identificar as fontes de dados que exigem mais pesquisa e, depois, habilitar as verificações de mapeamento e classificação somente nas fontes de dados ou volumes necessários.
+Você pode se beneficiar do uso de varreduras somente de mapeamento para analisar rapidamente seus dados e identificar as fontes de dados que exigem mais pesquisa e, posteriormente, habilitar as varreduras de mapeamento e classificação apenas nessas fontes de dados ou volumes necessários.
 
-A prioridade é atribuída somente a verificações somente de mapeamento, não a verificações de mapeamento e classificação.
+A prioridade é atribuída somente a varreduras apenas de Map, não a varreduras de Map e classify.
 
 A prioridade é definida como 1 por padrão, e você pode alterá-la para qualquer número entre 1 e 10.  Quanto menor o número, maior a prioridade.  Se você não definir uma prioridade, a verificação receberá uma prioridade de 5.
 

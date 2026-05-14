@@ -45,8 +45,5 @@ Se não quiser mais verificar arquivos de usuário de um grupo de compartilhamen
 
 .Passos
 . Na página _Configuração_, selecione oimage:button-gallery-options.gif["Botão Mais"] botão na linha do Grupo de Compartilhamentos de Arquivos e depois *Remover Grupo de Compartilhamentos de Arquivos*.
-+
-image:screenshot_compliance_remove_db.png["Uma captura de tela do botão Remover servidor de banco de dados na página Configuração de verificação."]
-
 . Selecione *Excluir Grupo de Compartilhamentos* na caixa de diálogo de confirmação.
 

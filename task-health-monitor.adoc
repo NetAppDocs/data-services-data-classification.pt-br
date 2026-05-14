@@ -48,7 +48,7 @@ Analise o uso da CPU, a utilização do disco e o uso da memória. Esses valores
 == Acesse o painel de controle do Monitor de Saúde.
 
 . Em Classificação de Dados, selecione **Configuração**.
-. Na seção **Configuração**, selecione **Monitor de integridade da classificação de dados**.
+. Selecione a aba **Monitor de saúde**.
 . No painel do Monitor de Saúde, você pode:
 +
 ** Analise o uso e a utilização. Se alguma métrica de uso ou utilização exibir avisos, selecione o aviso para obter recomendações sobre como resolver o problema.

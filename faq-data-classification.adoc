@@ -68,7 +68,7 @@ As varreduras de dados têm um impacto insignificante em seus sistemas de armaze
 
 O desempenho da verificação pode variar com base na largura de banda da rede e no tamanho médio dos arquivos no seu ambiente.  Também pode depender das características de tamanho do sistema host (na nuvem ou no local). Consulte link:concept-classification.html["A instância de classificação de dados"] e link:task-deploy-overview.html["Implementando a Classificação de Dados"] para maiores informações.
 
-Ao adicionar inicialmente novas fontes de dados, você também pode optar por executar apenas uma verificação de "mapeamento" (Mapping only) em vez de uma verificação de "classificação" completa (Map & Classify).  O mapeamento pode ser feito em suas fontes de dados muito rapidamente porque ele não acessa arquivos para ver os dados dentro deles. link:task-scanning-overview.html["Veja a diferença entre um mapeamento e uma varredura de classificação"] .
+Ao adicionar novas fontes de dados pela primeira vez, você também pode optar por realizar apenas uma varredura de mapeamento ou uma varredura completa. O mapeamento pode ser feito em suas fontes de dados muito rapidamente, pois não acessa arquivos para visualizar os dados internos. link:task-scanning-overview.html["Entenda a diferença entre uma varredura de mapeamento e uma varredura de classificação"].
 
 
 
@@ -115,9 +115,9 @@ Não. A Classificação de Dados não verifica instantâneos porque o conteúdo 
 
 === O que acontece se a hierarquização de dados estiver habilitada nos seus volumes ONTAP ?
 
-Quando a Classificação de Dados verifica volumes que têm dados frios em camadas para armazenamento de objetos usando as verificações Somente mapeamento, ela verifica todos os dados — dados que estão em discos locais e dados frios em camadas para armazenamento de objetos.  Isso também é válido para produtos que não são da NetApp e que implementam camadas.
+Quando a Classificação de Dados examina volumes que possuem dados frios em camadas no storage de objetos usando varreduras somente de mapa, ela examina todos os dados--dados que estão em discos locais e dados frios em camadas no storage de objetos. Isso também é verdade para produtos não-NetApp que implementam o armazenamento em camadas.
 
-A varredura somente de mapeamento não aquece os dados frios; eles permanecem frios e armazenados no armazenamento de objetos.  Por outro lado, se você executar a verificação Map & Classify, algumas configurações podem aquecer os dados frios.
+A varredura somente do mapa não aquece os dados frios: eles permanecem frios e continuam no storage de objetos. Por outro lado, se você executar a varredura completa, algumas configurações podem aquecer os dados frios.
 
 
 
@@ -162,7 +162,7 @@ A Classificação de Dados permite que você execute uma verificação geral de 
 +
 Após uma verificação rápida, você pode gerar um Relatório de Mapeamento de Dados.  Este relatório é uma visão geral dos dados armazenados em suas fontes de dados corporativos para ajudar você a tomar decisões sobre utilização de recursos, migração, backup, segurança e processos de conformidade.
 
-* *Verificação profunda de classificação de dados (verificação de mapa e classificação)*: a classificação de dados verifica os dados usando protocolos padrão e permissão somente leitura em todos os seus ambientes.  Arquivos selecionados são abertos e verificados em busca de dados comerciais confidenciais, informações privadas e problemas relacionados a ransomware.
+* *Análise profunda de classificação de dados (análise completa)*: A Classificação de Dados analisa dados usando protocolos padrão e permissão somente leitura em todos os seus ambientes. Arquivos selecionados são abertos e analisados em busca de dados confidenciais relacionados aos negócios, informações privadas e problemas relacionados a ransomware.
 +
 Após uma verificação completa, há muitos recursos adicionais de Classificação de Dados que você pode aplicar aos seus dados, como visualizar e refinar dados na página Investigação de Dados, pesquisar nomes em arquivos, copiar, mover e excluir arquivos de origem e muito mais.
 

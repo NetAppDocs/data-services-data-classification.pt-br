@@ -20,7 +20,7 @@ Por padrão, os painéis de Classificação de Dados exibem dados de conformidad
 
 [NOTE]
 ====
-* Os relatórios de conformidade só estarão disponíveis se você realizar uma verificação de classificação completa em suas fontes de dados.  Fontes de dados que passaram por uma varredura somente de mapeamento podem gerar apenas o Relatório de Mapeamento de Dados.
+* Os relatórios de conformidade só estão disponíveis se você realizar uma verificação completa de classificação em suas fontes de dados. Fontes de dados que passaram apenas por uma verificação de mapeamento podem gerar somente o Relatório de Mapeamento de Dados.
 * A NetApp não pode garantir 100% de precisão dos dados pessoais e dados pessoais confidenciais que a Classificação de Dados identifica.  Você deve sempre validar as informações revisando os dados.
 
 

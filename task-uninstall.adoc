@@ -23,10 +23,8 @@ As etapas que você precisa seguir dependem se você implantou a Classificação
 == Desinstalar a Classificação de Dados de um provedor de nuvem
 
 . Em Classificação de dados, selecione **Configuração**.
-. Na parte inferior da página de configuração, selecione **Desinstalar classificação**.
-+
-image:screenshot-uninstall.png["Uma captura de tela do botão para desinstalar o Data Classification."]
-
+. Acesse a aba **Configurações**.
+. Selecione **Desinstalar Classificação de Dados**.
 . Na caixa de diálogo, digite "desinstalar" para prosseguir com a desconexão da instância de Classificação de Dados do agente do Console.  Selecione **Desinstalar** para confirmar.
 . Na caixa de diálogo _Desinstalar Classificação_, digite *uninstall* para confirmar que deseja desconectar a instância de Classificação de Dados do agente do Console e selecione *Desinstalar*.
 . Para finalizar o processo de desinstalação, acesse o console do seu provedor de nuvem e exclua a instância de Classificação de Dados.  A instância é denominada _CloudCompliance_ com um hash gerado (UUID) concatenado a ela.  Por exemplo: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
@@ -37,11 +35,12 @@ image:screenshot-uninstall.png["Uma captura de tela do botão para desinstalar o
 == Desinstalar a Classificação de Dados de uma implantação local
 
 . Em Classificação de dados, selecione **Configuração**.
-. Na parte inferior da página de configuração, selecione **Desinstalar classificação**.
+. Acesse a aba **Configurações**.
+. Selecione **Desinstalar Classificação de Dados**.
 +
 image:screenshot-uninstall.png["Uma captura de tela do botão para desinstalar o Data Classification."]
 
-. Na caixa de diálogo, digite "desinstalar" para prosseguir com a desconexão da instância de Classificação de Dados do agente do Console.  Selecione **Desinstalar** para confirmar.
+. Na caixa de diálogo, digite "desinstalar" para prosseguir com a desconexão da instância de Data Classification do agente do Console. Selecione **Desinstalar** para confirmar.
 . Para desinstalar o software do host, execute o `cleanup.sh` script na máquina host de Classificação de Dados, por exemplo:
 +
 [source, cli]

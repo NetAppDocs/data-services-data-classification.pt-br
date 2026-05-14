@@ -59,21 +59,19 @@ Você pode habilitar a Classificação de Dados para FSx para volumes ONTAP .
 
 . No NetApp Console, *Governança > Classificação*.
 . No menu Classificação de Dados, selecione *Configuração*.
+. Identifique o sistema para o qual deseja ativar a digitalização.
+. Decida como deseja digitalizar os volumes. link:task-scanning-overview.html["Qual é a diferença entre varreduras de mapeamento e classificação?"].
+. Para ativar a verificação em todos os volumes do sistema, selecione *Ativar verificação* e, em seguida, selecione *Mapear apenas todos os volumes* ou *Verificação completa de todos os volumes*.
 +
-image:screenshot_fsx_scanning_activate.png["Uma captura de tela da guia Configuração imediatamente após a implantação da instância de Classificação de Dados."]
+Para gerenciar a verificação apenas em volumes selecionados, selecione *Ativar verificação* e depois *Gerenciar*. Na visão geral do sistema, identifique os recursos que deseja verificar. Selecione o tipo de verificação para cada volume e defina-o para o tipo de verificação desejado: completa ou somente mapeamento.
 
-. Selecione como você deseja verificar os volumes em cada sistema. link:concept-classification.html#whats-the-difference-between-mapping-and-classification-scans["Aprenda sobre mapeamento e varreduras de classificação"]:
 +
-** Para mapear todos os volumes, selecione *Mapear todos os volumes*.
-** Para mapear e classificar todos os volumes, selecione *Mapear e classificar todos os volumes*.
-** Para personalizar a verificação para cada volume, selecione *Ou selecione o tipo de verificação para cada volume* e, em seguida, escolha os volumes que deseja mapear e/ou classificar.
+Ver<<Habilitar e desabilitar verificações em volumes,Habilitar e desabilitar verificações em volumes>> para mais detalhes.
 
-
-. Na caixa de diálogo de confirmação, selecione *Aprovar* para que a Classificação de Dados comece a verificar seus volumes.
 
 
 .Resultado
-A Classificação de Dados inicia a varredura dos volumes selecionados no sistema. Os resultados estarão disponíveis no painel de conformidade assim que a Classificação de Dados concluir as verificações iniciais. O tempo que isso leva depende da quantidade de dados: pode levar alguns minutos ou horas. Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**. Acompanhe o progresso de cada verificação na barra de progresso; você pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.
+A Classificação de Dados inicia a verificação dos volumes selecionados no sistema. Os resultados estarão disponíveis no painel de Conformidade assim que a Classificação de Dados concluir as verificações iniciais. O tempo necessário depende da quantidade de dados — pode levar alguns minutos ou horas. Você pode acompanhar o progresso da verificação inicial acessando o menu **Configuração** e selecionando o botão **Gerenciar**. Acompanhe o progresso de cada verificação na barra de progresso; você pode passar o cursor sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.
 
 [NOTE]
 ====
@@ -92,13 +90,7 @@ Você precisará fornecer à Classificação de Dados credenciais CIFS para que 
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Na página Configuração, selecione *Exibir detalhes* para revisar o status e corrigir quaisquer erros.
-+
-Por exemplo, a imagem a seguir mostra um volume que a Classificação de Dados não consegue escanear devido a problemas de conectividade de rede entre a instância da Classificação de Dados e o volume.
-
-+
-image:screenshot_fsx_scanning_no_network_error.png["Uma captura de tela da página Exibir detalhes na configuração de verificação mostrando que o volume não está sendo verificado devido à conectividade de rede entre a Classificação de dados e o volume."]
-
+. Localize o sistema que deseja verificar. Na visão geral do sistema, Data Classification exibe se há algum erro. Selecione **Exibir erros** para ver os erros ou **Gerenciar** para obter uma visão geral do sistema.
 . Certifique-se de que haja uma conexão de rede entre a instância de Classificação de Dados e cada rede que inclui volumes para FSx para ONTAP.
 +
 
@@ -108,7 +100,7 @@ NOTE: Para o FSx para ONTAP, a Classificação de Dados pode escanear volumes so
 . Se você usar CIFS, forneça a Classificação de Dados com credenciais do Active Directory para que ele possa verificar volumes CIFS.
 +
 .. No menu Classificação de Dados, selecione *Configuração*.
-.. Para cada sistema, selecione *Editar credenciais CIFS* e insira o nome de usuário e a senha que o Data Classification precisa para acessar volumes CIFS no sistema.
+.. Para cada sistema, selecione **Gerenciar** e, em seguida, selecione *Editar credenciais CIFS* na página de visão geral do sistema. Insira o nome de usuário e a senha que o Data Classification precisa para acessar os volumes CIFS no sistema.
 +
 As credenciais podem ser somente leitura, mas fornecer credenciais de administrador garante que a Classificação de Dados possa ler quaisquer dados que exijam permissões elevadas.  As credenciais são armazenadas na instância de Classificação de Dados.
 
@@ -126,24 +118,20 @@ Depois de inserir as credenciais, você verá uma mensagem informando que todos 
 
 == Habilitar e desabilitar verificações em volumes
 
-Você pode iniciar ou interromper verificações em qualquer sistema a qualquer momento na página Configuração.  Você também pode alternar as verificações de somente mapeamento para verificações de mapeamento e classificação, e vice-versa.  É recomendável que você escaneie todos os volumes em um sistema.
+Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer momento na página de Configuração. Você também pode alternar entre varreduras somente de mapeamento e varreduras de mapeamento e classificação, e vice-versa. Recomenda-se que você varra todos os volumes em um sistema.
+
+A opção *Escanear sem permissões de gravação*, localizada na parte superior da página, está desativada por padrão. Isso significa que, se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não escaneará os arquivos, pois o Data Classification não consegue reverter o "tempo de acesso" para o carimbo de data/hora original. Se você não se importa se o tempo de acesso for redefinido, ative a opção e todos os arquivos serão escaneados independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^].
 
 
-TIP: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você seleciona a configuração *Mapa* ou *Mapa e Classificação* na área de título. Quando definido como *Personalizado* ou *Desativado* na área de título, você precisará ativar o mapeamento e/ou a varredura completa em cada novo volume adicionado ao sistema.
-
-O botão no topo da página para *Verificar quando faltarem permissões de "gravação"* está desabilitado por padrão. Isso significa que se a Classificação de Dados não tiver permissões de atributos de gravação no CIFS ou permissões de gravação no NFS, o sistema não verificará os arquivos porque a Classificação de Dados não poderá reverter o "último horário de acesso" para o registro de data e hora original. Se você não se importa se o último horário de acesso for redefinido, ligue o interruptor e todos os arquivos serão verificados, independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^].
-
-
-NOTE: Novos volumes adicionados ao sistema são escaneados automaticamente somente quando você define a configuração *Mapa* ou *Mapa e Classificação* na área de título. Quando a configuração para todos os volumes for *Personalizada* ou *Desativada*, você precisará ativar a verificação manualmente para cada novo volume adicionado.
+NOTE: Novos volumes adicionados ao sistema são digitalizados automaticamente somente quando você define a opção *Mapa* ou *Digitalização completa* na área de cabeçalho. Quando a configuração para todos os volumes é *Personalizada* ou *Desativada*, você precisa ativar a digitalização manualmente para cada novo volume que adicionar.
 
 image:screenshot_volume_compliance_selection.png["Uma captura de tela da página de configuração onde você pode ativar ou desativar a verificação de volumes individuais."]
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Escolha um sistema e selecione *Configuração*.
-. Para habilitar ou desabilitar verificações para todos os volumes, selecione **Mapear**, **Mapear e classificar** ou **Desativar** no título acima de todos os volumes.
+. Identifique o sistema que deseja verificar. Selecione **Ativar verificação**. No menu suspenso, escolha **Verificação completa**, **Somente mapeamento** ou **Gerenciar verificações** para abrir o menu do sistema e configurar a verificação em volumes ou compartilhamentos específicos.
 +
-Para habilitar ou desabilitar verificações para volumes individuais, encontre os volumes na lista e selecione **Mapear**, **Mapear e classificar** ou **Desativar** ao lado do nome do volume.
+Para ativar ou desativar as verificações de volumes individuais, localize os volumes ou compartilhamentos na lista e selecione **Map**, **Full scan** ou **Off** ao lado do nome do volume.
 
 
 
@@ -157,8 +145,6 @@ Quando você ativa a digitalização, a Classificação de Dados inicia a digita
 Por padrão, os volumes de proteção de dados (DP) não são verificados porque não são expostos externamente e a Classificação de Dados não pode acessá-los.  Esses são os volumes de destino para operações do SnapMirror de um sistema de arquivos FSx para ONTAP .
 
 Inicialmente, a lista de volumes identifica esses volumes como _Tipo_ *DP* com o _Status_ *Não digitalizando* e a _Ação necessária_ *Habilitar acesso a volumes DP*.
-
-image:screenshot_cloud_compliance_dp_volumes.png["Uma captura de tela mostrando o botão Habilitar acesso aos volumes DP que você pode selecionar para verificar volumes de proteção de dados."]
 
 .Passos
 Se você quiser escanear esses volumes de proteção de dados:

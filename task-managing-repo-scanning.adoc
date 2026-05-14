@@ -41,7 +41,7 @@ Você pode visualizar o status de verificação de cada ambiente de trabalho na 
 +
 image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
 
-. Na guia Configuração, selecione o botão *Configuração* do sistema.
+. Identifique o sistema cujas configurações de digitalização você deseja revisar e selecione **Gerenciar**.
 . Na página Configuração de verificação, visualize as configurações de verificação para todos os repositórios.
 +
 image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrando se seus buckets estão sendo escaneados e o status atual da varredura."]
@@ -51,31 +51,24 @@ image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrand
 
 
 
-== Alterar o tipo de digitalização de um repositório
+== Alterar o tipo de digitalização
 
-Você pode iniciar ou parar verificações somente de mapeamento ou verificações de mapeamento e classificação em um sistema a qualquer momento na página Configuração.  Você também pode mudar de varreduras somente de mapeamento para varreduras de mapeamento e classificação, e vice-versa.
+Você pode iniciar ou interromper as verificações em um sistema a qualquer momento na página de Configuração. Você também pode alternar entre verificações somente de mapeamento e verificações completas, e vice-versa.
 
 
-TIP: Os bancos de dados não podem ser configurados para varreduras somente de mapeamento.  A varredura do banco de dados pode estar Desligada ou Ligada; onde Ligada é equivalente a Mapear e Classificar.
+NOTE: A verificação somente de mapeamento não está disponível para bancos de dados. Ao ativar a verificação de banco de dados, ela deve ser completa.
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Na guia Configuração, selecione o botão *Configuração* do sistema.
+. Para alterar o tipo de verificação para todos os ativos em um sistema, selecione o menu de ações desse sistema e, em seguida, altere para o tipo de verificação desejado. Por exemplo, para alterar as verificações de um grupo de compartilhamentos de arquivos de somente mapeamento para completa, selecione *Verificar todos os compartilhamentos: verificação completa*.
++
+Para alterar o tipo de verificação para buckets, compartilhamentos ou volumes individuais, selecione o botão **Gerenciar** do sistema.
+
 +
 image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
 
-. Na página Configuração de verificação, altere qualquer um dos repositórios (buckets neste exemplo) para executar verificações *Mapear* ou *Mapear e classificar*.
 +
-image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrando como selecionar o tipo de digitalização para um bucket."]
-
-+
-Certos tipos de sistemas permitem que você altere o tipo de verificação globalmente para todos os repositórios usando uma barra de botões na parte superior da página.  Isso é válido para sistemas Cloud Volumes ONTAP, ONTAP local, Azure NetApp Files e Amazon FSx para ONTAP .
-
-+
-O exemplo abaixo mostra esta barra de botões para um sistema Azure NetApp Files .
-
-+
-image:screenshot_compliance_repo_scan_all.png["Uma captura de tela mostrando como configurar a mesma configuração de verificação para todos os volumes em um sistema."]
+Na configuração individual do sistema, selecione o ativo que deseja modificar. Selecione o *Tipo de digitalização* e, em seguida, altere para o tipo de digitalização desejado.
 
 
 
@@ -83,7 +76,7 @@ image:screenshot_compliance_repo_scan_all.png["Uma captura de tela mostrando com
 
 == Priorizar varreduras
 
-Você pode priorizar as verificações de mapeamento mais importantes ou mapear e classificar verificações para garantir que as verificações de alta prioridade sejam concluídas primeiro.
+Você pode priorizar as varreduras apenas de mapa ou completas mais importantes para garantir que as varreduras de alta prioridade sejam concluídas primeiro.
 
 Por padrão, as verificações são enfileiradas com base na ordem em que são iniciadas. Com a capacidade de priorizar verificações, você pode movê-las para a frente da fila. Várias varreduras podem ser priorizadas. A prioridade é designada na ordem "primeiro a entrar, primeiro a sair", o que significa que a primeira varredura que você prioriza passa para a frente da fila; a segunda varredura que você prioriza se torna a segunda na fila, e assim por diante.
 
@@ -91,8 +84,8 @@ A prioridade é concedida apenas uma vez. As novas varreduras automáticas de da
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Selecione os recursos que você deseja priorizar.
-. Das Ações `...` opção, selecione *Priorizar verificação*.
+. Localize o sistema para o qual deseja modificar as verificações e selecione *Gerenciar*.
+. Encontre os recursos que deseja priorizar. Selecione o menu de ação `...` e, em seguida, *Priorizar verificação*.
 
 
 
@@ -103,21 +96,18 @@ Você pode parar de escanear um repositório (por exemplo, um volume) se não pr
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Na guia Configuração, selecione o botão *Configuração* do sistema.
+. Selecione o botão *Gerenciar* do sistema.
 +
 image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
 
-. Na página Configuração de verificação, selecione *Desativado* para interromper a verificação de um bucket específico.
-+
-image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrando como selecionar o tipo de digitalização para um bucket."]
-
+. Na visão geral do sistema, selecione a coluna tipo de digitalização. Defina o tipo de digitalização como *Off*.
 
 
 
 
 == Pausar e retomar a varredura de um repositório
 
-Você pode "pausar" a verificação em um repositório se quiser interromper temporariamente a verificação de determinado conteúdo. Pausar a verificação significa que a Classificação de Dados não realizará mais verificações em busca de alterações ou adições ao repositório. Todos os resultados de varredura atuais permanecem acessíveis na Classificação de Dados.
+Você pode pausar a verificação para que o Data Classification não execute mais verificações em busca de alterações ou adições ao repositório. Todos os resultados da verificação atual permanecem acessíveis no Data Classification.
 
 Se você pausar as digitalizações, isso não elimina as cobranças, pois os dados ainda permanecem no sistema.
 
@@ -125,10 +115,9 @@ Você pode retomar a digitalização a qualquer momento.
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Na guia Configuração, selecione o botão *Configuração* do sistema.
+. Localize o sistema para o qual deseja modificar as verificações e selecione *Gerenciar*.
+. Identifique os recursos que deseja pausar. Para cada recurso, selecione o menu de ações `...` e depois *Pausar verificação*.
 +
-image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
+Se desejar retomar a digitalização, repita o procedimento e selecione *Retomar digitalização*.
 
-. Na página Configuração de digitalização, selecione as Açõesimage:button-actions-horizontal.png["Ícone de ações"] ícone.
-. Selecione *Pausar* para pausar a varredura de um volume ou selecione *Retomar* para retomar a varredura de um volume que foi pausado anteriormente.
 

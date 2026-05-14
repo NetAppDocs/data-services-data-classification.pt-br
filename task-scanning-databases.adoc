@@ -99,16 +99,13 @@ O banco de dados é adicionado à lista de sistemas.
 Você pode parar ou iniciar a varredura completa dos seus esquemas a qualquer momento.
 
 
-TIP: Não há opção para selecionar varreduras somente de mapeamento para esquemas de banco de dados.
+TIP: Não existe opção para selecionar varreduras somente de mapa para esquemas de banco de dados.
 
-. Na página Configuração, selecione o botão *Configuração* para o banco de dados que você deseja configurar.
+. Na página de Configuração, selecione o botão *Gerenciar* para o banco de dados que deseja configurar.
 +
 image:screenshot_compliance_db_server_config.png["Uma captura de tela da página Configuração de digitalização, onde você pode selecionar o botão Configuração."]
 
-. Selecione os esquemas que você deseja verificar movendo o controle deslizante para a direita.
-+
-image:screenshot_compliance_select_schemas.png["Uma captura de tela da página Configuração de verificação, onde você pode escolher os esquemas a serem verificados."]
-
+. Para cada esquema para o qual você deseja habilitar as varreduras, selecione a coluna *Tipo de varredura* e defina a varredura como desativada ou **Varredura completa**.
 
 
 .Resultado

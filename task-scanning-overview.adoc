@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-overview.html 
-keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, mapping-only scans, map and classify, map & classify 
+keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, map-only scans, map and classify, full 
 summary: Analise suas fontes de dados com o NetApp Data Classification. 
 ---
 = Digitalizar fontes de dados com a NetApp Data Classification
@@ -22,19 +22,22 @@ Você pode habilitar e desabilitar verificações no nível do volume ou no nív
 
 
 
-== Qual é a diferença entre varreduras de mapeamento e classificação?
+== Compreenda os tipos de digitalização
 
 Você pode realizar dois tipos de varreduras na Classificação de Dados:
 
-* **As verificações somente de mapeamento** fornecem apenas uma visão geral de alto nível dos seus dados e são realizadas em fontes de dados selecionadas.  As varreduras somente de mapeamento levam menos tempo do que as varreduras de mapeamento e classificação porque não acessam os arquivos para ver os dados contidos neles.  Talvez você queira fazer isso inicialmente para identificar áreas de pesquisa e depois executar uma varredura de Mapear e Classificar nessas áreas.
-* **As varreduras de Mapa e Classificação** fornecem uma varredura profunda dos seus dados.
+* **As varreduras somente de mapa** fornecem apenas uma visão geral de alto nível dos seus dados e são realizadas em fontes de dados selecionadas. As varreduras somente de mapa levam menos tempo do que as varreduras completas porque não acessam arquivos para ver os dados dentro deles.
+* **As varreduras completas** fornecem uma análise em nível profundo dos seus dados. Uma varredura completa inclui uma varredura de mapeamento e uma classificação dos dados dentro dos arquivos.
 
 
-A tabela abaixo mostra algumas das diferenças:
+
+TIP: Realizar uma varredura somente com base no mapa pode ser útil para obter uma visão geral dos seus dados e identificar áreas específicas para realizar varreduras completas.
+
+Analise as tabelas para ver quais informações são exibidas nas varreduras somente do mapa e nas varreduras completas.
 
 [cols="47,18,18"]
 |===
-| Recurso | Mapear e classificar varreduras | Varreduras somente de mapeamento 
+| Recurso | Digitalização completa | Varredura apenas do mapa 
 
 
 | Velocidade de digitalização | Lento | Rápido 
@@ -72,22 +75,22 @@ A tabela abaixo mostra algumas das diferenças:
 
 | Capacidade de ver metadados de arquivos** | Sim | Sim 
 |===
-{asterisco} A Classificação de Dados não impõe um limite na quantidade de dados que pode escanear.  Cada agente do Console suporta a digitalização e a exibição de 500 TiB de dados. Para escanear mais de 500 TiB de dados,link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] entãolink:task-deploy-overview.html["implantar outra instância de Classificação de Dados"] .  + A interface do usuário do console exibe dados de um único conector.  Para obter dicas sobre como visualizar dados de vários agentes do Console, consultelink:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^] .
+{asterisk}A Classificação de Dados não impõe um limite à quantidade de dados que analisa. Cada agente do Console suporta a análise e exibição de 500 TiB de dados. Para analisar mais de 500 TiB de dados, link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["instalar outro agente do Console"^] em seguida link:task-deploy-overview.html["implantar outra instância de Classificação de Dados"]. + A interface do usuário do Console exibe dados de um único conector. Para obter dicas sobre como visualizar dados de vários agentes do Console, consulte link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Trabalhar com vários agentes do Console"^].
 
 {asterisco}{asterisco} Os seguintes metadados são extraídos dos arquivos durante as varreduras de mapeamento:
 
-* Sistema
-* Tipo de sistema
-* Repositório de armazenamento
-* Tipo de arquivo
-* Capacidade utilizada
-* Número de arquivos
-* Tamanho do arquivo
-* Criação de arquivo
+* Hora da descoberta do arquivo
 * Último acesso ao arquivo
 * Última modificação do arquivo
-* Hora da descoberta do arquivo
+* Tipo de arquivo
+* Tamanho do arquivo
+* Criação de arquivo
+* Número de arquivos
 * Extração de permissões
+* Repositório de armazenamento
+* Sistema
+* Tipo de sistema
+* Capacidade utilizada
 
 
 .Diferenças do painel de governança:
@@ -95,7 +98,7 @@ A tabela abaixo mostra algumas das diferenças:
 ====
 [cols="40,25,25"]
 |===
-| Recurso | Mapear e classificar | Mapa 
+| Recurso | Digitalização completa | Varredura apenas do mapa 
 
 
 | Dados obsoletos | Sim | Sim 
@@ -145,7 +148,7 @@ A tabela abaixo mostra algumas das diferenças:
 ====
 [cols="40,25,25"]
 |===
-| Recurso | Mapear e classificar | Mapa 
+| Recurso | Digitalização completa | Varredura apenas do mapa 
 
 
 | Informações pessoais | Sim | Não 
@@ -168,7 +171,7 @@ A tabela abaixo mostra algumas das diferenças:
 ====
 [cols="40,25,25"]
 |===
-| Recurso | Mapear e classificar | Mapa 
+| Recurso | Digitalização completa | Varredura apenas do mapa 
 
 
 | Consultas salvas | Sim | Sim 

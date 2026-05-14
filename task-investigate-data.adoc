@@ -17,7 +17,7 @@ summary: Você pode investigar os dados da sua organização visualizando detalh
 O painel de Investigação de Dados exibe informações sobre seus dados em nível de arquivo e diretório, permitindo que você classifique e filtre os resultados. A página Investigação de Dados apresenta informações sobre metadados e permissões de arquivos e diretórios, além de identificar arquivos duplicados. Com informações em nível de arquivo, diretório e banco de dados, você pode tomar medidas para melhorar a conformidade da sua organização e economizar espaço de storage. A página Investigação de Dados também oferece suporte a link:task-copy-move.html["mover, copiar e excluir arquivos"].
 
 
-NOTE: Para obter insights da página Investigação, você deve executar uma verificação de classificação completa em suas fontes de dados.  Fontes de dados que passaram por uma varredura somente de mapeamento não mostram detalhes em nível de arquivo.
+NOTE: Para obter informações na página de Investigação, você precisa realizar uma análise completa de classificação em suas fontes de dados. Fontes de dados que passaram apenas por uma análise de mapa não exibem detalhes em nível de arquivo.
 
 
 

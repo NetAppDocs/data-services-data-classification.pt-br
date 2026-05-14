@@ -17,7 +17,7 @@ summary: 'Obtenha controle dos seus dados privados visualizando detalhes sobre o
 Obtenha controle dos seus dados privados visualizando detalhes sobre os dados pessoais (PII) e dados pessoais sensíveis (SPII) na sua organização.  Você também pode obter visibilidade revisando as categorias e os tipos de arquivo que o NetApp Data Classification encontrou em seus dados.
 
 
-NOTE: Os detalhes de conformidade no nível do arquivo só estarão disponíveis se você executar uma verificação de classificação completa. As varreduras somente de mapeamento não produzem detalhes no nível do arquivo.
+NOTE: Os detalhes de conformidade em nível de arquivo só estão disponíveis se você realizar uma verificação de classificação completa. Verificações somente de mapa não fornecem detalhes em nível de arquivo.
 
 Por padrão, o painel Classificação de Dados exibe dados de conformidade para todos os sistemas e bancos de dados.  Para ver dados de apenas alguns sistemas, selecione-os.
 
@@ -50,10 +50,10 @@ image:screenshot_personal_files.png["Uma captura de tela da caixa de diálogo de
 As imagens a seguir mostram dados pessoais encontrados em um diretório (compartilhamentos e pastas). Na aba *Estruturado*, você visualiza dados pessoais encontrados em bancos de dados. Na aba *Não estruturado*, você pode visualizar dados em nível de arquivo.
 
 +
-image:screenshot_compliance_investigation_page.png["Uma captura de tela de informações detalhadas encontradas em arquivos após clicar em Investigar resultados."]
+image:screenshot_compliance_investigation_page.png["Uma captura de tela com informações detalhadas encontradas nos arquivos após selecionar Investigate Results."]
 
 +
-image:screenshot_compliance_investigation_page_directory.png["Uma captura de tela de informações detalhadas encontradas em diretórios após clicar em Investigar resultados."]
+image:screenshot_compliance_investigation_page_directory.png["Uma captura de tela com informações detalhadas encontradas nos diretórios após selecionar Investigate Results."]
 
 
 
@@ -77,5 +77,5 @@ NOTE: Somente o inglês é suportado na verificação de dados pessoais confiden
 image:screenshot-sensitive-personal.png["Captura de tela do cartão de resultados pessoais sensíveis"] .
 
 . Para investigar os detalhes de um tipo específico de dados pessoais sensíveis, selecione *Exibir tudo* e, em seguida, selecione o ícone de seta *Investigar resultados* para um tipo específico de dados pessoais sensíveis.
-. Investigue os dados pesquisando, classificando, expandindo detalhes de um arquivo específico, clicando em *Investigar resultados* para ver informações mascaradas ou baixando a lista de arquivos.
+. Investigue os dados pesquisando, classificando, expandindo detalhes de um arquivo específico, selecionando *Investigate Results* para ver informações mascaradas ou baixando a lista de arquivos.
 

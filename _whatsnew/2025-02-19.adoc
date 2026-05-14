@@ -12,15 +12,15 @@ Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podma
 
 
 
-=== Priorizar varreduras somente de mapeamento
+=== Priorize apenas as varreduras de mapa
 
-Ao realizar verificações somente de mapeamento, você pode priorizar as verificações mais importantes. Esse recurso ajuda quando você tem muitos ambientes de trabalho e quer garantir que as verificações de alta prioridade sejam concluídas primeiro.
+Ao realizar varreduras somente de Map, você pode priorizar as varreduras mais importantes. Esse recurso é útil quando você tem muitos ambientes de trabalho e deseja garantir que as varreduras de alta prioridade sejam concluídas primeiro.
 
 Por padrão, as verificações são enfileiradas com base na ordem em que são iniciadas. Com a capacidade de priorizar verificações, você pode movê-las para a frente da fila. Várias varreduras podem ser priorizadas. A prioridade é designada na ordem "primeiro a entrar, primeiro a sair", o que significa que a primeira varredura que você prioriza passa para a frente da fila; a segunda varredura que você prioriza se torna a segunda na fila, e assim por diante.
 
 A prioridade é concedida apenas uma vez. As novas varreduras automáticas de dados de mapeamento ocorrem na ordem padrão.
 
-A priorização é limitada alink:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["varreduras somente de mapeamento"^] ; não está disponível para mapeamento e classificação de varreduras.
+A priorização é limitada a link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["varreduras apenas de mapa"^]; não está disponível para varreduras de mapa e classificação.
 
 Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["Priorizar varreduras"^] .
 

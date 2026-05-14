@@ -67,16 +67,14 @@ StorageGRID é adicionado à lista de sistemas.
 Depois de habilitar a Classificação de Dados no StorageGRID, a próxima etapa é configurar os buckets que você deseja verificar.  A Classificação de Dados descobre esses buckets e os exibe no sistema que você criou.
 
 .Passos
-. Na página Configuração, localize o sistema StorageGRID .
-. No bloco do sistema StorageGRID , selecione *Configuração*.
-. Conclua uma das seguintes etapas para habilitar ou desabilitar a verificação:
+. Em Classificação de Dados, selecione **Configuração**.
+. Na página de Configuração, localize o sistema StorageGRID para o qual deseja ativar a verificação.
+. Decida como deseja digitalizar os volumes. link:task-scanning-overview.html["Qual é a diferença entre varreduras de mapeamento e classificação?"].
+. Para ativar a verificação em todos os volumes do sistema, selecione *Ativar verificação* e, em seguida, selecione *Mapear apenas todos os volumes* ou *Verificação completa de todos os volumes*.
 +
-** Para habilitar varreduras somente de mapeamento em um bucket, selecione *Mapear*.
-** Para habilitar verificações completas em um bucket, selecione *Mapear e classificar*.
-** Para desabilitar a varredura em um bucket, selecione *Desativado*.
-
+Para gerenciar a verificação apenas em volumes selecionados, selecione *Ativar verificação* e depois *Gerenciar*. Na visão geral do sistema, identifique os recursos que deseja verificar. Selecione o tipo de verificação para cada volume e defina-o para o tipo de verificação desejado: completa ou somente mapeamento.
 
 
 
 .Resultado
-A Classificação de Dados inicia a varredura dos buckets que você habilitou.  Você pode acompanhar o progresso da verificação inicial navegando até o menu **Configuração** e selecionando **Configuração do sistema**.  O progresso de cada verificação é mostrado como uma barra de progresso.  Você também pode passar o mouse sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume.  Se houver algum erro, ele aparecerá na coluna Status, junto com a ação necessária para corrigi-lo.
+A Classificação de Dados inicia a verificação dos buckets que você habilitou. Você pode acompanhar o progresso da verificação inicial acessando o menu **Configuração**. Identifique o sistema e selecione **Gerenciar**. O progresso de cada verificação é exibido como uma barra de progresso. Você também pode passar o cursor sobre a barra de progresso para ver o número de arquivos verificados em relação ao total de arquivos no volume. Se houver algum erro, ele aparecerá na coluna Status, juntamente com a ação necessária para corrigir o erro.

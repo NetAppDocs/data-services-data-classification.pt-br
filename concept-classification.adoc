@@ -166,7 +166,7 @@ Revise as seguintes especificações para tipos de instância:
 Em um nível mais alto, a varredura de classificação de dados funciona assim:
 
 . Você implanta uma instância de Classificação de Dados no Console.
-. Você habilita o mapeamento de alto nível (chamado de varreduras _Somente mapeamento_) ou varreduras de nível profundo (chamadas de varreduras _Mapear e classificar_) em uma ou mais fontes de dados.
+. Você habilita as verificações em uma ou mais fontes de dados.
 . A Classificação de Dados analisa dados usando um processo de aprendizado de IA.
 . Use os painéis e ferramentas de relatórios fornecidos para ajudar em seus esforços de conformidade e governança.
 
@@ -186,15 +186,15 @@ NOTE: A Classificação de Dados não impõe um limite à quantidade de dados qu
 
 
 
-== Qual é a diferença entre varreduras de mapeamento e classificação?
+== Mapeamento e escaneamento completo
 
 Você pode realizar dois tipos de varreduras na Classificação de Dados:
 
-* **As verificações somente de mapeamento** fornecem apenas uma visão geral de alto nível dos seus dados e são realizadas em fontes de dados selecionadas.  As varreduras somente de mapeamento levam menos tempo do que as varreduras de mapeamento e classificação porque não acessam arquivos para ver os dados contidos neles.  Talvez você queira fazer isso inicialmente para identificar áreas de pesquisa e depois executar uma varredura de Mapear e Classificar nessas áreas.
-* **As varreduras de Mapa e Classificação** fornecem uma varredura profunda dos seus dados.
+* **As varreduras somente de mapa** fornecem apenas uma visão geral de alto nível dos seus dados e são realizadas em fontes de dados selecionadas. As varreduras somente de mapa levam menos tempo do que as varreduras completas porque não acessam os arquivos para ver os dados internos. Você pode optar por essa abordagem inicialmente para identificar áreas de pesquisa e, em seguida, realizar uma varredura completa nessas áreas.
+* **As varreduras completas** fornecem uma varredura em nível profundo dos seus dados. Uma varredura completa inclui uma varredura somente de mapa e uma classificação dos dados dentro dos arquivos.
 
 
-Para obter detalhes sobre as diferenças entre as varreduras de mapeamento e classificação, consultelink:task-scanning-overview.html["Qual é a diferença entre varreduras de mapeamento e classificação?"] .
+Para uma análise detalhada das diferenças entre varreduras apenas com mapa e varreduras completas, consulte link:task-scanning-overview.html["Qual é a diferença entre varreduras de mapeamento e classificação?"].
 
 
 

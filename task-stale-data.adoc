@@ -19,11 +19,9 @@ Por padrão, os dados são considerados obsoletos se a última modificação oco
 
 .Defina dados obsoletos.
 . Em Resiliência a Ransomware, selecione **Configuração**.
-. Na página de Configuração, role até o cabeçalho **Definição de dados obsoletos**.
+. Na página de Configuração, selecione a guia **Configurações**.
+. Na seção Definição de dados desatualizados, selecione *Editar*.
 . No menu suspenso **Propriedades do arquivo**, escolha se deseja definir dados obsoletos com base na data do *Último acesso* ou da *Última modificação*.
 . Selecione o período de tempo para a definição de dados obsoletos.
-+
-image:stale-data.png["Captura de tela das opções de definição de dados obsoletos"]
-
 . Selecione **Salvar**.
 
