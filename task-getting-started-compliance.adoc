@@ -65,15 +65,15 @@ Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer m
 A opção *Escanear sem permissões de gravação*, localizada na parte superior da página, está desativada por padrão. Isso significa que, se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não escaneará os arquivos, pois o Data Classification não consegue reverter o "tempo de acesso" para o carimbo de data/hora original. Se você não se importa se o tempo de acesso for redefinido, ative a opção e todos os arquivos serão escaneados independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^].
 
 
-NOTE: Novos volumes adicionados ao sistema são digitalizados automaticamente somente quando você define a opção *Mapa* ou *Digitalização completa* na área de cabeçalho. Quando a configuração para todos os volumes é *Personalizada* ou *Desativada*, você precisa ativar a digitalização manualmente para cada novo volume que adicionar.
+NOTE: Novos volumes adicionados ao sistema são verificados automaticamente somente se você tiver habilitado a verificação para todos os volumes. Se você habilitou a verificação apenas em determinados volumes, você deve habilitar manualmente a verificação no volume recém-adicionado.
 
 image:screenshot_volume_compliance_selection.png["Uma captura de tela da página de configuração onde você pode ativar ou desativar a verificação de volumes individuais."]
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Identifique o sistema que deseja verificar. Selecione **Ativar verificação**. No menu suspenso, escolha **Verificação completa**, **Somente mapeamento** ou **Gerenciar verificações** para abrir o menu do sistema e configurar a verificação em volumes ou compartilhamentos específicos.
+. Identifique o sistema que deseja verificar. Selecione **Ativar verificação**. No menu suspenso, escolha **Verificar todos os volumes: verificação completa**, **Verificar todos os volumes: somente mapeamento** ou **Gerenciar verificações** para abrir o menu do sistema e configurar a verificação em volumes específicos.
 +
-Para ativar ou desativar as verificações de volumes individuais, localize os volumes ou compartilhamentos na lista e selecione **Map**, **Full scan** ou **Off** ao lado do nome do volume.
+Para ativar ou desativar as verificações de volumes individuais, localize os volumes na lista. Na coluna tipo de verificação, selecione **Somente mapeamento** ou **Verificação completa**.
 
 
 

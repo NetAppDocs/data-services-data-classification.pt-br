@@ -32,6 +32,18 @@ Analise um link:https://youtu.be/_8YJ3KyZ7nI["vídeo tutorial"^]. Para obter mai
 
 
 
+=== Função de administrador de conformidade IAM
+
+A Classificação de Dados agora oferece suporte a uma função de administrador de Conformidade para gerenciar permissões na Classificação de Dados. A função de administrador de Conformidade não tem acesso a recursos como agentes do Console e espaços de trabalho. Usuários com a função de administrador de Conformidade devem estar associados a pelo menos uma outra função.
+
+Ao instalar o Data Classification, você deve ter a função de administrador da plataforma Console ou a função de administrador de Compliance.
+
+Se você já é um usuário, o acesso deve continuar normalmente. Por exemplo, uma função na plataforma que possui uma função de administrador de pasta ou projeto já tem acesso.
+
+Para obter mais informações, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-data-classification.html["Funções de classificação de dados"^].
+
+
+
 === Implantar o NetApp Data Classification com OVA
 
 NetApp Data Classification agora oferece suporte à implantação com VMware Open Virtual Appliance (OVA), proporcionando uma estratégia de implantação simplificada para ambientes VMware vSphere locais.

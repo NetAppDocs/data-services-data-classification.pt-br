@@ -32,7 +32,7 @@ Você pode visualizar o status de verificação de cada ambiente de trabalho na 
 * *Em execução* (ponto verde): A tarefa de verificação, que estava na fila, está ativamente em andamento no repositório de armazenamento selecionado.
 * *Concluído* (ponto verde): A verificação do repositório de armazenamento foi concluída.
 * *Pausado* (ponto cinza): Você pausou a digitalização. Embora as alterações de volume não sejam exibidas no sistema, as informações obtidas por meio da digitalização permanecem disponíveis.
-* *Erro* (ponto vermelho): A verificação não pode ser concluída porque encontrou problemas.  Se você precisar concluir uma ação, o erro aparecerá na dica de ferramenta na coluna “Ação necessária”.  Caso contrário, o sistema mostra um status de “erro” e tenta recuperar.  Quando termina, o status muda.
+* *Erro* (ponto vermelho): A verificação não pode ser concluída porque encontrou problemas. Se você precisar realizar uma ação, o erro aparecerá na dica de ferramenta sob a coluna “Ação necessária”. Caso contrário, o sistema exibirá o status “erro” e tentará se recuperar. Quando for concluída, o status será alterado.
 * *Não escaneando*: A configuração de volume "Desligado" foi selecionada e o sistema não está escaneando o volume.
 
 

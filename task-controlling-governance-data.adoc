@@ -115,7 +115,7 @@ O relatório inclui as seguintes informações:
 |===
 .Passos
 . Em Classificação de Dados, selecione *Governança*.
-. No bloco de relatórios, selecione *Relatório de visão geral do mapeamento de dados completo*.
+. No bloco de relatórios, selecione o botão **Download** no cabeçalho do relatório Visão geral completa do mapeamento de dados.
 +
 image:screenshot-compliance-report-buttons.png["Uma captura de tela do Painel de Governança que mostra como iniciar o Relatório de Mapeamento de Dados."]
 
