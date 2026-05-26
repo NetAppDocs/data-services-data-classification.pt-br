@@ -41,10 +41,10 @@ Nas tabelas a seguir, se o sistema marcado como "default" não estiver disponív
 | Tamanho do sistema | Especificações | Tipo de instância 
 
 
-| Extra grande | 32 CPUs, 128 GB de RAM, disco do sistema operacional (2.048 GiB, taxa de transferência mínima de 250 MB/s) e disco de dados (SSD de 1 TiB, taxa de transferência mínima de 750 MB/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^](padrão) 
+| Extra grande | 16 CPUs, 64 GB de RAM, disco do sistema operacional (2.048 GiB, taxa de transferência mínima de 250 MB/s) e disco de dados (1 TiB SSD, taxa de transferência mínima de 750 MB/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series["Standard_D32s_v5 ou Standard_D32_v5"^] 
 
 
-| Grande | 16 CPUs, 64 GB de RAM, SSD de 500 GiB | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^](padrão) 
+| Grande | 16 CPUs, 64 GB de RAM, SSD de 500 GiB | link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv5-series?tabs=sizebasic["Standard_D16_v5 ou Standard_D16s_v5"^] (padrão) 
 |===
 
 
