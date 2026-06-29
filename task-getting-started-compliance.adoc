@@ -62,7 +62,7 @@ Se você inseriu as credenciais corretamente, uma mensagem confirmará que todos
 
 Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer momento na página de Configuração. Você também pode alternar entre varreduras somente de mapeamento e varreduras de mapeamento e classificação, e vice-versa. Recomenda-se que você varra todos os volumes em um sistema.
 
-A opção *Escanear sem permissões de gravação*, localizada na parte superior da página, está desativada por padrão. Isso significa que, se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não escaneará os arquivos, pois o Data Classification não consegue reverter o "tempo de acesso" para o carimbo de data/hora original. Se você não se importa se o tempo de acesso for redefinido, ative a opção e todos os arquivos serão escaneados independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^].
+A opção *Escanear sem permissões de gravação* está desativada por padrão. Isso significa que, se o Data Classification não tiver as permissões de gravação apropriadas, o sistema não escaneará os arquivos porque o Data Classification não poderá reverter o "last accessed time" para o registro original. Se o seu sistema puder tolerar a modificação do last accessed time, selecione esta opção. link:reference-collected-metadata.html#last-accessed-time-timestamp["Saber mais"^].
 
 
 NOTE: Novos volumes adicionados ao sistema são verificados automaticamente somente se você tiver habilitado a verificação para todos os volumes. Se você habilitou a verificação apenas em determinados volumes, você deve habilitar manualmente a verificação no volume recém-adicionado.

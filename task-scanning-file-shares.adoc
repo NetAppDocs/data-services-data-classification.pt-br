@@ -27,7 +27,7 @@ Revise os seguintes pré-requisitos para garantir que você tenha uma configura�
 
 * Os compartilhamentos podem ser hospedados em qualquer lugar, inclusive na nuvem ou no local.  Compartilhamentos CIFS de sistemas de armazenamento NetApp 7-Mode mais antigos podem ser verificados como compartilhamentos de arquivos.
 +
-** A Classificação de Dados não pode extrair permissões ou o "último horário de acesso" dos sistemas do Modo 7.
+** A NetApp Data Classification não consegue extrair permissões ou a "última hora de acesso" de sistemas 7-Mode.
 ** Devido a um problema conhecido entre algumas versões do Linux e compartilhamentos CIFS em sistemas 7-Mode, você deve configurar o compartilhamento para usar somente SMBv1 com autenticação NTLM habilitada.
 
 
@@ -79,7 +79,7 @@ Ver<<Habilitar e desabilitar verificações em volumes,Habilitar e desabilitar v
 
 
 
-NOTE: A página de visão geral do sistema possui uma opção *Escanear sem permissões de gravação* que está desativada por padrão. Isso significa que, se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não examinará os arquivos, pois o Data Classification não consegue reverter o "último tempo de acesso" para o carimbo de data/hora original. + Se você marcar a opção *Escanear sem permissões de gravação*, a verificação redefine o último tempo de acesso e examina todos os arquivos independentemente das permissões. + Para saber mais sobre o último tempo de acesso, consulte link:reference-collected-metadata.html#last-access-time-timestamp["Metadados coletados de fontes de dados na Classificação de Dados"].
+NOTE: A página de visão geral do sistema possui uma opção *Escanear sem permissões de gravação* que está desativada por padrão. Se o Data Classification não tiver as permissões apropriadas, ele não escaneará os arquivos porque o Data Classification não pode reverter a "última hora de acesso" para o carimbo de data/hora original. + Você pode substituir essa configuração usando a opção *Escanear sem permissões de gravação*. Para saber mais sobre essa opção, consulte link:reference-collected-metadata.html#last-accessed-time-timestamp["Metadados coletados de fontes de dados na Classificação de Dados"].
 
 .Resultado
 A Classificação de Dados inicia a verificação dos arquivos nos compartilhamentos de arquivos que você adicionou.  Você podexref:#track-the-scanning-progress[Acompanhe o progresso da digitalização] e visualize os resultados da verificação no **Painel**.
@@ -147,7 +147,7 @@ Você pode acompanhar o progresso da verificação inicial.
 
 Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer momento na página de Configuração. Você também pode alternar entre varreduras somente de mapeamento e varreduras de mapeamento e classificação, e vice-versa. Recomenda-se que você varra todos os volumes em um sistema.
 
-A opção *Escanear sem permissões de gravação*, localizada na parte superior da página, está desativada por padrão. Isso significa que, se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não escaneará os arquivos, pois o Data Classification não consegue reverter o "tempo de acesso" para o carimbo de data/hora original. Se você não se importa se o tempo de acesso for redefinido, ative a opção e todos os arquivos serão escaneados independentemente das permissões. link:reference-collected-metadata.html#last-access-time-timestamp["Saber mais"^].
+A opção *Escanear sem permissões de gravação* está desativada por padrão. Isso significa que, se o Data Classification não tiver as permissões de gravação apropriadas, o sistema não escaneará os arquivos porque o Data Classification não poderá reverter o "last accessed time" para o registro original. Se o seu sistema puder tolerar a modificação do last accessed time, selecione esta opção. link:reference-collected-metadata.html#last-accessed-time-timestamp["Saber mais"^].
 
 
 NOTE: Novos volumes adicionados ao sistema são verificados automaticamente somente se você tiver habilitado a verificação para todos os volumes. Se você habilitou a verificação apenas em determinados volumes, você deve habilitar manualmente a verificação no volume recém-adicionado.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
-keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
+keywords: compliance, metadata, permissions, time stamps, privacy, last accessed time 
 summary: A Classificação de Dados coleta determinados metadados ao executar varreduras de classificação nos dados de suas fontes de dados e sistemas.  A Classificação de Dados pode acessar a maioria dos metadados necessários para classificar seus dados, mas há algumas fontes nas quais não conseguimos acessar os dados necessários. 
 ---
 = Metadados coletados de fontes de dados na NetApp Data Classification
@@ -14,7 +14,7 @@ summary: A Classificação de Dados coleta determinados metadados ao executar va
 
 
 [role="lead"]
-A NetApp Data Classification coleta determinados metadados ao executar verificações de classificação nos dados de suas fontes de dados e sistemas.  A Classificação de Dados pode acessar a maioria dos metadados necessários para classificar seus dados, mas há algumas fontes nas quais não conseguimos acessar os dados necessários.
+NetApp Data Classification coleta metadados durante a análise de suas fontes de dados e sistemas. A maioria dos metadados está disponível, mas alguns atributos não estão disponíveis para todos os protocolos.
 
 [cols="15,25,25,25"]
 |===
@@ -27,7 +27,7 @@ A NetApp Data Classification coleta determinados metadados ao executar verifica�
 | _Último horário de acesso_ | Disponível | Disponível 
 
 
-| _Hora da última modificação_ | Disponível | Disponível 
+| _Última modificação_ | Disponível | Disponível 
 
 
 .2+| *Permissões* | _Permissões abertas_ | Se o grupo "TODOS" tiver acesso ao arquivo, ele será considerado "Aberto à organização". | Se "Outros" tiver acesso ao arquivo, ele será considerado "Aberto à organização". 
@@ -38,30 +38,37 @@ A NetApp Data Classification coleta determinados metadados ao executar verifica�
 [NOTE]
 ====
 * A Classificação de Dados não extrai o "último horário de acesso" das fontes de dados do banco de dados.
-* Versões mais antigas do sistema operacional Windows (por exemplo, Windows 7 e Windows 8) desabilitam a coleta do atributo "hora do último acesso" por padrão, pois isso pode afetar o desempenho do sistema.  Quando esse atributo não for coletado, as análises de Classificação de Dados baseadas no "último horário de acesso" serão afetadas.  Você pode habilitar a coleta do último horário de acesso nesses sistemas Windows mais antigos, se necessário.
+* Versões mais antigas do sistema operacional Windows (por exemplo, Windows 7 e Windows 8) desativam por padrão a coleta do atributo "último acesso", pois isso pode afetar o desempenho do sistema. Quando esse atributo não é coletado, as análises de Classificação de Dados baseadas no "último acesso" serão afetadas. Você pode habilitar a coleta do "último acesso" nesses sistemas Windows mais antigos, se necessário.
 
 
 ====
 
 
-== Carimbo de data e hora do último acesso
+== Último horário de acesso
 
-Quando a Classificação de Dados extrai dados de compartilhamentos de arquivos, o sistema operacional considera que está acessando os dados e altera o "último horário de acesso" de acordo.  Após a digitalização, a Classificação de Dados tenta reverter o último horário de acesso para o registro de data e hora original.  Se a Classificação de Dados não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não poderá reverter o último horário de acesso para o registro de data e hora original.  Os volumes ONTAP configurados com SnapLock têm permissões somente leitura e também não podem reverter o último horário de acesso para o registro de data e hora original.
+Quando o Data Classification extrai dados de compartilhamentos de arquivos, o sistema operacional considera isso um evento de acesso e atualiza o "último horário de acesso" de acordo. Após a verificação, o Data Classification tenta reverter o último horário de acesso para o registro de data e hora original. Se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não poderá reverter o último horário de acesso para o registro de data e hora original.
 
-Por padrão, se a Classificação de Dados não tiver essas permissões, o sistema não verificará esses arquivos em seus volumes porque a Classificação de Dados não pode reverter o "último horário de acesso" para o registro de data e hora original.  No entanto, se você não se importa se o último horário de acesso será redefinido para o horário original em seus arquivos, você pode selecionar a opção *Verificar quando faltarem permissões de "atributos de gravação"* na parte inferior da página Configuração para que a Classificação de Dados verifique os volumes independentemente das permissões.
+Por padrão, Data Classification não analisa arquivos quando não possui permissões de gravação para restaurar o carimbo de data/hora original. Se seus dados puderem tolerar que o horário do último acesso não seja redefinido para o carimbo de data/hora original, habilite a opção *Analisar sem permissões de gravação* na página de configuração do sistema.
 
-image:screenshot_scan_missing_permissions.png["Uma captura de tela mostrando a opção que você pode usar para que o Data Classification verifique seus arquivos, mesmo que ele não tenha as permissões corretas para reverter o último horário de acesso ao registro de data e hora original."]
+image:screenshot_scan_missing_permissions.png["Uma captura de tela mostrando a opção que você pode usar para que o Data Classification analise seus arquivos mesmo que não tenha as permissões corretas para reverter o último acesso ao registro de data e hora original."]
 
 Essa funcionalidade é aplicável a sistemas ONTAP locais, Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP e compartilhamentos de arquivos de terceiros.
 
-Há um filtro na página Investigação chamado _Evento de Análise de Verificação_ que permite exibir os arquivos que não foram classificados porque a Classificação de Dados não conseguiu reverter o último horário de acesso ou os arquivos que foram classificados mesmo que a Classificação de Dados não tenha conseguido reverter o último horário de acesso.
+
+NOTE: Os volumes ONTAP configurados com SnapLock têm permissões somente de leitura e também não podem reverter o último acesso para o carimbo de data/hora original.
+
+
+
+=== Eventos de análise de varredura
+
+Na página de Investigação, existe um filtro chamado _Scan Analysis Event_ que permite exibir os arquivos que não foram classificados porque o NetApp Data Classification não conseguiu reverter o último horário de acesso, ou os arquivos que foram classificados mesmo que o NetApp Data Classification não tenha conseguido reverter o último horário de acesso.
 
 image:screenshot_scan_analysis_event_filter.png["Uma captura de tela do filtro para ver quais arquivos foram verificados e não verificados, com base em ter ou não permissões de gravação."]
 
 As seleções de filtros são:
 
-* "Não classificado — Não é possível reverter o último horário de acesso" - Isso mostra os arquivos que não foram classificados devido à falta de permissões de gravação.
-* "Último horário de acesso classificado e atualizado" - Mostra os arquivos que foram classificados e a Classificação de Dados não conseguiu redefinir o último horário de acesso para a data original.  Este filtro é relevante somente para ambientes em que você ativou a opção *Verificar quando faltarem permissões de "gravação de atributos"*.
+* "Não classificado -- Não é possível reverter o último acesso" - Isso mostra os arquivos que não foram classificados devido à falta de permissões de gravação.
+* "Classified and updated last accessed time" - Isso mostra os arquivos que foram classificados e a Classificação de Dados não conseguiu redefinir a última data de acesso para a data original. Este filtro é relevante apenas para ambientes onde *Verificar sem permissões de gravação* está habilitado.
 
 
-Se necessário, você pode exportar esses resultados para um relatório para ver quais arquivos estão ou não sendo verificados devido às permissões. link:task-investigate-data.html#download-your-report["Saiba mais sobre relatórios de investigação de dados"^].
+Caso necessário, você pode exportar esses resultados para um relatório para verificar quais arquivos estão sendo verificados ou não devido às permissões. link:task-investigate-data.html#download-your-report["Saiba mais sobre relatórios de investigação de dados"^].
