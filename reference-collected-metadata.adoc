@@ -56,19 +56,3 @@ Essa funcionalidade é aplicável a sistemas ONTAP locais, Cloud Volumes ONTAP, 
 
 
 NOTE: Os volumes ONTAP configurados com SnapLock têm permissões somente de leitura e também não podem reverter o último acesso para o carimbo de data/hora original.
-
-
-
-=== Eventos de análise de varredura
-
-Na página de Investigação, existe um filtro chamado _Scan Analysis Event_ que permite exibir os arquivos que não foram classificados porque o NetApp Data Classification não conseguiu reverter o último horário de acesso, ou os arquivos que foram classificados mesmo que o NetApp Data Classification não tenha conseguido reverter o último horário de acesso.
-
-image:screenshot_scan_analysis_event_filter.png["Uma captura de tela do filtro para ver quais arquivos foram verificados e não verificados, com base em ter ou não permissões de gravação."]
-
-As seleções de filtros são:
-
-* "Não classificado -- Não é possível reverter o último acesso" - Isso mostra os arquivos que não foram classificados devido à falta de permissões de gravação.
-* "Classified and updated last accessed time" - Isso mostra os arquivos que foram classificados e a Classificação de Dados não conseguiu redefinir a última data de acesso para a data original. Este filtro é relevante apenas para ambientes onde *Verificar sem permissões de gravação* está habilitado.
-
-
-Caso necessário, você pode exportar esses resultados para um relatório para verificar quais arquivos estão sendo verificados ou não devido às permissões. link:task-investigate-data.html#download-your-report["Saiba mais sobre relatórios de investigação de dados"^].
