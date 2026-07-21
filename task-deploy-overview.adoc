@@ -26,6 +26,7 @@ TIP: Para implementações VMware vSphere locais, a Classificação de Dados ofe
 
 
 
+[[on-premises-installation-script]]
 == Script de instalação local
 
 Tanto a instalação em um host Linux com acesso à internet quanto a instalação local em um host Linux sem acesso à internet utilizam um script de instalação. O script inicia verificando se o sistema e o ambiente atendem aos pré-requisitos. Se os pré-requisitos forem atendidos, a instalação é iniciada.

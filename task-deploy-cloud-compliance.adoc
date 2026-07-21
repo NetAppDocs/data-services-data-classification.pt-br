@@ -20,6 +20,7 @@ Observe que você também podelink:task-deploy-compliance-onprem.html["instalar 
 
 
 
+[[quick-start]]
 == Início rápido
 
 Comece rapidamente seguindo estas etapas ou role para baixo até as seções restantes para obter detalhes completos.
@@ -41,6 +42,7 @@ Inicie o assistente de instalação para implantar a instância de Classificaç�
 
 
 
+[[create-a-console-agent]]
 == Criar um agente de console
 
 Se você ainda não possui um agente de Console, crie um agente de Console em seu provedor de nuvem. Consulte  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["criando um agente de console na AWS"^] ou  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["criando um agente de console no Azure"^], ou  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["criando um agente de console no GCP"^]. Na maioria dos casos, você provavelmente já tem um agente de Console configurado antes de tentar ativar a Classificação de Dados porque a maioria  https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["Os recursos do console exigem um agente do console"], mas há casos em que será necessário configurar um agora.
@@ -67,6 +69,7 @@ TIP: A Classificação de Dados não impõe um limite à quantidade de dados que
 
 
 
+[[government-region-support]]
 === Apoio regional do governo
 
 A classificação de dados é suportada quando o agente do Console é implantado em uma região governamental (AWS GovCloud, Azure Gov ou Azure DoD).  Quando implantada dessa maneira, a Classificação de Dados tem as seguintes restrições:
@@ -75,6 +78,7 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-m
 
 
 
+[[prerequisites]]
 == Pré-requisitos
 
 Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de implantar a Classificação de Dados na nuvem.  Quando você implanta a Classificação de Dados na nuvem, ela fica localizada na mesma sub-rede que o agente do Console.
@@ -189,6 +193,7 @@ Veja os links a seguir para mais detalhes sobre os limites de vCPU:
 
 
 
+[[deploy-data-classification-in-the-cloud]]
 == Implantar classificação de dados na nuvem
 
 Siga estas etapas para implantar uma instância de Classificação de Dados na nuvem.  O agente do Console implantará a instância na nuvem e, em seguida, instalará o software de classificação de dados nessa instância.

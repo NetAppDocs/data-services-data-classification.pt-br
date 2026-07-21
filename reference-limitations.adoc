@@ -18,6 +18,7 @@ Limitações conhecidas identificam funções que não são suportadas ou não i
 
 
 
+[[netapp-data-classification-disabled-options]]
 == Opções desabilitadas de NetApp Data Classification
 
 A versão de dezembro de 2023 (versão 1.26.6) removeu as seguintes opções:
@@ -29,12 +30,14 @@ A versão de dezembro de 2023 (versão 1.26.6) removeu as seguintes opções:
 
 
 
+[[data-classification-scanning]]
 == Escaneamento de classificação de dados
 
 As seguintes limitações ocorrem com varreduras de Classificação de Dados.
 
 
 
+[[data-classification-scans-only-one-share-under-a-volume]]
 === A classificação de dados verifica apenas um compartilhamento em um volume
 
 Se você tiver vários compartilhamentos de arquivos em um único volume, a Classificação de Dados verificará o compartilhamento com a hierarquia mais alta.  Por exemplo, se você tiver ações como as seguintes:
@@ -70,6 +73,7 @@ Adicione todas as ações individualmente, por exemplo:
 
 
 
+[[last-accessed-timestamp]]
 === Último registro de data e hora acessado
 
 Quando a Classificação de Dados realiza uma varredura de um diretório, a varredura afeta o campo **Último acesso** do diretório.  Quando você visualiza o campo **Último acesso**, esses metadados refletem a data e a hora da verificação ou a última vez que um usuário acessou o diretório.

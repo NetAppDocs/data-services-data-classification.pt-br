@@ -27,6 +27,7 @@ TIP: Se você precisar de Classificação de Dados para identificar outros tipos
 
 
 
+[[types-of-personal-data]]
 == Tipos de dados pessoais
 
 Os dados pessoais, ou _informações de identificação pessoal_ (PII), encontrados em arquivos podem ser dados pessoais gerais ou identificadores nacionais.  A terceira coluna na tabela abaixo identifica se a Classificação de Dados usalink:task-controlling-private-data.html#view-files-that-contain-personal-data["validação de proximidade"^] para validar suas descobertas para o identificador.
@@ -321,6 +322,7 @@ Os idiomas nos quais esses itens podem ser reconhecidos estão identificados na 
 |===
 
 
+[[types-of-sensitive-personal-data]]
 == Tipos de dados pessoais sensíveis
 
 A Classificação de Dados pode encontrar as seguintes informações pessoais sensíveis (SPII) em arquivos.
@@ -340,6 +342,7 @@ O seguinte SPII atualmente só pode ser reconhecido em inglês:
 
 
 
+[[types-of-categories]]
 == Tipos de categorias
 
 A Classificação de Dados categoriza seus dados da seguinte maneira.
@@ -443,6 +446,7 @@ Os seguintes metadados também são categorizados e identificados nos mesmos idi
 
 
 
+[[types-of-files]]
 == Tipos de arquivos
 
 A Classificação de Dados verifica todos os arquivos em busca de insights de categoria e metadados e exibe todos os tipos de arquivo na seção de tipos de arquivo do painel.  Quando a Classificação de Dados detecta Informações Pessoais Identificáveis (PII) ou quando realiza uma pesquisa DSAR, somente os seguintes formatos de arquivo são suportados:
@@ -451,6 +455,7 @@ A Classificação de Dados verifica todos os arquivos em busca de insights de ca
 
 
 
+[[accuracy-of-information-found]]
 == Precisão das informações encontradas
 
 A NetApp não pode garantir 100% de precisão dos dados pessoais e dados pessoais confidenciais que a Classificação de Dados identifica.  Você deve sempre validar as informações revisando os dados.

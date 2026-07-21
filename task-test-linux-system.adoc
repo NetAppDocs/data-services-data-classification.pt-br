@@ -20,6 +20,7 @@ O script de instalação do Data Classification inclui um script de teste para g
 
 
 
+[[getting-started]]
 == Começando
 
 Você executará as seguintes tarefas.
@@ -33,6 +34,7 @@ Você executará as seguintes tarefas.
 
 
 
+[[create-a-console-agent]]
 == Criar um agente de console
 
 Um agente de console é necessário antes que você possa instalar e usar a Classificação de Dados.  No entanto, você pode executar o script de pré-requisitos sem um agente do Console.
@@ -50,6 +52,7 @@ Você precisa do endereço IP ou do nome do host do sistema do agente do Console
 
 
 
+[[verify-host-requirements]]
 == Verificar os requisitos do host
 
 O software de classificação de dados deve ser executado em um host que atenda a requisitos específicos de sistema operacional, requisitos de RAM e requisitos de software.
@@ -168,6 +171,7 @@ Observe que você deve reiniciar o Docker ou o Podman sempre que habilitar ou at
 
 
 
+[[enable-outbound-internet-access-from-data-classification]]
 == Habilitar acesso de saída à Internet a partir da Classificação de Dados
 
 A classificação de dados requer acesso de saída à Internet.  Se sua rede virtual ou física usar um servidor proxy para acesso à Internet, certifique-se de que a instância de Classificação de Dados tenha acesso de saída à Internet para contatar os seguintes endpoints.
@@ -199,6 +203,7 @@ TIP: Esta seção não é necessária para sistemas host instalados em sites sem
 |===
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == Verifique se todas as portas necessárias estão habilitadas
 
 Você deve garantir que todas as portas necessárias estejam abertas para comunicação entre o agente do Console, a Classificação de Dados, o Active Directory e suas fontes de dados.
@@ -217,6 +222,7 @@ O Console descobre clusters ONTAP usando HTTPS. Se você usar políticas de fire
 |===
 
 
+[[run-the-data-classification-prerequisites-script]]
 == Execute o script de pré-requisitos de classificação de dados
 
 Siga estas etapas para executar o script de pré-requisitos de Classificação de Dados.

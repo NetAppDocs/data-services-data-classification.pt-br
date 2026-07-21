@@ -22,6 +22,7 @@ Você pode habilitar e desabilitar verificações no nível do volume ou no nív
 
 
 
+[[understand-scan-types]]
 == Compreenda os tipos de digitalização
 
 Você pode realizar dois tipos de varreduras na Classificação de Dados:

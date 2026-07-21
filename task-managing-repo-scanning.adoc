@@ -20,6 +20,7 @@ Algumas das coisas que você pode alterar são se um repositório é verificado 
 
 
 
+[[view-the-scan-status-for-your-repositories]]
 == Visualize o status da verificação dos seus repositórios
 
 Você pode visualizar os repositórios individuais que o NetApp Data Classification está verificando (volumes, buckets, etc.) para cada sistema e fonte de dados.  Você também pode ver quantos foram "Mapeados" e quantos foram "Classificados".  A classificação demora mais porque a identificação completa da IA ​​está sendo realizada em todos os dados.
@@ -51,6 +52,7 @@ image:screenshot_compliance_repo_scan_settings.png["Uma captura de tela mostrand
 
 
 
+[[change-the-scan-type]]
 == Alterar o tipo de digitalização
 
 Você pode iniciar ou interromper as verificações em um sistema a qualquer momento na página de Configuração. Você também pode alternar entre verificações somente de mapeamento e verificações completas, e vice-versa.
@@ -74,6 +76,7 @@ Na configuração individual do sistema, selecione o ativo que deseja modificar.
 
 
 
+[[prioritize-scans]]
 == Priorizar varreduras
 
 Você pode priorizar as varreduras apenas de mapa ou completas mais importantes para garantir que as varreduras de alta prioridade sejam concluídas primeiro.
@@ -90,6 +93,7 @@ A prioridade é concedida apenas uma vez. As novas varreduras automáticas de da
 
 
 
+[[stop-scanning-for-a-repository]]
 == Parar de procurar um repositório
 
 Você pode parar de escanear um repositório (por exemplo, um volume) se não precisar mais monitorá-lo para verificar a conformidade.  Você faz isso desligando a digitalização.  Quando a digitalização é desativada, toda a indexação e informações sobre esse volume são removidas do sistema, e a cobrança pela digitalização dos dados é interrompida.
@@ -105,6 +109,7 @@ image:screenshot_compliance_config_button.png["Uma captura de tela mostrando com
 
 
 
+[[pause-and-resume-scanning-for-a-repository]]
 == Pausar e retomar a varredura de um repositório
 
 Você pode pausar a verificação para que o Data Classification não execute mais verificações em busca de alterações ou adições ao repositório. Todos os resultados da verificação atual permanecem acessíveis no Data Classification.

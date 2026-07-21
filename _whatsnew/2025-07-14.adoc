@@ -4,12 +4,14 @@
 
 
 
+[[resource-utilization-optimization]]
 === Otimização da utilização de recursos
 
 Esta versão de classificação do BlueXP inclui alterações de código que otimizam a utilização de recursos.
 
 
 
+[[improved-workflow-to-add-file-shares-for-scanning]]
 === Fluxo de trabalho aprimorado para adicionar compartilhamentos de arquivos para digitalização
 
 O fluxo de trabalho para adicionar compartilhamentos de arquivos a um grupo de compartilhamento de arquivos foi simplificado. O processo agora também diferencia o suporte ao protocolo CIFS com base no tipo de autenticação (Kerberos ou NTLM).
@@ -18,6 +20,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[enhanced-file-owner-information]]
 === Informações aprimoradas sobre o proprietário do arquivo
 
 Agora você pode visualizar mais informações sobre os proprietários dos arquivos capturados na guia Investigação. Ao visualizar os metadados de um arquivo na guia Investigação, localize o proprietário do arquivo e selecione **Exibir detalhes** para ver o nome de usuário, o e-mail e o nome da conta SAM. Você também pode ver outros itens de propriedade deste usuário. Este recurso está disponível somente para ambientes de trabalho com o Active Directory.

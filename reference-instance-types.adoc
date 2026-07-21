@@ -20,6 +20,7 @@ Nas tabelas a seguir, se o sistema marcado como "default" não estiver disponív
 
 
 
+[[aws-instance-types]]
 == Tipos de instância da AWS
 
 [cols="20,30,25"]
@@ -34,6 +35,7 @@ Nas tabelas a seguir, se o sistema marcado como "default" não estiver disponív
 |===
 
 
+[[azure-instance-types]]
 == Tipos de instância do Azure
 
 [cols="20,30,25"]
@@ -48,6 +50,7 @@ Nas tabelas a seguir, se o sistema marcado como "default" não estiver disponív
 |===
 
 
+[[gcp-instance-types]]
 == Tipos de instância do GCP
 
 [cols="20,30,25"]

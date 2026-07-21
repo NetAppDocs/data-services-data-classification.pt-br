@@ -21,6 +21,7 @@ IMPORTANT: A partir da versão 1.31, a Classificação de Dados está disponíve
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 A classificação de dados pode ser acessada por meio do NetApp Console.
@@ -33,6 +34,7 @@ Saiba mais sobre olink:https://docs.netapp.com/us-en/console-setup-admin/concept
 
 
 
+[[features]]
 == Características
 
 A classificação de dados usa inteligência artificial (IA), processamento de linguagem natural (PLN) e aprendizado de máquina (ML) para entender o conteúdo que ela verifica, a fim de extrair entidades e categorizar o conteúdo adequadamente.  Isso permite que a Classificação de Dados forneça as seguintes áreas de funcionalidade.
@@ -65,6 +67,7 @@ A Classificação de Dados fornece ferramentas que podem ajudar com o custo tota
 
 
 
+[[supported-systems-and-data-sources]]
 == Sistemas e fontes de dados suportados
 
 A Classificação de Dados pode escanear e analisar dados estruturados e não estruturados dos seguintes tipos de sistemas e fontes de dados:
@@ -99,12 +102,14 @@ A Classificação de Dados oferece suporte às versões 3.x, 4.0 e 4.1 do NFS e 
 
 
 
+[[cost]]
 == Custo
 
 A Classificação de Dados é de uso gratuito.  Não é necessária nenhuma licença de classificação ou assinatura paga.
 
 
 
+[[infrastructure-costs]]
 === Custos de infraestrutura
 
 * A instalação do Data Classification na nuvem requer a implantação de uma instância de nuvem, o que resulta em cobranças do provedor de nuvem onde ela é implantada. Ver <<A instância de classificação de dados,o tipo de instância que é implantada para cada provedor de nuvem>> .  Não há custo se você instalar o Data Classification em um sistema local.
@@ -113,6 +118,7 @@ A Classificação de Dados é de uso gratuito.  Não é necessária nenhuma lice
 
 
 
+[[data-transfer-costs]]
 === Custos de transferência de dados
 
 Os custos de transferência de dados dependem da sua configuração.  Se a instância de Classificação de Dados e a fonte de dados estiverem na mesma Zona de Disponibilidade e região, não haverá custos de transferência de dados.  Mas se a fonte de dados, como um sistema Cloud Volumes ONTAP , estiver em uma zona de disponibilidade ou região _diferente_, você será cobrado pelo seu provedor de nuvem pelos custos de transferência de dados.  Veja estes links para mais detalhes:
@@ -124,6 +130,7 @@ Os custos de transferência de dados dependem da sua configuração.  Se a inst�
 
 
 
+[[the-data-classification-instance]]
 == A instância de classificação de dados
 
 Quando você implanta a Classificação de Dados na nuvem, o Console implanta a instância na mesma sub-rede que o agente do Console. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Saiba mais sobre o agente do Console."^]
@@ -161,6 +168,7 @@ Revise as seguintes especificações para tipos de instância:
 |===
 
 
+[[how-data-classification-scanning-works]]
 == Como funciona a varredura de classificação de dados
 
 Em um nível mais alto, a varredura de classificação de dados funciona assim:
@@ -186,6 +194,7 @@ NOTE: A Classificação de Dados não impõe um limite à quantidade de dados qu
 
 
 
+[[mapping-and-full-scans]]
 == Mapeamento e escaneamento completo
 
 Você pode realizar dois tipos de varreduras na Classificação de Dados:
@@ -198,6 +207,7 @@ Para uma análise detalhada das diferenças entre varreduras apenas com mapa e v
 
 
 
+[[information-that-data-classification-categorizes]]
 == Informações que a Classificação de Dados categoriza
 
 A Classificação de Dados coleta, indexa e atribui categorias aos seguintes dados:
@@ -213,6 +223,7 @@ A Classificação de Dados coleta, indexa e atribui categorias aos seguintes dad
 
 
 
+[[networking-overview]]
 == Visão geral da rede
 
 A Classificação de Dados implanta um único servidor, ou cluster, onde você escolher: na nuvem ou no local.  Os servidores se conectam por meio de protocolos padrão às fontes de dados e indexam as descobertas em um cluster do Elasticsearch, que também é implantado nos mesmos servidores.  Isso permite suporte para ambientes multi-cloud, cross-cloud, nuvem privada e locais.

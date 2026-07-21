@@ -18,6 +18,7 @@ Se necessário, você pode impedir que o NetApp Data Classification verifique um
 
 
 
+[[deactivate-scans-for-a-system]]
 == Desativar varreduras para um sistema
 
 Quando você desativa as verificações, a Classificação de Dados não verifica mais os dados no sistema e remove os insights indexados da instância da Classificação de Dados.  Os dados do próprio sistema não são excluídos.
@@ -30,6 +31,7 @@ TIP: Você também pode desabilitar as verificações de um sistema no painel Se
 
 
 
+[[remove-a-database-from-data-classification]]
 == Remover um banco de dados da Classificação de Dados
 
 Se você não precisar mais verificar um determinado banco de dados, poderá excluí-lo da interface de Classificação de Dados e interromper todas as verificações.
@@ -39,6 +41,7 @@ Se você não precisar mais verificar um determinado banco de dados, poderá exc
 
 
 
+[[remove-a-group-of-file-shares-from-data-classification]]
 == Remover um grupo de compartilhamentos de arquivos da Classificação de Dados
 
 Se não quiser mais verificar arquivos de usuário de um grupo de compartilhamento de arquivos, você pode excluir o Grupo de Compartilhamentos de Arquivos da interface de Classificação de Dados e interromper todas as verificações.

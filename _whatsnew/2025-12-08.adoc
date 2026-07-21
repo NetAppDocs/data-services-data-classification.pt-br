@@ -4,6 +4,7 @@
 
 
 
+[[monitor-metrics-and-performance-in-the-health-monitoring-dashboard]]
 === Monitore as métricas e o desempenho no painel de monitoramento de integridade.
 
 O Data Classification agora oferece um painel de monitoramento de integridade, fornecendo monitoramento em tempo real de seus recursos e insights sobre uso de memória, uso de disco, utilização de disco e muito mais. Com as informações do painel de monitoramento de integridade, você pode analisar a infraestrutura da sua implementação e obter insights para otimizar o armazenamento e o desempenho.
@@ -12,6 +13,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[improved-loading-performance]]
 === Desempenho de carregamento aprimorado
 
 O desempenho de carregamento de todas as páginas em Classificação de Dados foi aprimorado para criar uma experiência de usuário mais eficiente.

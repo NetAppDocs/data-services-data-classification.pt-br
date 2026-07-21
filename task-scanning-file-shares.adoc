@@ -21,6 +21,7 @@ NOTE: A verificação de dados de compartilhamentos de arquivos que não sejam d
 
 
 
+[[prerequisites]]
 == Pré-requisitos
 
 Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de habilitar a Classificação de Dados.
@@ -48,6 +49,7 @@ Se você quiser ter certeza de que os "últimos horários de acesso" dos seus ar
 
 
 
+[[create-a-file-shares-group]]
 == Criar um grupo de compartilhamentos de arquivos
 
 Ao adicionar compartilhamentos de arquivos ao grupo, você deve usar o formato `<host_name>:/<share_path>` .
@@ -89,6 +91,7 @@ NOTE: Se a verificação não for concluída com sucesso para uma configuração
 
 
 
+[[edit-a-file-shares-group]]
 == Editar um grupo de compartilhamentos de arquivos
 
 Depois de criar um grupo de compartilhamentos de arquivos, você pode editar o protocolo CIFS ou adicionar e remover compartilhamentos de arquivos.
@@ -132,6 +135,7 @@ Se você estiver adicionando compartilhamentos de arquivos com um segundo protoc
 
 
 
+[[track-the-scanning-progress]]
 == Acompanhe o progresso da digitalização
 
 Você pode acompanhar o progresso da verificação inicial.
@@ -143,6 +147,7 @@ Você pode acompanhar o progresso da verificação inicial.
 
 
 
+[[enable-and-disable-scans-on-volumes]]
 == Habilitar e desabilitar verificações em volumes
 
 Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer momento na página de Configuração. Você também pode alternar entre varreduras somente de mapeamento e varreduras de mapeamento e classificação, e vice-versa. Recomenda-se que você varra todos os volumes em um sistema.

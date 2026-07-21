@@ -38,6 +38,7 @@ Os seguintes relatórios estão disponíveis para Classificação de Dados:
 
 
 
+[[select-the-systems-for-reports]]
 == Selecione os sistemas para relatórios
 
 Você pode filtrar o conteúdo do painel Conformidade de Classificação de Dados para ver dados de conformidade de todos os sistemas e bancos de dados, ou apenas de sistemas específicos.
@@ -55,6 +56,7 @@ image:screenshot-report-filter.png["Apresentação de tela mostrando a filtragem
 
 
 
+[[data-subject-access-request-report]]
 == Relatório de solicitação de acesso ao titular dos dados
 
 Regulamentos de privacidade, como o GDPR europeu, concedem aos titulares dos dados (como clientes ou funcionários) o direito de acessar seus dados pessoais.  Quando um titular de dados solicita essas informações, isso é conhecido como DSAR (solicitação de acesso do titular dos dados).  As organizações são obrigadas a responder a essas solicitações "sem demora injustificada" e, no máximo, dentro de um mês após o recebimento.
@@ -104,6 +106,7 @@ Se você escolher *Local*, o relatório será limitado às primeiras 10.000 linh
 
 
 
+[[health-insurance-portability-and-accountability-act-hipaa-report]]
 == Relatório da Lei de Portabilidade e Responsabilidade de Seguros de Saúde (HIPAA)
 
 O Relatório da Lei de Portabilidade e Responsabilidade de Seguros de Saúde (HIPAA) pode ajudar você a identificar arquivos que contêm informações de saúde.  Ele foi desenvolvido para auxiliar a sua organização a cumprir as leis de privacidade de dados da HIPAA.  As informações que a Classificação de Dados procura incluem:
@@ -141,6 +144,7 @@ A classificação de dados gera um relatório em PDF.
 
 
 
+[[payment-card-industry-data-security-standard-pci-dss-report]]
 == Relatório do Padrão de Segurança de Dados da Indústria de Cartões de Pagamento (PCI DSS)
 
 O relatório do Padrão de Segurança de Dados do Setor de Cartões de Pagamento (PCI DSS) pode ajudar você a identificar a distribuição de informações de cartão de crédito em seus arquivos.
@@ -171,6 +175,7 @@ A Classificação de Dados gera um relatório em PDF que você pode revisar e en
 
 
 
+[[privacy-risk-assessment-report]]
 == Relatório de Avaliação de Risco de Privacidade
 
 O Relatório de Avaliação de Risco de Privacidade fornece uma visão geral do status de risco de privacidade da sua organização, conforme exigido por regulamentações de privacidade como GDPR e CCPA.

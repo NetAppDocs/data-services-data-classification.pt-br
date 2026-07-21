@@ -21,6 +21,7 @@ NOTE: Por padrão, as verificações de Classificação de Dados excluem dados d
 
 
 
+[[supported-data-sources]]
 == Fontes de dados suportadas
 
 A exclusão de diretórios específicos de varreduras de Classificação de Dados é suportada para compartilhamentos NFS e CIFS nas seguintes fontes de dados:
@@ -34,6 +35,7 @@ A exclusão de diretórios específicos de varreduras de Classificação de Dado
 
 
 
+[[define-the-directories-to-exclude-from-scanning]]
 == Defina os diretórios a serem excluídos da verificação
 
 Antes de poder excluir diretórios da verificação de classificação, você precisa fazer login no sistema de Classificação de Dados para poder editar um arquivo de configuração e executar um script.  Veja comolink:reference-log-in-to-instance.html["faça login no sistema de classificação de dados"] dependendo se você instalou manualmente o software em uma máquina Linux ou se implantou a instância na nuvem.
@@ -70,6 +72,7 @@ Você pode adicionar, editar ou excluir itens da lista de exclusão usando estas
 
 
 
+[[examples]]
 == Exemplos
 
 .Configuração 1:
@@ -140,6 +143,7 @@ data_providers:
 
 
 
+[[escaping-special-characters-in-folder-names]]
 == Escapando caracteres especiais em nomes de pastas
 
 Se você tiver um nome de pasta que contenha um dos seguintes caracteres especiais e quiser excluir dados dessa pasta da verificação, será necessário usar a sequência de escape \\ antes do nome da pasta.
@@ -153,6 +157,7 @@ Sintaxe no arquivo de exclusão: `"\\*not_to_scan"`
 
 
 
+[[view-the-current-exclusion-list]]
 == Ver a lista de exclusões atual
 
 É possível que o conteúdo do `data_provider.yaml` arquivo de configuração seja diferente do que realmente foi confirmado após a execução do `update_data_providers_from_config_file.sh` roteiro.  Para visualizar a lista atual de diretórios que você excluiu da verificação de Classificação de Dados, execute o seguinte comando em "/opt/netapp/Datasense/tools/customer_configuration/data_providers":

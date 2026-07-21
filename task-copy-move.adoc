@@ -18,6 +18,7 @@ Além de fornecer informações sobre governança e oportunidades de economia, N
 
 
 
+[[copy-files]]
 == Copiar arquivos
 
 Data Classification suporta a cópia de arquivos de até 1 GB. Você pode copiar um total de 1 TB de dados ou 5 milhões de arquivos, o que ocorrer primeiro. Você pode copiar arquivos para um compartilhamento CIFS ou destino NFS. Não há impacto no arquivo de origem ao copiá-lo.
@@ -41,6 +42,7 @@ image:screenshot-copy-nfs.png["Captura de tela da função de cópia para arquiv
 
 
 
+[[move-files]]
 == Mover arquivos
 
 NetApp Data Classification suporta a movimentação de arquivos de até 1 GB. Você pode mover um total de 1 TB de dados ou 5 milhões de arquivos, o que ocorrer primeiro. Você pode mover arquivos para um compartilhamento CIFS ou destino NFS.
@@ -69,6 +71,7 @@ image:screenshot-move-nfs.png["Captura de tela da função de movimentação de 
 
 
 
+[[delete-files]]
 == Excluir arquivos
 
 Ao filtrar dados no painel de Investigação para descobrir oportunidades de economia de espaço e custos, você pode excluir esses arquivos. A exclusão de arquivos é compatível apenas com arquivos não estruturados.

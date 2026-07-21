@@ -4,6 +4,7 @@
 
 
 
+[[support-for-rhel-9-5]]
 === Suporte para RHEL 9.5
 
 Esta versão oferece suporte ao Red Hat Enterprise Linux v9.5, além das versões suportadas anteriormente. Isso se aplica a qualquer instalação manual local da BlueXP classification, incluindo implantações em sites obscuros.
@@ -12,6 +13,7 @@ Os seguintes sistemas operacionais exigem o uso do mecanismo de contêiner Podma
 
 
 
+[[prioritize-map-only-scans]]
 === Priorize apenas as varreduras de mapa
 
 Ao realizar varreduras somente de Map, você pode priorizar as varreduras mais importantes. Esse recurso é útil quando você tem muitos ambientes de trabalho e deseja garantir que as varreduras de alta prioridade sejam concluídas primeiro.
@@ -26,6 +28,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[retry-all-scans]]
 === Repetir todas as verificações
 
 A BlueXP classification permite repetir em lote todas as verificações com falha.
@@ -40,6 +43,7 @@ Para repetir todas as verificações:
 
 
 
+[[improved-categorization-model-accuracy]]
 === Precisão aprimorada do modelo de categorização
 
 A precisão do modelo de aprendizagem de máquina paralink:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorias predefinidas"] melhorou em 11%.

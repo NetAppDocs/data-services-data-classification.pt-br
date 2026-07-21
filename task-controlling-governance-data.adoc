@@ -22,6 +22,7 @@ Além disso, se você estiver planejando migrar dados de locais locais para a nu
 
 
 
+[[review-the-governance-dashboard]]
 == Revise o painel de governança
 
 O painel de governança fornece informações para que você possa aumentar a eficiência e controlar os custos relacionados aos dados armazenados em seus recursos de armazenamento.
@@ -38,6 +39,7 @@ O painel de governança é exibido.
 
 
 
+[[review-savings-opportunities]]
 === Revisar oportunidades de economia
 
 O componente _Oportunidades de economia_ mostra dados que você pode excluir ou colocar em um armazenamento de objetos mais barato.  Os dados em _Oportunidades de Economia_ são atualizados a cada 2 horas.  Você também pode atualizar os dados manualmente.
@@ -57,6 +59,7 @@ NOTE: Se alguma de suas fontes de dados implementar a hierarquização de dados,
 
 
 
+[[create-the-data-discovery-assessment-report]]
 == Crie o relatório de avaliação de descoberta de dados
 
 O relatório de avaliação de descoberta de dados fornece uma análise de alto nível do ambiente escaneado para mostrar áreas de preocupação e possíveis etapas de correção. Os resultados são baseados no mapeamento e na classificação dos seus dados. O objetivo deste relatório é conscientizar sobre três aspectos significativos do seu conjunto de dados:
@@ -94,6 +97,7 @@ A Classificação de Dados gera um relatório em PDF que você pode revisar e co
 
 
 
+[[create-the-data-mapping-overview-report]]
 == Crie o relatório de visão geral do mapeamento de dados
 
 O relatório de visão geral do mapeamento de dados fornece uma visão geral dos dados armazenados em suas fontes de dados corporativos para ajudar você com decisões de migração, backup, segurança e processos de conformidade.  O relatório resume todos os sistemas e fontes de dados.  Ele também fornece uma análise para cada sistema.
@@ -128,6 +132,7 @@ Se o relatório for maior que 1 MB, o arquivo PDF será retido na instância de 
 
 
 
+[[review-the-top-data-repositories-listed-by-data-sensitivity]]
 === Revise os principais repositórios de dados listados por sensibilidade de dados
 
 A área _Principais repositórios de dados por nível de sensibilidade_ do relatório Visão geral do mapeamento de dados lista os quatro principais repositórios de dados (sistemas e fontes de dados) que contêm os itens mais sensíveis.  O gráfico de barras para cada sistema é dividido em:
@@ -146,6 +151,7 @@ Esses dados são atualizados a cada duas horas e podem ser atualizados manualmen
 
 
 
+[[review-sensitive-data-and-wide-permissions]]
 === Revise dados confidenciais e permissões amplas
 
 A área _Dados confidenciais e permissões amplas_ do painel Governança mostra as contagens de arquivos que contêm dados confidenciais e têm permissões amplas.  A tabela mostra os seguintes tipos de permissões:
@@ -161,6 +167,7 @@ A área _Dados confidenciais e permissões amplas_ do painel Governança mostra 
 
 
 
+[[review-data-listed-by-types-of-open-permissions]]
 === Revisar dados listados por tipos de permissões abertas
 
 A área _Permissões abertas_ do relatório Visão geral do mapeamento de dados mostra a porcentagem para cada tipo de permissão que existe para todos os arquivos que estão sendo verificados.  O gráfico mostra os seguintes tipos de permissões:
@@ -178,6 +185,7 @@ A área _Permissões abertas_ do relatório Visão geral do mapeamento de dados 
 
 
 
+[[review-the-age-and-size-of-data]]
 === Revise a idade e o tamanho dos dados
 
 Você pode investigar os itens nos gráficos _Idade_ e _Tamanho_ do relatório Visão geral do mapeamento de dados para ver se há algum dado que você deve excluir ou colocar em um armazenamento de objetos mais barato.

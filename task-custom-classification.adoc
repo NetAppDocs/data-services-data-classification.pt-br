@@ -21,6 +21,7 @@ Todas as classificações personalizadas estão disponíveis no painel de contro
 
 
 
+[[create-a-custom-personal-identifier]]
 == Crie um identificador pessoal personalizado.
 
 A Classificação de Dados permite criar um identificador pessoal personalizado usando palavras-chave contextuais ou uma expressão regular para identificar dados exclusivos da sua organização.
@@ -63,6 +64,7 @@ Após a criação de um identificador pessoal personalizado, os resultados serã
 
 
 
+[[create-a-custom-category]]
 == Criar uma categoria personalizada
 
 Com categorias personalizadas, você pode categorizar dados específicos da sua organização. Categorias personalizadas são criadas com base em arquivos de texto que você carrega, a partir dos quais a Classificação de Dados cria um modelo de IA para identificar informações semelhantes em outros arquivos.
@@ -99,6 +101,7 @@ Após criar uma categoria personalizada, os resultados dela serão capturados na
 
 
 
+[[edit-a-custom-classifier]]
 == Editar um classificador personalizado
 
 Você pode modificar a lógica de um identificador pessoal depois de criá-lo. Não é possível alterar o tipo do identificador pessoal ou o tipo de lógica; por exemplo, não é possível alterar uma categoria personalizada para um identificador pessoal personalizado. Você também não pode alterar um identificador personalizado baseado em palavras-chave para um identificador personalizado baseado em expressões regulares.
@@ -113,6 +116,7 @@ Você pode modificar a lógica de um identificador pessoal depois de criá-lo. N
 
 
 
+[[delete-a-custom-classifier]]
 == Excluir um classificador personalizado
 
 . Em NetApp Data Classification, selecione *Classificação personalizada*.
@@ -122,6 +126,7 @@ Você pode modificar a lógica de um identificador pessoal depois de criá-lo. N
 
 
 
+[[next-steps]]
 == Próximos passos
 
 * xref:task-generating-compliance-reports.html[Gerar relatórios de conformidade]

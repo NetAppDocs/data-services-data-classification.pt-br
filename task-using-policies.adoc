@@ -26,6 +26,7 @@ image:screenshot_compliance_highlights_tab.png["Uma captura de tela da guia Cons
 
 
 
+[[view-saved-queries-results-in-the-investigation-page]]
 == Ver resultados de consultas salvas na página Investigação
 
 Para exibir os resultados de uma consulta salva na página Investigação, selecioneimage:button-gallery-options.gif["Botão Mais"] botão para uma pesquisa específica e selecione *Investigar resultados*.
@@ -34,6 +35,7 @@ image:screenshot_compliance_highlights_investigate.png["Uma captura de tela da s
 
 
 
+[[create-saved-queries-and-policies]]
 == Crie consultas e políticas salvas
 
 Você pode criar suas próprias consultas salvas personalizadas que fornecem resultados para consultas específicas da sua organização.  Os resultados são retornados para todos os arquivos e diretórios (compartilhamentos e pastas) que correspondem aos critérios de pesquisa.
@@ -61,6 +63,7 @@ Depois de criar a pesquisa ou política, você pode visualizá-la na aba **Consu
 
 
 
+[[edit-saved-queries-or-policies]]
 == Editar consultas ou políticas salvas
 
 Você pode modificar o nome e a descrição de uma consulta salva.  Você também pode converter uma consulta em uma política e vice-versa.
@@ -81,6 +84,7 @@ Opcionalmente, você pode converter a consulta em uma política ou converter a p
 
 
 
+[[delete-saved-queries]]
 == Excluir consultas salvas
 
 Você pode excluir qualquer consulta ou política personalizada salva se não precisar mais dela.  Você não pode excluir consultas salvas padrão.
@@ -89,6 +93,7 @@ Para excluir uma consulta salva, selecione oimage:button-gallery-options.gif["Bo
 
 
 
+[[default-queries]]
 == Consultas padrão
 
 A Classificação de Dados fornece as seguintes consultas de pesquisa definidas pelo sistema:

@@ -4,6 +4,7 @@
 
 
 
+[[scan-storagegrid-data]]
 === Verificar dados do StorageGRID
 
 A BlueXP classification oferece suporte à digitalização de dados no StorageGRID.

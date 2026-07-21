@@ -21,6 +21,7 @@ O painel de controle do NetApp Data Classification Health Monitor fornece monito
 
 
 
+[[health-monitor-insights]]
 == Informações do Monitor de Saúde
 
 O painel de controle do Monitor de Saúde apresenta informações em quatro categorias.
@@ -45,6 +46,7 @@ Analise o uso da CPU, a utilização do disco e o uso da memória. Esses valores
 
 
 
+[[access-the-health-monitor-dashboard]]
 == Acesse o painel de controle do Monitor de Saúde.
 
 . Em Classificação de Dados, selecione **Configuração**.

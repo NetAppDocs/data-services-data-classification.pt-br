@@ -28,6 +28,7 @@ As APIs na documentação do Swagger permitem que você pesquise, agregue dados,
 
 
 
+[[overview]]
 == Visão geral
 
 A API permite que você execute as seguintes funções:
@@ -56,6 +57,7 @@ A API é segura e usa o mesmo método de autenticação da interface do usuário
 
 
 
+[[accessing-the-swagger-api-reference]]
 == Acessando a referência da API do Swagger
 
 Para acessar o Swagger, você precisará do endereço IP da sua instância de NetApp Data Classification. No caso de uma implantação de nuvem, você usará o endereço IP público. Em seguida, você precisará acessar este endpoint:
@@ -64,6 +66,7 @@ Para acessar o Swagger, você precisará do endereço IP da sua instância de Ne
 
 
 
+[[example-using-the-apis]]
 == Exemplo usando as APIs
 
 O exemplo a seguir mostra uma chamada de API para copiar arquivos.

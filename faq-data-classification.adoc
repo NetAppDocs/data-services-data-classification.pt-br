@@ -18,12 +18,14 @@ Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma r
 
 
 
+[[netapp-data-classification]]
 == NetApp Data Classification
 
 As perguntas a seguir fornecem uma compreensão geral da Classificação de Dados.
 
 
 
+[[how-does-data-classification-work]]
 === Como funciona a Classificação de Dados?
 
 A Classificação de Dados implanta outra camada de IA junto com seu sistema NetApp Console e sistemas de armazenamento.  Em seguida, ele verifica os dados em volumes, buckets, bancos de dados e outras contas de armazenamento e indexa os insights de dados encontrados.  A classificação de dados utiliza inteligência artificial e processamento de linguagem natural, ao contrário de soluções alternativas que são comumente criadas em torno de expressões regulares e correspondência de padrões.
@@ -34,24 +36,28 @@ link:concept-classification.html["Saiba mais sobre como funciona a Classificaç�
 
 
 
+[[does-data-classification-have-a-rest-api-and-does-it-work-with-third-party-tools]]
 === O Data Classification tem uma API REST e funciona com ferramentas de terceiros?
 
 Sim, o Data Classification tem uma API REST para os recursos suportados na versão do Data Classification que faz parte da plataforma principal do Console. Ver link:api-classification.html["Documentação do API"] .
 
 
 
+[[is-data-classification-available-through-the-cloud-marketplaces]]
 === A classificação de dados está disponível nos mercados de nuvem?
 
 A Classificação de Dados faz parte dos principais recursos do NetApp Console , portanto você não precisa usar os marketplaces para este serviço.
 
 
 
+[[data-classification-scanning-and-analytics]]
 == Classificação de dados, digitalização e análise
 
 As perguntas a seguir estão relacionadas ao desempenho da varredura de classificação de dados e à análise.
 
 
 
+[[how-often-does-data-classification-scan-my-data]]
 === Com que frequência a Classificação de Dados verifica meus dados?
 
 Embora a verificação inicial dos seus dados possa demorar um pouco, as verificações subsequentes apenas inspecionam as alterações incrementais, o que reduz o tempo de verificação do sistema.  A Classificação de Dados verifica seus dados continuamente em rodízio, seis repositórios por vez, para que todos os dados alterados sejam classificados muito rapidamente.
@@ -64,6 +70,7 @@ As varreduras de dados têm um impacto insignificante em seus sistemas de armaze
 
 
 
+[[does-scan-performance-vary]]
 === O desempenho da digitalização varia?
 
 O desempenho da verificação pode variar com base na largura de banda da rede e no tamanho médio dos arquivos no seu ambiente.  Também pode depender das características de tamanho do sistema host (na nuvem ou no local). Consulte link:concept-classification.html["A instância de classificação de dados"] e link:task-deploy-overview.html["Implementando a Classificação de Dados"] para maiores informações.
@@ -72,6 +79,7 @@ Ao adicionar novas fontes de dados pela primeira vez, você também pode optar p
 
 
 
+[[can-i-search-my-data-using-data-classification]]
 === Posso pesquisar meus dados usando a Classificação de Dados?
 
 A Classificação de Dados oferece amplos recursos de pesquisa que facilitam a busca por um arquivo ou dado específico em todas as fontes conectadas.  A classificação de dados permite que os usuários pesquisem mais profundamente do que apenas o que os metadados refletem.  É um serviço independente de idioma que também pode ler os arquivos e analisar uma infinidade de tipos de dados confidenciais, como nomes e IDs.  Por exemplo, os usuários podem pesquisar em armazenamentos de dados estruturados e não estruturados para encontrar dados que podem ter vazado de bancos de dados para arquivos de usuários, violando a política corporativa.  As pesquisas podem ser salvas para mais tarde, e políticas podem ser criadas para pesquisar e agir sobre os resultados em uma frequência definida.
@@ -82,12 +90,14 @@ A Classificação de Dados também tem controle de acesso baseado em função (R
 
 
 
+[[data-classification-management-and-privacy]]
 == Gestão e privacidade de classificação de dados
 
 As perguntas a seguir fornecem informações sobre como gerenciar a Classificação de Dados e as configurações de privacidade.
 
 
 
+[[how-do-i-enable-or-disable-data-classification]]
 === Como habilitar ou desabilitar a Classificação de Dados?
 
 Primeiro, você precisa implantar uma instância do Data Classification no Console ou em um sistema local.  Depois que a instância estiver em execução, você poderá habilitar o serviço em sistemas, bancos de dados e outras fontes de dados existentes na guia *Configuração* ou selecionando um sistema específico. link:task-getting-started-compliance.html["Aprenda como começar"] .
@@ -101,18 +111,21 @@ Para remover completamente a instância de Classificação de Dados, remova-a ma
 
 
 
+[[can-the-service-exclude-scanning-data-in-certain-directories]]
 === O serviço pode excluir dados de digitalização em determinados diretórios?
 
 Sim. Se você quiser que a Classificação de Dados exclua dados de digitalização que residem em determinados diretórios de fonte de dados, você pode fornecer essa lista ao mecanismo de classificação.  Depois de aplicar essa alteração, a Classificação de Dados excluirá os dados de digitalização nos diretórios especificados. link:task-exclude-scan-paths.html["Saber mais"] .
 
 
 
+[[are-snapshots-that-reside-on-ontap-volumes-scanned]]
 === Os snapshots que residem em volumes ONTAP são verificados?
 
 Não. A Classificação de Dados não verifica instantâneos porque o conteúdo é idêntico ao conteúdo do volume.
 
 
 
+[[what-happens-if-data-tiering-is-enabled-on-your-ontap-volumes]]
 === O que acontece se a hierarquização de dados estiver habilitada nos seus volumes ONTAP ?
 
 Quando a Classificação de Dados examina volumes que possuem dados frios em camadas no storage de objetos usando varreduras somente de mapa, ela examina todos os dados--dados que estão em discos locais e dados frios em camadas no storage de objetos. Isso também é verdade para produtos não-NetApp que implementam o armazenamento em camadas.
@@ -121,18 +134,21 @@ A varredura somente do mapa não aquece os dados frios: eles permanecem frios e 
 
 
 
+[[types-of-source-systems-and-data-types]]
 == Tipos de sistemas de origem e tipos de dados
 
 As perguntas a seguir estão relacionadas aos tipos de armazenamento que podem ser digitalizados e aos tipos de dados que são digitalizados.
 
 
 
+[[are-there-any-restrictions-when-deployed-in-a-government-region]]
 === Há alguma restrição quando implantado em uma região governamental?
 
 A classificação de dados é suportada quando o agente do Console é implantado em uma região governamental (AWS GovCloud, Azure Gov ou Azure DoD), também conhecido como "modo restrito".
 
 
 
+[[what-data-sources-can-i-scan-if-i-install-data-classification-in-a-site-without-internet-access]]
 === Quais fontes de dados posso escanear se instalar o Data Classification em um site sem acesso à Internet?
 
 A Classificação de Dados só pode escanear dados de fontes de dados locais no site local.  Neste momento, a Classificação de Dados pode escanear as seguintes fontes de dados locais no "modo privado" — também conhecido como site "escuro":
@@ -144,6 +160,7 @@ A Classificação de Dados só pode escanear dados de fontes de dados locais no 
 
 
 
+[[which-file-types-are-supported]]
 === Quais tipos de arquivo são suportados?
 
 A Classificação de Dados verifica todos os arquivos em busca de insights de categoria e metadados e exibe todos os tipos de arquivo na seção de tipos de arquivo do painel.
@@ -154,6 +171,7 @@ Quando a Classificação de Dados detecta Informações Pessoais Identificáveis
 
 
 
+[[what-kinds-of-data-and-metadata-does-data-classification-capture]]
 === Que tipos de dados e metadados a Classificação de Dados captura?
 
 A Classificação de Dados permite que você execute uma verificação geral de "mapeamento" ou uma verificação completa de "classificação" em suas fontes de dados.  O mapeamento fornece apenas uma visão geral de alto nível dos seus dados, enquanto a classificação fornece uma varredura profunda dos seus dados.  O mapeamento pode ser feito em suas fontes de dados muito rapidamente porque ele não acessa arquivos para ver os dados dentro deles.
@@ -174,6 +192,7 @@ A classificação de dados pode identificar muitos tipos de dados privados, como
 
 
 
+[[can-i-limit-data-classification-information-to-specific-users]]
 === Posso limitar as informações de Classificação de Dados a usuários específicos?
 
 Sim, a Classificação de Dados é totalmente integrada ao NetApp Console.  Os usuários do NetApp Console só podem ver informações dos sistemas que eles têm permissão para visualizar, de acordo com suas permissões.
@@ -182,6 +201,7 @@ Além disso, se você quiser permitir que determinados usuários apenas visualiz
 
 
 
+[[can-anyone-access-the-private-data-sent-between-my-browser-and-data-classification]]
 === Alguém pode acessar os dados privados enviados entre meu navegador e a Classificação de Dados?
 
 Não. Os dados privados enviados entre seu navegador e a instância de Classificação de Dados são protegidos com criptografia de ponta a ponta usando TLS 1.2, o que significa que partes da NetApp e não da NetApp não podem lê-los.  A Classificação de Dados não compartilhará nenhum dado ou resultado com a NetApp , a menos que você solicite e aprove o acesso.
@@ -190,48 +210,56 @@ Os dados digitalizados permanecem no seu ambiente.
 
 
 
+[[how-is-sensitive-data-handled]]
 === Como os dados confidenciais são tratados?
 
 O NetApp não tem acesso a dados confidenciais e não os exibe na interface do usuário.  Dados confidenciais são mascarados, por exemplo, os últimos quatro números são exibidos para informações de cartão de crédito.
 
 
 
+[[where-is-the-data-stored]]
 === Onde os dados são armazenados?
 
 Os resultados da verificação são armazenados no Elasticsearch dentro da sua instância de Classificação de Dados.
 
 
 
+[[how-is-the-data-accessed]]
 === Como os dados são acessados?
 
 A Classificação de Dados acessa dados armazenados no Elasticsearch por meio de chamadas de API, que exigem autenticação e são criptografadas usando AES-128.  Acessar o Elasticsearch diretamente requer acesso root.
 
 
 
+[[licenses-and-costs]]
 == Licenças e custos
 
 A pergunta a seguir está relacionada ao licenciamento e aos custos para usar a Classificação de Dados.
 
 
 
+[[how-much-does-data-classification-cost]]
 === Quanto custa a Classificação de Dados?
 
 A classificação de dados é um recurso essencial do NetApp Console .  Não é cobrado.
 
 
 
+[[console-agent-deployment]]
 == Implantação do agente de console
 
 As perguntas a seguir estão relacionadas ao agente do Console.
 
 
 
+[[what-is-the-console-agent]]
 === O que é o agente do Console?
 
 O agente do Console é um software executado em uma instância de computação na sua conta de nuvem ou no local, que permite que o NetApp Console gerencie com segurança os recursos da nuvem.  Você deve implantar um agente do Console para usar a Classificação de Dados.
 
 
 
+[[where-does-the-console-agent-need-to-be-installed]]
 === Onde o agente do Console precisa ser instalado?
 
 Ao analisar dados, o agente do NetApp Console precisa ser instalado nos seguintes locais:
@@ -246,6 +274,7 @@ Se você tiver dados nesses locais, pode ser necessário usar https://docs.netap
 
 
 
+[[does-data-classification-require-access-to-credentials]]
 === A Classificação de Dados requer acesso a credenciais?
 
 A classificação de dados em si não recupera credenciais de armazenamento.  Em vez disso, eles são armazenados no agente do Console.
@@ -254,24 +283,28 @@ A Classificação de Dados usa credenciais do plano de dados, por exemplo, crede
 
 
 
+[[does-communication-between-the-service-and-the-console-agent-use-http]]
 === A comunicação entre o serviço e o agente do Console usa HTTP?
 
 Sim, a Classificação de Dados se comunica com o agente do Console usando HTTP.
 
 
 
+[[data-classification-deployment]]
 == Implantação de classificação de dados
 
 As perguntas a seguir estão relacionadas à instância separada de Classificação de Dados.
 
 
 
+[[what-deployment-models-does-data-classification-support]]
 === Quais modelos de implantação a Classificação de Dados suporta?
 
 O NetApp Console permite que o usuário escaneie e gere relatórios sobre sistemas praticamente em qualquer lugar, incluindo ambientes locais, na nuvem e híbridos.  A Classificação de Dados normalmente é implantada usando um modelo SaaS, no qual o serviço é habilitado por meio da interface do Console e não requer instalação de hardware ou software.  Mesmo neste modo de implantação de clicar e executar, o gerenciamento de dados pode ser feito independentemente de os armazenamentos de dados estarem no local ou na nuvem pública.
 
 
 
+[[what-type-of-instance-or-vm-is-required-for-data-classification]]
 === Que tipo de instância ou VM é necessária para a Classificação de Dados?
 
 Quandolink:task-deploy-cloud-compliance.html["implantado na nuvem"] :
@@ -285,12 +318,14 @@ link:concept-classification.html["Saiba mais sobre como funciona a Classificaç�
 
 
 
+[[can-i-deploy-the-data-classification-on-my-own-host]]
 === Posso implantar a Classificação de Dados no meu próprio host?
 
 Sim. Você pode instalar o software de classificação de dados em um host Linux que tenha acesso à Internet na sua rede ou na nuvem.  Tudo funciona da mesma forma e você continua gerenciando a configuração e os resultados da verificação por meio do Console.  Verlink:task-deploy-compliance-onprem.html["Implementando a Classificação de Dados no local"] para requisitos do sistema e detalhes de instalação.
 
 
 
+[[what-about-secure-sites-without-internet-access]]
 === E quanto aos sites seguros sem acesso à internet?
 
 Sim, isso também é suportado.  Você podelink:task-deploy-compliance-dark-site.html["implantar a Classificação de Dados em um site local que não tenha acesso à Internet"] para sites completamente seguros.

@@ -18,12 +18,14 @@ Conclua algumas etapas para começar a escanear seus esquemas de banco de dados 
 
 
 
+[[review-prerequisites]]
 == Revise os pré-requisitos
 
 Revise os seguintes pré-requisitos para garantir que você tenha uma configuração compatível antes de habilitar a Classificação de Dados.
 
 
 
+[[supported-databases]]
 === Bancos de dados suportados
 
 A Classificação de Dados pode escanear esquemas dos seguintes bancos de dados:
@@ -42,6 +44,7 @@ CAUTION: O recurso de coleta de estatísticas *deve ser habilitado* no banco de 
 
 
 
+[[database-requirements]]
 === Requisitos do banco de dados
 
 Qualquer banco de dados com conectividade com a instância de Classificação de Dados pode ser verificado, independentemente de onde esteja hospedado.  Você só precisa das seguintes informações para se conectar ao banco de dados:
@@ -60,6 +63,7 @@ NOTE: Para o MongoDB, é necessária uma função de administrador somente leitu
 
 
 
+[[deploy-the-data-classification-instance]]
 == Implantar a instância de classificação de dados
 
 Implante a Classificação de Dados se ainda não houver uma instância implantada.
@@ -70,6 +74,7 @@ Se você estiver escaneando esquemas de banco de dados que foram instalados em u
 
 
 
+[[add-the-database-server]]
 == Adicionar o servidor de banco de dados
 
 Adicione o servidor de banco de dados onde os esquemas residem.
@@ -94,6 +99,7 @@ O banco de dados é adicionado à lista de sistemas.
 
 
 
+[[enable-and-disable-scans-on-database-schemas]]
 == Habilitar e desabilitar varreduras em esquemas de banco de dados
 
 Você pode parar ou iniciar a varredura completa dos seus esquemas a qualquer momento.

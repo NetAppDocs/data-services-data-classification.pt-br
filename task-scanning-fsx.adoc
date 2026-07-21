@@ -18,6 +18,7 @@ Conclua algumas etapas para escanear o Amazon FSx em busca de volumes ONTAP com 
 
 
 
+[[before-you-begin]]
 == Antes de começar
 
 * Você precisa de um agente de console ativo na AWS para implantar e gerenciar a Classificação de Dados.
@@ -41,6 +42,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interfaces d
 
 
 
+[[deploy-the-data-classification-instance]]
 == Implantar a instância de classificação de dados
 
 link:task-deploy-cloud-compliance.html["Implantar classificação de dados"^]se ainda não houver uma instância implantada.
@@ -53,6 +55,7 @@ As atualizações do software de classificação de dados são automatizadas, de
 
 
 
+[[enable-data-classification-in-your-systems]]
 == Habilite a classificação de dados em seus sistemas
 
 Você pode habilitar a Classificação de Dados para FSx para volumes ONTAP .
@@ -82,6 +85,7 @@ A Classificação de Dados inicia a verificação dos volumes selecionados no si
 ====
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == Verifique se a Classificação de Dados tem acesso aos volumes
 
 Certifique-se de que a Classificação de Dados possa acessar volumes verificando sua rede, grupos de segurança e políticas de exportação.
@@ -116,6 +120,7 @@ Depois de inserir as credenciais, você verá uma mensagem informando que todos 
 
 
 
+[[enable-and-disable-scans-on-volumes]]
 == Habilitar e desabilitar verificações em volumes
 
 Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer momento na página de Configuração. Você também pode alternar entre varreduras somente de mapeamento e varreduras de mapeamento e classificação, e vice-versa. Recomenda-se que você varra todos os volumes em um sistema.
@@ -140,6 +145,7 @@ Quando você ativa a digitalização, a Classificação de Dados inicia a digita
 
 
 
+[[scan-data-protection-volumes]]
 == Digitalizar volumes de proteção de dados
 
 Por padrão, os volumes de proteção de dados (DP) não são verificados porque não são expostos externamente e a Classificação de Dados não pode acessá-los.  Esses são os volumes de destino para operações do SnapMirror de um sistema de arquivos FSx para ONTAP .

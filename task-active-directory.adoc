@@ -33,6 +33,7 @@ NOTE: SIDs de usuários locais e SIDs de domínios desconhecidos não são tradu
 
 
 
+[[supported-data-sources]]
 == Fontes de dados suportadas
 
 Uma integração do Active Directory com a Classificação de Dados pode identificar dados das seguintes fontes de dados:
@@ -45,6 +46,7 @@ Uma integração do Active Directory com a Classificação de Dados pode identif
 
 
 
+[[connect-to-your-active-directory-server]]
 == Conecte-se ao seu servidor Active Directory
 
 Depois de implantar a Classificação de Dados e ativar a verificação em suas fontes de dados, você pode integrar a Classificação de Dados ao seu Active Directory.  O Active Directory pode ser acessado usando um endereço IP de servidor DNS ou um endereço IP de servidor LDAP.
@@ -105,6 +107,7 @@ A Classificação de Dados é integrada ao Active Directory e uma nova seção �
 
 
 
+[[manage-your-active-directory-integration]]
 == Gerencie sua integração com o Active Directory
 
 Se precisar modificar algum valor na sua integração com o Active Directory, você deve atualizar a configuração do Active Directory em Data Classification. Retorne ao menu **Configuration** em Data Classification e acesse a guia de configurações para fazer as alterações.

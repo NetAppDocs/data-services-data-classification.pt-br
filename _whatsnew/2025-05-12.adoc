@@ -4,6 +4,7 @@
 
 
 
+[[prioritize-classification-scans]]
 === Priorizar varreduras de classificação
 
 A Classificação de Dados permite priorizar varreduras de Map & Classify, além das varreduras somente de Map, possibilitando que você selecione quais varreduras serão concluídas primeiro. A priorização de varreduras de Map & Classify é suportada durante e antes do início das varreduras. Se você optar por priorizar uma varredura enquanto ela estiver em andamento, tanto o mapeamento quanto a classificação das varreduras de Map & Classify serão priorizados.
@@ -12,6 +13,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[support-for-canadian-personally-identifiable-information-pii-data-categories]]
 === Suporte para categorias de dados de informações de identificação pessoal (PII) canadenses
 
 As varreduras de classificação de dados identificam categorias de dados PII canadenses. Essas categorias incluem informações bancárias, números de passaporte, números de seguro social, números de carteira de motorista e números de cartão de saúde para todas as províncias e territórios canadenses.
@@ -20,6 +22,7 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[custom-classification-preview]]
 === Classificação personalizada (visualização)
 
 A Classificação de Dados oferece suporte a classificações personalizadas para verificações do Map & Classify. Com classificações personalizadas, você pode adaptar as verificações de Classificação de Dados para capturar dados específicos da sua organização usando expressões regulares. Este recurso está atualmente em versão prévia.
@@ -28,18 +31,21 @@ Para obter mais informações, consulte link:https://docs.netapp.com/us-en/data-
 
 
 
+[[saved-searches-tab]]
 === Aba de pesquisas salvas
 
 A aba **Políticas** foi renomeadalink:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["**Pesquisas salvas**"] . A funcionalidade não foi alterada.
 
 
 
+[[send-scan-events-to-the-audit-page]]
 === Enviar eventos de verificação para a página de auditoria
 
 A classificação de dados suporta o envio de eventos de classificação (quando uma varredura é iniciada e quando ela termina) para o link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetApp Console Página de auditoria"^].
 
 
 
+[[security-updates]]
 === Atualizações de segurança
 
 * O pacote Keras foi atualizado, mitigando vulnerabilidades (BDSA-2025-0107 e BDSA-2025-1984).
@@ -48,12 +54,14 @@ A classificação de dados suporta o envio de eventos de classificação (quando
 
 
 
+[[performance-enhancements]]
 === Melhorias de desempenho
 
 Melhorias no código foram implementadas para reduzir o uso de RAM e melhorar o desempenho geral da Classificação de Dados.
 
 
 
+[[bug-fixes]]
 === Correções de bugs
 
 Foram corrigidos bugs que causavam falhas nas verificações do StorageGRID , o não carregamento das opções de filtro da página de investigação e o não download da Avaliação de Descoberta de Dados para avaliações de alto volume.
