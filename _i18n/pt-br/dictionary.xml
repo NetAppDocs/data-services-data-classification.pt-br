@@ -386,7 +386,6 @@
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">Documentação do API</block>
   <block id="c60d8912991913ddd6b9f743a592511c" category="paragraph">Sim, o Data Classification tem uma API REST para os recursos suportados na versão do Data Classification que faz parte da plataforma principal do Console. Ver <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block> .</block>
   <block id="ca3545f9022d57ae33eb493cb41afd19" category="section-title">A classificação de dados está disponível nos mercados de nuvem?</block>
-  <block id="0692a00bf8c746154454f1ab43fbb4c8" category="paragraph">A Classificação de Dados faz parte dos principais recursos do NetApp Console , portanto você não precisa usar os marketplaces para este serviço.</block>
   <block id="25534560556ecfce50508e26175329db" category="section-title">Classificação de dados, digitalização e análise</block>
   <block id="24a4132768e6098eec85404390afef8c" category="paragraph">As perguntas a seguir estão relacionadas ao desempenho da varredura de classificação de dados e à análise.</block>
   <block id="5f92862e4bdeced1587c5a6862cbfac3" category="section-title">Com que frequência a Classificação de Dados verifica meus dados?</block>
@@ -2858,4 +2857,7 @@
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">A NetApp Data Classification não consegue extrair permissões ou a "última hora de acesso" de sistemas 7-Mode.</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">A página de visão geral do sistema possui uma opção *Escanear sem permissões de gravação* que está desativada por padrão. Se o Data Classification não tiver as permissões apropriadas, ele não escaneará os arquivos porque o Data Classification não pode reverter a "última hora de acesso" para o carimbo de data/hora original. + Você pode substituir essa configuração usando a opção *Escanear sem permissões de gravação*. Para saber mais sobre essa opção, consulte <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>.</block>
   <block id="308857218552b597ea9cae644ef5a86a" category="admonition">O instalador de Data Classification reserva o UID 4321 e o GID 4321. Antes de iniciar a instalação, certifique-se de que o UID 4321 e o GID 4321 não estejam em uso na máquina host. Se estiverem em uso, a instalação falhará com uma mensagem de erro "invalid user".</block>
+  <block id="7a6e24dc300a73a85d44ed828d28c3db" category="paragraph">A Classificação de Dados faz parte dos recursos principais do NetApp Console. Você não precisa implantar a Classificação de Dados a partir de um marketplace de nuvem.</block>
+  <block id="e99dacbe5fb8f13a88a038ccac0ae040" category="section-title">Se eu reiniciar minha máquina virtual durante as verificações, qual é o impacto na verificação?</block>
+  <block id="c11dddbf642df4798f94fb3c97c30774" category="paragraph">As verificações persistem. Se você reiniciar uma máquina virtual enquanto as verificações estiverem em execução, elas serão retomadas de onde pararam após a reinicialização bem-sucedida da máquina virtual.</block>
 </blocks>
