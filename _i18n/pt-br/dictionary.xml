@@ -1160,7 +1160,6 @@
   <block id="196004c131c20b6770256be1148132f8" category="list-text">Nome de usuário e senha para o servidor</block>
   <block id="c5a32a433a4a6a349b1c917b51959e47" category="section-title">Instalar a Classificação de Dados no host Linux</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-xref">Veja esses passos aqui</block>
-  <block id="cdcaeff13fccb06b7b310f6f966ada4f" category="paragraph">Para configurações típicas, você instalará o software em um único sistema host. <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block> .</block>
   <block id="31e7f243ce8de6b2655624e7d7969f44" category="inline-image-macro">Um diagrama mostrando a localização das fontes de dados que você pode escanear ao usar uma única instância de Classificação de Dados implantada no local com acesso à Internet.</block>
   <block id="ab0e7b32181d9f9a6ee2bf396f53d64b" category="paragraph"><block ref="ab0e7b32181d9f9a6ee2bf396f53d64b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab6f827b404fc74a3d59a176e44dce54" category="inline-xref">Preparando o sistema host Linux</block>
@@ -2494,7 +2493,6 @@
   <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
   <block id="2c68446a47623409683fed996b7df333" category="cell">Necessário para processos internos dentro de um servidor Ubuntu.</block>
   <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">Instale Data Classification no host Linux local</block>
-  <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">Para configurações típicas, você instalará o software em um único host.</block>
   <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">Siga estas etapas ao instalar o software de Data Classification em um único host local em um ambiente offline.</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">Verifique se você instalou os dois pacotes de software necessários (Docker Engine ou Podman, e Python 3).</block>
   <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">Verifique se seu ambiente offline atende aos requisitos <block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>.</block>
@@ -2862,4 +2860,6 @@
   <block id="4c9398ce1129f1601e4d55b176ae4cd8" category="inline-link-macro">priorizá-los manualmente</block>
   <block id="b053d0df91aae10a4ef1dd644b52ec10" category="paragraph">Após a verificação inicial, a Classificação de Dados verifica continuamente seus dados em um esquema rotativo para detectar alterações incrementais. As verificações são realizadas automaticamente todos os dias. A Classificação de Dados realiza verificações em lotes de seis; você pode pausar as verificações ou <block ref="eb2a9ee088a42a6c145bd3fba80d3402" category="inline-link-macro-rx"></block>.</block>
   <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">Realizar uma varredura somente do mapa pode ser útil para obter uma visão geral dos seus dados. Com essa visão geral de alto nível, você pode decidir em quais fontes de dados deseja realizar varreduras completas.</block>
+  <block id="054d46968a7383743285f7a0e8b6508c" category="paragraph">Na maioria das situações, você instala o Data Classification em um sistema de host único. Este não é o mesmo host de máquina virtual que o agente do Console.</block>
+  <block id="ad54f23b3db54b6c128eb84641ffe234" category="paragraph">Na maioria das situações, você instala o Data Classification em um sistema de host único. Este não é o mesmo host de máquina virtual que o agente do Console. <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>.</block>
 </blocks>
