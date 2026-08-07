@@ -16,7 +16,7 @@ summary: Analise suas fontes de dados com o NetApp Data Classification.
 [role="lead"]
 NetApp Data Classification examina os dados nos repositórios (os volumes, esquemas de banco de dados ou outros dados de usuário) que você seleciona para identificar dados pessoais e confidenciais. Data Classification então mapeia os dados da sua organização, categoriza cada arquivo e identifica padrões predefinidos nos dados. O resultado da análise é um índice de informações pessoais, informações pessoais confidenciais, categorias de dados e tipos de arquivo.
 
-Após a verificação inicial, a Classificação de Dados verifica continuamente seus dados em um sistema round-robin para detectar alterações incrementais.  É por isso que é importante manter a instância em execução.
+Após a verificação inicial, a Classificação de Dados verifica continuamente seus dados em um esquema rotativo para detectar alterações incrementais. As verificações são realizadas automaticamente todos os dias. A Classificação de Dados realiza verificações em lotes de seis; você pode pausar as verificações ou link:task-managing-repo-scanning.html#prioritize-scans["priorizá-los manualmente"].
 
 Você pode habilitar e desabilitar verificações no nível do volume ou no nível do esquema do banco de dados.
 
@@ -32,7 +32,7 @@ Você pode realizar dois tipos de varreduras na Classificação de Dados:
 
 
 
-TIP: Realizar uma varredura somente com base no mapa pode ser útil para obter uma visão geral dos seus dados e identificar áreas específicas para realizar varreduras completas.
+TIP: Realizar uma varredura somente do mapa pode ser útil para obter uma visão geral dos seus dados. Com essa visão geral de alto nível, você pode decidir em quais fontes de dados deseja realizar varreduras completas.
 
 Analise as tabelas para ver quais informações são exibidas nas varreduras somente do mapa e nas varreduras completas.
 

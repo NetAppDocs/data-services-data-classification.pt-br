@@ -2802,7 +2802,6 @@
   <block id="5b727e9ed04fc43b0f4e0f294915a248" category="section-title">Compreenda os tipos de digitalização</block>
   <block id="486c832e76fd0638886898fc9c62ff69" category="list-text">**As varreduras somente de mapa** fornecem apenas uma visão geral de alto nível dos seus dados e são realizadas em fontes de dados selecionadas. As varreduras somente de mapa levam menos tempo do que as varreduras completas porque não acessam arquivos para ver os dados dentro deles.</block>
   <block id="71ebf849818df3526b1f19c48d22ee23" category="list-text">**As varreduras completas** fornecem uma análise em nível profundo dos seus dados. Uma varredura completa inclui uma varredura de mapeamento e uma classificação dos dados dentro dos arquivos.</block>
-  <block id="81f9f5fbbc14757a16be8eb963cfb5bb" category="admonition">Realizar uma varredura somente com base no mapa pode ser útil para obter uma visão geral dos seus dados e identificar áreas específicas para realizar varreduras completas.</block>
   <block id="8666915a830702ebb197dde305a34dc5" category="paragraph">Analise as tabelas para ver quais informações são exibidas nas varreduras somente do mapa e nas varreduras completas.</block>
   <block id="4cc971a27d1b8959788abcd1eab8e72b" category="cell">Digitalização completa</block>
   <block id="7f138c4c12db7bfc5e7b57acbcffe2d2" category="cell">Varredura apenas do mapa</block>
@@ -2860,4 +2859,7 @@
   <block id="7a6e24dc300a73a85d44ed828d28c3db" category="paragraph">A Classificação de Dados faz parte dos recursos principais do NetApp Console. Você não precisa implantar a Classificação de Dados a partir de um marketplace de nuvem.</block>
   <block id="e99dacbe5fb8f13a88a038ccac0ae040" category="section-title">Se eu reiniciar minha máquina virtual durante as verificações, qual é o impacto na verificação?</block>
   <block id="c11dddbf642df4798f94fb3c97c30774" category="paragraph">As verificações persistem. Se você reiniciar uma máquina virtual enquanto as verificações estiverem em execução, elas serão retomadas de onde pararam após a reinicialização bem-sucedida da máquina virtual.</block>
+  <block id="4c9398ce1129f1601e4d55b176ae4cd8" category="inline-link-macro">priorizá-los manualmente</block>
+  <block id="b053d0df91aae10a4ef1dd644b52ec10" category="paragraph">Após a verificação inicial, a Classificação de Dados verifica continuamente seus dados em um esquema rotativo para detectar alterações incrementais. As verificações são realizadas automaticamente todos os dias. A Classificação de Dados realiza verificações em lotes de seis; você pode pausar as verificações ou <block ref="eb2a9ee088a42a6c145bd3fba80d3402" category="inline-link-macro-rx"></block>.</block>
+  <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">Realizar uma varredura somente do mapa pode ser útil para obter uma visão geral dos seus dados. Com essa visão geral de alto nível, você pode decidir em quais fontes de dados deseja realizar varreduras completas.</block>
 </blocks>
