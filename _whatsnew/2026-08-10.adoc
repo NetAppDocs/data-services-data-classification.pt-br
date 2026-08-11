@@ -1,0 +1,12 @@
+= Aba de digitalizações ativas para aprimorar o gerenciamento de digitalizações
+:allow-uri-read: 
+
+
+
+
+[[active-scans-tab-to-enhance-scan-management]]
+=== Aba de digitalizações ativas para aprimorar o gerenciamento de digitalizações
+
+A Classificação de Dados agora oferece uma aba *Verificações Ativas* no menu Configuração, proporcionando uma experiência aprimorada para o gerenciamento de verificações. A aba Verificações Ativas fornece uma visão geral de todos os volumes que você ativou para verificação, com filtros familiares para classificar seus recursos. A aba também oferece uma localização central para priorizar verificações, pausar verificações e revisar erros.
+
+Para mais informações, consulte link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html["Gerenciar verificações"^].

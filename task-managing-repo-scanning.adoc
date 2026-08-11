@@ -63,14 +63,12 @@ NOTE: A verificação somente de mapeamento não está disponível para bancos d
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
 . Para alterar o tipo de verificação para todos os ativos em um sistema, selecione o menu de ações desse sistema e, em seguida, altere para o tipo de verificação desejado. Por exemplo, para alterar as verificações de um grupo de compartilhamentos de arquivos de somente mapeamento para completa, selecione *Verificar todos os compartilhamentos: verificação completa*.
-+
-Para alterar o tipo de verificação para buckets, compartilhamentos ou volumes individuais, selecione o botão **Gerenciar** do sistema.
-
+. Para alterar o tipo de verificação para buckets, compartilhamentos ou volumes individuais, selecione a guia **Verificações ativas**. Aplique os filtros apropriados para identificar os recursos que você deseja modificar.
 +
 image:screenshot_compliance_config_button.png["Uma captura de tela mostrando como selecionar o botão Configuração de um sistema."]
 
 +
-Na configuração individual do sistema, selecione o ativo que deseja modificar. Selecione o *Tipo de digitalização* e, em seguida, altere para o tipo de digitalização desejado.
+Na coluna Tipo de varredura, selecione o recurso designado e altere para **Somente mapeamento** ou **Varredura completa**.
 
 
 
@@ -87,8 +85,8 @@ A prioridade é concedida apenas uma vez. As novas varreduras automáticas de da
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Localize o sistema para o qual deseja modificar as verificações e selecione *Gerenciar*.
-. Encontre os recursos que deseja priorizar. Selecione o menu de ação `...` e, em seguida, *Priorizar verificação*.
+. Selecione a guia **Digitalizações ativas**.
+. Opcionalmente, aplique os filtros apropriados para identificar os recursos que você deseja modificar. Encontre os recursos que você deseja priorizar. Selecione o menu de ações  `...` e depois *Priorizar verificação*.
 
 
 
@@ -120,8 +118,8 @@ Você pode retomar a digitalização a qualquer momento.
 
 .Passos
 . No menu Classificação de Dados, selecione *Configuração*.
-. Localize o sistema para o qual deseja modificar as verificações e selecione *Gerenciar*.
-. Identifique os recursos que deseja pausar. Para cada recurso, selecione o menu de ações `...` e depois *Pausar verificação*.
+. Selecione a guia **Digitalizações ativas**.
+. Opcionalmente, aplique os filtros apropriados para identificar os recursos que você deseja modificar. Identifique os recursos que você deseja pausar. Para cada recurso, selecione o menu de ações  `...` e depois *Pausar verificação*.
 +
 Se desejar retomar a digitalização, repita o procedimento e selecione *Retomar digitalização*.
 
