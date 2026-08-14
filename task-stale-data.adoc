@@ -18,7 +18,7 @@ Dados obsoletos podem ser definidos com base em quando foram _acessados pela úl
 Por padrão, os dados são considerados obsoletos se a última modificação ocorreu há três anos.
 
 .Defina dados obsoletos.
-. Em Resiliência a Ransomware, selecione **Configuração**.
+. Em Classificação de Dados, selecione **Configuração**.
 . Na página de Configuração, selecione a guia **Configurações**.
 . Na seção Definição de dados desatualizados, selecione *Editar*.
 . No menu suspenso **Propriedade do arquivo**, escolha se deseja definir dados obsoletos com base em quando foi *Último acesso* ou *Última modificação*.

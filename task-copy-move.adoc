@@ -14,7 +14,7 @@ summary: Após filtrar dados no painel de investigação, você pode copiar, mov
 
 
 [role="lead"]
-Além de fornecer informações sobre governança e oportunidades de economia, NetApp Data Classification também permite que você execute ações em arquivos a partir do painel de investigação. Após filtrar dados no painel de investigação, você pode copiar, mover e excluir dados não estruturados. A execução dessas ações pode melhorar a conformidade, por exemplo, movendo arquivos para um local mais seguro ou criar oportunidades de economia excluindo arquivos antigos ou duplicados.
+NetApp Data Classification permite que você execute ações em arquivos descobertos no painel de investigação. Após filtrar os dados, você pode copiar, mover e excluir dados não estruturados para melhorar a conformidade, por exemplo, movendo arquivos confidenciais para um local mais seguro, ou para gerar economia ao excluir arquivos antigos ou duplicados.
 
 
 
@@ -74,7 +74,7 @@ image:screenshot-move-nfs.png["Captura de tela da função de movimentação de 
 [[delete-files]]
 == Excluir arquivos
 
-Ao filtrar dados no painel de Investigação para descobrir oportunidades de economia de espaço e custos, você pode excluir esses arquivos. A exclusão de arquivos é compatível apenas com arquivos não estruturados.
+Ao filtrar dados no painel de Investigação para descobrir oportunidades de economia de espaço e custos, você pode excluir esses arquivos. Você pode excluir apenas arquivos não estruturados.
 
 .Passos
 . No painel de investigação, selecione os arquivos que deseja excluir.
