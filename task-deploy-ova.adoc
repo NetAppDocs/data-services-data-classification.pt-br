@@ -14,7 +14,7 @@ summary: 'NetApp Data Classification oferece suporte à implantação para ambie
 
 
 [role="lead"]
-NetApp Data Classification oferece suporte à implementação com VMware Open Virtual Appliance (OVA), fornecendo um pacote gerenciado para instalar e executar Data Classification em ambientes VMware vSphere locais. O método de implementação OVA fornece um ambiente gerenciado e pré-validado pela NetApp, para simplificar a implementação.
+Implemente o NetApp Data Classification em um ambiente VMware vSphere local usando um Open Virtual Appliance (OVA) pré-validado, um pacote gerenciado que simplifica a instalação e a operação.
 
 Este método é recomendado para novas implementações baseadas em VMware.
 
@@ -48,7 +48,7 @@ Antes de usar o arquivo OVA para instalar o Data Classification, você precisa t
 
 | `DataClassification-<version>-XL.ova` | Grande volume de trabalho de produção: 32 CPUs, 128 GB de RAM, 1 TB de disco | 500 milhões de arquivos 
 |===
-. Acesse o cliente vSphere. Clique com o botão direito do mouse no cluster ou host de destino e selecione *Implantar modelo OVF* > *Criar VM a partir de OVA*.
+. Abra o cliente vSphere. Clique com o botão direito do mouse no cluster ou host de destino e selecione *Implantar modelo OVF* > *Criar VM a partir de OVA*.
 . Faça o upload do arquivo OVA que você baixou na primeira etapa.
 . Especifique o *nome da VM* e o data center, host ou cluster e datastore de destino.
 . Aceite o Contrato de Licença de Usuário Final da NetApp.
@@ -82,16 +82,16 @@ NOTE: A senha é usada para acesso à raiz, acesso SSH e administração do sist
 +
 Selecione o arquivo chamado *DATASENSE-INSTALLER-<version>.tar.gz*.
 
-. Copie o arquivo de instalação para o host da máquina virtual: `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`.
-. Descompacte o arquivo de instalação na máquina host.
+. Extraia o arquivo de instalação no host da máquina virtual executando  `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`.
+. Extraia o arquivo de instalação na máquina host.
 . No Console, selecione *Governança > Classificação*.
 . Selecione *Implantar Classificação*.
 +
 image:screenshot-deploy-classification.png["Uma captura de tela da seleção do botão para ativar a Classificação de Dados."]
 
-. Dependendo se você estiver instalando a Classificação de Dados em uma instância preparada na nuvem ou em uma instância preparada em suas instalações, selecione a opção *Implantar* apropriada para iniciar a instalação da Classificação de Dados.
-. A caixa de diálogo _Implantar classificação de dados no local_ é exibida.  Copie o comando fornecido (por exemplo: `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` ) e cole-o em um arquivo de texto para que você possa usá-lo mais tarde.  Em seguida, selecione *Fechar* para fechar a caixa de diálogo.
-. Conecte-se ao dispositivo OVA via SSH usando o usuário administrador.
+. Selecione a opção *Implantar* apropriada para o tipo de instância: nuvem ou local.
+. A caixa de diálogo _Implantar o NetApp Data Classification localmente_ é exibida. Copie o comando fornecido (por exemplo  `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`) para um arquivo de texto para uso posterior. Selecione *Fechar* para dispensar a caixa de diálogo.
+. Use SSH para conectar-se ao appliance OVA como o usuário administrador.
 . Execute o comando de instalação que você gerou para concluir a instalação e registrar o sistema em sua organização.
 
 

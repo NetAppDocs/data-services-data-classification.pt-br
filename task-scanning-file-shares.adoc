@@ -36,7 +36,7 @@ Revise os seguintes pré-requisitos para garantir que você tenha uma configura�
 * Você pode adicionar um compartilhamento DFS (Distributed File System) como um compartilhamento CIFS regular.  Como a Classificação de Dados não sabe que o compartilhamento é criado em vários servidores/volumes combinados como um único compartilhamento CIFS, você pode receber erros de permissão ou conectividade sobre o compartilhamento quando a mensagem realmente se aplica apenas a uma das pastas/compartilhamentos que está localizada em um servidor/volume diferente.
 * Para compartilhamentos CIFS (SMB), certifique-se de ter credenciais do Active Directory que forneçam acesso de leitura aos compartilhamentos.  Credenciais de administrador são preferenciais caso a Classificação de Dados precise verificar quaisquer dados que exijam permissões elevadas.
 +
-Se você quiser ter certeza de que os "últimos horários de acesso" dos seus arquivos não serão alterados pelas verificações de Classificação de Dados, é recomendável que o usuário tenha permissões de Gravação de Atributos no CIFS ou permissões de gravação no NFS. Se possível, configure o usuário do Active Directory como parte de um grupo pai na organização que tenha permissões para todos os arquivos.
+Para garantir que os "últimos horários de acesso" dos seus arquivos permaneçam inalterados pelas verificações do NetApp Data Classification, configure o usuário do Active Directory com permissões de Write Attributes no CIFS ou permissões de gravação no NFS. Se possível, configure o usuário do Active Directory como parte de um grupo pai na organização que tenha permissões para todos os arquivos.
 
 * Todos os compartilhamentos de arquivos CIFS em um grupo devem usar as mesmas credenciais do Active Directory.
 * Você pode misturar compartilhamentos NFS e CIFS (usando Kerberos ou NTLM).  Você deve adicionar as ações ao grupo separadamente.  Ou seja, você deve concluir o processo duas vezes — uma vez por protocolo.
@@ -150,12 +150,12 @@ Você pode acompanhar o progresso da verificação inicial.
 [[enable-and-disable-scans-on-volumes]]
 == Habilitar e desabilitar verificações em volumes
 
-Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer momento na página de Configuração. Você também pode alternar entre varreduras somente de mapeamento e varreduras de mapeamento e classificação, e vice-versa. Recomenda-se que você varra todos os volumes em um sistema.
+Você pode iniciar ou interromper varreduras em qualquer sistema a qualquer momento no menu Configuração. Você também pode alternar varreduras de somente mapa para varreduras completas, e vice-versa.
 
-A opção *Escanear sem permissões de gravação* está desativada por padrão. Isso significa que, se o Data Classification não tiver as permissões de gravação apropriadas, o sistema não escaneará os arquivos porque o Data Classification não poderá reverter o "last accessed time" para o registro original. Se o seu sistema puder tolerar a modificação do last accessed time, selecione esta opção. link:reference-collected-metadata.html#last-accessed-time-timestamp["Saber mais"^].
+A opção *Escanear sem permissões de gravação* está desativada por padrão. Isso significa que, se o Data Classification não tiver as permissões de gravação apropriadas, o sistema não escaneará os arquivos porque o Data Classification não poderá reverter o "horário do último acesso" para o registro original. Se o seu sistema puder tolerar a modificação do horário do último acesso, selecione esta opção. link:reference-collected-metadata.html#last-accessed-time-timestamp["Saber mais"^].
 
 
-NOTE: Novos volumes adicionados ao sistema são verificados automaticamente somente se você tiver habilitado a verificação para todos os volumes. Se você habilitou a verificação apenas em determinados volumes, você deve habilitar manualmente a verificação no volume recém-adicionado.
+NOTE: Novos volumes adicionados ao sistema são verificados automaticamente somente quando você habilita a verificação para todos os volumes. Se você habilitou a verificação apenas em determinados volumes, você deve habilitar manualmente a verificação no volume recém-adicionado.
 
 image:screenshot_volume_compliance_selection.png["Uma captura de tela da página de configuração onde você pode ativar ou desativar a verificação de volumes individuais."]
 

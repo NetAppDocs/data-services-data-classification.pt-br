@@ -4,7 +4,7 @@
 
 .Passos
 . Na aba Investigação, defina uma pesquisa selecionando os filtros que deseja usar. Verlink:task-investigate-data.html["Filtrando dados na página Investigação"] para mais detalhes.
-. Depois de definir todas as características do filtro conforme sua preferência, selecione *Salvar consulta*.
+. Após configurar todas as características do filtro, selecione *Salvar consulta*.
 +
 image:../media/screenshot_compliance_save_as_highlight.png["Captura de tela mostrando como salvar uma consulta filtrada como uma consulta salva."]
 
@@ -21,4 +21,4 @@ image:../media/screenshot_compliance_save_highlight2.png["Uma captura de tela qu
 
 
 
-Depois de criar a pesquisa ou política, você pode visualizá-la na aba **Consultas salvas**.
+Depois de criar a pesquisa ou política, você pode visualizá-la na guia **Consultas salvas**.

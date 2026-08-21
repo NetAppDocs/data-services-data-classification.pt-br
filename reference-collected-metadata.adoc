@@ -14,14 +14,14 @@ summary: A Classificação de Dados coleta determinados metadados ao executar va
 
 
 [role="lead"]
-NetApp Data Classification coleta metadados durante a análise de suas fontes de dados e sistemas. A maioria dos metadados está disponível, mas alguns atributos não estão disponíveis para todos os protocolos.
+NetApp Data Classification coleta metadados durante a varredura de suas fontes de dados e sistemas. Alguns atributos de metadados não estão disponíveis para todos os protocolos.
 
 [cols="15,25,25,25"]
 |===
 |  | *Metadados* | *CIFS* | *NFS* 
 
 
-.3+| *Carimbos de tempo* | _Tempo de criação_ | Disponível | Não disponível (sem suporte no Linux) 
+.3+| *Carimbos de tempo* | _Tempo de criação_ | Disponível | Não disponível (não suportado no Linux) 
 
 
 | _Último horário de acesso_ | Disponível | Disponível 
@@ -47,9 +47,9 @@ NetApp Data Classification coleta metadados durante a análise de suas fontes de
 [[last-accessed-time]]
 == Último horário de acesso
 
-Quando o Data Classification extrai dados de compartilhamentos de arquivos, o sistema operacional considera isso um evento de acesso e atualiza o "último horário de acesso" de acordo. Após a verificação, o Data Classification tenta reverter o último horário de acesso para o registro de data e hora original. Se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não poderá reverter o último horário de acesso para o registro de data e hora original.
+Quando o Data Classification extrai dados de compartilhamentos de arquivos, o sistema operacional trata isso como um evento de acesso e atualiza o "último horário de acesso" de acordo. Após a verificação, o Data Classification tenta reverter o último horário de acesso para o registro de data e hora original. Se o Data Classification não tiver permissões de gravação de atributos no CIFS ou permissões de gravação no NFS, o sistema não poderá reverter o último horário de acesso para o registro de data e hora original.
 
-Por padrão, Data Classification não analisa arquivos quando não possui permissões de gravação para restaurar o carimbo de data/hora original. Se seus dados puderem tolerar que o horário do último acesso não seja redefinido para o carimbo de data/hora original, habilite a opção *Analisar sem permissões de gravação* na página de configuração do sistema.
+Por padrão, o NetApp Data Classification não analisa arquivos quando não possui permissões de gravação para restaurar o carimbo de data/hora original. Se seus dados tolerarem que o horário do último acesso não seja redefinido para o carimbo de data/hora original, habilite a opção *Analisar sem permissões de gravação* na página de configuração do sistema.
 
 image:screenshot_scan_missing_permissions.png["Uma captura de tela mostrando a opção que você pode usar para que o Data Classification analise seus arquivos mesmo que não tenha as permissões corretas para reverter o último acesso ao registro de data e hora original."]
 

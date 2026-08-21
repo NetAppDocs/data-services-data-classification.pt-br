@@ -24,7 +24,7 @@ Limitações conhecidas identificam funções que não são suportadas ou não i
 A versão de dezembro de 2023 (versão 1.26.6) removeu as seguintes opções:
 
 * A opção para ativar a coleta de logs de auditoria foi desabilitada.
-* Durante a investigação dos Diretórios, a opção para calcular o número de dados de informações de identificação pessoal (PII) pelos Diretórios não está disponível.
+* Durante a investigação dos diretórios, a opção para calcular o número de dados de informações de identificação pessoal (PII) por diretórios não está disponível.
 * A opção de integrar dados usando rótulos do Azure Information Protection (AIP) foi desabilitada.
 
 

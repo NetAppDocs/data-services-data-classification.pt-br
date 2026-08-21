@@ -2,12 +2,12 @@
 :allow-uri-read: 
 
 
-Você pode iniciar ou interromper as varreduras em qualquer sistema a qualquer momento na página de Configuração. Você também pode alternar entre varreduras somente de mapeamento e varreduras de mapeamento e classificação, e vice-versa. Recomenda-se que você varra todos os volumes em um sistema.
+Você pode iniciar ou interromper varreduras em qualquer sistema a qualquer momento no menu Configuração. Você também pode alternar varreduras de somente mapa para varreduras completas, e vice-versa.
 
-A opção *Escanear sem permissões de gravação* está desativada por padrão. Isso significa que, se o Data Classification não tiver as permissões de gravação apropriadas, o sistema não escaneará os arquivos porque o Data Classification não poderá reverter o "last accessed time" para o registro original. Se o seu sistema puder tolerar a modificação do last accessed time, selecione esta opção. link:reference-collected-metadata.html#last-accessed-time-timestamp["Saber mais"^].
+A opção *Escanear sem permissões de gravação* está desativada por padrão. Isso significa que, se o Data Classification não tiver as permissões de gravação apropriadas, o sistema não escaneará os arquivos porque o Data Classification não poderá reverter o "horário do último acesso" para o registro original. Se o seu sistema puder tolerar a modificação do horário do último acesso, selecione esta opção. link:reference-collected-metadata.html#last-accessed-time-timestamp["Saber mais"^].
 
 
-NOTE: Novos volumes adicionados ao sistema são verificados automaticamente somente se você tiver habilitado a verificação para todos os volumes. Se você habilitou a verificação apenas em determinados volumes, você deve habilitar manualmente a verificação no volume recém-adicionado.
+NOTE: Novos volumes adicionados ao sistema são verificados automaticamente somente quando você habilita a verificação para todos os volumes. Se você habilitou a verificação apenas em determinados volumes, você deve habilitar manualmente a verificação no volume recém-adicionado.
 
 image:screenshot_volume_compliance_selection.png["Uma captura de tela da página de configuração onde você pode ativar ou desativar a verificação de volumes individuais."]
 

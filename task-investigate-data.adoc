@@ -57,7 +57,7 @@ Use os seguintes filtros para visualizar quanta informação confidencial está 
 | Nível de sensibilidade | Selecione o nível de sensibilidade: Pessoal, Pessoal sensível ou Não sensível. 
 
 
-| Número de identificadores | Selecione o intervalo de identificadores sensíveis detectados por arquivo.  Inclui dados pessoais e dados pessoais sensíveis.  Ao filtrar em Diretórios, a Classificação de Dados totaliza as correspondências de todos os arquivos em cada pasta (e subpastas).  OBSERVAÇÃO: a versão de dezembro de 2023 (versão 1.26.6) removeu a opção de calcular o número de dados de informações pessoais identificáveis (PII) por Diretórios. 
+| Número de identificadores | Selecione o intervalo de identificadores sensíveis detectados por arquivo. Inclui dados pessoais e dados pessoais sensíveis. Ao filtrar em Diretórios, o Data Classification totaliza as correspondências de todos os arquivos em cada pasta (e subpastas). NOTA: A versão de dezembro de 2023 (1.26.6) removeu a opção de calcular o número de dados de informações de identificação pessoal (PII) por Diretórios. 
 
 
 | Dados Pessoais | Selecione olink:reference-private-data-categories.html["tipos de dados pessoais"] . 
@@ -382,7 +382,7 @@ Uma caixa de diálogo exibe uma mensagem informando que os relatórios estão se
 
 .Passos
 . Na aba Investigação, defina uma pesquisa selecionando os filtros que deseja usar. Verlink:task-investigate-data.html["Filtrando dados na página Investigação"] para mais detalhes.
-. Depois de definir todas as características do filtro conforme sua preferência, selecione *Salvar consulta*.
+. Após configurar todas as características do filtro, selecione *Salvar consulta*.
 +
 image:../media/screenshot_compliance_save_as_highlight.png["Captura de tela mostrando como salvar uma consulta filtrada como uma consulta salva."]
 
@@ -399,7 +399,7 @@ image:../media/screenshot_compliance_save_highlight2.png["Uma captura de tela qu
 
 
 
-Depois de criar a pesquisa ou política, você pode visualizá-la na aba **Consultas salvas**.
+Depois de criar a pesquisa ou política, você pode visualizá-la na guia **Consultas salvas**.
 
 
 TIP: Pode levar até 15 minutos para que os resultados apareçam na página Consultas salvas.
